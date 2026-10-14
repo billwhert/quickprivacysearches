@@ -23,7 +23,7 @@
 - [x] Every chunk's text appears verbatim in the saved source file (0 missing: [])
 - [x] Every article text appears verbatim in the saved source file ([])
 - [x] Internal cross-references resolve (0 unresolved: [])
-- [x] Guided-topic citations exist in loaded text (65 cited across topics; unresolved: [])
+- [x] Guided-topic citations exist in loaded text (59 cited across topics; unresolved: [])
 
 ## Largest searchable chunks
 

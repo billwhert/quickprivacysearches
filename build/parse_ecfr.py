@@ -145,86 +145,113 @@ def parse(files: dict, doc: dict, retrieved_at: str, raw_root: pathlib.Path):
             part_label += " - " + " ".join(w if (i and w in small) else w.capitalize()
                                            for i, w in enumerate(words))
 
-        for sub in root.xpath('.//div[contains(@class,"subpart")]'):
-            h2 = sub.find("h2")
-            sub_title = norm(h2.text_content()).replace("—", " - ") if h2 is not None else ""
-            for div in sub.xpath('./div[contains(@class,"section") or contains(@class,"appendix")]'):
-                sid = div.get("id")
-                is_app = "appendix" in (div.get("class") or "")
-                title_line, nodes, notes, lead = parse_section(div)
-                if is_app:
-                    num = slug(sid)
-                    head_parts = title_line.split("—", 1)
-                    sec_ref = f"{short} {head_parts[0].strip()}"
-                    heading = head_parts[1].strip() if len(head_parts) > 1 else title_line
-                    permalink = f"{doc_id}/sec/{num}/"
-                    src = f"https://www.ecfr.gov/current/title-45/part-{part}"
-                    rows = []                     # the appendix is a table: one line per row
-                    for tr in div.iter("tr"):
-                        cells = [norm(c.text_content()) for c in tr if c.tag in ("td", "th")]
-                        cells = [x for x in cells if x]
+        title = files[part].get("title", 45)
+        sub_title = ""
+        for div in root.xpath(".//div[" + " or ".join(
+                f'contains(concat(" ", normalize-space(@class), " "), " {c} ")'
+                for c in ("subpart", "section", "appendix")) + "]"):
+            cls = (div.get("class") or "").split()
+            if "subpart" in cls:
+                h2 = div.find("h2")
+                sub_title = norm(h2.text_content()).replace("—", " - ") if h2 is not None else ""
+                continue
+            sid = div.get("id")
+            is_app = "appendix" in (div.get("class") or "")
+            title_line, nodes, notes, lead = parse_section(div)
+            if is_app:
+                num = slug(sid)
+                head_parts = title_line.split("—", 1)
+                sec_ref = f"{short} {head_parts[0].strip()}"
+                heading = head_parts[1].strip() if len(head_parts) > 1 else title_line
+                permalink = f"{doc_id}/sec/{num}/"
+                src = f"https://www.ecfr.gov/current/title-{title}/part-{part}"
+                rows = []                     # an appendix is running text and/or tables: one line per paragraph or row
+                for el in div.iter("p", "tr"):
+                    if el.tag == "p":
+                        if any(a.tag in ("td", "th") for a in el.iterancestors()):
+                            continue
+                        line = norm(el.text_content())
+                        if line:
+                            rows.append(line)
+                    else:
+                        cells = [x for x in (norm(c.text_content()) for c in el if c.tag in ("td", "th")) if x]
                         if cells:
                             rows.append(" | ".join(cells))
-                    table = Node(())
-                    table.lines = rows
-                    nodes, lead = [table], []
-                    hier = [part_label, sub_title, sec_ref.removeprefix(short + " ")]
+                # keep each piece under the size ceiling by splitting between paragraphs, never inside one
+                groups, cur = [], []
+                for line in rows:
+                    if cur and token_estimate(chr(10).join(cur + [line])) > 1100:
+                        groups.append(cur)
+                        cur = []
+                    cur.append(line)
+                if cur:
+                    groups.append(cur)
+                nodes = []
+                for gi, g in enumerate(groups, 1):
+                    n = Node((str(gi),)) if len(groups) > 1 else Node(())
+                    n.lines = g
+                    if len(groups) > 1:
+                        n.ref_suffix = f" (part {gi} of {len(groups)})"
+                    nodes.append(n)
+                lead = []
+                hier = [x for x in (part_label, sub_title, sec_ref.removeprefix(short + " ")) if x]
+            else:
+                num = sid
+                m = re.match(r"^§\s*" + re.escape(sid) + r"\s*(.*)$", title_line)
+                heading = (m.group(1) if m else title_line).strip().rstrip(".")
+                sec_ref = f"{short} § {sid}"
+                permalink = f"{doc_id}/sec/{sid}/"
+                src = f"https://www.ecfr.gov/current/title-{title}/section-{sid}"
+                hier = [x for x in (part_label, sub_title, f"Section {sid}") if x]
+            sec_id = f"{doc_id}:sec:{num}"
+            children: list[dict] = []
+
+            def emit(node, lead_in=""):
+                labels = node.labels()
+                key = ".".join(labels)
+                cid = f"{sec_id}:{key}" if key else f"{sec_id}:0"
+                is_def = bool(node.term) and len(node.path) == 1
+                ref = sec_ref + (getattr(node, "ref_suffix", None) or "".join(f"({g})" for g in node.path))
+                frag = f"p{key}" if key else ""
+                extra = {}
+                if is_def:
+                    extra["defined_term"] = node.term
+                if lead_in:
+                    extra["lead_in"] = lead_in
+                hs = node.headings()
+                if hs:
+                    extra["subheading"] = " | ".join(dict.fromkeys(hs))
+                path_h = ([f"Definition: {node.term}"] + [f"({g})" for g in node.path[1:]]) if node.term \
+                    else [f"({g})" for g in node.path]
+                children.append(mk(
+                    cid, "definition" if is_def else "paragraph", ref,
+                    f"Definition: {node.term}" if is_def else heading, node.render(),
+                    hier + path_h, sec_id, key or "0",
+                    permalink + (f"#{frag}" if frag else ""), src, **extra))
+
+            def walk(node, lead_in=""):
+                if token_estimate(node.render()) > CEILING_TOKENS and node.children:
+                    own = node.own_text()
+                    carried = (lead_in + " " + own).strip() if lead_in else own
+                    for ch in node.children:
+                        walk(ch, carried)
                 else:
-                    num = sid
-                    m = re.match(r"^§\s*" + re.escape(sid) + r"\s*(.*)$", title_line)
-                    heading = (m.group(1) if m else title_line).strip().rstrip(".")
-                    sec_ref = f"{short} § {sid}"
-                    permalink = f"{doc_id}/sec/{sid}/"
-                    src = f"https://www.ecfr.gov/current/title-45/section-{sid}"
-                    hier = [part_label, sub_title, f"Section {sid}"]
-                sec_id = f"{doc_id}:sec:{num}"
-                children: list[dict] = []
+                    emit(node, lead_in)
 
-                def emit(node, lead_in=""):
-                    labels = node.labels()
-                    key = ".".join(labels)
-                    cid = f"{sec_id}:{key}" if key else f"{sec_id}:0"
-                    is_def = bool(node.term) and len(node.path) == 1
-                    ref = sec_ref + "".join(f"({g})" for g in node.path)
-                    frag = f"p{key}" if key else ""
-                    extra = {}
-                    if is_def:
-                        extra["defined_term"] = node.term
-                    if lead_in:
-                        extra["lead_in"] = lead_in
-                    hs = node.headings()
-                    if hs:
-                        extra["subheading"] = " | ".join(dict.fromkeys(hs))
-                    path_h = ([f"Definition: {node.term}"] + [f"({g})" for g in node.path[1:]]) if node.term \
-                        else [f"({g})" for g in node.path]
-                    children.append(mk(
-                        cid, "definition" if is_def else "paragraph", ref,
-                        f"Definition: {node.term}" if is_def else heading, node.render(),
-                        hier + path_h, sec_id, key or "0",
-                        permalink + (f"#{frag}" if frag else ""), src, **extra))
+            if lead:
+                ln = Node(())
+                ln.lines = lead
+                emit(ln)
+            for node in nodes:
+                walk(node)
+            if not children:
+                continue
+            parent = mk(sec_id, "section", sec_ref, heading, "\n".join(c["text"] for c in children),
+                        hier, None, num, permalink, src,
+                        child_chunk_ids=[c["chunk_id"] for c in children])
+            if notes:
+                parent["note"] = " ".join(notes)
+            chunks.append(parent)
+            chunks.extend(children)
 
-                def walk(node, lead_in=""):
-                    if token_estimate(node.render()) > CEILING_TOKENS and node.children:
-                        own = node.own_text()
-                        carried = (lead_in + " " + own).strip() if lead_in else own
-                        for ch in node.children:
-                            walk(ch, carried)
-                    else:
-                        emit(node, lead_in)
-
-                if lead:
-                    ln = Node(())
-                    ln.lines = lead
-                    emit(ln)
-                for node in nodes:
-                    walk(node)
-                if not children:
-                    continue
-                parent = mk(sec_id, "section", sec_ref, heading, "\n".join(c["text"] for c in children),
-                            hier, None, num, permalink, src,
-                            child_chunk_ids=[c["chunk_id"] for c in children])
-                if notes:
-                    parent["note"] = " ".join(notes)
-                chunks.append(parent)
-                chunks.extend(children)
     return chunks, expected

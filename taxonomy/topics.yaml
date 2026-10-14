@@ -131,7 +131,7 @@ topics:
   - id: breach-notification
     label: "Breach notification"
     description: "Personal data breaches and the duty to notify."
-    phrases: ["personal data breach*", "breach of security", "breach notification", "notification of a breach", "breach of unsecured protected health information", "security breach*", "data breach*", "notification to individuals", "notification to the media", "notification to the secretary", "notification by a business associate", "unauthorized access and exfiltration"]
+    phrases: ["personal data breach*", "breach of security", "breach notification", "notification of a breach", "breach of unsecured protected health information", "security breach*", "data breach*", "notification to individuals", "notification to the media", "notification to the secretary", "notification by a business associate", "unauthorized access and exfiltration", "notification event*", "notify the federal trade commission"]
     weak: [breach*]
     min_score: 1.5
 

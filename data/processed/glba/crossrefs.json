@@ -1,0 +1,870 @@
+[
+ {
+  "from_chunk_id": "glba:sec:314.3:a",
+  "raw": "314.4",
+  "to_chunk_id": "glba:sec:314.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:314.5:0",
+  "raw": "314.4(j)",
+  "to_chunk_id": "glba:sec:314.4:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:314.6:0",
+  "raw": "314.4(b)(1)",
+  "to_chunk_id": "glba:sec:314.4:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.1:a",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.1:a",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.1:a",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.1:b",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.2:a",
+  "raw": "1016.6",
+  "to_chunk_id": "glba:sec:1016.6",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.2:a",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.3:l",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.3:l",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:a",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:a",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:b",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:b",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:c",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:d",
+  "raw": "1016.8",
+  "to_chunk_id": "glba:sec:1016.8",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:e",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:f",
+  "raw": "1016.9",
+  "to_chunk_id": "glba:sec:1016.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:f",
+  "raw": "1016.6(d)",
+  "to_chunk_id": "glba:sec:1016.6:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.4:f",
+  "raw": "1016.6(d)(3)",
+  "to_chunk_id": "glba:sec:1016.6:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:b",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:c",
+  "raw": "1016.4(c)(2)",
+  "to_chunk_id": "glba:sec:1016.4:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:d",
+  "raw": "1016.9",
+  "to_chunk_id": "glba:sec:1016.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:e",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:e",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:e",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:e",
+  "raw": "1016.6(a)(2)",
+  "to_chunk_id": "glba:sec:1016.6:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.5:e",
+  "raw": "1016.8",
+  "to_chunk_id": "glba:sec:1016.8",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:a",
+  "raw": "1016.4",
+  "to_chunk_id": "glba:sec:1016.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:a",
+  "raw": "1016.5",
+  "to_chunk_id": "glba:sec:1016.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:a",
+  "raw": "1016.8",
+  "to_chunk_id": "glba:sec:1016.8",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:a",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:a",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:a",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:a",
+  "raw": "1016.10(a)",
+  "to_chunk_id": "glba:sec:1016.10:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:b",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:b",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:b",
+  "raw": "1016.4",
+  "to_chunk_id": "glba:sec:1016.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:b",
+  "raw": "1016.5",
+  "to_chunk_id": "glba:sec:1016.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:c",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:c",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:c",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:d",
+  "raw": "1016.4(a)(2)",
+  "to_chunk_id": "glba:sec:1016.4:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:d",
+  "raw": "1016.7(b)",
+  "to_chunk_id": "glba:sec:1016.7:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:d",
+  "raw": "1016.7(c)",
+  "to_chunk_id": "glba:sec:1016.7:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:d",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:d",
+  "raw": "1016.9",
+  "to_chunk_id": "glba:sec:1016.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.6:f",
+  "raw": "1016.2(a)",
+  "to_chunk_id": "glba:sec:1016.2:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:a",
+  "raw": "1016.10(a)",
+  "to_chunk_id": "glba:sec:1016.10:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:a",
+  "raw": "1016.6(a)(2)",
+  "to_chunk_id": "glba:sec:1016.6:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:a",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:b",
+  "raw": "1016.4",
+  "to_chunk_id": "glba:sec:1016.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:c",
+  "raw": "1016.4",
+  "to_chunk_id": "glba:sec:1016.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:d",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:e",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:e",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:e",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:f",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:j",
+  "raw": "1016.9",
+  "to_chunk_id": "glba:sec:1016.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.7:k",
+  "raw": "1016.2(a)",
+  "to_chunk_id": "glba:sec:1016.2:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.8:a",
+  "raw": "1016.4",
+  "to_chunk_id": "glba:sec:1016.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.8:b",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.8:b",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.8:b",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.8:c",
+  "raw": "1016.9",
+  "to_chunk_id": "glba:sec:1016.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:b",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:e",
+  "raw": "1016.4(a)(1)",
+  "to_chunk_id": "glba:sec:1016.4:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:e",
+  "raw": "1016.5(a)",
+  "to_chunk_id": "glba:sec:1016.5:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:e",
+  "raw": "1016.8",
+  "to_chunk_id": "glba:sec:1016.8",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:g",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:g",
+  "raw": "1016.4(a)",
+  "to_chunk_id": "glba:sec:1016.4:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:g",
+  "raw": "1016.5(a)",
+  "to_chunk_id": "glba:sec:1016.5:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:g",
+  "raw": "1016.8(a)",
+  "to_chunk_id": "glba:sec:1016.8:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:h",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:h",
+  "raw": "1016.4(a)",
+  "to_chunk_id": "glba:sec:1016.4:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:h",
+  "raw": "1016.5(a)",
+  "to_chunk_id": "glba:sec:1016.5:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:h",
+  "raw": "1016.8(a)",
+  "to_chunk_id": "glba:sec:1016.8:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:i",
+  "raw": "1016.4(a)",
+  "to_chunk_id": "glba:sec:1016.4:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:i",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:i",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:i",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.9:i",
+  "raw": "1016.5",
+  "to_chunk_id": "glba:sec:1016.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.10:a",
+  "raw": "1016.4",
+  "to_chunk_id": "glba:sec:1016.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.10:a",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.10:a",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.10:a",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.10:a",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:a",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:a",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:a",
+  "raw": "1016.14(a)",
+  "to_chunk_id": "glba:sec:1016.14:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:a",
+  "raw": "1016.3(l)(3)",
+  "to_chunk_id": "glba:sec:1016.3:l",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:b",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:b",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:c",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:c",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:d",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.11:d",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.13:a",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.13:a",
+  "raw": "1016.10",
+  "to_chunk_id": "glba:sec:1016.10",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.13:a",
+  "raw": "1016.4",
+  "to_chunk_id": "glba:sec:1016.4",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.13:a",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.13:a",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.14:a",
+  "raw": "1016.4(a)(2)",
+  "to_chunk_id": "glba:sec:1016.4:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.14:a",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.14:a",
+  "raw": "1016.10",
+  "to_chunk_id": "glba:sec:1016.10",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.14:a",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.15:a",
+  "raw": "1016.4(a)(2)",
+  "to_chunk_id": "glba:sec:1016.4:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.15:a",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.15:a",
+  "raw": "1016.10",
+  "to_chunk_id": "glba:sec:1016.10",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.15:a",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:1016.15:b",
+  "raw": "1016.7(h)",
+  "to_chunk_id": "glba:sec:1016.7:h",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:1",
+  "raw": "1016.6",
+  "to_chunk_id": "glba:sec:1016.6",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:1",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:2",
+  "raw": "1016.14",
+  "to_chunk_id": "glba:sec:1016.14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:2",
+  "raw": "1016.15",
+  "to_chunk_id": "glba:sec:1016.15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:2",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:2",
+  "raw": "1016.7",
+  "to_chunk_id": "glba:sec:1016.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:2",
+  "raw": "1016.10(a)",
+  "to_chunk_id": "glba:sec:1016.10:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:3",
+  "raw": "1016.10(a)",
+  "to_chunk_id": "glba:sec:1016.10:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:3",
+  "raw": "1016.9(f)",
+  "to_chunk_id": "glba:sec:1016.9:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:4",
+  "raw": "1016.6(a)(3)",
+  "to_chunk_id": "glba:sec:1016.6:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:4",
+  "raw": "1016.6(c)(3)",
+  "to_chunk_id": "glba:sec:1016.6:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "glba:sec:appendix-to-part-1016:4",
+  "raw": "1016.13",
+  "to_chunk_id": "glba:sec:1016.13",
+  "external": false,
+  "own_space": true
+ }
+]

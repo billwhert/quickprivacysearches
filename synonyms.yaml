@@ -263,6 +263,31 @@ synonyms:
   - terms: [employer, employers, "employment records", "employee health records", "employee medical records", "hr records"]
     expand: ["employment records held by a covered entity in its role as employer", "employer"]
 
+  # ---- GLBA (FTC Safeguards Rule, 16 CFR 314; Regulation P, 12 CFR 1016) ----
+  - terms: ["safeguards rule", "ftc safeguards", "information security program", "qualified individual", ciso, "security program for financial institutions"]
+    expand: ["information security program", "qualified individual responsible for overseeing"]
+
+  - terms: ["financial privacy notice", "glba notice", "initial privacy notice", "annual privacy notice", "model privacy form", "gramm leach bliley notice", "bank privacy notice"]
+    expand: ["initial privacy notice to consumers", "annual privacy notice to customers", "model privacy form"]
+
+  - terms: ["financial opt out", "opt out of sharing with third parties", "nonaffiliated third parties", "nonaffiliated third party", "share with third parties financial", "joint marketing"]
+    expand: ["limits on disclosure of nonpublic personal information to nonaffiliated third parties", "opt out"]
+
+  - terms: ["notify the ftc", "ftc notification", "report breach to ftc", "notification event", "notification events", "500 consumers"]
+    expand: ["notify the Federal Trade Commission about notification events", "notification event"]
+
+  - terms: [mfa, "multi-factor", multifactor, "two-factor", "2fa"]
+    expand: ["multi-factor authentication"]
+
+  - terms: ["penetration test", "penetration testing", "pen test", "vulnerability scan", "vulnerability scans"]
+    expand: ["penetration testing", "vulnerability assessments"]
+
+  - terms: ["third party risk", "vendor oversight", "service provider oversight", "oversee vendors", "oversee service providers"]
+    expand: ["oversee service providers", "service provider"]
+
+  - terms: ["small financial institution", "small financial institutions", "small institutions", "small business exemption", "fewer than 5,000", "5,000 consumers"]
+    expand: ["fewer than five thousand consumers", "do not apply to financial institutions that maintain customer information concerning fewer than five thousand consumers"]
+
 jurisdictions:
   - id: eu
     label: "the EU (GDPR)"
@@ -272,6 +297,11 @@ jurisdictions:
     label: "California (CCPA/CPRA, CPPA regulations)"
     words: [california, californian, ccpa, cpra, cppa, "california consumer privacy act"]
     docs: [ccpa, ccpa_regs]
+  - id: glba
+    label: "financial institutions (GLBA: FTC Safeguards Rule and Regulation P)"
+    words: [glba, "gramm-leach-bliley", "gramm leach bliley", "safeguards rule", "regulation p", "reg p", "ftc safeguards"]
+    topical: ["financial institution", "financial institutions", "customer information", "nonpublic personal information"]
+    docs: [glba]
   - id: caloppa
     label: "CalOPPA (Cal. Bus. & Prof. Code 22575)"
     words: [caloppa, "online privacy protection act"]

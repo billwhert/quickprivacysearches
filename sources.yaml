@@ -93,3 +93,31 @@ documents:
     notes: "The eCFR is an editorial compilation, updated daily. For legal research, verify against the official CFR and the Federal Register."
     profile:
       definition_sections: ["160.103", "164.103", "164.304", "164.402", "164.501"]
+      ref_numbers: '16[04]\.\d{3}'
+  - doc_id: glba
+    title: "Gramm-Leach-Bliley Act rules: FTC Safeguards Rule (16 CFR Part 314) and Regulation P, Privacy of Consumer Financial Information (12 CFR Part 1016)"
+    short_name: GLBA
+    jurisdiction: US-Federal
+    doc_type: regulation
+    source_url: "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314"
+    parser: ecfr
+    ecfr_title: 16
+    parts:
+      - part: 314
+        title: 16
+        fetch_url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/{ECFR_DATE}/title-16?part=314"
+        structure_url: "https://www.ecfr.gov/api/versioner/v1/structure/{ECFR_DATE}/title-16.json?part=314"
+      - part: 1016
+        title: 12
+        fetch_url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/{ECFR_DATE}/title-12?part=1016"
+        structure_url: "https://www.ecfr.gov/api/versioner/v1/structure/{ECFR_DATE}/title-12.json?part=1016"
+    language: en
+    is_translation: false
+    version_label: "Electronic Code of Federal Regulations, 16 CFR Part 314 and 12 CFR Part 1016, current as of {ECFR_DATE}"
+    license_note: "US Government work, not subject to copyright (17 U.S.C. 105). The Office of the Federal Register and the Government Publishing Office state that the eCFR is an editorial compilation and not an official legal edition of the CFR."
+    attribution: "16 CFR Part 314 and 12 CFR Part 1016, Electronic Code of Federal Regulations (eCFR), Office of the Federal Register, National Archives and Records Administration, and U.S. Government Publishing Office, https://www.ecfr.gov. This site is not the official CFR."
+    reuse_url: "https://www.ecfr.gov/reader-aids/understanding-the-ecfr/what-is-the-ecfr"
+    notes: "Covers the FTC Safeguards Rule and the CFPB's Regulation P. The FTC's own Privacy Rule for motor vehicle dealers (16 CFR Part 313) and the Gramm-Leach-Bliley Act statute itself (15 U.S.C. 6801 et seq.) are not loaded. The eCFR is an editorial compilation, not the official CFR."
+    profile:
+      definition_sections: ["314.2", "1016.3"]
+      ref_numbers: '314\.\d{1,2}|1016\.\d{1,2}'

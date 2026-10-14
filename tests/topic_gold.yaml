@@ -61,3 +61,9 @@ gold:
   - {id: "hipaa:sec:164.530:j", has: [records-of-processing]}
   - {id: "hipaa:sec:160.103:business-associate", has: [definitions]}
   - {id: "hipaa:sec:164.404:b", not: [cross-border-transfers, cookies-tracking]}
+  # GLBA
+  - {id: "glba:sec:314.4:j", has: [breach-notification]}
+  - {id: "glba:sec:314.4:c", has: [security-safeguards]}
+  - {id: "glba:sec:1016.4:a", has: [notice-transparency]}
+  - {id: "glba:sec:1016.7:a", has: [right-opt-out]}
+  - {id: "glba:sec:314.2:r", has: [definitions]}

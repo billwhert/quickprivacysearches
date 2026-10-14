@@ -44,7 +44,8 @@ def ingest(doc_id: str, force_fetch: bool = False) -> bool:
                "effective_date": manifest["ecfr_date"]}
         chunks, toc = parse_ecfr.parse(manifest["files"], doc, manifest["retrieved_at"], ROOT)
         ids = {c["chunk_id"] for c in chunks} | all_loaded_ids(doc_id)
-        refs = crossrefs_ecfr.extract(chunks, ids, doc_id)
+        refs = crossrefs_ecfr.extract(chunks, ids, doc_id,
+                                      doc.get("profile", {}).get("ref_numbers", r"16[04]\.\d{3}"))
         plain = validate.norm(" ".join(
             lxml.html.fromstring((ROOT / f["html"]).read_text(encoding="utf-8")).text_content()
             for f in manifest["files"].values()))

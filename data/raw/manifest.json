@@ -55,5 +55,36 @@
   "checksum_sha256": "c74a206eee1f3a199d0aa9a07dedffcaa449471ef45f29aac50e614e0186d36c",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "last_checked_at": "2026-10-14T13:36:00Z"
+ },
+ "glba": {
+  "doc_id": "glba",
+  "source_url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
+  "fetch_url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/2026-10-09/title-16?part=314",
+  "raw_path": "data/raw/glba_314.html",
+  "files": {
+   "314": {
+    "html": "data/raw/glba_314.html",
+    "html_sha256": "581ecd899bb4867808ed850cd2a58ac6becf8a973a26f8a8e54f3fc6e2b5ff83",
+    "structure": "data/raw/glba_314_structure.json",
+    "structure_sha256": "c02be0058662dacad408b51f1bb347a6dace51b80fe51b7113f32dd92aaf8ea9",
+    "bytes": 80207,
+    "title": 16,
+    "date": "2026-10-09"
+   },
+   "1016": {
+    "html": "data/raw/glba_1016.html",
+    "html_sha256": "a15491ea03fe88572fdec8b9e8579da89442142208dd1a08ed80a9425745a080",
+    "structure": "data/raw/glba_1016_structure.json",
+    "structure_sha256": "847db5b83fdde315dc44fa1c396dc4361cb33c13c866cddcbfd0b9b5d1919005",
+    "bytes": 280344,
+    "title": 12,
+    "date": "2026-10-09"
+   }
+  },
+  "ecfr_date": "2026-10-09",
+  "bytes": 360551,
+  "checksum_sha256": "f0e1225afbe8322e5f9c3c3f0844dc1cc81ddd40361ee6b7714f31e2ae7e1213",
+  "retrieved_at": "2026-10-14T15:05:06Z",
+  "last_checked_at": "2026-10-14T15:05:06Z"
  }
 }

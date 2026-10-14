@@ -36,19 +36,24 @@ def fetch_ecfr(doc_id: str, doc: dict, force: bool = False) -> dict:
         return old
 
     titles = json.loads(_get("https://www.ecfr.gov/api/versioner/v1/titles.json", "application/json"))
-    date = next(t for t in titles["titles"] if t["number"] == doc["ecfr_title"])["up_to_date_as_of"]
+    def date_for(title):
+        return next(t for t in titles["titles"] if t["number"] == title)["up_to_date_as_of"]
+
+    date = date_for(doc["ecfr_title"])
     files, combined = {}, hashlib.sha256()
     for p in doc["parts"]:
         part = str(p["part"])
-        html = _get(p["fetch_url"].replace("{ECFR_DATE}", date), "text/html")
-        struct = _get(p["structure_url"].replace("{ECFR_DATE}", date), "application/json")
+        title = p.get("title", doc["ecfr_title"])
+        pdate = date_for(title)
+        html = _get(p["fetch_url"].replace("{ECFR_DATE}", pdate), "text/html")
+        struct = _get(p["structure_url"].replace("{ECFR_DATE}", pdate), "application/json")
         hp, sp = RAW / f"{doc_id}_{part}.html", RAW / f"{doc_id}_{part}_structure.json"
         hp.write_bytes(html)
         sp.write_bytes(struct)
         files[part] = {
             "html": str(hp.relative_to(ROOT)).replace("\\", "/"), "html_sha256": sha256(hp),
             "structure": str(sp.relative_to(ROOT)).replace("\\", "/"), "structure_sha256": sha256(sp),
-            "bytes": len(html) + len(struct),
+            "bytes": len(html) + len(struct), "title": title, "date": pdate,
         }
         combined.update(files[part]["html_sha256"].encode())
         combined.update(files[part]["structure_sha256"].encode())

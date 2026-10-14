@@ -1,11 +1,12 @@
 """Cross-references inside 45 CFR Parts 160/164: "164.502(b)", "§ 164.514(b)(2)(i)", "§§ 164.506 and 164.508"."""
 import re
 
-REF = re.compile(r"(?<![\d.])(?P<num>16[04]\.\d{3})(?P<subs>(?:\([A-Za-z0-9]{1,4}\))*)(?!\d)")
 SUB = re.compile(r"\(([A-Za-z0-9]{1,4})\)")
 
 
-def extract(chunks: list[dict], all_ids: set, own_doc: str) -> list[dict]:
+def extract(chunks: list[dict], all_ids: set, own_doc: str, numbers: str = r"16[04]\.\d{3}") -> list[dict]:
+    """numbers: regex for the section numbers that belong to this document (e.g. 314\\.\\d{1,2}|1016\\.\\d{1,2})."""
+    REF = re.compile(r"(?<![\d.])(?P<num>" + numbers + r")(?P<subs>(?:\([A-Za-z0-9]{1,4}\))*)(?!\d)")
     refs = []
     for c in chunks:
         if c["kind"] == "section":

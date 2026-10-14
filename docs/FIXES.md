@@ -16,6 +16,9 @@ How to use this file
 | F-22 | P2 | Topics | First-pass tags are noisiest for `security-safeguards` (about 190 provisions, mostly GDPR, from words like "safeguards") and `data-subject-rights` / `right-opt-out` in the CCPA regulations (most of that document is about requests). Review and tighten phrases in `taxonomy/topics.yaml` after looking at the "Phrases doing the work" table in `data/reports/topic_tagging.md`. | step 8 |
 | F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
 | F-32 | P3 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
+| F-34 | P2 | Content | Remaining Phase 2 documents, one at a time (each needs its own source check): LGPD (Portuguese original; English would be an unofficial translation), PIPEDA, Virginia/Colorado/Texas statutes (state legislature sites often block scripted downloads), and guidance (EDPB/WP29 DPIA, ICO DPIA/ROPA/DSAR, NIST Privacy Framework). Guidance must be visually distinct from law (spec risk). | step 13 |
+| F-35 | P3 | Decision | Step 14 (in-browser semantic search) is not recommended yet: 96 of 97 test queries pass with keywords and synonyms, and it would add a download of tens of MB. Revisit when real-use misses accumulate (see F-08). | step 14 |
+| F-36 | P3 | Content | GLBA: the statute itself (15 U.S.C. 6801 et seq.) and the FTC's own Privacy Rule for motor vehicle dealers (16 CFR 313) are not loaded. | step 13 |
 | F-33 | P3 | Review | Real-device check of the new design (phone and a large monitor) is still outstanding; emulated phone width shows no overflow on 11 page types. | review |
 | F-04 | P2 | Launch | Open the live site on a real phone using mobile data (not Wi-Fi) and try three searches. Everything else in the launch checklist was verified (see `docs/ACCEPTANCE.md`); a real device on a different network is the one thing I cannot do from here. | step 12 |
 | F-05 | P2 | Content | The two guided topics are published as a **first-release approval**; the line-by-line review of their provision lists is still pending. When you have time: `data/reports/guided_topics_review.md` (long; the review sheet lists every provision with its full text). The pages say "line-by-line review pending" until you re-approve with your own wording. | step 9 |
@@ -40,6 +43,16 @@ How to use this file
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
 
 ## Change log
+
+### Step 13 - first Phase 2 document: GLBA (2026-10-14)
+- Added the FTC Safeguards Rule (16 CFR Part 314) and Regulation P (12 CFR Part 1016) from the eCFR: 24 of 24 sections match
+  the official structure list, all validation checks pass, 148 chunks.
+- Pipeline generalized: an eCFR document may combine parts from different CFR titles; sections outside any subpart are handled;
+  appendices of running text are split at paragraph boundaries; cross-reference patterns are per document.
+- Added GLBA vocabulary, three comparison columns (breach notification, privacy notices, vendor oversight), 10 search tests and
+  5 topic-gold provisions.
+- Review polish: guided-topic and compare provision cards restructured (citation first, clamped text, footer links), topic
+  headers show steps/provisions/laws, Sources has a jump row. All 11 page types fit a 375px phone.
 
 ### Review and redesign pass (2026-10-14)
 Found and fixed by a full review of the code, the built site and the saved texts:

@@ -64,17 +64,18 @@ const ART = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:art(?:icle)?s?\.?\s*)(\d{1,3})\s*(?:\(\
 const RCT = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:recital|rec\.?)\s*\(?(\d{1,3})\)?\s*$/i;
 // Code sections: "1798.105", "Civ. Code 1798.140(ad)(1)", "section 1798.100(a)", "§ 7011(a)", "11 CCR 7025", "22575(b)"
 const CODE = new RegExp(
-  "^\\s*(?:(?:ccpa|cpra|cppa|hipaa|ccr|regs?|regulations?)\\s*[,:-]?\\s*)?" +
+  "^\\s*(?:(?:ccpa|cpra|cppa|hipaa|glba|ccr|regs?|regulations?)\\s*[,:-]?\\s*)?" +
   "(?:(?:45\\s*)?c\\.?f\\.?r\\.?\\s*,?\\s*)?" +
   "(?:(?:cal(?:ifornia)?\\.?\\s*)?(?:civ(?:il)?\\.?|bus(?:iness)?\\.?\\s*(?:&|and)?\\s*prof(?:essions)?\\.?)\\s*code\\s*,?\\s*)?" +
   "(?:(?:11\\s*)?c\\.?c\\.?r\\.?\\s*,?\\s*)?" +
   "(?:(?:sections?|secs?\\.?|§+)\\s*)?" +
-  "(\\d{4,5}(?:\\.\\d+){0,2}|\\d{3}\\.\\d{3})\\s*((?:\\(\\s*[a-zA-Z0-9]{1,3}\\s*\\)\\s*)*)\\s*$", "i");
+  "(\\d{4,5}(?:\\.\\d+){0,2}|\\d{3,4}\\.\\d{1,3})\\s*((?:\\(\\s*[a-zA-Z0-9]{1,3}\\s*\\)\\s*)*)\\s*$", "i");
 
 function docForNumber(num) {
   if (/^1798\./.test(num)) return "ccpa";
   if (/^7\d{3}$/.test(num)) return "ccpa_regs";
   if (/^16[04]\.\d{3}$/.test(num)) return "hipaa";
+  if (/^314\.\d{1,2}$/.test(num) || /^1016\.\d{1,2}$/.test(num)) return "glba";
   return null;
 }
 

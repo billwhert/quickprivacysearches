@@ -13,6 +13,11 @@ DISCLAIMER = ("Reference tool, not legal advice. Text is taken from the official
               "unmodified; check the official source and version date before relying on it.")
 
 
+LOGO = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+        'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+        '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>')
+
+
 def page(title: str, body: str, rel: str, active: str = "") -> str:
     nav = [("Search", f"{rel}", "search"), ("GDPR", f"{rel}gdpr/", "gdpr")]
     links = " ".join(
@@ -24,11 +29,16 @@ def page(title: str, body: str, rel: str, active: str = "") -> str:
 <title>{e(title)}</title>
 <link rel="stylesheet" href="{rel}assets/style.css">
 </head><body>
-<header class="site"><a class="brand" href="{rel}">Quick Privacy Searches</a><nav>{links}</nav></header>
-<main>
+<header class="site"><div class="wrap">
+<a class="brand" href="{rel}">{LOGO}Quick Privacy Searches</a><nav aria-label="Main">{links}</nav>
+</div></header>
+<main class="wrap">
 {body}
 </main>
-<footer class="site"><p>{e(DISCLAIMER)} Searches run in your browser and are never sent anywhere.</p></footer>
+<footer class="site"><div class="wrap">
+<p>{e(DISCLAIMER)}</p>
+<p>No accounts, no tracking. Searches run in your browser and are never sent anywhere.</p>
+</div></footer>
 </body></html>
 """
 
@@ -74,7 +84,8 @@ def build_doc_pages(doc_id: str) -> None:
 
     for i, a in enumerate(arts):
         rel = "../../../"
-        parts = [f'<p class="crumbs">{e(" › ".join(a["hierarchy"][:-1]))}</p>',
+        parts = [f'<p class="crumbs"><span class="badge">{e(doc_id.upper())}</span> '
+                 f'{e(" › ".join(a["hierarchy"][:-1]))}</p>',
                  f'<h1>{e(a["section_ref"])}<span class="sub">{e(a["heading"])}</span></h1>',
                  source_block(doc)]
         for cid in a["child_chunk_ids"]:
@@ -113,7 +124,8 @@ def build_doc_pages(doc_id: str) -> None:
     for i, r in enumerate(rcts):
         rel = "../../../"
         cites = out_refs.get(r["chunk_id"], [])
-        body = [f'<p class="crumbs">Recitals</p>', f'<h1>{e(r["section_ref"])}</h1>', source_block(doc),
+        body = [f'<p class="crumbs"><span class="badge">{e(doc_id.upper())}</span> Recitals</p>',
+                f'<h1>{e(r["section_ref"])}</h1>', source_block(doc),
                 f'<section class="prov"><div class="text">{render_text(r["text"])}</div>'
                 + ('<p class="refs">References: ' + ", ".join(link(rel, t) for t in cites) + "</p>" if cites else "")
                 + "</section>"]
@@ -158,15 +170,18 @@ def build_home() -> None:
     examples = ["GDPR Article 30", "When is a data protection impact assessment required?",
                 "What must a record of processing activities contain?",
                 "lawful bases for processing", "right to erasure", "Recital 26"]
-    ex = " ".join(f'<a href="#q={e(x)}" class="ex">{e(x)}</a>' for x in examples)
-    body = f"""<h1>Search privacy law</h1>
-<p class="lede">Exact source text, with citations and links to the official source. Currently loaded: the GDPR (articles and recitals).</p>
+    ex = " ".join(f'<a href="#q={e(x)}" class="chip">{e(x)}</a>' for x in examples)
+    body = f"""<section class="hero">
+<h1>Find the exact text of privacy law</h1>
+<p class="lede">Search by citation or by question. Every result is the unmodified source text,
+with its citation, version, and a link to the official source. Currently loaded: the GDPR.</p>
 <form id="search-form" role="search" autocomplete="off">
   <label for="q" class="vh">Search</label>
   <input id="q" type="search" placeholder="Try &quot;GDPR Article 30&quot; or &quot;right to erasure&quot;" autofocus>
   <button type="submit">Search</button>
 </form>
-<p class="examples">Examples: {ex}</p>
+<div class="examples"><span>Try:</span> {ex}</div>
+</section>
 <div id="status" role="status" aria-live="polite"></div>
 <ol id="results" class="results"></ol>
 <noscript><p>Search needs JavaScript. You can still <a href="gdpr/">browse the GDPR</a>.</p></noscript>

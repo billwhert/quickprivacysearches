@@ -41,7 +41,10 @@ function card(c, terms, opts = {}) {
   const heading = c.heading ? `<span class="sub"> - ${esc(c.heading)}</span>` : "";
   const parentLink = art ? `<button class="link expand" data-art="${c.art}" data-doc="${c.doc}">Show full article</button>
     <a href="${art.url}">Open article page</a>` : "";
+  const kind = { paragraph: "Article", definition: "Definition", recital: "Recital" }[c.kind] || c.kind;
   return `<li class="result${opts.exact ? " exact" : ""}" data-id="${esc(c.id)}">
+    <div class="result-head"><span class="badge">${esc(c.doc.toUpperCase())}</span>
+      <span class="badge kind">${esc(kind)}</span>${opts.exact ? '<span class="badge">Exact match</span>' : ""}</div>
     <p class="crumbs">${esc(c.hier.slice(0, -1).join(" › "))}</p>
     <h2><a href="${c.url}">${esc(c.ref)}</a>${heading}</h2>
     ${opts.note ? `<p class="note">${esc(opts.note)}</p>` : ""}

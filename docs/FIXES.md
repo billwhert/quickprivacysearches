@@ -15,12 +15,8 @@ How to use this file
 | F-02 | P1 | Review | Topic tags (step 8) are keyword-assigned first pass. Review `data/reports/topic_review.csv` and record corrections in `taxonomy/overrides.yaml`. | step 8 |
 | F-22 | P2 | Topics | First-pass tags are noisiest for `security-safeguards` (about 190 provisions, mostly GDPR, from words like "safeguards") and `data-subject-rights` / `right-opt-out` in the CCPA regulations (most of that document is about requests). Review and tighten phrases in `taxonomy/topics.yaml` after looking at the "Phrases doing the work" table in `data/reports/topic_tagging.md`. | step 8 |
 | F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
-| F-28 | P1 | Decision | **Licence for this project.** The repository has no LICENSE file, so by default all rights are reserved even though the repo is public. Suggested: MIT for the code and CC BY 4.0 for the editorial files (topics, comparisons, synonyms). Say which you want and I will add the files and a line on the About page. | step 11 |
-| F-29 | P1 | Decision | **CalOPPA source.** The California Legislature's site says some of its material may be copyrighted and to obtain permission. The statute text itself is law (and the US Supreme Court held government edicts are not copyrightable in *Georgia v. Public.Resource.Org*, 2020), and only five short sections are reproduced, with attribution. Options: keep as is, or email the Legislative Counsel Bureau for written confirmation. | step 11 |
-| F-30 | P2 | Decision | **Name on the About page.** `maintainer` in `site.yaml` is empty, so the page says "an independent project". Add your name or organisation if you want it shown. | step 11 |
-| F-31 | P2 | Decision | **AI-assistance statement.** The About page says the software and first drafts of the synonym lists, tags, guided topics and comparisons were developed with an AI coding assistant, and that no AI writes or alters the legal text. Confirm or edit the wording in `build/trust.py` (spec open decision 6 was about summaries). | step 11 |
-| F-32 | P2 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
-| F-04 | P1 | Launch | Spec test 20: confirm in a browser's network tab that query text is never sent anywhere. Also test on a phone and a different network. | step 12 |
+| F-32 | P3 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
+| F-04 | P2 | Launch | Open the live site on a real phone using mobile data (not Wi-Fi) and try three searches. Everything else in the launch checklist was verified (see `docs/ACCEPTANCE.md`); a real device on a different network is the one thing I cannot do from here. | step 12 |
 | F-05 | P2 | Content | The two guided topics are published as a **first-release approval**; the line-by-line review of their provision lists is still pending. When you have time: `data/reports/guided_topics_review.md` (long; the review sheet lists every provision with its full text). The pages say "line-by-line review pending" until you re-approve with your own wording. | step 9 |
 | F-26 | P2 | Content | Eight comparison sets (`compare/*.yaml`) are an editorial selection of provisions and have not been reviewed. The page says they are not a statement of equivalence. Check the columns make sense; add or remove provisions in the YAML. | step 10 |
 | F-27 | P3 | Feature | Compare view could be linked from guided topics and from search results that span several laws. | step 10 |
@@ -32,7 +28,6 @@ How to use this file
 | F-09 | P2 | UI | With a law filter on, the "Also searched related wording" line can still show expansions from other laws (for example GDPR terms when filtered to HIPAA). Harmless to results but noisy. | step 7 |
 | F-10 | P2 | UI | Filter counts are capped by the top-150 candidate list and shown as "99+". Could show exact counts. | step 7 |
 | F-11 | P2 | Data | GDPR text is the Official Journal original as published. Corrigenda (2018) may not be reflected; consider using the consolidated text and recording the version. | step 2 |
-| F-12 | P2 | Data | CalOPPA raw text was captured by hand from the rendered leginfo page (leginfo blocks scripted downloads), so it is not a byte-exact download. Re-capture when leginfo allows scripted access, or note in Sources. | step 5 |
 | F-13 | P2 | Data | CCPA statute and regulations come from the CPPA's consolidated PDFs, not the Legislature's leginfo or OAL. Fine for now; state this clearly on the Sources page. | step 5 |
 | F-14 | P2 | Data | eCFR is an editorial compilation, not the official annual CFR. Say so on the Sources page. | step 6 |
 | F-15 | P2 | Feature | Export a set of results to Markdown / print-friendly (spec section 11) is not built. | planned |
@@ -44,6 +39,16 @@ How to use this file
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
 
 ## Change log
+
+### Step 12 - Launch (2026-10-14)
+- Owner decisions applied: MIT license added for the code and editorial files; **CalOPPA removed entirely** (its source site
+  cautions about copyright); About page simplified and the maintainer/AI-assistance wording removed.
+- Scope change: phase 1 is now GDPR, CCPA/CPRA, CPPA regulations and HIPAA. CalOPPA is no longer loaded; searches that name it say it
+  is not loaded. The two guided topics and the privacy-notice comparison were trimmed to match and re-approved.
+- Verified live: no request carries search text and nothing but this site is contacted (spec test 20); no horizontal overflow at
+  375px on 11 page types (the header nav was overflowing and now wraps); repository public with MIT detected; HTTP redirects to HTTPS.
+- Added share metadata (description and Open Graph tags), a friendly 404 page and a sitemap.
+- Acceptance record: `docs/ACCEPTANCE.md`.
 
 ### Step 11 - Trust pages (2026-10-14)
 - Added About, Disclaimer and privacy notice, and Sources pages, linked from every page's footer.

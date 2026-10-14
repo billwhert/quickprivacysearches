@@ -124,13 +124,8 @@ document.querySelector(".examples").addEventListener("click", e => {
   submit(b.dataset.q);
   input.focus();
 });
-// Links that arrive with #q=... (for example from another site) run once, then the hash is removed.
-const m = location.hash.match(/^#q=(.*)$/);
-if (m) {
-  input.value = decodeURIComponent(m[1].replace(/\+/g, " "));
-  history.replaceState(null, "", location.pathname + location.search);
-  run(input.value);
-}
+// Old links carrying #q=... are never run; the hash is simply dropped so nothing lingers.
+if (location.hash.startsWith("#q=")) history.replaceState(null, "", location.pathname + location.search);
 // Back/forward cache restores must not bring an old search back either.
 window.addEventListener("pageshow", e => {
   if (e.persisted) { input.value = ""; list.innerHTML = ""; status.textContent = ""; }

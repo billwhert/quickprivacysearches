@@ -118,7 +118,7 @@ synonyms:
   - terms: ["complaint", "complain", "lodge a complaint", "file a complaint"]
     expand: ["right to lodge a complaint with a supervisory authority"]
 
-  # ---- California (CCPA / CPPA regulations / CalOPPA) ----
+  # ---- California (CCPA / CPPA regulations) ----
   - terms: ["do not sell", "do not share", "do not sell or share", "sell link", "opt out of sale", "opt-out of sale", "opt out of the sale", "opt out of sharing", "stop selling my data"]
     expand: ["right to opt out of sale or sharing of personal information", "Do Not Sell or Share My Personal Information"]
 
@@ -269,9 +269,13 @@ jurisdictions:
     words: [gdpr, eu, europe, european, "european union", "general data protection regulation", "eea"]
     docs: [gdpr]
   - id: california
-    label: "California (CCPA/CPRA, CPPA regulations, CalOPPA)"
-    words: [california, californian, ccpa, cpra, caloppa, cppa, "california consumer privacy act"]
-    docs: [ccpa, ccpa_regs, caloppa]
+    label: "California (CCPA/CPRA, CPPA regulations)"
+    words: [california, californian, ccpa, cpra, cppa, "california consumer privacy act"]
+    docs: [ccpa, ccpa_regs]
+  - id: caloppa
+    label: "CalOPPA (Cal. Bus. & Prof. Code 22575)"
+    words: [caloppa, "online privacy protection act"]
+    docs: []
   - id: hipaa
     label: "US health privacy (HIPAA)"
     words: [hipaa, ephi, hhs, ocr, baa, "health and human services"]

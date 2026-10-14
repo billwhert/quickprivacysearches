@@ -1,5 +1,5 @@
 """Parser for US legal-code documents delivered as PDF or plain text (CCPA statute, CPPA regulations,
-CalOPPA). One section = one parent chunk; each top-level subdivision = one searchable chunk
+other US codes). One section = one parent chunk; each top-level subdivision = one searchable chunk
 (split further only when it is too long); definitions sections are chunked per defined term.
 
 Structure inside a section follows California drafting convention:

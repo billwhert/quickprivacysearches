@@ -20,57 +20,36 @@ def report_url(site: dict, ref: str = "", permalink: str = "") -> str:
 def about_body(site: dict, docs: list, counts: dict) -> str:
     loaded = "".join(
         f'<li><a href="../{e(d["doc_id"])}/">{e(d["title"])}</a>, {counts[d["doc_id"]]}</li>' for d in docs)
-    who = (f"This site is maintained by {e(site['maintainer'])}." if site.get("maintainer")
-           else "This is an independent project.")
     return f"""<h1>About</h1>
-<p class="lede">Quick Privacy Searches is a free reference for privacy law. It takes official laws and
-regulations, breaks them into small provisions, and lets you search them, read them in order, and compare them.</p>
+<p class="lede">Quick Privacy Searches is a small, free research site for privacy law. It lets you search the
+exact text of a few privacy laws and regulations, read them in order, and compare them. Every result links to
+the official source and shows which version it is and when it was retrieved.</p>
 
-<h2>What you get</h2>
-<ul>
-<li><strong>The exact text.</strong> Every result is the law's own wording, unmodified, with its citation.</li>
-<li><strong>A way back to the source.</strong> Each result links to the official publication and shows the
-version and the date the text was retrieved.</li>
-<li><strong>Research paths.</strong> <a href="../topics/">Guided topics</a> gather the provisions that bear on a
-common question, and <a href="../compare/">comparisons</a> put the same question side by side across laws.</li>
-</ul>
-
-<h2>What it is not</h2>
-<ul>
-<li>It is not legal advice, and it does not tell you what you must do to comply.</li>
-<li>It does not draft notices, policies or contracts.</li>
-<li>It is not the official publication of any law. Always check the official source linked on each result.</li>
-<li>It is not a complete library. It covers the documents listed below, and says so when a question is about
-a law it does not have.</li>
-</ul>
-
-<h2>Currently loaded</h2>
+<h2>What is loaded</h2>
 <ul>{loaded}</ul>
-<p>More documents and guidance are planned. Each one is listed on the <a href="../sources/">Sources</a> page with
-its official link, version, retrieval date and reuse terms.</p>
+<p>Where each text comes from, and the terms it is reused under, are on the <a href="../sources/">Sources</a> page.
+If you ask about a law that is not loaded, the site says so rather than guessing.</p>
 
-<h2>How it works</h2>
-<p>The text of each law is downloaded from its official publisher and saved unchanged. A parser splits it along
-the law's own structure (articles, sections, subdivisions, definitions) and the build checks the result against
-the document's own table of contents and confirms every piece of text appears verbatim in the saved source. The
-site is then generated as static pages. Searching happens entirely in your browser.</p>
-<p>No AI model writes, rewrites or summarizes the legal text shown here, and nothing is generated at the moment you
-search. The software, and the first drafts of the synonym lists, topic tags, guided topics and comparison
-selections, were developed with the help of an AI coding assistant. Those editorial selections are labelled with
-their review status; the legal text itself is always taken from the stored source.</p>
-
-<h2>Reading the results</h2>
+<h2>Using it</h2>
 <ul>
 <li>Search by citation (<em>GDPR Article 30</em>, <em>1798.105</em>, <em>164.502(b)</em>) or by question.</li>
-<li>Search is keyword-based with a curated list of related terms. It can miss provisions that use very different
-wording, so use <a href="../documents/">Browse</a> when you need to be thorough.</li>
-<li>Topic tags are assigned by keyword rules and can be incomplete or occasionally wrong.</li>
-<li>Laws change. The version and retrieval date shown with every provision tell you how current the text is.</li>
+<li><a href="../topics/">Guided topics</a> gather the provisions on a common question; <a href="../compare/">Compare</a>
+puts the same question side by side across laws; <a href="../documents/">Browse</a> lets you read a law in order.</li>
+<li>Results are the source's own wording. Nothing is generated when you search.</li>
 </ul>
 
-<h2>Spot a mistake?</h2>
-<p>Please <a href="{e(report_url(site))}">report an error</a>. A link to the official source helps most.
-{who} The code and the editorial files are in the <a href="{e(site['repo'])}">public repository</a>.</p>
+<h2>Good to know</h2>
+<ul>
+<li>This is a research aid, not legal advice. See the <a href="../disclaimer/">disclaimer and privacy notice</a>.</li>
+<li>Search is keyword-based and can miss provisions that use very different wording. Topic tags are keyword-assigned
+and can be incomplete.</li>
+<li>Laws change. The version and retrieval date shown with each provision tell you how current it is.</li>
+<li>This is an independent site and is not affiliated with any government, regulator or publisher of these laws.</li>
+</ul>
+
+<h2>Found a mistake?</h2>
+<p><a href="{e(report_url(site))}">Report an error</a> (a link to the official source helps most). The code and the
+editorial files are in the <a href="{e(site['repo'])}">public repository</a> under the MIT license.</p>
 """
 
 

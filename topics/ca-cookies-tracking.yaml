@@ -38,7 +38,7 @@ triggers:
   - california
   - ccpa
 
-docs: [ccpa, ccpa_regs, caloppa, gdpr]
+docs: [ccpa, ccpa_regs, gdpr]
 
 applicability:
   - question: "Is the organization a \"business\" under the CCPA?"
@@ -63,14 +63,14 @@ items:
     chunk_ids: ["ccpa_regs:sec:7026:a", "ccpa_regs:sec:7026:c", "ccpa_regs:sec:7026:d", "ccpa_regs:sec:7026:f", "ccpa:sec:1798.135:c"]
   - label: "Contracts with third parties that receive personal information"
     chunk_ids: ["ccpa:sec:1798.100:d", "ccpa_regs:sec:7053:a"]
-  - label: "CalOPPA: disclosing how a site responds to do-not-track signals"
-    chunk_ids: ["caloppa:sec:22575:b"]
 
 related:
   - label: "California business privacy notice: what the notice at collection and privacy policy contain"
     topic: ca-business-privacy-notice
   - label: "Comparison: EU consent requirements under the GDPR"
     chunk_ids: ["gdpr:art:4:11", "gdpr:art:6:1", "gdpr:art:7:1", "gdpr:art:7:3"]
+
+# Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
 
 # Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
 reviewed_hashes:
@@ -105,7 +105,6 @@ reviewed_hashes:
   "ccpa:sec:1798.135:c": "0f253444b83563a4"
   "ccpa:sec:1798.100:d": "83f2d274c83f4ddd"
   "ccpa_regs:sec:7053:a": "6f46d9c1b3eac545"
-  "caloppa:sec:22575:b": "995f69b003955c0d"
   "gdpr:art:4:11": "0ba24ebaf596b3ff"
   "gdpr:art:6:1": "3fb2ef15dab39616"
   "gdpr:art:7:1": "69183c28ae3f6710"

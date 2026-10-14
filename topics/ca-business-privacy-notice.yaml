@@ -25,7 +25,6 @@ triggers:
   - california
   - ccpa
   - cpra
-  - caloppa
   - privacy notice
   - privacy policy
   - notice at collection
@@ -37,7 +36,7 @@ triggers:
   - do not track
 
 # Which loaded laws this topic draws on (used to keep it away from questions about other laws).
-docs: [ccpa, ccpa_regs, caloppa]
+docs: [ccpa, ccpa_regs]
 
 applicability:
   - question: "Is the organization a \"business\" under the CCPA?"
@@ -47,9 +46,6 @@ applicability:
     chunk_ids: ["ccpa:sec:1798.140:i"]
   - question: "Is the information \"personal information\"?"
     chunk_ids: ["ccpa:sec:1798.140:v"]
-  - question: "Does CalOPPA reach the website or online service?"
-    note: "CalOPPA applies to operators of commercial websites and online services that collect personally identifiable information from California residents."
-    chunk_ids: ["caloppa:sec:22575:a", "caloppa:sec:22577:c", "caloppa:sec:22577:a", "caloppa:sec:22577:d"]
 
 items:
   - label: "What the CCPA says about a notice at or before the point of collection"
@@ -62,8 +58,6 @@ items:
     chunk_ids: ["ccpa_regs:sec:7003:a", "ccpa_regs:sec:7003:b", "ccpa_regs:sec:7003:c", "ccpa_regs:sec:7003:d"]
   - label: "Which disclosures the regulations list in total"
     chunk_ids: ["ccpa_regs:sec:7010:a", "ccpa_regs:sec:7010:b", "ccpa_regs:sec:7010:e", "ccpa_regs:sec:7010:f", "ccpa_regs:sec:7010:g"]
-  - label: "CalOPPA: posting a privacy policy and what it must disclose, including do-not-track"
-    chunk_ids: ["caloppa:sec:22575:a", "caloppa:sec:22575:b", "caloppa:sec:22577:b"]
 
 related:
   - label: "Cookies and tracking (California): opt-out of sale or sharing, opt-out preference signals, \"Do Not Sell or Share\" link"
@@ -72,14 +66,12 @@ related:
     chunk_ids: ["ccpa:sec:1798.105:a", "ccpa:sec:1798.106:a", "ccpa:sec:1798.110:a", "ccpa:sec:1798.120:a"]
 
 # Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
+
+# Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
 reviewed_hashes:
   "ccpa:sec:1798.140:d": "b37898a92b8e73b5"
   "ccpa:sec:1798.140:i": "e30dc8b6460267ec"
   "ccpa:sec:1798.140:v": "6239f6255bac8e58"
-  "caloppa:sec:22575:a": "b8745a1e72c0062a"
-  "caloppa:sec:22577:c": "b0afc6a17080e8ba"
-  "caloppa:sec:22577:a": "e98d7b82f0b61325"
-  "caloppa:sec:22577:d": "8963bdcd6a1ab5e5"
   "ccpa:sec:1798.100:a": "c5d82b44bbdcf7d1"
   "ccpa_regs:sec:7012:a": "c20e76837141262a"
   "ccpa_regs:sec:7012:c": "2cbf6c1513d7229c"
@@ -100,8 +92,6 @@ reviewed_hashes:
   "ccpa_regs:sec:7010:e": "07510979876578d5"
   "ccpa_regs:sec:7010:f": "d2226894e785c1b4"
   "ccpa_regs:sec:7010:g": "a353e22bdc883346"
-  "caloppa:sec:22575:b": "995f69b003955c0d"
-  "caloppa:sec:22577:b": "8fa6b0f3921dc845"
   "ccpa:sec:1798.105:a": "7bfc4ae1f0ffd599"
   "ccpa:sec:1798.106:a": "a43e4a7eda04a3ae"
   "ccpa:sec:1798.110:a": "0de1668878bb9a8f"

@@ -33,7 +33,8 @@ LOGO = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width
 
 # ---------- shared page frame ----------
 
-def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> str:
+def page(title: str, body: str, rel: str, nav_docs: list, active: str = "", desc: str = "") -> str:
+    description = " ".join((desc or SITE.get("description", "")).split())
     nav = [("Search", rel, "search")]
     if GUIDES:
         nav.append(("Guides", f"{rel}topics/", "guides"))
@@ -51,6 +52,12 @@ def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> s
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
+<meta name="description" content="{e(description)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{e(SITE.get("name", ""))}">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(description)}">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="{rel}assets/style.css?v={VERSION}">
 </head><body>
 <header class="site"><div class="wrap">
@@ -195,7 +202,9 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         title = f'{a["section_ref"]} - {a["heading"]}' if a["heading"] else a["section_ref"]
         nav_title = "In this article" if a["kind"] == "article" else "In this section"
         (d / "index.html").write_text(
-            page(title, doc_layout(parts, side_panel(doc, nav_title, nav_items, a["source_url"], a["section_ref"], a["permalink"])), rel, docs, doc_id),
+            page(title, doc_layout(parts, side_panel(doc, nav_title, nav_items, a["source_url"], a["section_ref"], a["permalink"])), rel, docs, doc_id,
+                 desc=f'{a["section_ref"]}{": " + a["heading"] if a["heading"] else ""}. Exact text with its citation, '
+                      f'version date and a link to the official source.'),
             encoding="utf-8")
 
     for i, r in enumerate(recitals):
@@ -364,7 +373,7 @@ def build_guides(docs: list, by_id_all: dict) -> None:
         d = DIST / "topics" / t["id"]
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(
-            page(t["title"], doc_layout(parts, side), rel, docs, "guides"), encoding="utf-8")
+            page(t["title"], doc_layout(parts, side), rel, docs, "guides", desc=t["scope"]), encoding="utf-8")
         summary.append({
             "id": t["id"], "title": t["title"], "scope": t["scope"], "url": f'topics/{t["id"]}/',
             "triggers": t["triggers"], "docs": t.get("docs", []), "state": state,
@@ -409,7 +418,7 @@ def build_compare(docs: list, by_id_all: dict) -> None:
                  'exactly as published; check each provision\'s version date and official source.</p>']
         d = DIST / "compare" / s["id"]
         d.mkdir(parents=True, exist_ok=True)
-        (d / "index.html").write_text(page(s["title"], "\n".join(parts), rel, docs, "compare"), encoding="utf-8")
+        (d / "index.html").write_text(page(s["title"], "\n".join(parts), rel, docs, "compare", desc=s["question"]), encoding="utf-8")
     cards = "".join(
         f'<article class="doc-card"><div class="result-head">'
         + "".join(f'<span class="badge kind">{e(docs_by_id[c["doc"]]["short_name"])}</span>' for c in s["columns"])
@@ -440,6 +449,25 @@ def build_trust(docs: list, by_id_all: dict) -> None:
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(page(title, f'<div class="prose">{body}</div>', "../", docs, slug),
                                       encoding="utf-8")
+
+
+# ---------- 404 and sitemap ----------
+
+def build_extras(docs: list) -> None:
+    base = "/" + SITE["site_url"].split("//", 1)[1].split("/", 1)[1] if "/" in SITE["site_url"].split("//", 1)[1] else "/"
+    body = ('<div class="prose"><h1>Page not found</h1><p class="lede">That address does not exist on this site. '
+            'It may have been mistyped, or a link may be out of date.</p>'
+            f'<p><a class="btn-link" href="{base}">Search the laws</a> '
+            f'<a class="btn-link" href="{base}documents/">Browse</a></p></div>')
+    (DIST / "404.html").write_text(page("Page not found", body, base, docs, ""), encoding="utf-8")
+    urls = [p.parent.relative_to(DIST).as_posix() for p in DIST.rglob("index.html")]
+    root = SITE["site_url"].rstrip("/") + "/"
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in sorted(urls):
+        lines.append(f"<url><loc>{e(root + ('' if u == '.' else u + '/'))}</loc></url>")
+    lines.append("</urlset>")
+    (DIST / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 # ---------- home and build ----------
@@ -573,6 +601,9 @@ def build() -> None:
     BY_ID.update(by_id_all)
     GUIDES.clear()
     GUIDES.extend(t for t in topics_all if guided.visible(t))
+    names = ", ".join(d["short_name"] for d in docs)
+    SITE["description"] = (f"Search the exact text of privacy law ({names}) with citations, version dates and links "
+                           "to the official sources. Free, no accounts, no tracking.")
     for d in loaded:
         build_doc_pages(d, docs, by_id_all, in_refs)
     export_search.export()
@@ -582,6 +613,7 @@ def build() -> None:
     build_guides(docs, by_id_all)
     build_compare(docs, by_id_all)
     build_trust(docs, by_id_all)
+    build_extras(docs)
     guided.write_review_sheet(topics_all, by_id_all, {d["doc_id"]: d for d in docs})
     n = sum(1 for _ in DIST.rglob("*.html"))
     print(f"site: {n} html pages -> {DIST}")

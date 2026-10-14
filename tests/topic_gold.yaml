@@ -46,8 +46,6 @@ gold:
   - {id: "ccpa_regs:sec:7070:a", has: [childrens-data]}
   - {id: "ccpa_regs:sec:7150:a", has: [dpia]}
   - {id: "ccpa_regs:sec:7101:a", has: [records-of-processing]}
-  # CalOPPA
-  - {id: "caloppa:sec:22575:b", has: [notice-transparency, cookies-tracking]}
   # HIPAA
   - {id: "hipaa:sec:164.404:a", has: [breach-notification]}
   - {id: "hipaa:sec:164.404:b", has: [breach-notification]}

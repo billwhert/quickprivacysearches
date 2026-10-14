@@ -18,7 +18,7 @@ title: Cookies and tracking (California)
 scope: One sentence on what it covers.
 status: draft            # draft | published
 triggers: [cookies, "do not sell", website]   # one word scores 1, a phrase 2; shown at 2 or more
-docs: [ccpa, ccpa_regs, caloppa, gdpr]         # laws it draws on (keeps it away from other-law questions)
+docs: [ccpa, ccpa_regs, gdpr]         # laws it draws on (keeps it away from other-law questions)
 applicability:           # "does the law apply at all?"
   - question: Is the organization a "business" under the CCPA?
     note: Optional short summary, shown labelled as a summary.

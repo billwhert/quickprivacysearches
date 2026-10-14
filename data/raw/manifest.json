@@ -29,17 +29,6 @@
   "retrieved_at": "2026-10-14T13:21:49Z",
   "last_checked_at": "2026-10-14T13:21:49Z"
  },
- "caloppa": {
-  "doc_id": "caloppa",
-  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
-  "fetch_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
-  "raw_path": "data/raw/caloppa.txt",
-  "bytes": 7170,
-  "checksum_sha256": "a31643135f5906e283fbf7d4a086ec5dd3a492394d56386c5eb7c5667d37ad67",
-  "retrieved_at": "2026-10-14T13:20:00Z",
-  "last_checked_at": "2026-10-14T13:20:00Z",
-  "fetch_method": "Text of the rendered leginfo.legislature.ca.gov page (BPC Division 8, Chapter 22), captured via a browser."
- },
  "hipaa": {
   "doc_id": "hipaa",
   "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C",

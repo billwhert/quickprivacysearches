@@ -8,9 +8,6 @@ columns:
   - doc: ccpa
     heading: "CCPA: notice at collection and the online privacy policy"
     chunk_ids: ["ccpa:sec:1798.100:a", "ccpa:sec:1798.130:a.5"]
-  - doc: caloppa
-    heading: "CalOPPA: privacy policy for commercial websites and online services"
-    chunk_ids: ["caloppa:sec:22575:a", "caloppa:sec:22575:b"]
   - doc: hipaa
     heading: "HIPAA: notice of privacy practices"
     chunk_ids: ["hipaa:sec:164.520:a"]

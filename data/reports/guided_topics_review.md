@@ -10,7 +10,7 @@ and does the wording of the heading describe what the law says (not what a busin
 
 Scope: Which California privacy law provisions address the content and presentation of an online privacy notice.
 
-Triggers: california, ccpa, cpra, caloppa, privacy notice, privacy policy, notice at collection, website, online business, small business, privacy notice for my website, what to include, do not track
+Triggers: california, ccpa, cpra, privacy notice, privacy policy, notice at collection, website, online business, small business, privacy notice for my website, what to include, do not track
 
 ### Does the law apply at all?
 
@@ -69,37 +69,6 @@ _Summary shown on the page:_ The definition sets thresholds based on revenue, vo
 >     (A) Physical formats, including paper documents, printed images, vinyl records, or video tapes.
 >     (B) Digital formats, including text, image, audio, or video files.
 >     (C) Abstract digital formats, including compressed or encrypted files, metadata, or artificial intelligence systems that are capable of outputting personal information.
-
-**Does CalOPPA reach the website or online service?**
-
-_Summary shown on the page:_ CalOPPA applies to operators of commercial websites and online services that collect personally identifiable information from California residents.
-
-- [ ] **CalOPPA § 22575(a)** (`caloppa:sec:22575:a`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (a) An operator of a commercial Web site or online service that collects personally identifiable information through the Internet about individual consumers residing in California who use or visit its commercial Web site or online service shall conspicuously post its privacy policy on its Web site, or in the case of an operator of an online service, make that policy available in accordance with paragraph (5) of subdivision (b) of Section 22577. An operator shall be in violation of this subdivision only if the operator fails to post its policy within 30 days after being notified of noncompliance.
-
-- [ ] **CalOPPA § 22577(c)** (`caloppa:sec:22577:c`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (c) The term “operator” means any person or entity that owns a Web site located on the Internet or an online service that collects and maintains personally identifiable information from a consumer residing in California who uses or visits the Web site or online service if the Web site or online service is operated for commercial purposes. It does not include any third party that operates, hosts, or manages, but does not own, a Web site or online service on the owner’s behalf or by processing information on behalf of the owner.
-
-- [ ] **CalOPPA § 22577(a)** (`caloppa:sec:22577:a`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (a) The term “personally identifiable information” means individually identifiable information about an individual consumer collected online by the operator from that individual and maintained by the operator in an accessible form, including any of the following:
->   (1) A first and last name.
->   (2) A home or other physical address, including street name and name of a city or town.
->   (3) An e-mail address.
->   (4) A telephone number.
->   (5) A social security number.
->   (6) Any other identifier that permits the physical or online contacting of a specific individual.
->   (7) Information concerning a user that the Web site or online service collects online from the user and maintains in personally identifiable form in combination with an identifier described in this subdivision.
-
-- [ ] **CalOPPA § 22577(d)** (`caloppa:sec:22577:d`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (d) The term “consumer” means any individual who seeks or acquires, by purchase or lease, any goods, services, money, or credit for personal, family, or household purposes.
 
 ### What the provisions say
 
@@ -277,38 +246,6 @@ _Summary shown on the page:_ CalOPPA applies to operators of commercial websites
   - California Consumer Privacy Act Regulations, effective 1 January 2026 (CPPA consolidated text); retrieved 2026-10-14; [official source](https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf)
 
 > (g) A business that offers a financial incentive or price or service difference shall provide a Notice of Financial Incentive in accordance with the CCPA and section 7016.
-
-**6. CalOPPA: posting a privacy policy and what it must disclose, including do-not-track**
-
-- [ ] **CalOPPA § 22575(a)** (`caloppa:sec:22575:a`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (a) An operator of a commercial Web site or online service that collects personally identifiable information through the Internet about individual consumers residing in California who use or visit its commercial Web site or online service shall conspicuously post its privacy policy on its Web site, or in the case of an operator of an online service, make that policy available in accordance with paragraph (5) of subdivision (b) of Section 22577. An operator shall be in violation of this subdivision only if the operator fails to post its policy within 30 days after being notified of noncompliance.
-
-- [ ] **CalOPPA § 22575(b)** (`caloppa:sec:22575:b`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (b) The privacy policy required by subdivision (a) shall do all of the following:
->   (1) Identify the categories of personally identifiable information that the operator collects through the Web site or online service about individual consumers who use or visit its commercial Web site or online service and the categories of third-party persons or entities with whom the operator may share that personally identifiable information.
->   (2) If the operator maintains a process for an individual consumer who uses or visits its commercial Web site or online service to review and request changes to any of his or her personally identifiable information that is collected through the Web site or online service, provide a description of that process.
->   (3) Describe the process by which the operator notifies consumers who use or visit its commercial Web site or online service of material changes to the operator’s privacy policy for that Web site or online service.
->   (4) Identify its effective date.
->   (5) Disclose how the operator responds to Web browser “do not track” signals or other mechanisms that provide consumers the ability to exercise choice regarding the collection of personally identifiable information about an individual consumer’s online activities over time and across third-party Web sites or online services, if the operator engages in that collection.
->   (6) Disclose whether other parties may collect personally identifiable information about an individual consumer’s online activities over time and across different Web sites when a consumer uses the operator’s Web site or service.
->   (7) An operator may satisfy the requirement of paragraph (5) by providing a clear and conspicuous hyperlink in the operator’s privacy policy to an online location containing a description, including the effects, of any program or protocol the operator follows that offers the consumer that choice.
-
-- [ ] **CalOPPA § 22577(b)** (`caloppa:sec:22577:b`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (b) The term “conspicuously post” with respect to a privacy policy shall include posting the privacy policy through any of the following:
->   (1) A Web page on which the actual privacy policy is posted if the Web page is the homepage or first significant page after entering the Web site.
->   (2) An icon that hyperlinks to a Web page on which the actual privacy policy is posted, if the icon is located on the homepage or the first significant page after entering the Web site, and if the icon contains the word “privacy.” The icon shall also use a color that contrasts with the background color of the Web page or is otherwise distinguishable.
->   (3) A text link that hyperlinks to a Web page on which the actual privacy policy is posted, if the text link is located on the homepage or first significant page after entering the Web site, and if the text link does one of the following:
->     (A) Includes the word “privacy.”
->     (B) Is written in capital letters equal to or greater in size than the surrounding text.
->     (C) Is written in larger type than the surrounding text, or in contrasting type, font, or color to the surrounding text of the same size, or set off from the surrounding text of the same size by symbols or other marks that call attention to the language.
->   (4) Any other functional hyperlink that is so displayed that a reasonable person would notice it.
->   (5) In the case of an online service, any other reasonably accessible means of making the privacy policy available for consumers of the online service.
 
 ### Related
 
@@ -616,20 +553,6 @@ _Summary shown on the page:_ The definitions of sell and share, and of cross-con
 >   (4) Grants the business the right—with respect to the personal information that the business makes available to the third party—to take reasonable and appropriate steps to ensure that the third party uses it in a manner consistent with the business’s obligations under the CCPA and these regulations. For example, the business may require the third party to attest that it treats the personal information the business made available to it in the same manner that the business is obligated to treat it under the CCPA and these regulations.
 >   (5) Grants the business the right, upon notice, to take reasonable and appropriate steps to stop and remediate unauthorized use of personal information made available to the third party. For example, the business may require the third party to provide documentation that verifies that it no longer retains or uses the personal information of consumers who have had their requests to opt-out of sale/sharing forwarded to it by the first party business.
 >   (6) Requires the third party to notify the business after it makes a determination that it can no longer meet its obligations under the CCPA and these regulations.
-
-**7. CalOPPA: disclosing how a site responds to do-not-track signals**
-
-- [ ] **CalOPPA § 22575(b)** (`caloppa:sec:22575:b`) - Internet Privacy Requirements
-  - Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014; retrieved 2026-10-14; [official source](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=)
-
-> (b) The privacy policy required by subdivision (a) shall do all of the following:
->   (1) Identify the categories of personally identifiable information that the operator collects through the Web site or online service about individual consumers who use or visit its commercial Web site or online service and the categories of third-party persons or entities with whom the operator may share that personally identifiable information.
->   (2) If the operator maintains a process for an individual consumer who uses or visits its commercial Web site or online service to review and request changes to any of his or her personally identifiable information that is collected through the Web site or online service, provide a description of that process.
->   (3) Describe the process by which the operator notifies consumers who use or visit its commercial Web site or online service of material changes to the operator’s privacy policy for that Web site or online service.
->   (4) Identify its effective date.
->   (5) Disclose how the operator responds to Web browser “do not track” signals or other mechanisms that provide consumers the ability to exercise choice regarding the collection of personally identifiable information about an individual consumer’s online activities over time and across third-party Web sites or online services, if the operator engages in that collection.
->   (6) Disclose whether other parties may collect personally identifiable information about an individual consumer’s online activities over time and across different Web sites when a consumer uses the operator’s Web site or service.
->   (7) An operator may satisfy the requirement of paragraph (5) by providing a clear and conspicuous hyperlink in the operator’s privacy policy to an online location containing a description, including the effects, of any program or protocol the operator follows that offers the consumer that choice.
 
 ### Related
 

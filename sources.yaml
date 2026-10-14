@@ -67,32 +67,6 @@ documents:
       heading_re: '^§\s*(7\d{3}(?:\.\d+)?)\.\s*(.*)$'
       article_re: '^ARTICLE \d+\.'
       definition_sections: ["7001"]
-  - doc_id: caloppa
-    title: "California Online Privacy Protection Act (Cal. Bus. & Prof. Code 22575-22579)"
-    short_name: CalOPPA
-    jurisdiction: US-CA
-    doc_type: law
-    source_url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article="
-    # leginfo blocks scripted downloads, so the page text was captured from the rendered page.
-    fetch_method: manual
-    fetch_note: "Text of the rendered leginfo.legislature.ca.gov page (BPC Division 8, Chapter 22), captured via a browser."
-    manual_retrieved_at: "2026-10-14T13:20:00Z"
-    raw_ext: txt
-    parser: code
-    language: en
-    is_translation: false
-    version_label: "Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014"
-    effective_date: "2004-07-01"  # operative date; 22575 last amended effective 2014-01-01
-    license_note: "Statutory text of five short sections. The California Legislature's Privacy and Conditions of Use Policy says some information on its site may be protected by copyright and that permission to use that material must be obtained from the Assembly, the Senate or the Legislative Counsel Bureau. Statutory text is law; see the note on the Sources page."
-    attribution: "California Business and Professions Code, sections 22575-22579, California Legislative Information (https://leginfo.legislature.ca.gov), California State Legislature."
-    reuse_url: "https://leginfo.legislature.ca.gov/faces/home.xhtml"
-    notes: "Captured by hand from the rendered California Legislative Information page, because that site blocks scripted downloads. The saved file is the page text, not a byte-exact download."
-    profile:
-      heading_re: '^(2257\d)\.\s*(.*)$'
-      toc: ["22575", "22576", "22577", "22578", "22579"]
-      note_re: '^\((?:Added|Amended|Repealed|Enacted)\b'
-      default_article: "Chapter 22. Internet Privacy Requirements"
-      default_title: "Internet Privacy Requirements"
   - doc_id: hipaa
     title: "HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164)"
     short_name: HIPAA

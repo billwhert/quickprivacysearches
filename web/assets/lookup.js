@@ -64,7 +64,7 @@ const ART = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:art(?:icle)?s?\.?\s*)(\d{1,3})\s*(?:\(\
 const RCT = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:recital|rec\.?)\s*\(?(\d{1,3})\)?\s*$/i;
 // Code sections: "1798.105", "Civ. Code 1798.140(ad)(1)", "section 1798.100(a)", "§ 7011(a)", "11 CCR 7025", "22575(b)"
 const CODE = new RegExp(
-  "^\\s*(?:(?:ccpa|cpra|cppa|caloppa|hipaa|ccr|regs?|regulations?)\\s*[,:-]?\\s*)?" +
+  "^\\s*(?:(?:ccpa|cpra|cppa|hipaa|ccr|regs?|regulations?)\\s*[,:-]?\\s*)?" +
   "(?:(?:45\\s*)?c\\.?f\\.?r\\.?\\s*,?\\s*)?" +
   "(?:(?:cal(?:ifornia)?\\.?\\s*)?(?:civ(?:il)?\\.?|bus(?:iness)?\\.?\\s*(?:&|and)?\\s*prof(?:essions)?\\.?)\\s*code\\s*,?\\s*)?" +
   "(?:(?:11\\s*)?c\\.?c\\.?r\\.?\\s*,?\\s*)?" +
@@ -74,7 +74,6 @@ const CODE = new RegExp(
 function docForNumber(num) {
   if (/^1798\./.test(num)) return "ccpa";
   if (/^7\d{3}$/.test(num)) return "ccpa_regs";
-  if (/^2257\d$/.test(num)) return "caloppa";
   if (/^16[04]\.\d{3}$/.test(num)) return "hipaa";
   return null;
 }

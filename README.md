@@ -23,7 +23,6 @@ required?") and get the exact text of the law, with a link to the official sourc
 | GDPR (articles and recitals) | Available |
 | California CCPA/CPRA (Civil Code 1798.100 et seq.) | Available |
 | CPPA CCPA regulations (11 CCR 7000 et seq.) | Available |
-| California Online Privacy Protection Act (CalOPPA) | Available |
 | HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164) | Available |
 
 Later: more US state laws, LGPD, PIPEDA, GLBA, and regulator guidance.
@@ -38,3 +37,8 @@ official source and check the version date shown with each result. Spotted a mis
 
 Build and development notes are in [docs/DEVELOPING.md](docs/DEVELOPING.md).
 The full project plan is in [SPEC.md](SPEC.md).
+
+## License
+The code and the editorial files (guided topics, comparison sets, synonym lists, topic rules) are released under the
+[MIT License](LICENSE). The legal texts themselves belong to their publishers or are public-domain government
+works; see the Sources page for each document's terms.

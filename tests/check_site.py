@@ -23,7 +23,7 @@ check("site has pages", len(htmls) > 100, f"{len(htmls)} pages")
 
 # --- trust pages exist and say the required things ---
 need = {
-    "about/index.html": ["not legal advice", "official source", "Currently loaded", "Report an error".lower()],
+    "about/index.html": ["not legal advice", "official source", "What is loaded", "Report an error".lower()],
     "disclaimer/index.html": ["Not legal advice", "No accounts", "not sent anywhere", "cookies", "GitHub"],
     "sources/index.html": ["Official source", "Reuse terms", "Attribution", "Retrieved", "Fingerprint"],
 }

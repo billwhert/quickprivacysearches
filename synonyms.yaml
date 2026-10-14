@@ -1,2 +1,156 @@
-# Query expansion terms (used from step 4). Example shape:
-# erase: [delete]
+# Query expansion, reviewed by hand. Edit freely; the site rebuilds from this file.
+#
+# synonyms: when a visitor's query contains any phrase in `terms`, the phrases in `expand`
+#   are searched as well (at lower weight) and shown to the visitor as "also searched".
+#   Matching is whole-word and case-insensitive. Use the law's own wording in `expand`.
+#
+# jurisdictions: words that tell us which law a question is about. `docs` lists loaded
+#   doc_ids from sources.yaml. If a visitor asks about a law that is not loaded yet,
+#   the site says so instead of returning unrelated text.
+
+synonyms:
+  - terms: [dpia, pia, "privacy impact assessment", "impact assessment"]
+    expand: ["data protection impact assessment"]
+
+  - terms: [ropa, "record of processing", "records of processing", "processing records", "processing inventory", "data inventory", "data mapping"]
+    expand: ["records of processing activities", "record of processing activities"]
+
+  - terms: [dsar, dsr, sar, "subject access request", "data subject request", "data subject requests", "access request", "request my data", "get my data"]
+    expand: ["right of access by the data subject", "rights of the data subject"]
+
+  - terms: [erase, erased, erasing, delete, deleted, deletion, "be forgotten", "right to be forgotten", "remove my data", "wipe"]
+    expand: ["right to erasure", "erasure of personal data"]
+
+  - terms: [dpo, "privacy officer"]
+    expand: ["data protection officer"]
+
+  - terms: ["lawful basis", "lawful bases", "legal basis", "legal bases", "legal grounds", "lawful ground", "lawful grounds"]
+    expand: ["lawfulness of processing"]
+
+  - terms: ["legitimate interest", "legitimate interests", "lia"]
+    expand: ["legitimate interests pursued by the controller"]
+
+  - terms: [breach, breaches, "data breach", "security incident", "data leak"]
+    expand: ["personal data breach"]
+
+  - terms: ["breach notification", "notify a breach", "report a breach", "notification of a breach", "breach reporting"]
+    expand: ["notification of a personal data breach to the supervisory authority", "communication of a personal data breach to the data subject"]
+
+  - terms: [regulator, "data protection authority", "dpa authority", "privacy regulator", "authority"]
+    expand: ["supervisory authority"]
+
+  - terms: [fine, fines, penalty, penalties, sanction, sanctions]
+    expand: ["administrative fines"]
+
+  - terms: ["processor contract", "processing agreement", "data processing agreement", "dpa", "vendor contract", "vendor agreement", "service provider contract"]
+    expand: ["contract or other legal act", "processor"]
+
+  - terms: [vendor, vendors, "service provider", "service providers", "third party processor"]
+    expand: ["processor"]
+
+  - terms: [scc, sccs, "standard contractual clauses", "contractual clauses"]
+    expand: ["standard data protection clauses"]
+
+  - terms: [bcr, bcrs]
+    expand: ["binding corporate rules"]
+
+  - terms: ["international transfer", "international transfers", "cross border", "cross-border", "transfer abroad", "send data abroad", "outside the eu", "third country", "transfers outside"]
+    expand: ["transfers of personal data to third countries or international organisations"]
+
+  - terms: [kid, kids, child, children, minor, minors, "under 16", "under 13", "parental consent"]
+    expand: ["child", "information society services"]
+
+  - terms: ["personal information", "pii", "personal info", "personally identifiable information"]
+    expand: ["personal data"]
+
+  - terms: ["sensitive data", "sensitive information", "sensitive personal data", "special category", "special categories"]
+    expand: ["special categories of personal data"]
+
+  - terms: ["health data", "health information", "medical data", "medical information"]
+    expand: ["data concerning health"]
+
+  - terms: ["biometric data", "biometrics", "fingerprint", "face recognition", "facial recognition"]
+    expand: ["biometric data"]
+
+  - terms: [profiling, "automated decision", "automated decisions", "automated decision making", "algorithmic decision"]
+    expand: ["automated individual decision-making, including profiling"]
+
+  - terms: ["privacy notice", "privacy policy", "privacy statement", "transparency notice", "fair processing notice"]
+    expand: ["information to be provided to the data subject", "transparent information"]
+
+  - terms: ["data portability", "port my data", "export my data", "portability"]
+    expand: ["right to data portability"]
+
+  - terms: ["opt out", "opt-out", "object to processing", "stop processing", "stop using my data", "direct marketing", "marketing emails", "unsubscribe"]
+    expand: ["right to object"]
+
+  - terms: ["withdraw consent", "withdrawing consent", "revoke consent", "consent withdrawal"]
+    expand: ["right to withdraw consent"]
+
+  - terms: [cookie, cookies, tracking, tracker, trackers, pixel, pixels, "online identifier", "online identifiers", fingerprinting]
+    expand: ["online identifiers", "consent", "profiling"]
+
+  - terms: ["data retention", "retention period", "how long keep", "how long can we keep", "retain data", "storage limitation"]
+    expand: ["storage limitation", "no longer than is necessary"]
+
+  - terms: ["data minimisation", "data minimization", "minimise data", "minimize data", "collect only necessary", "collect only what is necessary"]
+    expand: ["data minimisation"]
+
+  - terms: ["privacy by design", "by design", "by default", "privacy by default"]
+    expand: ["data protection by design and by default"]
+
+  - terms: ["joint controller", "joint controllers", "co-controller", "co controllers"]
+    expand: ["joint controllers"]
+
+  - terms: ["eu representative", "representative in the eu", "non eu company", "non-eu company", "outside the union"]
+    expand: ["representatives of controllers or processors not established in the union"]
+
+  - terms: ["territorial scope", "does gdpr apply", "scope of gdpr"]
+    expand: ["territorial scope", "material scope"]
+
+  - terms: ["security measures", "data security", "encryption", "pseudonymisation", "pseudonymization", "security of processing"]
+    expand: ["security of processing", "pseudonymisation and encryption"]
+
+  - terms: [compensation, damages, liability, "right to compensation"]
+    expand: ["right to compensation and liability"]
+
+  - terms: ["complaint", "complain", "lodge a complaint", "file a complaint"]
+    expand: ["right to lodge a complaint with a supervisory authority"]
+
+jurisdictions:
+  - id: eu
+    label: "the EU (GDPR)"
+    words: [gdpr, eu, europe, european, "european union", "general data protection regulation", "eea"]
+    docs: [gdpr]
+  - id: california
+    label: "California (CCPA/CPRA, CPPA regulations, CalOPPA)"
+    words: [california, californian, ccpa, cpra, caloppa, cppa, "california consumer privacy act"]
+    docs: [ccpa, ccpa_regs, caloppa]
+  - id: hipaa
+    label: "US health privacy (HIPAA)"
+    words: [hipaa, "protected health information", phi, "covered entity", "covered entities", "business associate", "business associates"]
+    docs: [hipaa]
+  - id: canada
+    label: "Canada (PIPEDA)"
+    words: [canada, canadian, pipeda, ontario, quebec]
+    docs: []
+  - id: brazil
+    label: "Brazil (LGPD)"
+    words: [brazil, brazilian, lgpd]
+    docs: []
+  - id: uk
+    label: "the United Kingdom (UK GDPR)"
+    words: [uk, "united kingdom", british, ico]
+    docs: []
+  - id: virginia
+    label: "Virginia (VCDPA)"
+    words: [virginia, vcdpa]
+    docs: []
+  - id: colorado
+    label: "Colorado (CPA)"
+    words: [colorado]
+    docs: []
+  - id: texas
+    label: "Texas (TDPSA)"
+    words: [texas, tdpsa]
+    docs: []

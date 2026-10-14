@@ -1,22 +1,22 @@
 // Search page: runs entirely in the browser. No network calls except loading the
 // static data and library files from this same site; query text is never sent anywhere.
 import MiniSearch from "./minisearch.js";
-import { prepareQuery, lookupCitation, INDEX_OPTIONS, SEARCH_OPTIONS } from "./lookup.js";
+import { createEngine, search, stem, STOPWORDS, normalize } from "./lookup.js";
 
 const $ = id => document.getElementById(id);
 const input = $("q"), form = $("search-form"), status = $("status"), list = $("results");
 const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const MAX_RESULTS = 20;
 
-let data, ms;
-const byId = new Map();
+let data, syn, engine;
 
 const ready = (async () => {
   status.textContent = "Loading index...";
-  data = await (await fetch("assets/search-data.json")).json();
-  ms = new MiniSearch(INDEX_OPTIONS);
-  ms.addAll(data.chunks);
-  data.chunks.forEach(c => byId.set(c.id, c));
+  [data, syn] = await Promise.all([
+    fetch("assets/search-data.json").then(r => r.json()),
+    fetch("assets/synonyms.json").then(r => r.json()),
+  ]);
+  engine = createEngine(MiniSearch, data);
   status.textContent = "";
 })();
 
@@ -56,36 +56,47 @@ function card(c, terms, opts = {}) {
   </li>`;
 }
 
+function highlightTerms(q) {
+  const words = q.terms.concat(q.expansions.flatMap(x => normalize(x).trim().split(" ")))
+    .filter(w => !STOPWORDS.has(w));
+  return [...new Set(words.map(stem))].filter(w => w.length > 2);
+}
+
 async function run(raw) {
   raw = raw.trim();
   await ready;
   if (!raw) { list.innerHTML = ""; status.textContent = ""; return; }
+  const res = search(engine, data, syn, raw);
+  const hl = highlightTerms(res.query);
   const out = [];
   const seen = new Set();
-  const cit = lookupCitation(raw, data);
-  if (cit) {
-    out.push(card(cit.chunk, [], { exact: true, note: cit.note }));
-    seen.add(cit.chunk.id);
+  if (res.citation) {
+    out.push(card(res.citation.chunk, [], { exact: true, note: res.citation.note }));
+    seen.add(res.citation.chunk.id);
   }
-  const p = prepareQuery(raw);
-  let hits = [];
-  if (p.terms.length && !(cit && cit.exact && /^\s*(gdpr\s*)?(art|recital)/i.test(raw))) {
-    hits = ms.search(p.terms.join(" "), SEARCH_OPTIONS);
-  }
-  const terms = p.terms;
   let shown = 0;
-  for (const h of hits) {
+  for (const h of res.results) {
     if (seen.has(h.id)) continue;
-    out.push(card(byId.get(h.id), terms.concat(h.terms || [])));
+    out.push(card(engine.byId.get(h.id), hl));
     if (++shown >= MAX_RESULTS) break;
   }
   list.innerHTML = out.join("");
+
+  const notes = res.messages.map(m => `<span class="note-line">${esc(m)}</span>`);
+  if (res.expansions.length && out.length) {
+    notes.push(`<span class="note-line">Also searched related wording: ` +
+      `${res.expansions.map(x => `<em>${esc(x)}</em>`).join(", ")}</span>`);
+  }
   if (!out.length) {
-    status.innerHTML = `No provisions found for "${esc(raw)}" in the loaded sources (currently the GDPR only). ` +
-      `Try broader terms, or <a href="gdpr/">browse the GDPR</a>.`;
+    const tail = res.outOfScope
+      ? `You can <a href="gdpr/">browse the GDPR</a> instead.`
+      : `No provisions found for "${esc(raw)}" in the loaded sources. ` +
+        `Try broader terms or different wording, or <a href="gdpr/">browse the GDPR</a>.`;
+    status.innerHTML = (notes.length ? notes.join("<br>") + "<br>" : "") + tail;
   } else {
-    status.textContent = `${out.length} result${out.length === 1 ? "" : "s"}` +
-      (hits.length > shown ? ` (showing top ${shown} matches of ${hits.length})` : "");
+    const count = `${out.length} result${out.length === 1 ? "" : "s"}` +
+      (res.results.length > shown ? ` (top ${shown} of ${res.results.length} matches)` : "");
+    status.innerHTML = esc(count) + (notes.length ? "<br>" + notes.join("<br>") : "");
   }
 }
 

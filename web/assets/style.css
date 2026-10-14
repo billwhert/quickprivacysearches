@@ -192,3 +192,6 @@ mark { background: var(--mark); color: inherit; padding: 0 2px; border-radius: 3
   .brand { font-size: .92rem; white-space: nowrap; }
   header nav a { padding: .3rem .5rem; }
 }
+
+.note-line { display: inline-block; margin-top: .25rem; }
+#status em { font-style: normal; color: var(--text-2); }

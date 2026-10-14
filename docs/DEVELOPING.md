@@ -41,3 +41,17 @@ publishes it to GitHub Pages. The workflow only needs Python; processed data is 
 ## Pages limits
 As last known: site up to about 1 GB, about 100 GB/month soft bandwidth, 100 MB per file.
 Verify at https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
+
+## How search works
+All of it runs in the browser (`web/assets/lookup.js`, shared with the test runner):
+1. **Citation lookup** - "Art. 35(1)", "Recital 26" jump straight to the provision.
+2. **Cleanup** - stopwords removed, light stemming ("bases" and "base" match).
+3. **Jurisdiction detection** - words like "GDPR" filter to a law; a law that is not loaded
+   yet (for example "Canada") gets a clear "not loaded yet" message instead of unrelated text.
+4. **Synonym expansion** - `synonyms.yaml`; expansions are searched at 70% weight and shown
+   to the visitor as "also searched".
+5. **Ranking** - term, heading and citation boosts; multi-word phrase matches rank higher;
+   paragraph 1 gets a small tie-breaker bonus.
+
+To add or fix a synonym, edit `synonyms.yaml` and rebuild. `node tests/run_queries.mjs` shows
+what changed; set `VERBOSE=1` to see the top results for every query.

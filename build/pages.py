@@ -216,12 +216,23 @@ with its citation, version, and a link to the official source. Currently loaded:
     (DIST / "index.html").write_text(page("Quick Privacy Searches", body, "", "search"), encoding="utf-8")
 
 
+def export_synonyms() -> None:
+    import json
+    import yaml
+    data = yaml.safe_load((ROOT / "synonyms.yaml").read_text(encoding="utf-8"))
+    for g in data["synonyms"]:
+        assert g["terms"] and g["expand"], f"empty synonym group: {g}"
+    (DIST / "assets" / "synonyms.json").write_text(
+        json.dumps({"synonyms": data["synonyms"], "jurisdictions": data["jurisdictions"]},
+                   ensure_ascii=False), encoding="utf-8")
+
+
 def build() -> None:
     global VERSION
     h = hashlib.sha256()
     for f in sorted(list((WEB / "assets").iterdir()) + [WEB / "vendor" / "minisearch.js"]):
         h.update(f.read_bytes())
-    for f in sorted(PROCESSED.rglob("chunks.json")):
+    for f in sorted(PROCESSED.rglob("chunks.json")) + [ROOT / "synonyms.yaml"]:
         h.update(f.read_bytes())
     VERSION = h.hexdigest()[:10]
     if DIST.exists():
@@ -233,6 +244,7 @@ def build() -> None:
             for name in ("minisearch.js", "lookup.js"):
                 t = t.replace(f'"./{name}"', f'"./{name}?v={VERSION}"')
             t = t.replace('"assets/search-data.json"', f'"assets/search-data.json?v={VERSION}"')
+            t = t.replace('"assets/synonyms.json"', f'"assets/synonyms.json?v={VERSION}"')
             (DIST / "assets" / f.name).write_text(t, encoding="utf-8")
         else:
             shutil.copy(f, DIST / "assets" / f.name)
@@ -242,6 +254,7 @@ def build() -> None:
         if (d / "chunks.json").exists():
             build_doc_pages(d.name)
     export_search.export()
+    export_synonyms()
     build_home()
     n = sum(1 for _ in DIST.rglob("*.html"))
     print(f"site: {n} html pages -> {DIST}")

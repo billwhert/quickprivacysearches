@@ -1,0 +1,17 @@
+# Comparison set: side-by-side provisions on one question across laws.
+# Exact text is pulled from the stored provisions. The selection is editorial; it is not a statement
+# that the provisions are equivalent. Keep headings descriptive ("what the provisions say").
+id: individual-request-deadlines
+title: Deadlines to respond to an individual's request
+question: How quickly must a request from an individual be answered?
+columns:
+  - doc: gdpr
+    heading: "GDPR: requests under the data subject rights"
+    chunk_ids: ["gdpr:art:12:3", "gdpr:art:12:4"]
+  - doc: ccpa
+    docs: [ccpa, ccpa_regs]
+    heading: "CCPA and CPPA regulations: consumer requests"
+    chunk_ids: ["ccpa:sec:1798.130:a.2", "ccpa_regs:sec:7021:a", "ccpa_regs:sec:7021:b"]
+  - doc: hipaa
+    heading: "HIPAA: requests for access to protected health information"
+    chunk_ids: ["hipaa:sec:164.524:b"]

@@ -6,7 +6,7 @@ source, then publish with `python build/guided.py approve <topic-id> --by "Your 
 Things to check for each provision: is it the right one for this heading, is anything missing,
 and does the wording of the heading describe what the law says (not what a business must do)?
 
-## California business privacy notice  (`ca-business-privacy-notice`, draft)
+## California business privacy notice  (`ca-business-privacy-notice`, published)
 
 Scope: Which California privacy law provisions address the content and presentation of an online privacy notice.
 
@@ -323,7 +323,7 @@ _Summary shown on the page:_ CalOPPA applies to operators of commercial websites
   - [ ] **CCPA § 1798.120(a)** (`ccpa:sec:1798.120:a`) - Consumers’ Right to Opt Out of Sale or Sharing of Personal Information
     - CCPA as amended through AB 137 and AB 566, effective 1 January 2026 (CPPA consolidated text, posted December 2025); retrieved 2026-10-14; [official source](https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf)
 
-## Cookies and tracking (California)  (`ca-cookies-tracking`, draft)
+## Cookies and tracking (California)  (`ca-cookies-tracking`, published)
 
 Scope: Which California privacy law provisions address cookies, trackers, and the sale or sharing of personal information collected through a website.
 

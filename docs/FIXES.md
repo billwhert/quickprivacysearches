@@ -17,7 +17,9 @@ How to use this file
 | F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
 | F-03 | P1 | Legal | License and attribution wording for every source is a placeholder (EU reuse decision, CPPA, California Legislature, eCFR). Confirm and display on Sources page. | step 11 |
 | F-04 | P1 | Launch | Spec test 20: confirm in a browser's network tab that query text is never sent anywhere. Also test on a phone and a different network. | step 12 |
-| F-05 | P1 | Content | **Review the two guided topics and publish them.** Open `data/reports/guided_topics_review.md`, check every cited provision, edit `topics/*.yaml` if needed, then run `python build/guided.py approve <id> --by "Your name"`. Until then they are hidden on the live site. | step 9 |
+| F-05 | P2 | Content | The two guided topics are published as a **first-release approval**; the line-by-line review of their provision lists is still pending. When you have time: `data/reports/guided_topics_review.md` (long; the review sheet lists every provision with its full text). The pages say "line-by-line review pending" until you re-approve with your own wording. | step 9 |
+| F-26 | P2 | Content | Eight comparison sets (`compare/*.yaml`) are an editorial selection of provisions and have not been reviewed. The page says they are not a statement of equivalence. Check the columns make sense; add or remove provisions in the YAML. | step 10 |
+| F-27 | P3 | Feature | Compare view could be linked from guided topics and from search results that span several laws. | step 10 |
 | F-24 | P2 | Content | Guided topics have no hand-written summaries yet (only short applicability notes). The spec allows summaries only after you have written or reviewed them. | step 9 |
 | F-25 | P3 | Content | More guided topics for the other loaded laws (GDPR DPIA, DSAR handling, HIPAA breach notification) once the first two are approved. | step 9 |
 | F-06 | P2 | Search | "how to verify a consumer request": the verification regulations (7060-7063) rank 5th behind a definition and other request rules. | step 5 |
@@ -38,6 +40,11 @@ How to use this file
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
 
 ## Change log
+
+### Step 10 - Compare view (2026-10-14)
+- Added `/compare/` with eight hand-written comparison sets (request deadlines, breach notification, access, deletion, definitions of personal data, privacy notices, penalties, processor contracts).
+- Each set is a YAML file; text comes from the stored provisions; the build fails if a cited provision is missing or sits in the wrong column's document. Columns can be hidden with law toggles.
+- Both guided topics were approved for first release (see F-05).
 
 ### Step 9 - Guided topics (2026-10-14)
 - Engine: topics are YAML files in `topics/`; text is always pulled from the stored provision; build fails if a cited provision does not exist; wording that tells the reader what to do is rejected.

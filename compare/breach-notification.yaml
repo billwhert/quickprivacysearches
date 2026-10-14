@@ -1,0 +1,17 @@
+id: breach-notification
+title: Breach notification
+question: Who must be told about a data breach, and by when?
+columns:
+  - doc: gdpr
+    heading: "GDPR: notifying the authority and individuals"
+    chunk_ids: ["gdpr:art:33:1", "gdpr:art:34:1"]
+  - doc: hipaa
+    heading: "HIPAA Breach Notification Rule: individuals, media, the Secretary, business associates"
+    chunk_ids: ["hipaa:sec:164.404:b", "hipaa:sec:164.406:b", "hipaa:sec:164.408:b", "hipaa:sec:164.410:b"]
+  - doc: ccpa
+    heading: "CCPA: civil actions after certain breaches"
+    note: >-
+      The CCPA provisions loaded here do not set a breach notification deadline; section 1798.150
+      addresses civil actions after certain breaches. California's breach notification statute
+      (Civil Code section 1798.82) is not loaded on this site.
+    chunk_ids: ["ccpa:sec:1798.150:a"]

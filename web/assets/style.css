@@ -263,3 +263,12 @@ button.chip:hover { border-color: var(--accent); color: var(--accent); filter: n
 .related { padding-left: 1.2rem; }
 .disclaimer { margin-top: 2.2rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .86rem; color: var(--text-3); }
 .prov-links { display: flex; gap: .9rem; font-size: .8rem; }
+
+/* compare view */
+.cmp-grid { display: grid; gap: 1.1rem; margin-top: 1.2rem; align-items: start;
+            grid-template-columns: repeat(var(--cols, 2), minmax(0, 1fr)); }
+.cmp-col { min-width: 0; }
+.cmp-head { position: sticky; top: 56px; z-index: 2; background: var(--bg); padding: .5rem 0 .3rem; border-bottom: 1px solid var(--line); }
+.cmp-head h2 { font-size: .98rem; margin: .3rem 0 0; line-height: 1.3; }
+.cmp-col .prov { margin: .8rem 0; }
+@media (max-width: 62rem) { .cmp-grid { grid-template-columns: minmax(0, 1fr); } .cmp-head { position: static; } }

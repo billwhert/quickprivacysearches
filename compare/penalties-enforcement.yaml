@@ -1,0 +1,13 @@
+id: penalties-enforcement
+title: Penalties and fines
+question: What penalties do the laws provide for violations?
+columns:
+  - doc: gdpr
+    heading: "GDPR: administrative fines"
+    chunk_ids: ["gdpr:art:83:4", "gdpr:art:83:5"]
+  - doc: ccpa
+    heading: "CCPA: administrative and civil enforcement"
+    chunk_ids: ["ccpa:sec:1798.155:a", "ccpa:sec:1798.199.90:a"]
+  - doc: hipaa
+    heading: "HIPAA: civil money penalties"
+    chunk_ids: ["hipaa:sec:160.404:a", "hipaa:sec:160.404:b"]

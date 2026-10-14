@@ -15,9 +15,9 @@ title: California business privacy notice
 scope: >-
   Which California privacy law provisions address the content and presentation of an online
   privacy notice.
-status: draft
-reviewed_by: ""
-reviewed_at: ""
+status: published
+reviewed_by: "site owner (first-release approval; line-by-line review pending)"
+reviewed_at: "2026-10-14"
 
 # Words and phrases that surface this topic from a search. A single word scores 1, a phrase 2;
 # a topic is shown when the score reaches 2.
@@ -70,3 +70,39 @@ related:
     topic: ca-cookies-tracking
   - label: "Consumer rights provisions: right to know, delete, correct, and opt out"
     chunk_ids: ["ccpa:sec:1798.105:a", "ccpa:sec:1798.106:a", "ccpa:sec:1798.110:a", "ccpa:sec:1798.120:a"]
+
+# Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
+reviewed_hashes:
+  "ccpa:sec:1798.140:d": "b37898a92b8e73b5"
+  "ccpa:sec:1798.140:i": "e30dc8b6460267ec"
+  "ccpa:sec:1798.140:v": "6239f6255bac8e58"
+  "caloppa:sec:22575:a": "b8745a1e72c0062a"
+  "caloppa:sec:22577:c": "b0afc6a17080e8ba"
+  "caloppa:sec:22577:a": "e98d7b82f0b61325"
+  "caloppa:sec:22577:d": "8963bdcd6a1ab5e5"
+  "ccpa:sec:1798.100:a": "c5d82b44bbdcf7d1"
+  "ccpa_regs:sec:7012:a": "c20e76837141262a"
+  "ccpa_regs:sec:7012:c": "2cbf6c1513d7229c"
+  "ccpa_regs:sec:7012:e": "1a0d315a9cdf316c"
+  "ccpa_regs:sec:7012:f": "a48b5aba12ca7f4d"
+  "ccpa:sec:1798.100:b": "23f3925464cce93d"
+  "ccpa_regs:sec:7012:g": "963e4369f6f0e4d6"
+  "ccpa:sec:1798.130:a.5": "8ce02d92eea7593d"
+  "ccpa_regs:sec:7011:a": "c68b35b170d23373"
+  "ccpa_regs:sec:7011:d": "a270ec28bd5f28b0"
+  "ccpa_regs:sec:7011:e": "7c92c1693d8b0197"
+  "ccpa_regs:sec:7003:a": "842aea34e879e999"
+  "ccpa_regs:sec:7003:b": "4a46d893c6f987de"
+  "ccpa_regs:sec:7003:c": "8e3b87b51fdc1e3f"
+  "ccpa_regs:sec:7003:d": "de332b5dacb146d4"
+  "ccpa_regs:sec:7010:a": "864333d7c79b10ce"
+  "ccpa_regs:sec:7010:b": "55d12171ff645010"
+  "ccpa_regs:sec:7010:e": "07510979876578d5"
+  "ccpa_regs:sec:7010:f": "d2226894e785c1b4"
+  "ccpa_regs:sec:7010:g": "a353e22bdc883346"
+  "caloppa:sec:22575:b": "995f69b003955c0d"
+  "caloppa:sec:22577:b": "8fa6b0f3921dc845"
+  "ccpa:sec:1798.105:a": "7bfc4ae1f0ffd599"
+  "ccpa:sec:1798.106:a": "a43e4a7eda04a3ae"
+  "ccpa:sec:1798.110:a": "0de1668878bb9a8f"
+  "ccpa:sec:1798.120:a": "d17f3217a918ec5d"

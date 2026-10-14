@@ -1,0 +1,16 @@
+id: deletion-erasure
+title: Deletion and erasure
+question: Can an individual have their information deleted, and what are the exceptions?
+columns:
+  - doc: gdpr
+    heading: "GDPR: right to erasure and its exceptions"
+    chunk_ids: ["gdpr:art:17:1", "gdpr:art:17:3"]
+  - doc: ccpa
+    heading: "CCPA: right to delete and its exceptions"
+    chunk_ids: ["ccpa:sec:1798.105:a", "ccpa:sec:1798.105:d"]
+  - doc: hipaa
+    heading: "HIPAA: right to amend"
+    note: >-
+      The HIPAA provisions loaded here address a right to have protected health information
+      amended; they do not contain a general right to deletion.
+    chunk_ids: ["hipaa:sec:164.526:a"]

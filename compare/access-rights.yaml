@@ -1,0 +1,13 @@
+id: access-rights
+title: The right of access
+question: What do the laws say about an individual's right to access their information?
+columns:
+  - doc: gdpr
+    heading: "GDPR: right of access by the data subject"
+    chunk_ids: ["gdpr:art:15:1", "gdpr:art:15:3"]
+  - doc: ccpa
+    heading: "CCPA: right to know what personal information is collected"
+    chunk_ids: ["ccpa:sec:1798.110:a", "ccpa:sec:1798.115:a"]
+  - doc: hipaa
+    heading: "HIPAA: access of individuals to protected health information"
+    chunk_ids: ["hipaa:sec:164.524:a"]

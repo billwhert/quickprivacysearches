@@ -6,6 +6,7 @@ import shutil
 
 import yaml
 
+import compare
 import export_search
 import guided
 from common import PROCESSED, ROOT, read_json
@@ -17,6 +18,7 @@ e = html.escape
 VERSION = "dev"  # set in build(): content hash used to bust browser caches
 TOPICS: dict = {}   # topic id -> {label, parent}; set in build()
 GUIDES: list = []   # guided topics shown on this build; set in build()
+COMPARES: list = []  # comparison sets; set in build()
 PARENT_KINDS = ("article", "section")
 
 DISCLAIMER = ("Reference tool, not legal advice. Text is taken from the official source and shown "
@@ -33,8 +35,10 @@ def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> s
     nav = [("Search", rel, "search")]
     if GUIDES:
         nav.append(("Guides", f"{rel}topics/", "guides"))
+    if COMPARES:
+        nav.append(("Compare", f"{rel}compare/", "compare"))
     nav.append(("Browse", f"{rel}documents/", "browse"))
-    if active not in ("search", "guides", ""):
+    if active not in ("search", "guides", "compare", ""):
         active = "browse"
     links = " ".join(
         f'<a href="{href}"{" aria-current=page" if key == active else ""}>{e(label)}</a>'
@@ -363,6 +367,49 @@ def build_guides(docs: list, by_id_all: dict) -> None:
     (DIST / "assets" / "topics.json").write_text(json.dumps({"topics": summary}, ensure_ascii=False), encoding="utf-8")
 
 
+# ---------- compare ----------
+
+def build_compare(docs: list, by_id_all: dict) -> None:
+    if not COMPARES:
+        return
+    BY_ID.update(by_id_all)
+    docs_by_id = {d["doc_id"]: d for d in docs}
+    for s in COMPARES:
+        rel = "../../"
+        cols = s["columns"]
+        toggles = "".join(
+            f'<button type="button" class="fchip" aria-pressed="true" data-col="{e(c["doc"])}">'
+            f'{e(docs_by_id[c["doc"]]["short_name"])}</button>' for c in cols)
+        grid = []
+        for c in cols:
+            d = docs_by_id[c["doc"]]
+            note = (f'<p class="summary"><span class="badge kind">Note</span> {e(" ".join(c["note"].split()))}</p>'
+                    if c.get("note") else "")
+            grid.append(
+                f'<div class="cmp-col" data-col="{e(c["doc"])}"><div class="cmp-head">'
+                f'<span class="badge">{e(d["short_name"])}</span><h2>{e(c["heading"])}</h2></div>{note}'
+                + "".join(provision_card(cid, rel, docs_by_id) for cid in c["chunk_ids"]) + "</div>")
+        parts = ['<p class="crumbs"><span class="badge">Compare</span></p>',
+                 f'<h1>{e(s["title"])}</h1>', f'<p class="lede">{e(s["question"])}</p>',
+                 '<div class="filters"><div class="fgroup"><span class="flabel">Show</span>' + toggles + "</div></div>",
+                 f'<div class="cmp-grid" style="--cols:{len(cols)}">{"".join(grid)}</div>',
+                 '<p class="disclaimer">The provisions are placed side by side as an editorial selection. That is not '
+                 'a statement that they are equivalent or that they cover the same situations. The text is shown '
+                 'exactly as published; check each provision\'s version date and official source.</p>']
+        d = DIST / "compare" / s["id"]
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(page(s["title"], "\n".join(parts), rel, docs, "compare"), encoding="utf-8")
+    cards = "".join(
+        f'<article class="doc-card"><div class="result-head">'
+        + "".join(f'<span class="badge kind">{e(docs_by_id[c["doc"]]["short_name"])}</span>' for c in s["columns"])
+        + f'</div><h2><a href="{e(s["id"])}/">{e(s["title"])}</a></h2><p class="muted">{e(s["question"])}</p>'
+        f'<p class="actions"><a href="{e(s["id"])}/">Compare side by side</a></p></article>' for s in COMPARES)
+    body = ('<h1>Compare the laws</h1><p class="lede">The same question, answered by each law, side by side. '
+            'Pick a comparison; you can hide the laws you do not need.</p>'
+            f'<div class="doc-grid">{cards}</div>')
+    (DIST / "compare" / "index.html").write_text(page("Compare the laws", body, "../", docs, "compare"), encoding="utf-8")
+
+
 # ---------- home and build ----------
 
 def build_home(docs: list) -> None:
@@ -482,6 +529,12 @@ def build() -> None:
     guided_errors = guided.validate(guided.load_topics(), by_id_all)
     if guided_errors:
         raise SystemExit("Guided topics are inconsistent:\n  " + "\n  ".join(guided_errors))
+    sets_all = compare.load_sets()
+    compare_errors = compare.validate(sets_all, by_id_all, {d["doc_id"] for d in docs})
+    if compare_errors:
+        raise SystemExit("Comparison sets are inconsistent:\n  " + "\n  ".join(compare_errors))
+    COMPARES.clear()
+    COMPARES.extend(sets_all)
     topics_all = guided.load_topics()
     BY_ID.update(by_id_all)
     GUIDES.clear()
@@ -493,6 +546,7 @@ def build() -> None:
     build_home(docs)
     build_documents(docs, by_id_all)
     build_guides(docs, by_id_all)
+    build_compare(docs, by_id_all)
     guided.write_review_sheet(topics_all, by_id_all, {d["doc_id"]: d for d in docs})
     n = sum(1 for _ in DIST.rglob("*.html"))
     print(f"site: {n} html pages -> {DIST}")

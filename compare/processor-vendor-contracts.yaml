@@ -1,0 +1,14 @@
+id: processor-vendor-contracts
+title: Contracts with processors and vendors
+question: What do the laws say about the contract with an organization that handles data on your behalf?
+columns:
+  - doc: gdpr
+    heading: "GDPR: processor contract"
+    chunk_ids: ["gdpr:art:28:3"]
+  - doc: ccpa
+    docs: [ccpa, ccpa_regs]
+    heading: "CCPA and CPPA regulations: service providers, contractors and third parties"
+    chunk_ids: ["ccpa:sec:1798.100:d", "ccpa_regs:sec:7051:a"]
+  - doc: hipaa
+    heading: "HIPAA: business associate contracts"
+    chunk_ids: ["hipaa:sec:164.504:e.1"]

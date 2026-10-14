@@ -13,9 +13,9 @@ title: Cookies and tracking (California)
 scope: >-
   Which California privacy law provisions address cookies, trackers, and the sale or sharing of
   personal information collected through a website.
-status: draft
-reviewed_by: ""
-reviewed_at: ""
+status: published
+reviewed_by: "site owner (first-release approval; line-by-line review pending)"
+reviewed_at: "2026-10-14"
 
 triggers:
   - cookies
@@ -71,3 +71,42 @@ related:
     topic: ca-business-privacy-notice
   - label: "Comparison: EU consent requirements under the GDPR"
     chunk_ids: ["gdpr:art:4:11", "gdpr:art:6:1", "gdpr:art:7:1", "gdpr:art:7:3"]
+
+# Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
+reviewed_hashes:
+  "ccpa:sec:1798.140:d": "b37898a92b8e73b5"
+  "ccpa:sec:1798.140:ad": "4d8bfbfe258812ff"
+  "ccpa:sec:1798.140:ah": "760d9ef00d625dac"
+  "ccpa:sec:1798.140:k": "1fd588873b90f344"
+  "ccpa:sec:1798.140:ai": "257fe7299efbd70e"
+  "ccpa:sec:1798.140:v": "6239f6255bac8e58"
+  "ccpa:sec:1798.140:aj": "0e770cb00fa8b70c"
+  "ccpa:sec:1798.120:a": "d17f3217a918ec5d"
+  "ccpa:sec:1798.120:b": "666e8d499287e52b"
+  "ccpa:sec:1798.135:a": "13b14bce8704f63b"
+  "ccpa_regs:sec:7013:c": "88168ac8267b4b15"
+  "ccpa_regs:sec:7013:d": "017134784cd0a094"
+  "ccpa_regs:sec:7015:a": "3d6aaa80555da26e"
+  "ccpa_regs:sec:7015:b": "9c047d98eaeea7d5"
+  "ccpa:sec:1798.135:b": "af712a10e367cfd1"
+  "ccpa_regs:sec:7025:a": "61e6b279596b9149"
+  "ccpa_regs:sec:7025:b": "9f4d81f5892f4b10"
+  "ccpa_regs:sec:7025:c.1": "a64eaa7f94a6ae06"
+  "ccpa_regs:sec:7025:c.2": "013ececf1cda9d80"
+  "ccpa_regs:sec:7025:f": "65be4f4a46a7e62f"
+  "ccpa_regs:sec:7013:a": "e4d1af70cbfacfe0"
+  "ccpa_regs:sec:7013:e": "eef9d9b732275c70"
+  "ccpa_regs:sec:7013:f": "0140a5f5024913ab"
+  "ccpa_regs:sec:7013:g": "b056e679cbacfa69"
+  "ccpa_regs:sec:7026:a": "5045e9cbd44a7d57"
+  "ccpa_regs:sec:7026:c": "092b64fdd9bdf5be"
+  "ccpa_regs:sec:7026:d": "5663897e223e3ae8"
+  "ccpa_regs:sec:7026:f": "eb5c5e20e2f59e66"
+  "ccpa:sec:1798.135:c": "0f253444b83563a4"
+  "ccpa:sec:1798.100:d": "83f2d274c83f4ddd"
+  "ccpa_regs:sec:7053:a": "6f46d9c1b3eac545"
+  "caloppa:sec:22575:b": "995f69b003955c0d"
+  "gdpr:art:4:11": "0ba24ebaf596b3ff"
+  "gdpr:art:6:1": "3fb2ef15dab39616"
+  "gdpr:art:7:1": "69183c28ae3f6710"
+  "gdpr:art:7:3": "fe03c75c8dda4c83"

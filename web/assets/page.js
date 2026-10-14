@@ -52,3 +52,15 @@ if (box) {
   };
   box.addEventListener("input", apply);
 }
+
+// Compare view: hide or show a law's column.
+document.addEventListener("click", e => {
+  const b = e.target.closest("button[data-col]");
+  if (!b) return;
+  const on = b.getAttribute("aria-pressed") !== "true";
+  b.setAttribute("aria-pressed", String(on));
+  const col = document.querySelector(`.cmp-col[data-col="${b.dataset.col}"]`);
+  if (col) col.hidden = !on;
+  const grid = document.querySelector(".cmp-grid");
+  if (grid) grid.style.setProperty("--cols", String(document.querySelectorAll(".cmp-col:not([hidden])").length || 1));
+});

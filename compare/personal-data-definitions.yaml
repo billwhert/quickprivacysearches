@@ -1,0 +1,13 @@
+id: personal-data-definitions
+title: What counts as personal data
+question: How does each law define the information it protects?
+columns:
+  - doc: gdpr
+    heading: "GDPR: \"personal data\""
+    chunk_ids: ["gdpr:art:4:1"]
+  - doc: ccpa
+    heading: "CCPA: \"personal information\""
+    chunk_ids: ["ccpa:sec:1798.140:v"]
+  - doc: hipaa
+    heading: "HIPAA: \"protected health information\""
+    chunk_ids: ["hipaa:sec:160.103:protected-health-information", "hipaa:sec:160.103:individually-identifiable-health-information"]

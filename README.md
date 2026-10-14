@@ -37,3 +37,13 @@ python build/ingest.py gdpr --force-fetch   # re-download and compare checksum
 - `data/processed/<doc_id>/` - `document.json`, `chunks.json`, `crossrefs.json`
 - `data/reports/<doc_id>_validation.md` - checks and 10-chunk spot-check sample
 - Parsers live in `build/parse_*.py`; the parser is chosen by `parser:` in `sources.yaml`.
+
+## Build and test the site (step 3)
+```bash
+python build/build.py          # writes dist/ (pages + assets/search-data.json)
+python -m http.server -d dist 8000
+npm install && node tests/run_queries.mjs   # acceptance queries against dist/
+```
+- `web/assets/` - search page JS/CSS (`lookup.js` holds citation lookup and query cleanup)
+- `web/vendor/minisearch.js` - vendored search library (MIT)
+- `docs/engine-comparison.md` - why MiniSearch was chosen over Pagefind

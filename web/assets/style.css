@@ -1,0 +1,60 @@
+:root {
+  --bg: #fbfaf7; --fg: #1d1d1b; --muted: #5d5d57; --line: #dedbd2; --accent: #1f5f8b;
+  --card: #ffffff; --mark: #ffe9a3; --warn: #8a5a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #151618; --fg: #ecebe6; --muted: #a3a29b; --line: #34363a; --accent: #7ab8e6;
+          --card: #1c1e21; --mark: #5b4a12; --warn: #e0b45a; }
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+       font-family: Georgia, "Times New Roman", serif; line-height: 1.55; }
+a { color: var(--accent); }
+header.site, footer.site, main { max-width: 52rem; margin: 0 auto; padding: 0 16px; }
+header.site { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+              flex-wrap: wrap; padding-top: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+              font-family: system-ui, sans-serif; }
+.brand { font-weight: 700; text-decoration: none; color: var(--fg); }
+header nav a { margin-left: 1rem; text-decoration: none; }
+header nav a[aria-current] { font-weight: 700; text-decoration: underline; }
+footer.site { color: var(--muted); font-size: .85rem; font-family: system-ui, sans-serif;
+              padding-top: 1rem; padding-bottom: 2rem; border-top: 1px solid var(--line); margin-top: 3rem; }
+main { padding-top: 1rem; padding-bottom: 1rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: .6rem 0; }
+h1 .sub { display: block; font-size: 1.05rem; font-weight: 400; color: var(--muted); }
+.lede { color: var(--muted); }
+.vh { position: absolute; left: -9999px; }
+#search-form { display: flex; gap: .5rem; margin: 1rem 0 .5rem; }
+#q { flex: 1; font-size: 1.05rem; padding: .6rem .7rem; border: 1px solid var(--line);
+     border-radius: 6px; background: var(--card); color: var(--fg); min-width: 0; }
+button { font: 600 .95rem system-ui, sans-serif; padding: .55rem .9rem; border-radius: 6px;
+         border: 1px solid var(--accent); background: var(--accent); color: var(--bg); cursor: pointer; }
+button.link { background: none; color: var(--accent); border: none; padding: 0; font-weight: 500; }
+.examples { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
+.ex { margin-right: .6rem; white-space: nowrap; }
+#status { font-family: system-ui, sans-serif; color: var(--muted); margin: .8rem 0; font-size: .9rem; }
+.results { list-style: none; padding: 0; margin: 0; }
+.result { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+          padding: .8rem 1rem; margin: 0 0 .8rem; }
+.result.exact { border-color: var(--accent); }
+.result h2 { font-size: 1.05rem; margin: 0 0 .1rem; }
+.result .crumbs, .crumbs { font: .78rem system-ui, sans-serif; color: var(--muted); margin: 0 0 .3rem; }
+.result .meta, .meta { font: .78rem system-ui, sans-serif; color: var(--muted); margin: .5rem 0 0; }
+.result .actions { font: .85rem system-ui, sans-serif; margin-top: .5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.text p { margin: .35rem 0; }
+.text .l1 { margin-left: 1.4rem; } .text .l2 { margin-left: 2.8rem; }
+.text .l3 { margin-left: 4.2rem; } .text .l4 { margin-left: 5.6rem; }
+mark { background: var(--mark); color: inherit; padding: 0 1px; border-radius: 2px; }
+.prov { border-left: 3px solid var(--line); padding: .1rem 0 .1rem .9rem; margin: 1rem 0; }
+.prov:target { border-left-color: var(--accent); }
+.anchor { font: .75rem system-ui, sans-serif; color: var(--muted); text-decoration: none; }
+.refs { font: .82rem system-ui, sans-serif; color: var(--muted); }
+.note { font: .85rem system-ui, sans-serif; color: var(--warn); }
+.notes { font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); margin-top: 1.5rem; }
+.pager { display: flex; justify-content: space-between; margin-top: 2rem; font-family: system-ui, sans-serif; }
+.toc { padding-left: 1.2rem; } .toc li { margin: .15rem 0; }
+.recs a { display: inline-block; min-width: 2.2rem; }
+.expanded { margin-top: .6rem; border-top: 1px dashed var(--line); padding-top: .4rem; }
+.expanded .prov { margin: .6rem 0; }
+@media (max-width: 480px) { html { font-size: 16px; } #search-form { flex-direction: column; } }

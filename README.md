@@ -1,49 +1,38 @@
-# Privacy Law Reference Tool
+# Quick Privacy Searches
 
-Free, static, searchable reference for privacy law. See `SPEC.md` for the full spec.
-Status: build step 1 (skeleton and hosting proof).
+A free, searchable reference for privacy law. Look up a provision by citation
+("GDPR Article 30") or ask a question ("when is a data protection impact assessment
+required?") and get the exact text of the law, with a link to the official source.
 
-## Layout
-- `sources.yaml` - every document, URL, type, jurisdiction, parser
-- `synonyms.yaml` - query expansion (step 4)
-- `topics/` - guided topic YAML files (step 9)
-- `data/raw/` - saved original source files (step 2+)
-- `build/build.py` - static site build (currently a hello page)
-- `.github/workflows/pages.yml` - build and deploy to GitHub Pages
+**Try it: https://billwhert.github.io/quickprivacysearches/**
 
-## Run locally
-```bash
-pip install -r requirements.txt
-python build/build.py
-python -m http.server -d dist 8000   # open http://localhost:8000
-```
+## What it is
 
-## Deploy
-1. Create a **public** GitHub repo and push this folder to `main`.
-2. Repo Settings > Pages > Source: **GitHub Actions**.
-3. The workflow runs on each push; the URL appears in the deploy job
-   (`https://<username>.github.io/<repo>/`).
+- **Exact source text.** Results are the actual words of the law, unmodified.
+  Nothing is written by an AI at the moment you search.
+- **Traceable.** Every result shows its citation, the official source, the version,
+  and the date the text was retrieved.
+- **Private.** There are no accounts, no tracking, and searches run in your browser.
+  Your queries are never sent anywhere.
+- **Free.** It is a static site hosted on GitHub Pages.
 
-## GitHub Pages limits (verify at https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
-As last known: published site <= 1 GB, ~100 GB/month soft bandwidth, ~10 builds/hour soft limit,
-files over 100 MB are rejected by git. Keep generated output well under these.
+## What's covered
 
-## Ingestion pipeline (step 2+)
-```bash
-python build/ingest.py gdpr            # fetch (skipped if raw file present) -> parse -> validate
-python build/ingest.py gdpr --force-fetch   # re-download and compare checksum
-```
-- `data/raw/` - original files unchanged, plus `manifest.json` (URL, checksum, retrieval date)
-- `data/processed/<doc_id>/` - `document.json`, `chunks.json`, `crossrefs.json`
-- `data/reports/<doc_id>_validation.md` - checks and 10-chunk spot-check sample
-- Parsers live in `build/parse_*.py`; the parser is chosen by `parser:` in `sources.yaml`.
+| Law | Status |
+|---|---|
+| GDPR (articles and recitals) | Available |
+| California CCPA/CPRA, CPPA regulations, CalOPPA | Planned |
+| HIPAA Privacy, Security, and Breach Notification Rules | Planned |
 
-## Build and test the site (step 3)
-```bash
-python build/build.py          # writes dist/ (pages + assets/search-data.json)
-python -m http.server -d dist 8000
-npm install && node tests/run_queries.mjs   # acceptance queries against dist/
-```
-- `web/assets/` - search page JS/CSS (`lookup.js` holds citation lookup and query cleanup)
-- `web/vendor/minisearch.js` - vendored search library (MIT)
-- `docs/engine-comparison.md` - why MiniSearch was chosen over Pagefind
+Later: more US state laws, LGPD, PIPEDA, GLBA, and regulator guidance.
+
+## Please note
+
+This is a research aid, not legal advice. Laws change, so always confirm against the
+official source and check the version date shown with each result. Spotted a mistake?
+[Open an issue](https://github.com/billwhert/quickprivacysearches/issues).
+
+## For contributors
+
+Build and development notes are in [docs/DEVELOPING.md](docs/DEVELOPING.md).
+The full project plan is in [SPEC.md](SPEC.md).

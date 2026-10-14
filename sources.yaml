@@ -1,0 +1,42 @@
+# One entry per document. Phase 1 documents; URLs are confirmed at step 2+.
+documents:
+  - doc_id: gdpr
+    title: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+    jurisdiction: EU
+    doc_type: law
+    source_url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    parser: eurlex
+    language: en
+    is_translation: false
+  - doc_id: ccpa
+    title: "California Consumer Privacy Act / CPRA (Cal. Civ. Code 1798.100 et seq.)"
+    jurisdiction: US-CA
+    doc_type: law
+    source_url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article="
+    parser: calcode
+    language: en
+    is_translation: false
+  - doc_id: ccpa_regs
+    title: "CPPA CCPA Regulations (Cal. Code Regs. tit. 11, 7000 et seq.)"
+    jurisdiction: US-CA
+    doc_type: regulation
+    source_url: "https://cppa.ca.gov/regulations/"
+    parser: generic_html
+    language: en
+    is_translation: false
+  - doc_id: caloppa
+    title: "California Online Privacy Protection Act (Cal. Bus. & Prof. Code 22575-22579)"
+    jurisdiction: US-CA
+    doc_type: law
+    source_url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article="
+    parser: calcode
+    language: en
+    is_translation: false
+  - doc_id: hipaa
+    title: "HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164)"
+    jurisdiction: US-Federal
+    doc_type: regulation
+    source_url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C"
+    parser: ecfr
+    language: en
+    is_translation: false

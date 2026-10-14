@@ -54,7 +54,7 @@ function card(c, terms, opts = {}) {
     <div class="text">${renderLines(c.text, terms)}</div>
     <p class="meta">${esc(doc.title)} · ${esc(doc.version_label)} · retrieved ${esc(doc.retrieved_at.slice(0, 10))}</p>
     <div class="actions"><a href="${c.url}">Permalink</a>
-      <a href="${esc(doc.source_url)}">Official source</a>${parentLink}</div>
+      <a href="${esc(c.src || doc.source_url)}">Official source</a>${parentLink}</div>
     <div class="expanded" hidden></div>
   </li>`;
 }

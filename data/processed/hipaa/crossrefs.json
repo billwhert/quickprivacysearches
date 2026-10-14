@@ -1,0 +1,2158 @@
+[
+ {
+  "from_chunk_id": "hipaa:sec:160.103:business-associate",
+  "raw": "164.501",
+  "to_chunk_id": "hipaa:sec:164.501",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.103:business-associate",
+  "raw": "164.504(f)",
+  "to_chunk_id": "hipaa:sec:164.504:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.103:Civil money penalty or penalty",
+  "raw": "160.404",
+  "to_chunk_id": "hipaa:sec:160.404",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.105:0",
+  "raw": "160.104",
+  "to_chunk_id": "hipaa:sec:160.104",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.203:a",
+  "raw": "160.204",
+  "to_chunk_id": "hipaa:sec:160.204",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.204:a",
+  "raw": "160.203(a)",
+  "to_chunk_id": "hipaa:sec:160.203:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.204:c",
+  "raw": "160.203(a)",
+  "to_chunk_id": "hipaa:sec:160.203:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:a",
+  "raw": "160.306",
+  "to_chunk_id": "hipaa:sec:160.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:a",
+  "raw": "160.308",
+  "to_chunk_id": "hipaa:sec:160.308",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:a",
+  "raw": "160.408",
+  "to_chunk_id": "hipaa:sec:160.408",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:a",
+  "raw": "160.410",
+  "to_chunk_id": "hipaa:sec:160.410",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:a",
+  "raw": "160.526",
+  "to_chunk_id": "hipaa:sec:160.526",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:a",
+  "raw": "160.420",
+  "to_chunk_id": "hipaa:sec:160.420",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:b",
+  "raw": "160.306",
+  "to_chunk_id": "hipaa:sec:160.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.312:b",
+  "raw": "160.308",
+  "to_chunk_id": "hipaa:sec:160.308",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.314:b",
+  "raw": "160.526",
+  "to_chunk_id": "hipaa:sec:160.526",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.314:c",
+  "raw": "160.310(c)(3)",
+  "to_chunk_id": "hipaa:sec:160.310:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.316:a",
+  "raw": "160.306",
+  "to_chunk_id": "hipaa:sec:160.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.402:a",
+  "raw": "160.410",
+  "to_chunk_id": "hipaa:sec:160.410",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.402:b",
+  "raw": "164.105(b)",
+  "to_chunk_id": "hipaa:sec:164.105:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.404:a",
+  "raw": "160.406",
+  "to_chunk_id": "hipaa:sec:160.406",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.404:a",
+  "raw": "160.408",
+  "to_chunk_id": "hipaa:sec:160.408",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.404:a",
+  "raw": "160.412",
+  "to_chunk_id": "hipaa:sec:160.412",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.412:0",
+  "raw": "160.410(b)(2)",
+  "to_chunk_id": "hipaa:sec:160.410:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.414:0",
+  "raw": "160.420",
+  "to_chunk_id": "hipaa:sec:160.420",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.420:a",
+  "raw": "160.536",
+  "to_chunk_id": "hipaa:sec:160.536",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.420:a",
+  "raw": "160.404",
+  "to_chunk_id": "hipaa:sec:160.404",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.420:a",
+  "raw": "160.408",
+  "to_chunk_id": "hipaa:sec:160.408",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.420:a",
+  "raw": "160.504",
+  "to_chunk_id": "hipaa:sec:160.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.420:a",
+  "raw": "160.548",
+  "to_chunk_id": "hipaa:sec:160.548",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.420:b",
+  "raw": "160.504",
+  "to_chunk_id": "hipaa:sec:160.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.422:0",
+  "raw": "160.504",
+  "to_chunk_id": "hipaa:sec:160.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.422:0",
+  "raw": "160.416",
+  "to_chunk_id": "hipaa:sec:160.416",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.422:0",
+  "raw": "160.548",
+  "to_chunk_id": "hipaa:sec:160.548",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.504:c",
+  "raw": "160.410(b)(1)",
+  "to_chunk_id": "hipaa:sec:160.410:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.508:c",
+  "raw": "160.410(b)(2)(ii)(B)",
+  "to_chunk_id": "hipaa:sec:160.410:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.518:a",
+  "raw": "160.538",
+  "to_chunk_id": "hipaa:sec:160.538",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.526:c",
+  "raw": "160.504",
+  "to_chunk_id": "hipaa:sec:160.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:b",
+  "raw": "160.410",
+  "to_chunk_id": "hipaa:sec:160.410",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:b",
+  "raw": "160.404",
+  "to_chunk_id": "hipaa:sec:160.404",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:b",
+  "raw": "160.408",
+  "to_chunk_id": "hipaa:sec:160.408",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:b",
+  "raw": "160.412",
+  "to_chunk_id": "hipaa:sec:160.412",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:b",
+  "raw": "164.414(b)",
+  "to_chunk_id": "hipaa:sec:164.414:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:d",
+  "raw": "160.518(a)",
+  "to_chunk_id": "hipaa:sec:160.518:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:d",
+  "raw": "160.540",
+  "to_chunk_id": "hipaa:sec:160.540",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:d",
+  "raw": "160.420",
+  "to_chunk_id": "hipaa:sec:160.420",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:d",
+  "raw": "160.504",
+  "to_chunk_id": "hipaa:sec:160.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.534:d",
+  "raw": "160.518",
+  "to_chunk_id": "hipaa:sec:160.518",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.536:a",
+  "raw": "160.534",
+  "to_chunk_id": "hipaa:sec:160.534",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.536:a",
+  "raw": "160.406",
+  "to_chunk_id": "hipaa:sec:160.406",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.536:a",
+  "raw": "160.408",
+  "to_chunk_id": "hipaa:sec:160.408",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.538:b",
+  "raw": "160.518",
+  "to_chunk_id": "hipaa:sec:160.518",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.540:g",
+  "raw": "160.420",
+  "to_chunk_id": "hipaa:sec:160.420",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.546:d",
+  "raw": "160.548",
+  "to_chunk_id": "hipaa:sec:160.548",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:160.548:e",
+  "raw": "160.410(a)(1)",
+  "to_chunk_id": "hipaa:sec:160.410:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.103:health-care-component",
+  "raw": "164.105(a)(2)(iii)(D)",
+  "to_chunk_id": "hipaa:sec:164.105:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.103:hybrid-entity",
+  "raw": "164.105(a)(2)(iii)(D)",
+  "to_chunk_id": "hipaa:sec:164.105:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.105:a",
+  "raw": "164.314",
+  "to_chunk_id": "hipaa:sec:164.314",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.105:a",
+  "raw": "164.504",
+  "to_chunk_id": "hipaa:sec:164.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.105:a",
+  "raw": "164.316(a)",
+  "to_chunk_id": "hipaa:sec:164.316:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.105:a",
+  "raw": "164.530(i)",
+  "to_chunk_id": "hipaa:sec:164.530:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.105:b",
+  "raw": "164.308(a)(4)(ii)(A)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.105:b",
+  "raw": "164.504(g)",
+  "to_chunk_id": "hipaa:sec:164.504:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:c",
+  "raw": "164.308",
+  "to_chunk_id": "hipaa:sec:164.308",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:c",
+  "raw": "164.310",
+  "to_chunk_id": "hipaa:sec:164.310",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:c",
+  "raw": "164.312",
+  "to_chunk_id": "hipaa:sec:164.312",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:c",
+  "raw": "164.314",
+  "to_chunk_id": "hipaa:sec:164.314",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:c",
+  "raw": "164.316",
+  "to_chunk_id": "hipaa:sec:164.316",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:d",
+  "raw": "164.308",
+  "to_chunk_id": "hipaa:sec:164.308",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:d",
+  "raw": "164.310",
+  "to_chunk_id": "hipaa:sec:164.310",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:d",
+  "raw": "164.312",
+  "to_chunk_id": "hipaa:sec:164.312",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:d",
+  "raw": "164.314",
+  "to_chunk_id": "hipaa:sec:164.314",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:d",
+  "raw": "164.316",
+  "to_chunk_id": "hipaa:sec:164.316",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.306:e",
+  "raw": "164.316(b)(2)(iii)",
+  "to_chunk_id": "hipaa:sec:164.316:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.308:a",
+  "raw": "164.306",
+  "to_chunk_id": "hipaa:sec:164.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.308:a",
+  "raw": "164.306(a)",
+  "to_chunk_id": "hipaa:sec:164.306:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.308:b",
+  "raw": "164.314(a)",
+  "to_chunk_id": "hipaa:sec:164.314:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.310:0",
+  "raw": "164.306",
+  "to_chunk_id": "hipaa:sec:164.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.312:0",
+  "raw": "164.306",
+  "to_chunk_id": "hipaa:sec:164.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.312:a",
+  "raw": "164.308(a)(4)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:a",
+  "raw": "164.308(b)(3)",
+  "to_chunk_id": "hipaa:sec:164.308:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:a",
+  "raw": "164.308(b)(2)",
+  "to_chunk_id": "hipaa:sec:164.308:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:a",
+  "raw": "164.410",
+  "to_chunk_id": "hipaa:sec:164.410",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:a",
+  "raw": "164.504(e)(3)",
+  "to_chunk_id": "hipaa:sec:164.504:e.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:a",
+  "raw": "164.308(b)(4)",
+  "to_chunk_id": "hipaa:sec:164.308:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:b",
+  "raw": "164.504(f)(1)(ii)",
+  "to_chunk_id": "hipaa:sec:164.504:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:b",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.314:b",
+  "raw": "164.504(f)(2)(iii)",
+  "to_chunk_id": "hipaa:sec:164.504:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.316:0",
+  "raw": "164.306",
+  "to_chunk_id": "hipaa:sec:164.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.316:a",
+  "raw": "164.306(b)(2)(i)",
+  "to_chunk_id": "hipaa:sec:164.306:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(1)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(2)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(3)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(4)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(5)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(6)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(7)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(a)(8)",
+  "to_chunk_id": "hipaa:sec:164.308:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.308(b)(1)",
+  "to_chunk_id": "hipaa:sec:164.308:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.310(a)(1)",
+  "to_chunk_id": "hipaa:sec:164.310:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.310(b)",
+  "to_chunk_id": "hipaa:sec:164.310:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.310(c)",
+  "to_chunk_id": "hipaa:sec:164.310:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.310(d)(1)",
+  "to_chunk_id": "hipaa:sec:164.310:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.312",
+  "to_chunk_id": "hipaa:sec:164.312",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.312(a)(1)",
+  "to_chunk_id": "hipaa:sec:164.312:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.312(b)",
+  "to_chunk_id": "hipaa:sec:164.312:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.312(c)(1)",
+  "to_chunk_id": "hipaa:sec:164.312:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.312(d)",
+  "to_chunk_id": "hipaa:sec:164.312:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:appendix-a-to-subpart-c-of-part-164:0",
+  "raw": "164.312(e)(1)",
+  "to_chunk_id": "hipaa:sec:164.312:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.404:a",
+  "raw": "164.406(a)",
+  "to_chunk_id": "hipaa:sec:164.406:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.404:a",
+  "raw": "164.408(a)",
+  "to_chunk_id": "hipaa:sec:164.408:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.404:b",
+  "raw": "164.412",
+  "to_chunk_id": "hipaa:sec:164.412",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.404:d",
+  "raw": "164.502(g)(4)",
+  "to_chunk_id": "hipaa:sec:164.502:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.406:a",
+  "raw": "164.404(a)(2)",
+  "to_chunk_id": "hipaa:sec:164.404:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.406:b",
+  "raw": "164.412",
+  "to_chunk_id": "hipaa:sec:164.412",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.406:c",
+  "raw": "164.404(c)",
+  "to_chunk_id": "hipaa:sec:164.404:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.408:a",
+  "raw": "164.404(a)(2)",
+  "to_chunk_id": "hipaa:sec:164.404:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.408:b",
+  "raw": "164.412",
+  "to_chunk_id": "hipaa:sec:164.412",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.408:b",
+  "raw": "164.404(a)",
+  "to_chunk_id": "hipaa:sec:164.404:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.410:b",
+  "raw": "164.412",
+  "to_chunk_id": "hipaa:sec:164.412",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.410:c",
+  "raw": "164.404(c)",
+  "to_chunk_id": "hipaa:sec:164.404:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.414:a",
+  "raw": "164.530(b)",
+  "to_chunk_id": "hipaa:sec:164.530:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.414:b",
+  "raw": "164.402",
+  "to_chunk_id": "hipaa:sec:164.402",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.500:b",
+  "raw": "164.500",
+  "to_chunk_id": "hipaa:sec:164.500",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.500:b",
+  "raw": "164.501",
+  "to_chunk_id": "hipaa:sec:164.501",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.500:b",
+  "raw": "164.502",
+  "to_chunk_id": "hipaa:sec:164.502",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.500:b",
+  "raw": "164.504",
+  "to_chunk_id": "hipaa:sec:164.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.500:b",
+  "raw": "164.512",
+  "to_chunk_id": "hipaa:sec:164.512",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.500:b",
+  "raw": "164.532",
+  "to_chunk_id": "hipaa:sec:164.532",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.500:b",
+  "raw": "164.534",
+  "to_chunk_id": "hipaa:sec:164.534",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.501:health-care-operations",
+  "raw": "164.502(a)(5)(i)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.501:health-care-operations",
+  "raw": "164.514(g)",
+  "to_chunk_id": "hipaa:sec:164.514:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.501:health-care-operations",
+  "raw": "164.514",
+  "to_chunk_id": "hipaa:sec:164.514",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.501:payment",
+  "raw": "164.502(a)(5)(i)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.506",
+  "to_chunk_id": "hipaa:sec:164.506",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.502(b)",
+  "to_chunk_id": "hipaa:sec:164.502:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.514(d)",
+  "to_chunk_id": "hipaa:sec:164.514:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.530(c)",
+  "to_chunk_id": "hipaa:sec:164.530:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.502(a)(5)(i)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.510",
+  "to_chunk_id": "hipaa:sec:164.510",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.512",
+  "to_chunk_id": "hipaa:sec:164.512",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.509",
+  "to_chunk_id": "hipaa:sec:164.509",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.1",
+  "raw": "164.514(e)",
+  "to_chunk_id": "hipaa:sec:164.514:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.2",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.2",
+  "raw": "164.528",
+  "to_chunk_id": "hipaa:sec:164.528",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.3",
+  "raw": "164.504(e)",
+  "to_chunk_id": "hipaa:sec:164.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.3",
+  "raw": "164.504(e)(2)(i)(A)",
+  "to_chunk_id": "hipaa:sec:164.504:e.2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.4",
+  "raw": "164.524(c)(2)(ii)",
+  "to_chunk_id": "hipaa:sec:164.524:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.508(a)(4)",
+  "to_chunk_id": "hipaa:sec:164.508:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.512(b)",
+  "to_chunk_id": "hipaa:sec:164.512:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.514(e)",
+  "to_chunk_id": "hipaa:sec:164.514:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.512(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.506(a)",
+  "to_chunk_id": "hipaa:sec:164.506:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.502(e)",
+  "to_chunk_id": "hipaa:sec:164.502:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.504(e)",
+  "to_chunk_id": "hipaa:sec:164.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.528",
+  "to_chunk_id": "hipaa:sec:164.528",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:a.5",
+  "raw": "164.512(a)",
+  "to_chunk_id": "hipaa:sec:164.512:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:b",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:b",
+  "raw": "164.512(a)",
+  "to_chunk_id": "hipaa:sec:164.512:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:c",
+  "raw": "164.522(a)(1)",
+  "to_chunk_id": "hipaa:sec:164.522:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:c",
+  "raw": "164.522(a)",
+  "to_chunk_id": "hipaa:sec:164.522:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:d",
+  "raw": "164.514(a)",
+  "to_chunk_id": "hipaa:sec:164.514:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:d",
+  "raw": "164.514",
+  "to_chunk_id": "hipaa:sec:164.514",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:e",
+  "raw": "164.504(e)(1)(i)",
+  "to_chunk_id": "hipaa:sec:164.504:e.1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:e",
+  "raw": "164.504(e)",
+  "to_chunk_id": "hipaa:sec:164.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:g",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:h",
+  "raw": "164.522(b)",
+  "to_chunk_id": "hipaa:sec:164.522:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:i",
+  "raw": "164.520",
+  "to_chunk_id": "hipaa:sec:164.520",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:i",
+  "raw": "164.520(b)(1)(iii)",
+  "to_chunk_id": "hipaa:sec:164.520:b.1.iii",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:i",
+  "raw": "164.520(b)(1)(iii)(A)",
+  "to_chunk_id": "hipaa:sec:164.520:b.1.iii",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.502:j",
+  "raw": "164.512(f)(2)(i)",
+  "to_chunk_id": "hipaa:sec:164.512:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:a",
+  "raw": "164.514(b)(2)(i)",
+  "to_chunk_id": "hipaa:sec:164.514:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:a",
+  "raw": "164.514(b)(2)(i)(B)",
+  "to_chunk_id": "hipaa:sec:164.514:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.1",
+  "raw": "164.502(e)(2)",
+  "to_chunk_id": "hipaa:sec:164.502:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.1",
+  "raw": "164.502(e)",
+  "to_chunk_id": "hipaa:sec:164.502:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.2",
+  "raw": "164.410",
+  "to_chunk_id": "hipaa:sec:164.410",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.2",
+  "raw": "164.502(e)(1)(ii)",
+  "to_chunk_id": "hipaa:sec:164.502:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.2",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.2",
+  "raw": "164.526",
+  "to_chunk_id": "hipaa:sec:164.526",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.2",
+  "raw": "164.528",
+  "to_chunk_id": "hipaa:sec:164.528",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.3",
+  "raw": "164.314(a)(1)",
+  "to_chunk_id": "hipaa:sec:164.314:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.3",
+  "raw": "164.314(a)(2)",
+  "to_chunk_id": "hipaa:sec:164.314:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.3",
+  "raw": "160.103",
+  "to_chunk_id": "hipaa:sec:160.103",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.3",
+  "raw": "164.514(e)(4)",
+  "to_chunk_id": "hipaa:sec:164.514:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.5",
+  "raw": "164.504(e)(2)",
+  "to_chunk_id": "hipaa:sec:164.504:e.2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:e.5",
+  "raw": "164.502(e)(1)(ii)",
+  "to_chunk_id": "hipaa:sec:164.502:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:f",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:f",
+  "raw": "164.502(a)(5)(i)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:f",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:f",
+  "raw": "164.526",
+  "to_chunk_id": "hipaa:sec:164.526",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:f",
+  "raw": "164.528",
+  "to_chunk_id": "hipaa:sec:164.528",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.504:f",
+  "raw": "164.520(b)(1)(iii)(C)",
+  "to_chunk_id": "hipaa:sec:164.520:b.1.iii",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.506:a",
+  "raw": "164.508(a)(2)",
+  "to_chunk_id": "hipaa:sec:164.508:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.506:a",
+  "raw": "164.502(a)(5)(i)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.506:b",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:a",
+  "raw": "164.532",
+  "to_chunk_id": "hipaa:sec:164.532",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:a",
+  "raw": "164.502(a)(2)(ii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:a",
+  "raw": "164.512(a)",
+  "to_chunk_id": "hipaa:sec:164.512:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:a",
+  "raw": "164.512(d)",
+  "to_chunk_id": "hipaa:sec:164.512:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:a",
+  "raw": "164.512(g)(1)",
+  "to_chunk_id": "hipaa:sec:164.512:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:a",
+  "raw": "164.512(j)(1)(i)",
+  "to_chunk_id": "hipaa:sec:164.512:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:a",
+  "raw": "164.501",
+  "to_chunk_id": "hipaa:sec:164.501",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:b",
+  "raw": "164.530(j)",
+  "to_chunk_id": "hipaa:sec:164.530:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.508:c",
+  "raw": "164.520",
+  "to_chunk_id": "hipaa:sec:164.520",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.509:a",
+  "raw": "164.512(d)",
+  "to_chunk_id": "hipaa:sec:164.512:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.509:b",
+  "raw": "164.502(a)(5)(iii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.509:b",
+  "raw": "164.502(a)(5)(iii)(C)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.509:c",
+  "raw": "164.502(a)(5)(iii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.509:d",
+  "raw": "164.502(a)(5)(iii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.512:0",
+  "raw": "164.502(a)(5)(iii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.512:0",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.512:0",
+  "raw": "164.510",
+  "to_chunk_id": "hipaa:sec:164.510",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.512:0",
+  "raw": "164.509",
+  "to_chunk_id": "hipaa:sec:164.509",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.512:c",
+  "raw": "164.502(a)(5)(iii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.512:i",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.512:j",
+  "raw": "164.501",
+  "to_chunk_id": "hipaa:sec:164.501",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:d",
+  "raw": "164.502(b)",
+  "to_chunk_id": "hipaa:sec:164.502:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:d",
+  "raw": "164.512",
+  "to_chunk_id": "hipaa:sec:164.512",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:d",
+  "raw": "164.512(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:f",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:f",
+  "raw": "164.520(b)(1)(iii)(A)",
+  "to_chunk_id": "hipaa:sec:164.520:b.1.iii",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:g",
+  "raw": "164.502(a)(5)(i)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:h",
+  "raw": "164.510",
+  "to_chunk_id": "hipaa:sec:164.510",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:h",
+  "raw": "164.512(f)(1)(ii)(C)",
+  "to_chunk_id": "hipaa:sec:164.512:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:h",
+  "raw": "164.512(i)(2)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:h",
+  "raw": "164.512(i)(2)(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.514:h",
+  "raw": "164.512(j)",
+  "to_chunk_id": "hipaa:sec:164.512:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:a",
+  "raw": "164.504(a)",
+  "to_chunk_id": "hipaa:sec:164.504:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.ii",
+  "raw": "160.202",
+  "to_chunk_id": "hipaa:sec:160.202",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.ii",
+  "raw": "164.508(a)(2)",
+  "to_chunk_id": "hipaa:sec:164.508:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.ii",
+  "raw": "164.508(b)(5)",
+  "to_chunk_id": "hipaa:sec:164.508:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.ii",
+  "raw": "164.502(a)(5)(iii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.ii",
+  "raw": "164.509",
+  "to_chunk_id": "hipaa:sec:164.509",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iii",
+  "raw": "164.514(f)(1)",
+  "to_chunk_id": "hipaa:sec:164.514:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iii",
+  "raw": "164.504(f)",
+  "to_chunk_id": "hipaa:sec:164.504:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iv",
+  "raw": "164.522(a)",
+  "to_chunk_id": "hipaa:sec:164.522:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iv",
+  "raw": "164.522(a)(1)(vi)",
+  "to_chunk_id": "hipaa:sec:164.522:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iv",
+  "raw": "164.522(b)",
+  "to_chunk_id": "hipaa:sec:164.522:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iv",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iv",
+  "raw": "164.526",
+  "to_chunk_id": "hipaa:sec:164.526",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.iv",
+  "raw": "164.528",
+  "to_chunk_id": "hipaa:sec:164.528",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.v",
+  "raw": "164.530(i)(2)(ii)",
+  "to_chunk_id": "hipaa:sec:164.530:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.1.vii",
+  "raw": "164.530(a)(1)(ii)",
+  "to_chunk_id": "hipaa:sec:164.530:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.2",
+  "raw": "164.512(j)(1)(i)",
+  "to_chunk_id": "hipaa:sec:164.512:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:b.2",
+  "raw": "164.530(i)(2)(ii)",
+  "to_chunk_id": "hipaa:sec:164.530:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.520:e",
+  "raw": "164.530(j)",
+  "to_chunk_id": "hipaa:sec:164.530:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.522:a",
+  "raw": "164.510(b)",
+  "to_chunk_id": "hipaa:sec:164.510:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.522:a",
+  "raw": "164.502(a)(2)(ii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.522:a",
+  "raw": "164.510(a)",
+  "to_chunk_id": "hipaa:sec:164.510:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.522:a",
+  "raw": "164.512",
+  "to_chunk_id": "hipaa:sec:164.512",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.522:a",
+  "raw": "160.530(j)",
+  "to_chunk_id": "hipaa:sec:160.530",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.524:d",
+  "raw": "164.530(d)",
+  "to_chunk_id": "hipaa:sec:164.530:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.524:d",
+  "raw": "160.306",
+  "to_chunk_id": "hipaa:sec:160.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.524:d",
+  "raw": "164.530(a)(1)(ii)",
+  "to_chunk_id": "hipaa:sec:164.530:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.524:e",
+  "raw": "164.530(j)",
+  "to_chunk_id": "hipaa:sec:164.530:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.526:a",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.526:d",
+  "raw": "164.530(d)",
+  "to_chunk_id": "hipaa:sec:164.530:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.526:d",
+  "raw": "160.306",
+  "to_chunk_id": "hipaa:sec:160.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.526:d",
+  "raw": "164.530(a)(1)(ii)",
+  "to_chunk_id": "hipaa:sec:164.530:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.526:f",
+  "raw": "164.530(j)",
+  "to_chunk_id": "hipaa:sec:164.530:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.506",
+  "to_chunk_id": "hipaa:sec:164.506",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.502",
+  "to_chunk_id": "hipaa:sec:164.502",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.510",
+  "to_chunk_id": "hipaa:sec:164.510",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.512(k)(2)",
+  "to_chunk_id": "hipaa:sec:164.512:k",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.512(k)(5)",
+  "to_chunk_id": "hipaa:sec:164.512:k",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.514(e)",
+  "to_chunk_id": "hipaa:sec:164.514:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:a",
+  "raw": "164.512(d)",
+  "to_chunk_id": "hipaa:sec:164.512:d",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:b",
+  "raw": "164.502(a)(2)(ii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:b",
+  "raw": "164.512",
+  "to_chunk_id": "hipaa:sec:164.512",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:b",
+  "raw": "164.512(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.528:d",
+  "raw": "164.530(j)",
+  "to_chunk_id": "hipaa:sec:164.530:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:a",
+  "raw": "164.520",
+  "to_chunk_id": "hipaa:sec:164.520",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:e",
+  "raw": "164.502(j)",
+  "to_chunk_id": "hipaa:sec:164.502:j",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:g",
+  "raw": "160.316",
+  "to_chunk_id": "hipaa:sec:160.316",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:h",
+  "raw": "160.306",
+  "to_chunk_id": "hipaa:sec:160.306",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:i",
+  "raw": "164.520",
+  "to_chunk_id": "hipaa:sec:164.520",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:i",
+  "raw": "164.520(b)(1)(v)(C)",
+  "to_chunk_id": "hipaa:sec:164.520:b.1.v",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:i",
+  "raw": "164.520(b)(3)",
+  "to_chunk_id": "hipaa:sec:164.520:b.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:i",
+  "raw": "164.520(c)",
+  "to_chunk_id": "hipaa:sec:164.520:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:j",
+  "raw": "164.414(b)",
+  "to_chunk_id": "hipaa:sec:164.414:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:k",
+  "raw": "164.504(a)",
+  "to_chunk_id": "hipaa:sec:164.504:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.530:k",
+  "raw": "164.504(f)",
+  "to_chunk_id": "hipaa:sec:164.504:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:a",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:a",
+  "raw": "164.512(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:a",
+  "raw": "164.512(i)(1)(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:b",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:b",
+  "raw": "164.522(a)",
+  "to_chunk_id": "hipaa:sec:164.522:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:c",
+  "raw": "164.508",
+  "to_chunk_id": "hipaa:sec:164.508",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:c",
+  "raw": "164.512(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:c",
+  "raw": "164.522(a)",
+  "to_chunk_id": "hipaa:sec:164.522:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:c",
+  "raw": "164.512(i)(1)(i)",
+  "to_chunk_id": "hipaa:sec:164.512:i",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:d",
+  "raw": "164.308(b)",
+  "to_chunk_id": "hipaa:sec:164.308:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:d",
+  "raw": "164.314(a)",
+  "to_chunk_id": "hipaa:sec:164.314:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:d",
+  "raw": "164.502(e)",
+  "to_chunk_id": "hipaa:sec:164.502:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:d",
+  "raw": "164.504(e)",
+  "to_chunk_id": "hipaa:sec:164.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.308(b)",
+  "to_chunk_id": "hipaa:sec:164.308:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.314(a)",
+  "to_chunk_id": "hipaa:sec:164.314:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.502(e)",
+  "to_chunk_id": "hipaa:sec:164.502:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.504(e)",
+  "to_chunk_id": "hipaa:sec:164.504",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.524",
+  "to_chunk_id": "hipaa:sec:164.524",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.526",
+  "to_chunk_id": "hipaa:sec:164.526",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.528",
+  "to_chunk_id": "hipaa:sec:164.528",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:e",
+  "raw": "164.530(f)",
+  "to_chunk_id": "hipaa:sec:164.530:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:f",
+  "raw": "164.514(e)",
+  "to_chunk_id": "hipaa:sec:164.514:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "hipaa:sec:164.532:f",
+  "raw": "164.502(a)(5)(ii)",
+  "to_chunk_id": "hipaa:sec:164.502:a.5",
+  "external": false,
+  "own_space": true
+ }
+]

@@ -22,13 +22,17 @@ function topIds(raw) {
 const SPEC = [
   ["Spec 1  GDPR reference lookup", "GDPR Article 30", ["gdpr:art:30:"]],
   ["Spec 2  CCPA reference lookup", "1798.105", ["ccpa:sec:1798.105:a"]],
+  ["Spec 3  HIPAA reference lookup", "164.502(b)", ["hipaa:sec:164.502:b"]],
   ["Spec 4  DPIA required", "When is a DPIA required under GDPR?", ["gdpr:art:35:1", "gdpr:art:35:3"]],
   ["Spec 5  record of processing", "What must a record of processing activities contain?", ["gdpr:art:30:1", "gdpr:art:30:2"]],
   ["Spec 6  exceptions to right to delete", "What are the exceptions to the CCPA right to delete?", ["ccpa:sec:1798.105:d"]],
+  ["Spec 7  HIPAA minimum necessary", "What is the HIPAA minimum necessary standard?", ["hipaa:sec:164.502:b", "hipaa:sec:164.514:d"]],
   ["Spec 8  DSAR deadline", "What is the deadline to respond to a data subject access request under GDPR?", ["gdpr:art:12:3", "gdpr:art:15:"]],
   ["Spec 9  define sell and share", "How does CCPA define “sell” and “share”?",
     ["ccpa:sec:1798.140:ad", "ccpa:sec:1798.140:ah"], { all: true, top: 5 }],
-  ["Spec 10 breach timelines (GDPR part)", "What are the breach notification timelines under GDPR vs. HIPAA?", ["gdpr:art:33:1"]],
+  ["Spec 10 breach timelines, both laws", "What are the breach notification timelines under GDPR vs. HIPAA?",
+    ["gdpr:art:33:1", "hipaa:sec:164.404", "hipaa:sec:164.408", "hipaa:sec:164.410"], { groups: [[0], [1, 2, 3]], top: 6 }],
+  ["Spec 11 business associate", "What counts as a “business associate” under HIPAA?", ["hipaa:sec:160.103:business-associate"]],
   ["Spec 12 lawful bases", "What are the lawful bases for processing under GDPR?", ["gdpr:art:6:1"]],
   ["Spec 13 CCPA privacy notice contents", "What must a CCPA privacy notice include?",
     ["ccpa:sec:1798.130:a", "ccpa:sec:1798.100:a", "ccpa_regs:sec:7011", "ccpa_regs:sec:7012"]],
@@ -76,8 +80,32 @@ const EXTRA = [
   ["CCPA enforcement fines", "administrative fine for violating the CCPA", ["ccpa:sec:1798.155", "ccpa:sec:1798.199.90"]],
   ["CCPA risk assessment", "when must a business conduct a risk assessment", ["ccpa_regs:sec:7150"]],
   ["CCPA verification of requests", "how to verify a consumer request", ["ccpa_regs:sec:7060"]],
+  ["HIPAA citation, section only", "164.524", ["hipaa:sec:164.524:a"]],
+  ["HIPAA citation with form", "45 CFR 164.404(b)", ["hipaa:sec:164.404:b"]],
+  ["HIPAA citation § 160.103", "§ 160.103", ["hipaa:sec:160.103:0"]],
+  ["HIPAA patient access", "how can a patient get a copy of their medical records", ["hipaa:sec:164.524"]],
+  ["HIPAA de-identification", "how do you de-identify health data", ["hipaa:sec:164.514"]],
+  ["HIPAA BAA", "what must a business associate agreement contain", ["hipaa:sec:164.504:e", "hipaa:sec:164.502:e", "hipaa:sec:164.314"]],
+  ["HIPAA notice of privacy practices", "what must a notice of privacy practices include", ["hipaa:sec:164.520"]],
+  ["HIPAA security risk analysis", "security risk analysis requirement", ["hipaa:sec:164.308:a"]],
+  ["HIPAA breach media notice", "when must a breach be reported to the media", ["hipaa:sec:164.406"]],
+  ["HIPAA breach to HHS", "breach notification to the Secretary of HHS", ["hipaa:sec:164.408"]],
+  ["HIPAA civil money penalties", "hipaa civil money penalty amounts", ["hipaa:sec:160.404", "hipaa:sec:160.408"]],
+  ["HIPAA psychotherapy notes", "psychotherapy notes authorization", ["hipaa:sec:164.508:a", "hipaa:sec:164.501"]],
+  ["HIPAA family members", "can a provider share patient information with a family member", ["hipaa:sec:164.510"]],
+  ["HIPAA encryption safeguard", "encryption of ePHI technical safeguards", ["hipaa:sec:164.312"]],
+  ["HIPAA training", "workforce training on privacy policies", ["hipaa:sec:164.530:b", "hipaa:sec:164.308:a.5"]],
+  ["HIPAA who is covered", "who is a covered entity", ["hipaa:sec:160.103:covered-entity", "hipaa:sec:160.102"]],
   ["CCPA response deadline", "how long to respond to a request to delete", ["ccpa_regs:sec:7021", "ccpa:sec:1798.130:a"]],
 ];
+
+function filterTest() {
+  const q = "HIPAA breach notification requirements";
+  const { ids } = topIds(q);
+  const ok = ids.length > 0 && ids.every(i => i.startsWith("hipaa:"));
+  console.log(`${ok ? "PASS" : "FAIL"}  Spec 19 HIPAA filter returns only HIPAA: "${q}" (${ids.length} results)`);
+  return ok ? 1 : 0;
+}
 
 function run(title, tests) {
   console.log(`\n== ${title} ==`);
@@ -87,6 +115,7 @@ function run(title, tests) {
     const top = ids.slice(0, opt.top || 3);
     let ok;
     if (exp.length === 0) ok = ids.length === 0 && r.messages.length > 0;
+    else if (opt.groups) ok = opt.groups.every(g => g.some(i => top.some(t => t.startsWith(exp[i]))));
     else if (opt.all) ok = exp.every(e => top.some(t => t.startsWith(e)));
     else ok = top.some(t => exp.some(e => t.startsWith(e)));
     if (ok) pass++;
@@ -97,7 +126,9 @@ function run(title, tests) {
   return [pass, tests.length];
 }
 
-const [p1, n1] = run("Spec acceptance tests (applicable to loaded laws)", SPEC);
+const [p1a, n1a] = run("Spec acceptance tests (applicable to loaded laws)", SPEC);
+const f19 = filterTest();
+const p1 = p1a + f19, n1 = n1a + 1;
 const [p2, n2] = run("Extra queries", EXTRA);
 console.log(`\nTotal ${p1 + p2}/${n1 + n2}`);
 process.exitCode = p1 === n1 ? 0 : 1;

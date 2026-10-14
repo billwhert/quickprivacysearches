@@ -68,10 +68,10 @@ def doc_layout(parts: list, side: str) -> str:
     return f'<div class="doc-layout"><article>{"".join(parts)}</article>{side}</div>'
 
 
-def side_panel(doc: dict, nav_title: str = "", nav_items: list = None) -> str:
+def side_panel(doc: dict, nav_title: str = "", nav_items: list = None, src: str = "") -> str:
     out = ['<aside class="side">',
            '<div class="side-card"><h3>Source</h3>',
-           f'<p><a href="{e(doc["source_url"])}">Official text</a></p>',
+           f'<p><a href="{e(src or doc["source_url"])}">Official text</a></p>',
            f'<p class="muted">{e(doc["version_label"])}<br>Retrieved {e(doc["retrieved_at"][:10])}</p></div>']
     if nav_items:
         out.append(f'<div class="side-card"><h3>{e(nav_title)}</h3><ul class="side-nav">'
@@ -166,7 +166,7 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         title = f'{a["section_ref"]} - {a["heading"]}' if a["heading"] else a["section_ref"]
         nav_title = "In this article" if a["kind"] == "article" else "In this section"
         (d / "index.html").write_text(
-            page(title, doc_layout(parts, side_panel(doc, nav_title, nav_items)), rel, docs, doc_id),
+            page(title, doc_layout(parts, side_panel(doc, nav_title, nav_items, a["source_url"])), rel, docs, doc_id),
             encoding="utf-8")
 
     for i, r in enumerate(recitals):

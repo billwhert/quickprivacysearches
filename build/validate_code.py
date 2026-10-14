@@ -24,18 +24,23 @@ def validate_code(doc: dict, chunks: list[dict], toc: list[str], plain: str, cro
 
     # label continuity among top-level subdivisions of each section
     bad = {}
+    import re
+    range_re = re.compile(r"^\((\w+)\)\s*[–—-]\s*\((\w+)\)")  # "(b)-(d) [Reserved]"
     for s in secs:
-        labels = []
+        labels = []                      # (label, last label it covers)
         for c in kids:
-            if c["parent_chunk_id"] != s["chunk_id"]:
+            if c["parent_chunk_id"] != s["chunk_id"] or c["kind"] == "definition":
                 continue
             lab = c["number"].split(".")[0]
-            if lab != "0" and (not labels or labels[-1] != lab):
-                labels.append(lab)
-        for prev, cur in zip(labels, labels[1:]):
-            style = "digit" if prev.isdigit() else ("upper" if prev.isupper() else "lower")
-            if cur not in pc.successors(style, prev):
-                bad.setdefault(s["number"], []).append(f"{prev}->{cur}")
+            if lab != "0" and (not labels or labels[-1][0] != lab):
+                m = range_re.match(c["text"])    # "(b)-(d) [Reserved]" covers b through d
+                labels.append((lab, m.group(2) if m and m.group(1) == lab else lab))
+        for (_, prev_end), (cur, _) in zip(labels, labels[1:]):
+            if not (prev_end.isalnum() and cur.isalnum()):
+                continue
+            style = "digit" if prev_end.isdigit() else ("upper" if prev_end.isupper() else "lower")
+            if cur not in pc.successors(style, prev_end):
+                bad.setdefault(s["number"], []).append(f"{prev_end}->{cur}")
     check("Top-level subdivision labels run in sequence (no gaps)", not bad, str(bad))
 
     empty = [c["chunk_id"] for c in kids if len(c["text"].strip()) < 3]
@@ -49,7 +54,9 @@ def validate_code(doc: dict, chunks: list[dict], toc: list[str], plain: str, cro
     check("Every parent_chunk_id resolves",
           all(c["parent_chunk_id"] in idset for c in kids if c["parent_chunk_id"]))
 
-    miss = [c["chunk_id"] for c in kids if norm(c["text"]) not in plain]
+    # table rows are rendered with " | " between cells; the source has no such separator
+    miss = [c["chunk_id"] for c in kids if norm(c["text"]) not in plain
+            and norm(c["text"].replace(" | ", " ")) not in plain]
     check("Every chunk's text appears verbatim in the saved source file", not miss,
           f"{len(miss)} missing: {miss[:8]}")
     if doc.get("profile", {}).get("definition_sections"):

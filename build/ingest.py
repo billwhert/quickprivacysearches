@@ -35,6 +35,20 @@ def ingest(doc_id: str, force_fetch: bool = False) -> bool:
         refs = crossrefs_code.extract(chunks, ids, doc_id)
         plain = validate.norm(" ".join(parse_code.raw_lines(raw_path)))
         result = validate_code.validate_code(doc, chunks, toc, plain, refs, ids)
+    elif doc["parser"] == "ecfr":
+        import crossrefs_ecfr
+        import lxml.html
+        import parse_ecfr
+        import validate_code
+        doc = {**doc, "version_label": doc["version_label"].replace("{ECFR_DATE}", manifest["ecfr_date"]),
+               "effective_date": manifest["ecfr_date"]}
+        chunks, toc = parse_ecfr.parse(manifest["files"], doc, manifest["retrieved_at"], ROOT)
+        ids = {c["chunk_id"] for c in chunks} | all_loaded_ids(doc_id)
+        refs = crossrefs_ecfr.extract(chunks, ids, doc_id)
+        plain = validate.norm(" ".join(
+            lxml.html.fromstring((ROOT / f["html"]).read_text(encoding="utf-8")).text_content()
+            for f in manifest["files"].values()))
+        result = validate_code.validate_code(doc, chunks, toc, plain, refs, ids)
     elif doc["parser"] == "eurlex":
         raw_text = raw_path.read_text(encoding="utf-8")
         chunks = parse_eurlex.parse(raw_text, doc, manifest["retrieved_at"])

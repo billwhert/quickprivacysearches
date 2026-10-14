@@ -39,5 +39,32 @@
   "retrieved_at": "2026-10-14T13:20:00Z",
   "last_checked_at": "2026-10-14T13:20:00Z",
   "fetch_method": "Text of the rendered leginfo.legislature.ca.gov page (BPC Division 8, Chapter 22), captured via a browser."
+ },
+ "hipaa": {
+  "doc_id": "hipaa",
+  "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C",
+  "fetch_url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/2026-10-09/title-45?part=160",
+  "raw_path": "data/raw/hipaa_160.html",
+  "files": {
+   "160": {
+    "html": "data/raw/hipaa_160.html",
+    "html_sha256": "5b3955ffd436b360d7b34ef31ddb91fb7f9a95370650de083de4b98b371f5d14",
+    "structure": "data/raw/hipaa_160_structure.json",
+    "structure_sha256": "a297fee336d2b2a41eaff814f674a32e1b3a01e6d28bb3aff1cba6aaf1cfe0bf",
+    "bytes": 244576
+   },
+   "164": {
+    "html": "data/raw/hipaa_164.html",
+    "html_sha256": "10bdd3d525701dc08fdc1c78b4807608680c9c6a1720b7578f107cc46bc02535",
+    "structure": "data/raw/hipaa_164_structure.json",
+    "structure_sha256": "9e610e450d92fcc2debef6a9ed23e0a68a5566d00d2378f7a179c68ce152b5a9",
+    "bytes": 611528
+   }
+  },
+  "ecfr_date": "2026-10-09",
+  "bytes": 856104,
+  "checksum_sha256": "c74a206eee1f3a199d0aa9a07dedffcaa449471ef45f29aac50e614e0186d36c",
+  "retrieved_at": "2026-10-14T13:36:00Z",
+  "last_checked_at": "2026-10-14T13:36:00Z"
  }
 }

@@ -24,7 +24,7 @@ required?") and get the exact text of the law, with a link to the official sourc
 | California CCPA/CPRA (Civil Code 1798.100 et seq.) | Available |
 | CPPA CCPA regulations (11 CCR 7000 et seq.) | Available |
 | California Online Privacy Protection Act (CalOPPA) | Available |
-| HIPAA Privacy, Security, and Breach Notification Rules | Planned |
+| HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164) | Available |
 
 Later: more US state laws, LGPD, PIPEDA, GLBA, and regulator guidance.
 

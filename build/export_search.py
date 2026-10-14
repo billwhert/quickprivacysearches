@@ -35,6 +35,7 @@ def export() -> dict:
                 "ref": c["section_ref"], "heading": c["heading"],
                 "term": c.get("defined_term", ""), "text": c["text"], "lead": c.get("lead_in", ""),
                 "url": c["permalink"], "hier": c["hierarchy"], "parent": c["parent_chunk_id"],
+                "src": c["source_url"], "sub": c.get("subheading", ""),
             })
     out = {"chunks": chunks, "articles": parents, "docs": docs}
     write_json(DIST / "assets" / "search-data.json", out)

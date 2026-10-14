@@ -39,11 +39,11 @@ const hasPhrase = (padded, phrase) => padded.includes(" " + normalize(phrase).tr
 
 export const INDEX_OPTIONS = {
   idField: "id",
-  fields: ["term", "heading", "ref", "text"],
+  fields: ["term", "heading", "sub", "ref", "text"],
   processTerm: t => { t = t.toLowerCase().replace(/'s$/, ""); return STOPWORDS.has(t) ? null : stem(t); },
 };
 export const SEARCH_OPTIONS = {
-  boost: { term: 4, heading: 3, ref: 2, text: 1 }, prefix: false, fuzzy: 0.15, combineWith: "OR",
+  boost: { term: 4, heading: 3, sub: 3, ref: 2, text: 1 }, prefix: false, fuzzy: 0.15, combineWith: "OR",
   bm25: { k: 1.2, b: 0.4, d: 0.5 }, // long provisions (many lettered points) are penalised less than default
 };
 const EXPANSION_WEIGHT = 0.7;      // synonym matches count a bit less than the visitor's own words
@@ -52,6 +52,7 @@ const MAX_PHRASE_WORDS = 5;
 const DIVERSITY_MIN_RATIO = 0.5;  // best-of-each-law is promoted if it scores at least this share of the top hit
 const MIN_TERM_WEIGHT = 0.3;  // floor for ubiquitous words
 const RARE_IDF = 3.2;         // ln(N/df) at or above which a word has full weight
+const EXACT_TERM_BOOST = 3;         // the whole question is a defined term: "who is a covered entity"
 const QUOTED_TERM_BOOST = 2.5;      // "define 'sell'" -> the definition of Sell
 const DEFINITION_DEFAULT_PENALTY = 0.7; // operative rules before definitions unless a definition is asked for
 const DEFINITION_INTENT_BOOST = 1.3; // "definition of ..." -> definition chunks
@@ -63,16 +64,18 @@ const ART = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:art(?:icle)?s?\.?\s*)(\d{1,3})\s*(?:\(\
 const RCT = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:recital|rec\.?)\s*\(?(\d{1,3})\)?\s*$/i;
 // Code sections: "1798.105", "Civ. Code 1798.140(ad)(1)", "section 1798.100(a)", "§ 7011(a)", "11 CCR 7025", "22575(b)"
 const CODE = new RegExp(
-  "^\\s*(?:(?:ccpa|cpra|cppa|caloppa|ccr|regs?|regulations?)\\s*[,:-]?\\s*)?" +
+  "^\\s*(?:(?:ccpa|cpra|cppa|caloppa|hipaa|ccr|regs?|regulations?)\\s*[,:-]?\\s*)?" +
+  "(?:(?:45\\s*)?c\\.?f\\.?r\\.?\\s*,?\\s*)?" +
   "(?:(?:cal(?:ifornia)?\\.?\\s*)?(?:civ(?:il)?\\.?|bus(?:iness)?\\.?\\s*(?:&|and)?\\s*prof(?:essions)?\\.?)\\s*code\\s*,?\\s*)?" +
   "(?:(?:11\\s*)?c\\.?c\\.?r\\.?\\s*,?\\s*)?" +
   "(?:(?:sections?|secs?\\.?|§+)\\s*)?" +
-  "(\\d{4,5}(?:\\.\\d+){0,2})\\s*((?:\\(\\s*[a-zA-Z0-9]{1,3}\\s*\\)\\s*)*)\\s*$", "i");
+  "(\\d{4,5}(?:\\.\\d+){0,2}|\\d{3}\\.\\d{3})\\s*((?:\\(\\s*[a-zA-Z0-9]{1,3}\\s*\\)\\s*)*)\\s*$", "i");
 
 function docForNumber(num) {
   if (/^1798\./.test(num)) return "ccpa";
   if (/^7\d{3}$/.test(num)) return "ccpa_regs";
   if (/^2257\d$/.test(num)) return "caloppa";
+  if (/^16[04]\.\d{3}$/.test(num)) return "hipaa";
   return null;
 }
 
@@ -137,7 +140,9 @@ export function analyzeQuery(raw, syn, loadedDocs) {
   const jurWords = new Set();
   for (const j of syn.jurisdictions) {
     const hit = j.words.filter(w => hasPhrase(padded, w));
-    if (hit.length) {
+    // topical phrases ("covered entity") also point to a law but remain part of the question
+    const topical = (j.topical || []).filter(w => hasPhrase(padded, w));
+    if (hit.length || topical.length) {
       mentioned.push(j);
       hit.forEach(w => normalize(w).trim().split(" ").forEach(x => jurWords.add(x)));
     }
@@ -260,7 +265,7 @@ export function search(engine, data, syn, raw, opts = {}) {
   for (const [id, score] of ranked) {
     const c = byId.get(id);
     if (q.filterDocs.length && !q.filterDocs.includes(c.doc)) continue;
-    const hay = normalize(`${c.heading} ${c.term} ${c.text}`);
+    const hay = normalize(`${c.heading} ${c.sub || ""} ${c.term} ${c.text}`);
     let longest = 0;
     for (const ph of phrases) {
       const n = ph.split(" ").length;
@@ -268,6 +273,10 @@ export function search(engine, data, syn, raw, opts = {}) {
     }
     let s = score * (1 + 0.2 * Math.max(0, longest - 1));
     if (c.kind === "paragraph" && c.n === 1) s *= FIRST_PARAGRAPH_BONUS;
+    if (c.term && q.terms.length) {
+      const asked = q.terms.join(" ");
+      if (c.term.split(";").some(t => normalize(t).trim() === asked)) s *= EXACT_TERM_BOOST;
+    }
     if (c.term) {
       const termHay = normalize(c.term);
       if (q.quoted.some(t => termHay.includes(" " + t + " ") || t.split(" ").every(w => termHay.includes(" " + w)))) s *= QUOTED_TERM_BOOST;
@@ -279,14 +288,16 @@ export function search(engine, data, syn, raw, opts = {}) {
   final.sort((a, b) => b.score - a.score);
   // A question that names no law: after the best match, show the best match from each other law
   // (if it is nearly as good) so no single law fills the first screen.
-  if (!q.filterDocs.length && final.length) {
+  if ((!q.filterDocs.length || q.filterDocs.length > 1) && final.length) {
     const top = final[0].score;
     const picked = new Set([final[0].id]);
     const head = [final[0]];
     const seenDocs = new Set([byId.get(final[0].id).doc]);
+    // the visitor named several laws ("GDPR vs. HIPAA"): show each one, however it scores
+    const named = new Set(q.filterDocs);
     for (const r of final) {
       const d = byId.get(r.id).doc;
-      if (!seenDocs.has(d) && r.score >= top * DIVERSITY_MIN_RATIO) {
+      if (!seenDocs.has(d) && (named.has(d) || r.score >= top * DIVERSITY_MIN_RATIO)) {
         head.push(r); picked.add(r.id); seenDocs.add(d);
       }
     }

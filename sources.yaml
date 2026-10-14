@@ -83,9 +83,24 @@ documents:
       default_title: "Internet Privacy Requirements"
   - doc_id: hipaa
     title: "HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164)"
+    short_name: HIPAA
     jurisdiction: US-Federal
     doc_type: regulation
     source_url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C"
     parser: ecfr
+    ecfr_title: 45
+    # Text from the eCFR renderer API; the official structure (table of contents) from the
+    # versioner API is saved alongside it and used to validate the section list.
+    parts:
+      - part: 160
+        fetch_url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/{ECFR_DATE}/title-45?part=160"
+        structure_url: "https://www.ecfr.gov/api/versioner/v1/structure/{ECFR_DATE}/title-45.json?part=160"
+      - part: 164
+        fetch_url: "https://www.ecfr.gov/api/renderer/v1/content/enhanced/{ECFR_DATE}/title-45?part=164"
+        structure_url: "https://www.ecfr.gov/api/versioner/v1/structure/{ECFR_DATE}/title-45.json?part=164"
     language: en
     is_translation: false
+    version_label: "Electronic Code of Federal Regulations, 45 CFR Parts 160 and 164, current as of {ECFR_DATE}"
+    license_note: "Works of the US Government are in the public domain. Source: Electronic Code of Federal Regulations (eCFR), Office of the Federal Register. Note: the eCFR is an unofficial editorial compilation; the official CFR is published annually by the Government Publishing Office. Confirm wording at step 11."
+    profile:
+      definition_sections: ["160.103", "164.103", "164.304", "164.402", "164.501"]

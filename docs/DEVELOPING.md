@@ -69,3 +69,10 @@ citation that happens to start a wrapped line is never mistaken for a heading.
 Sources that block scripted downloads (the California Legislature's leginfo site does) can use
 `fetch_method: manual`: save the text under `data/raw/` and describe how it was captured in
 `fetch_note`. The manifest records the checksum and capture date.
+
+## Federal regulations from the eCFR
+Documents with `parser: ecfr` list their `parts` in `sources.yaml`. `build/fetch_ecfr.py` saves,
+for each part, the eCFR renderer HTML and the official structure JSON (the table of contents),
+all from one resolved date. `build/parse_ecfr.py` nests paragraphs by eCFR's indent levels and
+labels them from the paragraph ids, and validation checks the parsed sections against the
+official structure list. Each result links to the section on ecfr.gov.

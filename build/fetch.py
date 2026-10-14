@@ -14,6 +14,9 @@ def now() -> str:
 
 def fetch(doc_id: str, force: bool = False) -> dict:
     doc = load_sources()[doc_id]
+    if doc.get("parts"):
+        from fetch_ecfr import fetch_ecfr
+        return fetch_ecfr(doc_id, doc, force)
     manifest = read_json(MANIFEST) if MANIFEST.exists() else {}
     path = RAW / f"{doc_id}.{doc.get('raw_ext', 'html')}"
     if doc.get("fetch_method") == "manual":

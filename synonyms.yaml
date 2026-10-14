@@ -182,6 +182,87 @@ synonyms:
   - terms: ["charge more", "charge me more", "higher price", "different price", "price difference", discriminate, discrimination, penalize, penalise, retaliate, retaliation, "pay more", "worse service", "deny service", "deny me"]
     expand: ["discriminate against a consumer", "price or service difference", "no retaliation"]
 
+  # ---- HIPAA (45 CFR Parts 160 and 164) ----
+  - terms: [phi, ephi, "health information", "patient data", "patient information", "medical records", "medical record", "patient records", "health records"]
+    weight: 0.3   # generic vocabulary mapping (PHI appears in most HIPAA provisions)
+    expand: ["protected health information"]
+
+  - terms: [baa, baas, "business associate agreement", "business associate agreements", "business associate contract", "vendor agreement for phi"]
+    expand: ["business associate contracts", "satisfactory assurances", "business associate"]
+
+  - terms: ["minimum necessary", "need to know", "limit disclosure", "limit phi"]
+    expand: ["minimum necessary", "reasonable efforts to limit protected health information to the minimum necessary"]
+
+  - terms: ["patient access", "access to my records", "get my medical records", "copy of my records", "request my records", "right of access", "access my health information", "get a copy", "obtain a copy", "request a copy", "copy of their", "copy of my", "copy of the"]
+    expand: ["access of individuals to protected health information", "right of access to inspect and obtain a copy of protected health information"]
+
+  - terms: ["notice of privacy practices", npp, "privacy notice for patients", "hipaa notice"]
+    expand: ["notice of privacy practices for protected health information"]
+
+  - terms: ["de-identification", "deidentification", "de-identified", "deidentified", "de identified", "safe harbor", "expert determination", anonymize, anonymise]
+    expand: ["de-identification of protected health information", "standard: de-identification", "safe harbor", "expert determination"]
+
+  - terms: [authorization, authorizations, "patient authorization", "written permission", "signed release", "release of information", roi]
+    expand: ["uses and disclosures for which an authorization is required", "valid authorization"]
+
+  - terms: ["psychotherapy notes", "therapy notes", "mental health notes"]
+    expand: ["psychotherapy notes"]
+
+  - terms: ["sale of phi", "selling phi", "sell patient data", "sale of protected health information"]
+    expand: ["sale of protected health information"]
+
+  - terms: ["security rule", "risk analysis", "security risk analysis", "sra", "security risk assessment", "administrative safeguards", "technical safeguards", "physical safeguards"]
+    expand: ["security management process", "risk analysis", "administrative safeguards", "technical safeguards", "physical safeguards"]
+
+  - terms: ["breach of phi", "phi breach", "breach notification rule", "hipaa breach", "notify patients", "notify individuals of a breach", "notify hhs", "notify the secretary", "60 days", "media notice"]
+    expand: ["breach of unsecured protected health information", "notification to individuals", "notification to the Secretary", "notification to the media"]
+
+  - terms: ["civil money penalty", "civil money penalties", "hipaa fine", "hipaa fines", "hipaa penalty", "hipaa penalties", "ocr enforcement", "ocr"]
+    expand: ["civil money penalty", "amount of a civil money penalty", "determination of the amount of a civil money penalty"]
+
+  - terms: ["emergency", "disaster", "contingency plan", "backup", "backups", "disaster recovery"]
+    expand: ["contingency plan", "data backup plan", "disaster recovery plan", "emergency mode operation plan"]
+
+  - terms: ["family member", "family members", "friends", "next of kin", "involved in care", "caregiver"]
+    expand: ["uses and disclosures requiring an opportunity for the individual to agree or to object", "persons involved in the individual's care"]
+
+  - terms: ["law enforcement", "police", subpoena, "court order", "legal process", "public health", "health oversight", "required by law"]
+    expand: ["uses and disclosures for which an authorization or opportunity to agree or object is not required", "disclosures for law enforcement purposes", "required by law"]
+
+  - terms: ["covered entity", "covered entities", "does hipaa apply", "who must comply with hipaa", "hipaa apply", "hipaa applicability"]
+    expand: ["covered entity", "applicability", "health plan, health care clearinghouse, health care provider who transmits any health information in electronic form"]
+
+  - terms: ["marketing", "fundraising", "marketing communications"]
+    expand: ["uses and disclosures for marketing", "uses and disclosures for fundraising"]
+
+  - terms: [media, press, news, newspaper, "prominent media outlets"]
+    expand: ["notification to the media", "prominent media outlets"]
+
+  - terms: [hhs, "department of health and human services", "secretary of hhs", "secretary of health and human services", "health and human services"]
+    expand: ["notification to the Secretary", "Secretary"]
+
+  - terms: [training, train, trained, "workforce training", "employee training", "staff training", "train employees", "train staff"]
+    expand: ["train all members of its workforce", "training"]
+
+  - terms: [timeline, timelines, "time limit", "how soon", deadline, deadlines, "within how many days", "how many days"]
+    weight: 0.8
+    expand: ["timeliness of notification", "without unreasonable delay and in no case later than 60 calendar days"]
+
+  - terms: [retain, retained, retention, "keep records", "how long keep", "record retention", documentation, "retain documentation", "six years", "6 years"]
+    expand: ["retain the documentation required for six years", "documentation retention period"]
+
+  - terms: [restrict, restriction, restrictions, "restrict disclosure", "limit disclosure", "ask not to share", "opt out of disclosure", "refuse to share"]
+    expand: ["right of an individual to request restriction of uses and disclosures", "agree to a restriction"]
+
+  - terms: [texting, text, texts, sms, "text message", "text messages", email, emails, emailing, fax, "unencrypted email", "patient portal"]
+    expand: ["transmission security", "confidential communications", "alternative means or alternative locations"]
+
+  - terms: ["privacy officer", "privacy official", "compliance officer", "security officer", "security official", "hipaa officer"]
+    expand: ["privacy official", "security official", "personnel designations"]
+
+  - terms: [employer, employers, "employment records", "employee health records", "employee medical records", "hr records"]
+    expand: ["employment records held by a covered entity in its role as employer", "employer"]
+
 jurisdictions:
   - id: eu
     label: "the EU (GDPR)"
@@ -193,7 +274,8 @@ jurisdictions:
     docs: [ccpa, ccpa_regs, caloppa]
   - id: hipaa
     label: "US health privacy (HIPAA)"
-    words: [hipaa, "protected health information", phi, "covered entity", "covered entities", "business associate", "business associates"]
+    words: [hipaa, ephi, hhs, ocr, baa, "health and human services"]
+    topical: ["protected health information", phi, "covered entity", "covered entities", "business associate", "business associates"]
     docs: [hipaa]
   - id: canada
     label: "Canada (PIPEDA)"

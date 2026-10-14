@@ -1,0 +1,16 @@
+{
+ "doc_id": "hipaa",
+ "title": "HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164)",
+ "short_name": "HIPAA",
+ "jurisdiction": "US-Federal",
+ "doc_type": "regulation",
+ "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C",
+ "version_label": "Electronic Code of Federal Regulations, 45 CFR Parts 160 and 164, current as of 2026-10-09",
+ "effective_date": "2026-10-09",
+ "retrieved_at": "2026-10-14T13:36:00Z",
+ "language": "en",
+ "is_translation": false,
+ "raw_path": "data/raw/hipaa_160.html",
+ "checksum": "c74a206eee1f3a199d0aa9a07dedffcaa449471ef45f29aac50e614e0186d36c",
+ "license_note": "Works of the US Government are in the public domain. Source: Electronic Code of Federal Regulations (eCFR), Office of the Federal Register. Note: the eCFR is an unofficial editorial compilation; the official CFR is published annually by the Government Publishing Office. Confirm wording at step 11."
+}

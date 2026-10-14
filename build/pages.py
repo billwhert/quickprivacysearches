@@ -1,4 +1,5 @@
 """Generate the static site (pages, assets, search data) from data/processed/."""
+import hashlib
 import html
 import shutil
 
@@ -8,6 +9,8 @@ import export_search
 DIST = ROOT / "dist"
 WEB = ROOT / "web"
 e = html.escape
+
+VERSION = "dev"  # set in build(): content hash used to bust browser caches
 
 DISCLAIMER = ("Reference tool, not legal advice. Text is taken from the official source and shown "
               "unmodified; check the official source and version date before relying on it.")
@@ -27,7 +30,7 @@ def page(title: str, body: str, rel: str, active: str = "") -> str:
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
-<link rel="stylesheet" href="{rel}assets/style.css">
+<link rel="stylesheet" href="{rel}assets/style.css?v={VERSION}">
 </head><body>
 <header class="site"><div class="wrap">
 <a class="brand" href="{rel}">{LOGO}Quick Privacy Searches</a><nav aria-label="Main">{links}</nav>
@@ -54,6 +57,22 @@ def render_text(text: str) -> str:
 def source_block(doc: dict) -> str:
     return (f'<p class="meta">Source: <a href="{e(doc["source_url"])}">official text</a> · '
             f'{e(doc["version_label"])} · retrieved {e(doc["retrieved_at"][:10])}</p>')
+
+
+def doc_layout(parts: list, side: str) -> str:
+    return f'<div class="doc-layout"><article>{"".join(parts)}</article>{side}</div>'
+
+
+def side_panel(doc: dict, doc_id: str, nav_title: str = "", nav_items: list = None) -> str:
+    out = ['<aside class="side">',
+           '<div class="side-card"><h3>Source</h3>',
+           f'<p><a href="{e(doc["source_url"])}">Official text</a></p>',
+           f'<p class="muted">{e(doc["version_label"])}<br>Retrieved {e(doc["retrieved_at"][:10])}</p></div>']
+    if nav_items:
+        out.append(f'<div class="side-card"><h3>{e(nav_title)}</h3><ul class="side-nav">'
+                   + "".join(f'<li><a href="#{a}">{e(t)}</a></li>' for a, t in nav_items) + "</ul></div>")
+    out.append(f'<p class="side-link"><a href="../../">All {e(doc_id.upper())} provisions</a></p></aside>')
+    return "".join(out)
 
 
 def build_doc_pages(doc_id: str) -> None:
@@ -86,8 +105,8 @@ def build_doc_pages(doc_id: str) -> None:
         rel = "../../../"
         parts = [f'<p class="crumbs"><span class="badge">{e(doc_id.upper())}</span> '
                  f'{e(" › ".join(a["hierarchy"][:-1]))}</p>',
-                 f'<h1>{e(a["section_ref"])}<span class="sub">{e(a["heading"])}</span></h1>',
-                 source_block(doc)]
+                 f'<h1>{e(a["section_ref"])}<span class="sub">{e(a["heading"])}</span></h1>']
+        nav_items = []
         for cid in a["child_chunk_ids"]:
             c = by_id[cid]
             n = c["number"]
@@ -98,6 +117,8 @@ def build_doc_pages(doc_id: str) -> None:
             if cites:
                 cite_html = ('<p class="refs">References: '
                              + ", ".join(link(rel, t) for t in cites) + "</p>")
+            if label:
+                nav_items.append((f"p{n}", label))
             parts.append(
                 f'<section class="prov" id="p{n}">'
                 + (f'<a class="anchor" href="#p{n}" title="Permalink">{e(label)}</a>' if label else "")
@@ -119,13 +140,15 @@ def build_doc_pages(doc_id: str) -> None:
         d = DIST / doc_id / "art" / str(a["number"])
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(
-            page(f'{a["section_ref"]} - {a["heading"]}', "\n".join(parts), rel, doc_id), encoding="utf-8")
+            page(f'{a["section_ref"]} - {a["heading"]}',
+                 doc_layout(parts, side_panel(doc, doc_id, "In this article", nav_items)),
+                 rel, doc_id), encoding="utf-8")
 
     for i, r in enumerate(rcts):
         rel = "../../../"
         cites = out_refs.get(r["chunk_id"], [])
         body = [f'<p class="crumbs"><span class="badge">{e(doc_id.upper())}</span> Recitals</p>',
-                f'<h1>{e(r["section_ref"])}</h1>', source_block(doc),
+                f'<h1>{e(r["section_ref"])}</h1>',
                 f'<section class="prov"><div class="text">{render_text(r["text"])}</div>'
                 + ('<p class="refs">References: ' + ", ".join(link(rel, t) for t in cites) + "</p>" if cites else "")
                 + "</section>"]
@@ -140,7 +163,8 @@ def build_doc_pages(doc_id: str) -> None:
                     + "</nav>")
         d = DIST / doc_id / "rct" / str(r["number"])
         d.mkdir(parents=True, exist_ok=True)
-        (d / "index.html").write_text(page(r["section_ref"], "\n".join(body), rel, doc_id), encoding="utf-8")
+        (d / "index.html").write_text(
+            page(r["section_ref"], doc_layout(body, side_panel(doc, doc_id)), rel, doc_id), encoding="utf-8")
 
     # document browser
     groups: dict[str, dict[str, list]] = {}
@@ -150,17 +174,20 @@ def build_doc_pages(doc_id: str) -> None:
         sec = h[1] if len(h) > 2 else ""
         groups.setdefault(chap, {}).setdefault(sec, []).append(a)
     toc = [f'<h1>{e(doc["title"])}</h1>', source_block(doc),
-           f'<p>{len(arts)} articles and {len(rcts)} recitals. <a href="#recitals">Jump to recitals</a>.</p>']
+           f'<p class="lede">{len(arts)} articles and {len(rcts)} recitals. <a href="#recitals">Jump to recitals</a>.</p>',
+           '<div class="chapters">']
     for chap, secs in groups.items():
-        toc.append(f"<h2>{e(chap)}</h2>")
+        card = [f'<section class="chapter"><h2>{e(chap)}</h2>']
         for sec, items in secs.items():
             if sec:
-                toc.append(f"<h3>{e(sec)}</h3>")
-            toc.append("<ul class=toc>" + "".join(
+                card.append(f"<h3>{e(sec)}</h3>")
+            card.append("<ul class=toc>" + "".join(
                 f'<li><a href="art/{a["number"]}/">Art. {a["number"]}</a> {e(a["heading"])}</li>'
                 for a in items) + "</ul>")
-    toc.append('<h2 id="recitals">Recitals</h2><p class="recs">'
-               + " ".join(f'<a href="rct/{r["number"]}/">{r["number"]}</a>' for r in rcts) + "</p>")
+        toc.append("".join(card) + "</section>")
+    toc.append("</div>")
+    toc.append('<section class="chapter" id="recitals"><h2>Recitals</h2><p class="recs">'
+               + " ".join(f'<a href="rct/{r["number"]}/">{r["number"]}</a>' for r in rcts) + "</p></section>")
     (DIST / doc_id).mkdir(parents=True, exist_ok=True)
     (DIST / doc_id / "index.html").write_text(
         page(f'{doc["title"]}', "\n".join(toc), "../", doc_id), encoding="utf-8")
@@ -185,16 +212,30 @@ with its citation, version, and a link to the official source. Currently loaded:
 <div id="status" role="status" aria-live="polite"></div>
 <ol id="results" class="results"></ol>
 <noscript><p>Search needs JavaScript. You can still <a href="gdpr/">browse the GDPR</a>.</p></noscript>
-<script type="module" src="assets/search.js"></script>"""
+<script type="module" src="assets/search.js?v={VERSION}"></script>"""
     (DIST / "index.html").write_text(page("Quick Privacy Searches", body, "", "search"), encoding="utf-8")
 
 
 def build() -> None:
+    global VERSION
+    h = hashlib.sha256()
+    for f in sorted(list((WEB / "assets").iterdir()) + [WEB / "vendor" / "minisearch.js"]):
+        h.update(f.read_bytes())
+    for f in sorted(PROCESSED.rglob("chunks.json")):
+        h.update(f.read_bytes())
+    VERSION = h.hexdigest()[:10]
     if DIST.exists():
         shutil.rmtree(DIST)
     (DIST / "assets").mkdir(parents=True)
     for f in (WEB / "assets").iterdir():
-        shutil.copy(f, DIST / "assets" / f.name)
+        if f.suffix == ".js":  # version module imports and the data fetch so caches never go stale
+            t = f.read_text(encoding="utf-8")
+            for name in ("minisearch.js", "lookup.js"):
+                t = t.replace(f'"./{name}"', f'"./{name}?v={VERSION}"')
+            t = t.replace('"assets/search-data.json"', f'"assets/search-data.json?v={VERSION}"')
+            (DIST / "assets" / f.name).write_text(t, encoding="utf-8")
+        else:
+            shutil.copy(f, DIST / "assets" / f.name)
     shutil.copy(WEB / "vendor" / "minisearch.js", DIST / "assets" / "minisearch.js")
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
     for d in sorted(PROCESSED.iterdir()):

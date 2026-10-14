@@ -286,3 +286,10 @@ button.chip:hover { border-color: var(--accent); color: var(--accent); filter: n
 @media (max-width: 40rem) { .src-card dl { grid-template-columns: 1fr; gap: .1rem; } .src-card dd { margin-bottom: .5rem; } }
 .foot-links { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-top: .6rem; }
 .foot-links a { color: var(--text-2); }
+
+/* header: wrap onto a second row on narrow screens instead of overflowing */
+header.site .wrap { height: auto; min-height: 56px; flex-wrap: wrap; padding-top: .3rem; padding-bottom: .3rem; row-gap: 0; }
+@media (max-width: 520px) {
+  header nav { width: 100%; margin-left: -.5rem; }
+  header nav a { padding: .3rem .55rem; }
+}

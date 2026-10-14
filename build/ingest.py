@@ -70,6 +70,8 @@ def ingest(doc_id: str, force_fetch: bool = False) -> bool:
     })
     write_json(out / "chunks.json", chunks)
     write_json(out / "crossrefs.json", refs)
+    import tag_topics   # topics are re-applied (rules + manual overrides) on every ingest
+    tag_topics.run()
 
     for c in result["checks"]:
         print(("PASS " if c["ok"] else "FAIL ") + c["name"] + (f"  [{c['detail']}]" if c["detail"] else ""))

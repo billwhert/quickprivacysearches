@@ -13,7 +13,12 @@
   "parent_chunk_id": null,
   "token_count": 913,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency",
+   "vendor-contracts",
+   "security-safeguards",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -43,12 +48,16 @@
   "parent_chunk_id": "ccpa:sec:1798.100",
   "token_count": 326,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.100/#pa"
+  "permalink": "ccpa/sec/1798.100/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.100:b",
@@ -65,12 +74,15 @@
   "parent_chunk_id": "ccpa:sec:1798.100",
   "token_count": 152,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.100/#pb"
+  "permalink": "ccpa/sec/1798.100/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.100:c",
@@ -92,7 +104,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.100/#pc"
+  "permalink": "ccpa/sec/1798.100/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.100:d",
@@ -109,12 +122,15 @@
   "parent_chunk_id": "ccpa:sec:1798.100",
   "token_count": 259,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.100/#pd"
+  "permalink": "ccpa/sec/1798.100/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.100:e",
@@ -131,12 +147,15 @@
   "parent_chunk_id": "ccpa:sec:1798.100",
   "token_count": 57,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "security-safeguards"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.100/#pe"
+  "permalink": "ccpa/sec/1798.100/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.100:f",
@@ -158,7 +177,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.100/#pf"
+  "permalink": "ccpa/sec/1798.100/#pf",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.105",
@@ -174,7 +194,13 @@
   "parent_chunk_id": null,
   "token_count": 862,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-deletion",
+   "vendor-contracts",
+   "security-safeguards",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -202,12 +228,16 @@
   "parent_chunk_id": "ccpa:sec:1798.105",
   "token_count": 35,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-deletion"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.105/#pa"
+  "permalink": "ccpa/sec/1798.105/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.105:b",
@@ -224,12 +254,16 @@
   "parent_chunk_id": "ccpa:sec:1798.105",
   "token_count": 35,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-deletion"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.105/#pb"
+  "permalink": "ccpa/sec/1798.105/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.105:c",
@@ -246,12 +280,18 @@
   "parent_chunk_id": "ccpa:sec:1798.105",
   "token_count": 391,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-deletion",
+   "vendor-contracts",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.105/#pc"
+  "permalink": "ccpa/sec/1798.105/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.105:d",
@@ -268,12 +308,19 @@
   "parent_chunk_id": "ccpa:sec:1798.105",
   "token_count": 400,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-deletion",
+   "vendor-contracts",
+   "security-safeguards",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.105/#pd"
+  "permalink": "ccpa/sec/1798.105/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.106",
@@ -289,7 +336,10 @@
   "parent_chunk_id": null,
   "token_count": 151,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-correction"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -316,12 +366,16 @@
   "parent_chunk_id": "ccpa:sec:1798.106",
   "token_count": 57,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-correction"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.106/#pa"
+  "permalink": "ccpa/sec/1798.106/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.106:b",
@@ -338,12 +392,16 @@
   "parent_chunk_id": "ccpa:sec:1798.106",
   "token_count": 32,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-correction"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.106/#pb"
+  "permalink": "ccpa/sec/1798.106/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.106:c",
@@ -360,12 +418,16 @@
   "parent_chunk_id": "ccpa:sec:1798.106",
   "token_count": 61,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-correction"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.106/#pc"
+  "permalink": "ccpa/sec/1798.106/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.110",
@@ -381,7 +443,10 @@
   "parent_chunk_id": null,
   "token_count": 398,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -408,12 +473,16 @@
   "parent_chunk_id": "ccpa:sec:1798.110",
   "token_count": 114,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.110/#pa"
+  "permalink": "ccpa/sec/1798.110/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.110:b",
@@ -430,12 +499,16 @@
   "parent_chunk_id": "ccpa:sec:1798.110",
   "token_count": 160,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.110/#pb"
+  "permalink": "ccpa/sec/1798.110/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.110:c",
@@ -452,12 +525,16 @@
   "parent_chunk_id": "ccpa:sec:1798.110",
   "token_count": 124,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.110/#pc"
+  "permalink": "ccpa/sec/1798.110/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.115",
@@ -473,7 +550,11 @@
   "parent_chunk_id": null,
   "token_count": 433,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -501,12 +582,16 @@
   "parent_chunk_id": "ccpa:sec:1798.115",
   "token_count": 166,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.115/#pa"
+  "permalink": "ccpa/sec/1798.115/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.115:b",
@@ -523,12 +608,16 @@
   "parent_chunk_id": "ccpa:sec:1798.115",
   "token_count": 70,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.115/#pb"
+  "permalink": "ccpa/sec/1798.115/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.115:c",
@@ -545,12 +634,16 @@
   "parent_chunk_id": "ccpa:sec:1798.115",
   "token_count": 131,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.115/#pc"
+  "permalink": "ccpa/sec/1798.115/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.115:d",
@@ -567,12 +660,17 @@
   "parent_chunk_id": "ccpa:sec:1798.115",
   "token_count": 65,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.115/#pd"
+  "permalink": "ccpa/sec/1798.115/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.120",
@@ -588,7 +686,12 @@
   "parent_chunk_id": null,
   "token_count": 456,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency",
+   "childrens-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -616,12 +719,16 @@
   "parent_chunk_id": "ccpa:sec:1798.120",
   "token_count": 140,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.120/#pa"
+  "permalink": "ccpa/sec/1798.120/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.120:b",
@@ -638,12 +745,17 @@
   "parent_chunk_id": "ccpa:sec:1798.120",
   "token_count": 69,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.120/#pb"
+  "permalink": "ccpa/sec/1798.120/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.120:c",
@@ -660,12 +772,17 @@
   "parent_chunk_id": "ccpa:sec:1798.120",
   "token_count": 135,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "childrens-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.120/#pc"
+  "permalink": "ccpa/sec/1798.120/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.120:d",
@@ -682,12 +799,17 @@
   "parent_chunk_id": "ccpa:sec:1798.120",
   "token_count": 112,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "childrens-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.120/#pd"
+  "permalink": "ccpa/sec/1798.120/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.121",
@@ -703,7 +825,13 @@
   "parent_chunk_id": null,
   "token_count": 519,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency",
+   "vendor-contracts",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -731,12 +859,19 @@
   "parent_chunk_id": "ccpa:sec:1798.121",
   "token_count": 212,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency",
+   "vendor-contracts",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.121/#pa"
+  "permalink": "ccpa/sec/1798.121/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.121:b",
@@ -753,12 +888,17 @@
   "parent_chunk_id": "ccpa:sec:1798.121",
   "token_count": 103,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.121/#pb"
+  "permalink": "ccpa/sec/1798.121/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.121:c",
@@ -775,12 +915,18 @@
   "parent_chunk_id": "ccpa:sec:1798.121",
   "token_count": 124,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "vendor-contracts",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.121/#pc"
+  "permalink": "ccpa/sec/1798.121/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.121:d",
@@ -797,12 +943,17 @@
   "parent_chunk_id": "ccpa:sec:1798.121",
   "token_count": 81,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.121/#pd"
+  "permalink": "ccpa/sec/1798.121/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.125",
@@ -818,7 +969,11 @@
   "parent_chunk_id": null,
   "token_count": 525,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "lawful-basis-consent"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -844,12 +999,16 @@
   "parent_chunk_id": "ccpa:sec:1798.125",
   "token_count": 268,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.125/#pa"
+  "permalink": "ccpa/sec/1798.125/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.125:b",
@@ -866,12 +1025,17 @@
   "parent_chunk_id": "ccpa:sec:1798.125",
   "token_count": 257,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "lawful-basis-consent"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.125/#pb"
+  "permalink": "ccpa/sec/1798.125/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130",
@@ -887,7 +1051,14 @@
   "parent_chunk_id": null,
   "token_count": 2332,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "notice-transparency",
+   "vendor-contracts",
+   "security-safeguards",
+   "sensitive-health-data",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -927,7 +1098,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.130/#pa.1",
-  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:"
+  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:a.2",
@@ -945,13 +1117,16 @@
   "parent_chunk_id": "ccpa:sec:1798.130",
   "token_count": 516,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.130/#pa.2",
-  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:"
+  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:a.3",
@@ -969,13 +1144,19 @@
   "parent_chunk_id": "ccpa:sec:1798.130",
   "token_count": 589,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "vendor-contracts",
+   "security-safeguards",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.130/#pa.3",
-  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:"
+  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:a.4",
@@ -993,13 +1174,16 @@
   "parent_chunk_id": "ccpa:sec:1798.130",
   "token_count": 329,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.130/#pa.4",
-  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:"
+  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:a.5",
@@ -1017,13 +1201,16 @@
   "parent_chunk_id": "ccpa:sec:1798.130",
   "token_count": 430,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.130/#pa.5",
-  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:"
+  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:a.6",
@@ -1047,7 +1234,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.130/#pa.6",
-  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:"
+  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:a.7",
@@ -1071,7 +1259,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.130/#pa.7",
-  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:"
+  "lead_in": "(a) In order to comply with Sections 1798.100, 1798.105, 1798.106, 1798.110, 1798.115, and 1798.125, a business shall, in a form that is reasonably accessible to consumers:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:b",
@@ -1093,7 +1282,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.130/#pb"
+  "permalink": "ccpa/sec/1798.130/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.130:c",
@@ -1110,12 +1300,15 @@
   "parent_chunk_id": "ccpa:sec:1798.130",
   "token_count": 112,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.130/#pc"
+  "permalink": "ccpa/sec/1798.130/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.135",
@@ -1131,7 +1324,15 @@
   "parent_chunk_id": null,
   "token_count": 1803,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency",
+   "cookies-tracking",
+   "childrens-data",
+   "sensitive-health-data",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -1162,12 +1363,18 @@
   "parent_chunk_id": "ccpa:sec:1798.135",
   "token_count": 342,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.135/#pa"
+  "permalink": "ccpa/sec/1798.135/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.135:b",
@@ -1184,12 +1391,19 @@
   "parent_chunk_id": "ccpa:sec:1798.135",
   "token_count": 410,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "cookies-tracking",
+   "sensitive-health-data",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.135/#pb"
+  "permalink": "ccpa/sec/1798.135/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.135:c",
@@ -1206,12 +1420,20 @@
   "parent_chunk_id": "ccpa:sec:1798.135",
   "token_count": 510,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency",
+   "cookies-tracking",
+   "childrens-data",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.135/#pc"
+  "permalink": "ccpa/sec/1798.135/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.135:d",
@@ -1228,12 +1450,15 @@
   "parent_chunk_id": "ccpa:sec:1798.135",
   "token_count": 114,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.135/#pd"
+  "permalink": "ccpa/sec/1798.135/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.135:e",
@@ -1250,12 +1475,18 @@
   "parent_chunk_id": "ccpa:sec:1798.135",
   "token_count": 162,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "cookies-tracking",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.135/#pe"
+  "permalink": "ccpa/sec/1798.135/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.135:f",
@@ -1272,12 +1503,17 @@
   "parent_chunk_id": "ccpa:sec:1798.135",
   "token_count": 143,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.135/#pf"
+  "permalink": "ccpa/sec/1798.135/#pf",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.135:g",
@@ -1294,12 +1530,17 @@
   "parent_chunk_id": "ccpa:sec:1798.135",
   "token_count": 122,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.135/#pg"
+  "permalink": "ccpa/sec/1798.135/#pg",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.136",
@@ -1315,7 +1556,11 @@
   "parent_chunk_id": null,
   "token_count": 289,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "cookies-tracking"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -1350,7 +1595,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.136/#pa"
+  "permalink": "ccpa/sec/1798.136/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.136:b",
@@ -1367,12 +1613,17 @@
   "parent_chunk_id": "ccpa:sec:1798.136",
   "token_count": 44,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "cookies-tracking"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.136/#pb"
+  "permalink": "ccpa/sec/1798.136/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.136:c",
@@ -1394,7 +1645,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.136/#pc"
+  "permalink": "ccpa/sec/1798.136/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.136:d",
@@ -1411,12 +1663,17 @@
   "parent_chunk_id": "ccpa:sec:1798.136",
   "token_count": 60,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "cookies-tracking"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.136/#pd"
+  "permalink": "ccpa/sec/1798.136/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.136:e",
@@ -1433,12 +1690,17 @@
   "parent_chunk_id": "ccpa:sec:1798.136",
   "token_count": 73,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "cookies-tracking"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.136/#pe"
+  "permalink": "ccpa/sec/1798.136/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.136:f",
@@ -1460,7 +1722,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.136/#pf"
+  "permalink": "ccpa/sec/1798.136/#pf",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140",
@@ -1476,7 +1739,18 @@
   "parent_chunk_id": null,
   "token_count": 6159,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "lawful-basis-consent",
+   "notice-transparency",
+   "cookies-tracking",
+   "vendor-contracts",
+   "cross-border-transfers",
+   "security-safeguards",
+   "childrens-data",
+   "sensitive-health-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -1537,12 +1811,15 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 6,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.140/"
+  "permalink": "ccpa/sec/1798.140/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:a",
@@ -1559,13 +1836,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 42,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "cookies-tracking",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pa",
-  "defined_term": "Advertising and marketing"
+  "defined_term": "Advertising and marketing",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:b",
@@ -1582,13 +1863,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 72,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pb",
-  "defined_term": "Aggregate consumer information"
+  "defined_term": "Aggregate consumer information",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:c",
@@ -1605,13 +1889,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 135,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "cookies-tracking",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pc",
-  "defined_term": "Biometric information"
+  "defined_term": "Biometric information",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:d",
@@ -1628,13 +1916,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 528,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pd",
-  "defined_term": "Business"
+  "defined_term": "Business",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:e",
@@ -1651,13 +1942,19 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 504,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "cookies-tracking",
+   "vendor-contracts",
+   "security-safeguards",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pe",
-  "defined_term": "Business purpose"
+  "defined_term": "Business purpose",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:f",
@@ -1674,13 +1971,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 52,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pf",
-  "defined_term": "Collects; collected; collection"
+  "defined_term": "Collects; collected; collection",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:g",
@@ -1697,13 +1997,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 57,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pg",
-  "defined_term": "Commercial purposes"
+  "defined_term": "Commercial purposes",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:h",
@@ -1720,13 +2023,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 161,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "lawful-basis-consent",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#ph",
-  "defined_term": "Consent"
+  "defined_term": "Consent",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:i",
@@ -1743,13 +2050,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 52,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pi",
-  "defined_term": "Consumer"
+  "defined_term": "Consumer",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:j",
@@ -1766,13 +2076,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 452,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pj",
-  "defined_term": "Contractor"
+  "defined_term": "Contractor",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:k",
@@ -1789,13 +2103,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 64,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "cookies-tracking",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pk",
-  "defined_term": "Cross-context behavioral advertising"
+  "defined_term": "Cross-context behavioral advertising",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:l",
@@ -1812,13 +2130,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 36,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pl",
-  "defined_term": "Dark pattern"
+  "defined_term": "Dark pattern",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:m",
@@ -1835,13 +2156,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 140,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pm",
-  "defined_term": "Deidentified"
+  "defined_term": "Deidentified",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:n",
@@ -1858,13 +2182,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 73,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pn",
-  "defined_term": "Designated methods for submitting requests"
+  "defined_term": "Designated methods for submitting requests",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:o",
@@ -1881,13 +2208,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 27,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#po",
-  "defined_term": "Device"
+  "defined_term": "Device",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:p",
@@ -1904,13 +2234,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 105,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pp",
-  "defined_term": "Homepage"
+  "defined_term": "Homepage",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:q",
@@ -1927,13 +2260,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 35,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pq",
-  "defined_term": "Household"
+  "defined_term": "Household",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:r",
@@ -1950,13 +2286,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 30,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pr",
-  "defined_term": "Infer; inference"
+  "defined_term": "Infer; inference",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:s",
@@ -1973,13 +2312,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 82,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#ps",
-  "defined_term": "Intentionally interacts"
+  "defined_term": "Intentionally interacts",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:t",
@@ -1996,13 +2338,18 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 43,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "cookies-tracking",
+   "sensitive-health-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pt",
-  "defined_term": "Nonpersonalized advertising"
+  "defined_term": "Nonpersonalized advertising",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:u",
@@ -2019,13 +2366,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 40,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pu",
-  "defined_term": "Person"
+  "defined_term": "Person",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:v",
@@ -2042,13 +2392,18 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 604,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "cookies-tracking",
+   "sensitive-health-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pv",
-  "defined_term": "Personal information"
+  "defined_term": "Personal information",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:w",
@@ -2065,13 +2420,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 68,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "sensitive-health-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pw",
-  "defined_term": "Precise geolocation"
+  "defined_term": "Precise geolocation",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:x",
@@ -2088,13 +2447,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 57,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#px",
-  "defined_term": "Probabilistic identifier"
+  "defined_term": "Probabilistic identifier",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:y",
@@ -2111,13 +2473,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 35,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#py",
-  "defined_term": "Processing"
+  "defined_term": "Processing",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:z",
@@ -2134,13 +2499,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 81,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pz",
-  "defined_term": "Profiling"
+  "defined_term": "Profiling",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:aa",
@@ -2157,13 +2525,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 81,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "security-safeguards",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#paa",
-  "defined_term": "Pseudonymize; Pseudonymization"
+  "defined_term": "Pseudonymize; Pseudonymization",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ab",
@@ -2180,13 +2552,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 334,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "security-safeguards",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pab",
-  "defined_term": "Research"
+  "defined_term": "Research",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ac",
@@ -2203,13 +2579,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 82,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "security-safeguards",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pac",
-  "defined_term": "Security and integrity"
+  "defined_term": "Security and integrity",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ad",
@@ -2226,13 +2606,19 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 413,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency",
+   "cross-border-transfers",
+   "sensitive-health-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pad",
-  "defined_term": "Sell; selling; sale; sold"
+  "defined_term": "Sell; selling; sale; sold",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ae",
@@ -2249,13 +2635,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 260,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "sensitive-health-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pae",
-  "defined_term": "Sensitive personal information"
+  "defined_term": "Sensitive personal information",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:af",
@@ -2272,13 +2662,16 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 27,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#paf",
-  "defined_term": "Service; services"
+  "defined_term": "Service; services",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ag",
@@ -2295,13 +2688,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 458,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pag",
-  "defined_term": "Service provider"
+  "defined_term": "Service provider",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ah",
@@ -2318,13 +2715,20 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 454,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency",
+   "cookies-tracking",
+   "cross-border-transfers",
+   "sensitive-health-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pah",
-  "defined_term": "Share; shared; sharing"
+  "defined_term": "Share; shared; sharing",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ai",
@@ -2341,13 +2745,17 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 69,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pai",
-  "defined_term": "Third party"
+  "defined_term": "Third party",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:aj",
@@ -2364,13 +2772,18 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 162,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "cookies-tracking",
+   "childrens-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#paj",
-  "defined_term": "Unique identifier; unique personal identifier"
+  "defined_term": "Unique identifier; unique personal identifier",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.140:ak",
@@ -2387,13 +2800,18 @@
   "parent_chunk_id": "ccpa:sec:1798.140",
   "token_count": 237,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "childrens-data",
+   "definitions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.140/#pak",
-  "defined_term": "Verifiable consumer request"
+  "defined_term": "Verifiable consumer request",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145",
@@ -2409,7 +2827,19 @@
   "parent_chunk_id": null,
   "token_count": 5430,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-deletion",
+   "right-portability",
+   "right-opt-out",
+   "breach-notification",
+   "vendor-contracts",
+   "security-safeguards",
+   "childrens-data",
+   "sensitive-health-data",
+   "enforcement-penalties",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -2451,12 +2881,16 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 863,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pa"
+  "permalink": "ccpa/sec/1798.145/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:b",
@@ -2473,12 +2907,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 84,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pb"
+  "permalink": "ccpa/sec/1798.145/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:c",
@@ -2495,12 +2932,19 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 464,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-portability",
+   "breach-notification",
+   "security-safeguards",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pc"
+  "permalink": "ccpa/sec/1798.145/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:d",
@@ -2517,12 +2961,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 272,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pd"
+  "permalink": "ccpa/sec/1798.145/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:e",
@@ -2539,12 +2986,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 95,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pe"
+  "permalink": "ccpa/sec/1798.145/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:f",
@@ -2561,12 +3011,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 48,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pf"
+  "permalink": "ccpa/sec/1798.145/#pf",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:g",
@@ -2583,12 +3036,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 528,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pg"
+  "permalink": "ccpa/sec/1798.145/#pg",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:h",
@@ -2605,12 +3061,16 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 283,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#ph"
+  "permalink": "ccpa/sec/1798.145/#ph",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:i",
@@ -2627,12 +3087,20 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 365,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "vendor-contracts",
+   "childrens-data",
+   "sensitive-health-data",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pi"
+  "permalink": "ccpa/sec/1798.145/#pi",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:j",
@@ -2649,12 +3117,17 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 130,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "vendor-contracts",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pj"
+  "permalink": "ccpa/sec/1798.145/#pj",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:k",
@@ -2671,12 +3144,16 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 220,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pk"
+  "permalink": "ccpa/sec/1798.145/#pk",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:l",
@@ -2693,12 +3170,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 62,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pl"
+  "permalink": "ccpa/sec/1798.145/#pl",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:m",
@@ -2715,12 +3195,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 624,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pm"
+  "permalink": "ccpa/sec/1798.145/#pm",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:n",
@@ -2737,12 +3220,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 377,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pn"
+  "permalink": "ccpa/sec/1798.145/#pn",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:o",
@@ -2759,12 +3245,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 433,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#po"
+  "permalink": "ccpa/sec/1798.145/#po",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:p",
@@ -2781,12 +3270,15 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 25,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pp"
+  "permalink": "ccpa/sec/1798.145/#pp",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:q",
@@ -2803,12 +3295,17 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 411,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-deletion",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pq"
+  "permalink": "ccpa/sec/1798.145/#pq",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.145:r",
@@ -2825,12 +3322,17 @@
   "parent_chunk_id": "ccpa:sec:1798.145",
   "token_count": 146,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.145/#pr"
+  "permalink": "ccpa/sec/1798.145/#pr",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.146",
@@ -2846,7 +3348,13 @@
   "parent_chunk_id": null,
   "token_count": 974,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-portability",
+   "breach-notification",
+   "security-safeguards",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -2872,12 +3380,19 @@
   "parent_chunk_id": "ccpa:sec:1798.146",
   "token_count": 759,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-portability",
+   "breach-notification",
+   "security-safeguards",
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.146/#pa"
+  "permalink": "ccpa/sec/1798.146/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.146:b",
@@ -2899,7 +3414,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.146/#pb"
+  "permalink": "ccpa/sec/1798.146/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.148",
@@ -2915,7 +3431,11 @@
   "parent_chunk_id": null,
   "token_count": 663,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-portability",
+   "security-safeguards"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -2948,7 +3468,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.148/#pa"
+  "permalink": "ccpa/sec/1798.148/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.148:b",
@@ -2965,12 +3486,17 @@
   "parent_chunk_id": "ccpa:sec:1798.148",
   "token_count": 66,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-portability",
+   "security-safeguards"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.148/#pb"
+  "permalink": "ccpa/sec/1798.148/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.148:c",
@@ -2992,7 +3518,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.148/#pc"
+  "permalink": "ccpa/sec/1798.148/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.148:d",
@@ -3014,7 +3541,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.148/#pd"
+  "permalink": "ccpa/sec/1798.148/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.150",
@@ -3030,7 +3558,11 @@
   "parent_chunk_id": null,
   "token_count": 725,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "breach-notification",
+   "security-safeguards",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -3057,12 +3589,17 @@
   "parent_chunk_id": "ccpa:sec:1798.150",
   "token_count": 322,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "breach-notification",
+   "security-safeguards",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.150/#pa"
+  "permalink": "ccpa/sec/1798.150/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.150:b",
@@ -3079,12 +3616,16 @@
   "parent_chunk_id": "ccpa:sec:1798.150",
   "token_count": 299,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "breach-notification",
+   "security-safeguards"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.150/#pb"
+  "permalink": "ccpa/sec/1798.150/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.150:c",
@@ -3101,12 +3642,16 @@
   "parent_chunk_id": "ccpa:sec:1798.150",
   "token_count": 104,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "breach-notification",
+   "security-safeguards"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.150/#pc"
+  "permalink": "ccpa/sec/1798.150/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.155",
@@ -3122,7 +3667,11 @@
   "parent_chunk_id": null,
   "token_count": 298,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -3148,12 +3697,17 @@
   "parent_chunk_id": "ccpa:sec:1798.155",
   "token_count": 118,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.155/#pa"
+  "permalink": "ccpa/sec/1798.155/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.155:b",
@@ -3170,12 +3724,15 @@
   "parent_chunk_id": "ccpa:sec:1798.155",
   "token_count": 179,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.155/#pb"
+  "permalink": "ccpa/sec/1798.155/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.160",
@@ -3191,7 +3748,11 @@
   "parent_chunk_id": null,
   "token_count": 976,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "breach-notification",
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -3225,7 +3786,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.160/#pa"
+  "permalink": "ccpa/sec/1798.160/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.160:b",
@@ -3242,12 +3804,15 @@
   "parent_chunk_id": "ccpa:sec:1798.160",
   "token_count": 117,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.160/#pb"
+  "permalink": "ccpa/sec/1798.160/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.160:c",
@@ -3264,12 +3829,15 @@
   "parent_chunk_id": "ccpa:sec:1798.160",
   "token_count": 124,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.160/#pc"
+  "permalink": "ccpa/sec/1798.160/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.160:d",
@@ -3286,12 +3854,17 @@
   "parent_chunk_id": "ccpa:sec:1798.160",
   "token_count": 438,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "breach-notification",
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.160/#pd"
+  "permalink": "ccpa/sec/1798.160/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.160:e",
@@ -3313,7 +3886,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.160/#pe"
+  "permalink": "ccpa/sec/1798.160/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.175",
@@ -3358,7 +3932,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.175/"
+  "permalink": "ccpa/sec/1798.175/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.180",
@@ -3374,7 +3949,9 @@
   "parent_chunk_id": null,
   "token_count": 57,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -3398,12 +3975,15 @@
   "parent_chunk_id": "ccpa:sec:1798.180",
   "token_count": 57,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.180/"
+  "permalink": "ccpa/sec/1798.180/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185",
@@ -3419,7 +3999,20 @@
   "parent_chunk_id": null,
   "token_count": 3450,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "dpia",
+   "data-subject-rights",
+   "right-correction",
+   "right-opt-out",
+   "lawful-basis-consent",
+   "notice-transparency",
+   "cookies-tracking",
+   "vendor-contracts",
+   "security-safeguards",
+   "childrens-data",
+   "sensitive-health-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -3468,13 +4061,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 74,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.1",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.2",
@@ -3498,7 +4094,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.2",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.3",
@@ -3516,13 +4113,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 72,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.3",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.4",
@@ -3540,13 +4140,19 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 212,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "notice-transparency",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.4",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.5",
@@ -3570,7 +4176,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.5",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.6",
@@ -3588,13 +4195,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 203,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.6",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.7",
@@ -3612,13 +4222,17 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 213,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-correction"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.7",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.8",
@@ -3636,13 +4250,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 58,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.8",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.9",
@@ -3660,13 +4277,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 84,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.9",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.10",
@@ -3684,13 +4304,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 61,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.10",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.11",
@@ -3714,7 +4337,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.11",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.12",
@@ -3732,13 +4356,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 48,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.12",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.13",
@@ -3756,13 +4383,17 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 143,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.13",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.14",
@@ -3780,13 +4411,18 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 254,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "dpia",
+   "security-safeguards",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.14",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.15",
@@ -3804,13 +4440,17 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 74,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.15",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.16",
@@ -3828,13 +4468,16 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 36,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.16",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.17",
@@ -3858,7 +4501,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.17",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.18",
@@ -3876,13 +4520,20 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 679,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "cookies-tracking",
+   "childrens-data",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.18",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.19",
@@ -3900,13 +4551,20 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 525,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out",
+   "lawful-basis-consent",
+   "cookies-tracking",
+   "sensitive-health-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.19",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.20",
@@ -3930,7 +4588,8 @@
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.20",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:a.21",
@@ -3948,13 +4607,17 @@
   "parent_chunk_id": "ccpa:sec:1798.185",
   "token_count": 36,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
   "permalink": "ccpa/sec/1798.185/#pa.21",
-  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:"
+  "lead_in": "(a) On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title, including, but not limited to, the following areas:",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:b",
@@ -3976,7 +4639,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.185/#pb"
+  "permalink": "ccpa/sec/1798.185/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:c",
@@ -3998,7 +4662,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.185/#pc"
+  "permalink": "ccpa/sec/1798.185/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.185:d",
@@ -4020,7 +4685,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.185/#pd"
+  "permalink": "ccpa/sec/1798.185/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.190",
@@ -4067,7 +4733,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.190/"
+  "permalink": "ccpa/sec/1798.190/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.190:a",
@@ -4089,7 +4756,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.190/#pa"
+  "permalink": "ccpa/sec/1798.190/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.190:b",
@@ -4111,7 +4779,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.190/#pb"
+  "permalink": "ccpa/sec/1798.190/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.192",
@@ -4127,7 +4796,10 @@
   "parent_chunk_id": null,
   "token_count": 129,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -4151,12 +4823,16 @@
   "parent_chunk_id": "ccpa:sec:1798.192",
   "token_count": 129,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-opt-out"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.192/"
+  "permalink": "ccpa/sec/1798.192/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.194",
@@ -4201,7 +4877,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.194/"
+  "permalink": "ccpa/sec/1798.194/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.196",
@@ -4217,7 +4894,9 @@
   "parent_chunk_id": null,
   "token_count": 46,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -4241,12 +4920,15 @@
   "parent_chunk_id": "ccpa:sec:1798.196",
   "token_count": 46,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "exemptions"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.196/"
+  "permalink": "ccpa/sec/1798.196/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.198",
@@ -4293,7 +4975,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.198/#pa"
+  "permalink": "ccpa/sec/1798.198/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.198:b",
@@ -4315,7 +4998,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.198/#pb"
+  "permalink": "ccpa/sec/1798.198/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199",
@@ -4360,7 +5044,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199/"
+  "permalink": "ccpa/sec/1798.199/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.10",
@@ -4407,7 +5092,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.10/#pa"
+  "permalink": "ccpa/sec/1798.199.10/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.10:b",
@@ -4429,7 +5115,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.10/#pb"
+  "permalink": "ccpa/sec/1798.199.10/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15",
@@ -4445,7 +5132,11 @@
   "parent_chunk_id": null,
   "token_count": 286,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -4481,7 +5172,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/"
+  "permalink": "ccpa/sec/1798.199.15/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15:a",
@@ -4503,7 +5195,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/#pa"
+  "permalink": "ccpa/sec/1798.199.15/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15:b",
@@ -4525,7 +5218,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/#pb"
+  "permalink": "ccpa/sec/1798.199.15/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15:c",
@@ -4547,7 +5241,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/#pc"
+  "permalink": "ccpa/sec/1798.199.15/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15:d",
@@ -4569,7 +5264,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/#pd"
+  "permalink": "ccpa/sec/1798.199.15/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15:e",
@@ -4586,12 +5282,16 @@
   "parent_chunk_id": "ccpa:sec:1798.199.15",
   "token_count": 22,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "data-subject-rights",
+   "right-access"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/#pe"
+  "permalink": "ccpa/sec/1798.199.15/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15:f",
@@ -4608,12 +5308,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.15",
   "token_count": 57,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/#pf"
+  "permalink": "ccpa/sec/1798.199.15/#pf",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.15:g",
@@ -4635,7 +5338,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.15/#pg"
+  "permalink": "ccpa/sec/1798.199.15/#pg",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.20",
@@ -4680,7 +5384,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.20/"
+  "permalink": "ccpa/sec/1798.199.20/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.25",
@@ -4725,7 +5430,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.25/"
+  "permalink": "ccpa/sec/1798.199.25/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.30",
@@ -4770,7 +5476,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.30/"
+  "permalink": "ccpa/sec/1798.199.30/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.35",
@@ -4815,7 +5522,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.35/"
+  "permalink": "ccpa/sec/1798.199.35/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40",
@@ -4831,7 +5539,12 @@
   "parent_chunk_id": null,
   "token_count": 560,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "dpia",
+   "records-of-processing",
+   "security-safeguards",
+   "childrens-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -4872,7 +5585,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/"
+  "permalink": "ccpa/sec/1798.199.40/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:a",
@@ -4894,7 +5608,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pa"
+  "permalink": "ccpa/sec/1798.199.40/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:b",
@@ -4911,12 +5626,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.40",
   "token_count": 92,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "records-of-processing"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pb"
+  "permalink": "ccpa/sec/1798.199.40/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:c",
@@ -4938,7 +5656,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pc"
+  "permalink": "ccpa/sec/1798.199.40/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:d",
@@ -4955,12 +5674,17 @@
   "parent_chunk_id": "ccpa:sec:1798.199.40",
   "token_count": 88,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "dpia",
+   "security-safeguards",
+   "childrens-data"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pd"
+  "permalink": "ccpa/sec/1798.199.40/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:e",
@@ -4982,7 +5706,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pe"
+  "permalink": "ccpa/sec/1798.199.40/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:f",
@@ -5004,7 +5729,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pf"
+  "permalink": "ccpa/sec/1798.199.40/#pf",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:g",
@@ -5026,7 +5752,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pg"
+  "permalink": "ccpa/sec/1798.199.40/#pg",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:h",
@@ -5048,7 +5775,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#ph"
+  "permalink": "ccpa/sec/1798.199.40/#ph",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:i",
@@ -5070,7 +5798,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pi"
+  "permalink": "ccpa/sec/1798.199.40/#pi",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:j",
@@ -5092,7 +5821,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pj"
+  "permalink": "ccpa/sec/1798.199.40/#pj",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:k",
@@ -5114,7 +5844,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pk"
+  "permalink": "ccpa/sec/1798.199.40/#pk",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.40:l",
@@ -5136,7 +5867,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.40/#pl"
+  "permalink": "ccpa/sec/1798.199.40/#pl",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.45",
@@ -5152,7 +5884,10 @@
   "parent_chunk_id": null,
   "token_count": 251,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -5178,12 +5913,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.45",
   "token_count": 142,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.45/#pa"
+  "permalink": "ccpa/sec/1798.199.45/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.45:b",
@@ -5200,12 +5938,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.45",
   "token_count": 109,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.45/#pb"
+  "permalink": "ccpa/sec/1798.199.45/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.50",
@@ -5221,7 +5962,9 @@
   "parent_chunk_id": null,
   "token_count": 224,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -5245,12 +5988,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.50",
   "token_count": 224,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.50/"
+  "permalink": "ccpa/sec/1798.199.50/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.55",
@@ -5266,7 +6012,10 @@
   "parent_chunk_id": null,
   "token_count": 352,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -5292,12 +6041,16 @@
   "parent_chunk_id": "ccpa:sec:1798.199.55",
   "token_count": 326,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.55/#pa"
+  "permalink": "ccpa/sec/1798.199.55/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.55:b",
@@ -5319,7 +6072,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.55/#pb"
+  "permalink": "ccpa/sec/1798.199.55/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.60",
@@ -5364,7 +6118,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.60/"
+  "permalink": "ccpa/sec/1798.199.60/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.65",
@@ -5409,7 +6164,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.65/"
+  "permalink": "ccpa/sec/1798.199.65/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.70",
@@ -5457,7 +6213,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.70/"
+  "permalink": "ccpa/sec/1798.199.70/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.70:a",
@@ -5479,7 +6236,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.70/#pa"
+  "permalink": "ccpa/sec/1798.199.70/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.70:b",
@@ -5501,7 +6259,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.70/#pb"
+  "permalink": "ccpa/sec/1798.199.70/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.70:c",
@@ -5523,7 +6282,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.70/#pc"
+  "permalink": "ccpa/sec/1798.199.70/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.75",
@@ -5539,7 +6299,9 @@
   "parent_chunk_id": null,
   "token_count": 263,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -5565,12 +6327,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.75",
   "token_count": 230,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.75/#pa"
+  "permalink": "ccpa/sec/1798.199.75/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.75:b",
@@ -5587,12 +6352,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.75",
   "token_count": 32,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.75/#pb"
+  "permalink": "ccpa/sec/1798.199.75/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.80",
@@ -5643,7 +6411,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.80/#pa"
+  "permalink": "ccpa/sec/1798.199.80/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.80:b",
@@ -5665,7 +6434,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.80/#pb"
+  "permalink": "ccpa/sec/1798.199.80/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.80:c",
@@ -5687,7 +6457,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.80/#pc"
+  "permalink": "ccpa/sec/1798.199.80/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.80:d",
@@ -5709,7 +6480,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.80/#pd"
+  "permalink": "ccpa/sec/1798.199.80/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.80:e",
@@ -5731,7 +6503,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.80/#pe"
+  "permalink": "ccpa/sec/1798.199.80/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.80:f",
@@ -5753,7 +6526,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.80/#pf"
+  "permalink": "ccpa/sec/1798.199.80/#pf",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.85",
@@ -5769,7 +6543,9 @@
   "parent_chunk_id": null,
   "token_count": 56,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -5793,12 +6569,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.85",
   "token_count": 56,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.85/"
+  "permalink": "ccpa/sec/1798.199.85/",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.90",
@@ -5814,7 +6593,11 @@
   "parent_chunk_id": null,
   "token_count": 576,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -5843,12 +6626,17 @@
   "parent_chunk_id": "ccpa:sec:1798.199.90",
   "token_count": 155,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "childrens-data",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.90/#pa"
+  "permalink": "ccpa/sec/1798.199.90/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.90:b",
@@ -5865,12 +6653,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.90",
   "token_count": 251,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.90/#pb"
+  "permalink": "ccpa/sec/1798.199.90/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.90:c",
@@ -5887,12 +6678,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.90",
   "token_count": 91,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.90/#pc"
+  "permalink": "ccpa/sec/1798.199.90/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.90:d",
@@ -5914,7 +6708,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.90/#pd"
+  "permalink": "ccpa/sec/1798.199.90/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.90:e",
@@ -5936,7 +6731,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.90/#pe"
+  "permalink": "ccpa/sec/1798.199.90/#pe",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.95",
@@ -5985,7 +6781,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.95/#pa"
+  "permalink": "ccpa/sec/1798.199.95/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.95:b",
@@ -6007,7 +6804,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.95/#pb"
+  "permalink": "ccpa/sec/1798.199.95/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.95:c",
@@ -6029,7 +6827,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.95/#pc"
+  "permalink": "ccpa/sec/1798.199.95/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.95:d",
@@ -6051,7 +6850,8 @@
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.95/#pd"
+  "permalink": "ccpa/sec/1798.199.95/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "ccpa:sec:1798.199.100",
@@ -6067,7 +6867,10 @@
   "parent_chunk_id": null,
   "token_count": 86,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
@@ -6091,11 +6894,15 @@
   "parent_chunk_id": "ccpa:sec:1798.199.100",
   "token_count": 86,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "vendor-contracts",
+   "enforcement-penalties"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
   "retrieved_at": "2026-10-14T13:21:47Z",
-  "permalink": "ccpa/sec/1798.199.100/"
+  "permalink": "ccpa/sec/1798.199.100/",
+  "topics_manual": false
  }
 ]

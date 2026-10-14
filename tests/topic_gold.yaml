@@ -1,0 +1,65 @@
+# Provisions whose topics are known to be right. `has` must all be present; `not` must be absent.
+# Run: python tests/check_topics.py   (after python build/tag_topics.py)
+gold:
+  # GDPR
+  - {id: "gdpr:art:35:1", has: [dpia]}
+  - {id: "gdpr:art:30:1", has: [records-of-processing]}
+  - {id: "gdpr:art:33:1", has: [breach-notification]}
+  - {id: "gdpr:art:34:1", has: [breach-notification]}
+  - {id: "gdpr:art:17:1", has: [data-subject-rights, right-deletion]}
+  - {id: "gdpr:art:15:1", has: [right-access]}
+  - {id: "gdpr:art:16:1", has: [right-correction]}
+  - {id: "gdpr:art:20:1", has: [right-portability]}
+  - {id: "gdpr:art:21:1", has: [right-opt-out]}
+  - {id: "gdpr:art:6:1", has: [lawful-basis-consent]}
+  - {id: "gdpr:art:7:1", has: [lawful-basis-consent]}
+  - {id: "gdpr:art:13:1", has: [notice-transparency]}
+  - {id: "gdpr:art:28:3", has: [vendor-contracts]}
+  - {id: "gdpr:art:44:1", has: [cross-border-transfers]}
+  - {id: "gdpr:art:46:1", has: [cross-border-transfers]}
+  - {id: "gdpr:art:8:1", has: [childrens-data]}
+  - {id: "gdpr:art:9:1", has: [sensitive-health-data]}
+  - {id: "gdpr:art:83:1", has: [enforcement-penalties]}
+  - {id: "gdpr:art:4:1", has: [definitions]}
+  - {id: "gdpr:art:2:1", has: [scope-applicability]}
+  - {id: "gdpr:art:3:1", has: [scope-applicability]}
+  - {id: "gdpr:art:32:1", has: [security-safeguards]}
+  - {id: "gdpr:art:23:1", has: [exemptions]}
+  - {id: "gdpr:art:1:1", not: [enforcement-penalties, security-safeguards, breach-notification]}
+  # CCPA statute
+  - {id: "ccpa:sec:1798.105:a", has: [data-subject-rights, right-deletion]}
+  - {id: "ccpa:sec:1798.105:d", has: [exemptions]}
+  - {id: "ccpa:sec:1798.106:a", has: [right-correction]}
+  - {id: "ccpa:sec:1798.110:a", has: [right-access]}
+  - {id: "ccpa:sec:1798.120:a", has: [right-opt-out]}
+  - {id: "ccpa:sec:1798.135:a", has: [right-opt-out, notice-transparency]}
+  - {id: "ccpa:sec:1798.140:ad", has: [definitions]}
+  - {id: "ccpa:sec:1798.150:a", has: [enforcement-penalties]}
+  - {id: "ccpa:sec:1798.100:a", has: [notice-transparency]}
+  - {id: "ccpa:sec:1798.145:a", has: [exemptions]}
+  - {id: "ccpa:sec:1798.155:a", has: [enforcement-penalties]}
+  # CPPA regulations
+  - {id: "ccpa_regs:sec:7025:a", has: [cookies-tracking, right-opt-out]}
+  - {id: "ccpa_regs:sec:7011:a", has: [notice-transparency]}
+  - {id: "ccpa_regs:sec:7012:a", has: [notice-transparency]}
+  - {id: "ccpa_regs:sec:7051:a", has: [vendor-contracts]}
+  - {id: "ccpa_regs:sec:7070:a", has: [childrens-data]}
+  - {id: "ccpa_regs:sec:7150:a", has: [dpia]}
+  - {id: "ccpa_regs:sec:7101:a", has: [records-of-processing]}
+  # CalOPPA
+  - {id: "caloppa:sec:22575:b", has: [notice-transparency, cookies-tracking]}
+  # HIPAA
+  - {id: "hipaa:sec:164.404:a", has: [breach-notification]}
+  - {id: "hipaa:sec:164.404:b", has: [breach-notification]}
+  - {id: "hipaa:sec:164.308:a", has: [security-safeguards]}
+  - {id: "hipaa:sec:164.312:a", has: [security-safeguards]}
+  - {id: "hipaa:sec:164.524:a", has: [right-access]}
+  - {id: "hipaa:sec:164.526:a", has: [right-correction]}
+  - {id: "hipaa:sec:164.528:a", has: [data-subject-rights]}
+  - {id: "hipaa:sec:164.520:a", has: [notice-transparency]}
+  - {id: "hipaa:sec:164.508:a", has: [lawful-basis-consent]}
+  - {id: "hipaa:sec:164.504:e.1", has: [vendor-contracts]}
+  - {id: "hipaa:sec:160.404:a", has: [enforcement-penalties]}
+  - {id: "hipaa:sec:164.530:j", has: [records-of-processing]}
+  - {id: "hipaa:sec:160.103:business-associate", has: [definitions]}
+  - {id: "hipaa:sec:164.404:b", not: [cross-border-transfers, cookies-tracking]}

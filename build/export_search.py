@@ -36,8 +36,12 @@ def export() -> dict:
                 "term": c.get("defined_term", ""), "text": c["text"], "lead": c.get("lead_in", ""),
                 "url": c["permalink"], "hier": c["hierarchy"], "parent": c["parent_chunk_id"],
                 "src": c["source_url"], "sub": c.get("subheading", ""),
+                "topics": c.get("topics", []),
             })
-    out = {"chunks": chunks, "articles": parents, "docs": docs}
+    tax = yaml.safe_load((ROOT / "taxonomy" / "topics.yaml").read_text(encoding="utf-8"))["topics"]
+    taxonomy = [{"id": t["id"], "label": t["label"], "parent": t.get("parent"),
+                 "description": t.get("description", "")} for t in tax]
+    out = {"chunks": chunks, "articles": parents, "docs": docs, "taxonomy": taxonomy}
     write_json(DIST / "assets" / "search-data.json", out)
     return out
 

@@ -1,0 +1,197 @@
+# Controlled topic vocabulary and first-pass keyword rules.
+#
+# How tagging works (build/tag_topics.py)
+#   Each provision is scored against every topic. A phrase found in the provision's HEADING (or
+#   paragraph heading / defined term) scores `head` points; a phrase found in its TEXT scores `text`
+#   points. Each phrase counts once. `weak` phrases score half as much. A topic is assigned when the
+#   score reaches `min_score`.
+#   A sub-topic assigns its parent automatically.
+#
+# Phrase syntax: plain words, case-insensitive, whole words. A trailing * matches word endings
+#   (penalt* matches penalty, penalties). Use the law's own wording.
+#
+# To correct a result, do NOT edit the generated files. Put the correction in
+# taxonomy/overrides.yaml; it is re-applied on every rebuild.
+
+defaults:
+  head: 3        # points for a phrase found in a heading / defined term
+  text: 1.5      # points for a phrase found in the text
+  min_score: 1.5
+
+topics:
+  - id: dpia
+    label: "DPIA / risk assessment"
+    description: "Data protection impact assessments, privacy impact assessments, risk assessments."
+    phrases: ["data protection impact assessment*", "privacy impact assessment*", dpia, "risk assessment*", "impact assessment*"]
+    weak: ["prior consultation", "high risk to the rights and freedoms"]
+
+  - id: data-subject-rights
+    label: "Individual rights (DSAR / consumer rights)"
+    description: "Rights of individuals over their data and how requests are handled."
+    phrases:
+      - "right of access"
+      - "right to know"
+      - "right to delete"
+      - "right to correct"
+      - "right to erasure"
+      - "right to rectification"
+      - "right to data portability"
+      - "right to object"
+      - "right to restriction"
+      - "right to opt out"
+      - "right to limit"
+      - "data subject request*"
+      - "consumer request*"
+      - "request to delete"
+      - "request to know"
+      - "request to correct"
+      - "request to opt-out"
+      - "rights of the data subject"
+      - "access of individuals"
+      - "accounting of disclosures"
+      - "individual rights"
+      - "right to request"
+    weak: ["data subject rights", "verifiable consumer request"]
+    min_score: 1.5
+
+  - id: right-access
+    parent: data-subject-rights
+    label: "Right of access"
+    phrases: ["right of access", "right to know", "request to know", "access of individuals to protected health information", "inspect and obtain a copy", "access to protected health information", "request to access"]
+    min_score: 1.5
+
+  - id: right-deletion
+    parent: data-subject-rights
+    label: "Deletion / erasure"
+    phrases: ["right to erasure", "right to delete", "request to delete", "erasure of personal data", "right to be forgotten", "requests to delete"]
+    weak: ["erasure", "delete*"]
+    min_score: 1.5
+
+  - id: right-correction
+    parent: data-subject-rights
+    label: "Correction / rectification"
+    phrases: ["right to rectification", "right to correct", "request to correct", "rectification of personal data", "amendment of protected health information", "requests to correct", "right to amend"]
+    min_score: 1.5
+
+  - id: right-portability
+    parent: data-subject-rights
+    label: "Data portability"
+    phrases: ["data portability", "portability", "transmit those data to another controller"]
+    min_score: 1.5
+
+  - id: right-opt-out
+    parent: data-subject-rights
+    label: "Opt-out / objection / limit"
+    phrases: ["right to opt out", "opt-out", "opt out", "right to object", "do not sell", "do not share", "opt-out preference signal*", "right to limit", "right to restriction", "request to limit", "limit the use"]
+    min_score: 1.5
+
+  - id: records-of-processing
+    label: "Record-keeping (ROPA)"
+    description: "Records of processing activities, documentation and record-keeping duties."
+    phrases: ["records of processing activities", "record of processing activities", "record of processing", "record-keeping", "recordkeeping", "maintain records", "retain the documentation", "keep records", "record of consumer requests"]
+    weak: [documentation, "maintain a record"]
+    min_score: 1.5
+
+  - id: lawful-basis-consent
+    label: "Lawful basis and consent"
+    description: "When processing is allowed: lawful bases, consent, authorizations."
+    phrases: ["lawfulness of processing", "lawful basis", "legal basis", "legitimate interests", "conditions for consent", "consent", "valid authorization", "authorization*", "affirmatively authorized", "opt-in", "opt in"]
+    min_score: 3
+
+  - id: notice-transparency
+    label: "Notices and transparency"
+    description: "Privacy policies, notices at collection, information to be provided."
+    phrases:
+      - "notice at collection"
+      - "privacy policy"
+      - "privacy notice"
+      - "notice of privacy practices"
+      - "transparent information"
+      - "information to be provided"
+      - "transparency"
+      - "notice of right to opt-out"
+      - "notice of right to limit"
+      - "notice of financial incentive"
+      - "conspicuously post*"
+      - "pre-use notice"
+      - "inform consumers"
+      - "point of collection"
+      - "provide notice"
+      - "notice to consumers"
+      - "clear and conspicuous link"
+      - "conspicuous link"
+    min_score: 1.5
+
+  - id: cookies-tracking
+    label: "Cookies and tracking"
+    description: "Cookies, trackers, browser signals, behavioral advertising."
+    phrases: [cookie*, "tracking technolog*", pixel*, "do not track", "opt-out preference signal*", "cross-context behavioral advertising", "online identifier*", "behavioral advertising", "global privacy control", "browser signal*", "fingerprint*", "web beacon*", "terminal equipment", "advertising"]
+    min_score: 1.5
+
+  - id: breach-notification
+    label: "Breach notification"
+    description: "Personal data breaches and the duty to notify."
+    phrases: ["personal data breach*", "breach of security", "breach notification", "notification of a breach", "breach of unsecured protected health information", "security breach*", "data breach*", "notification to individuals", "notification to the media", "notification to the secretary", "notification by a business associate", "unauthorized access and exfiltration"]
+    weak: [breach*]
+    min_score: 1.5
+
+  - id: vendor-contracts
+    label: "Vendors, processors and contracts"
+    description: "Processors, service providers, contractors, business associates and the contracts that bind them."
+    phrases: ["processor contract*", "contract or other legal act", "sub-processor*", "service provider*", "contractor*", "business associate contract*", "business associate agreement*", "satisfactory assurances", "engage another processor", "joint controllers", "third party contract*", "contract requirements"]
+    weak: [processor*, "business associate*"]
+    min_score: 3
+
+  - id: cross-border-transfers
+    label: "Cross-border transfers"
+    description: "Transfers of personal data to other countries or international organisations."
+    phrases: ["third countr*", "international organisation*", "international organization*", "standard data protection clauses", "binding corporate rules", "adequacy decision*", "cross-border", "international transfer*", "transfers of personal data", "transfer* to a third"]
+    min_score: 1.5
+
+  - id: security-safeguards
+    label: "Security safeguards"
+    description: "Security of processing and safeguards."
+    phrases: ["security of processing", "technical and organisational measures", "technical and organizational measures", "administrative safeguards", "physical safeguards", "technical safeguards", "safeguard*", encryption, pseudonymisation, pseudonymization, "access control*", "audit control*", "cybersecurity*", "security program", "risk analysis", "reasonable security", "security measures", "contingency plan", "security management process", "security incident*", "integrity and confidentiality"]
+    weak: [confidentiality, integrity, security]
+    min_score: 1.5
+
+  - id: childrens-data
+    label: "Children's data"
+    description: "Provisions specific to children and minors."
+    phrases: [child, children, "child's", minor, minors, "under 16", "under 13", "less than 16 years", "less than 13 years", "parental consent", "holder of parental responsibility", "parent or guardian", "unemancipated"]
+    min_score: 1.5
+
+  - id: sensitive-health-data
+    label: "Sensitive and health data"
+    description: "Special categories, sensitive personal information, health data."
+    phrases: ["special categories of personal data", "sensitive personal information", "data concerning health", "health data", "biometric data", "genetic data", "psychotherapy notes", "racial or ethnic origin", "precise geolocation", "genetic information", "reproductive health care", "substance use disorder*", "mental health", "sexual orientation", "religious or philosophical beliefs", "trade union membership"]
+    min_score: 1.5
+
+  - id: enforcement-penalties
+    label: "Enforcement and penalties"
+    description: "Fines, penalties, enforcement powers and remedies."
+    phrases: ["civil money penalt*", "administrative fine*", "penalt*", "enforcement", "investigation*", "injunction*", "civil penalt*", "statutory damages", "private right of action", "civil action", "sanction*", "right to compensation", "corrective powers", "compliance review*", "cure period", "probable cause"]
+    weak: [fine*, violation*, complaint*]
+    min_score: 3
+
+  - id: definitions
+    label: "Definitions"
+    description: "Defined terms."
+    # assigned by rule: every defined-term chunk, plus sections headed "Definitions"
+    phrases: []
+    headers: [definition*]
+    min_score: 3
+
+  - id: scope-applicability
+    label: "Scope and applicability"
+    description: "What the law covers and who must comply."
+    phrases: []
+    headers: ["scope", "applicability", "territorial scope", "material scope", "title and scope", "statutory basis and purpose", "applicability and scope", "subject-matter and objectives", "general applicability", "application of"]
+    min_score: 3
+
+  - id: exemptions
+    label: "Exemptions and exceptions"
+    description: "Exemptions, exceptions and limits on a rule."
+    phrases: ["exemption*", "exempt", "exception*", "shall not apply", "does not apply", "shall not restrict", "not required to comply", "derogation*", "preempt*", "shall not be required", "shall not be required to comply"]
+    headers: [exemption*, exception*, preemption, limitation*, restriction*]
+    min_score: 3

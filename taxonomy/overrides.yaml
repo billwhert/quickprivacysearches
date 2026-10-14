@@ -1,0 +1,14 @@
+# Manual topic corrections. These survive every rebuild.
+#
+# Each entry:
+#   id:      a provision id (for example gdpr:art:35:1) or a whole section/article id
+#            (for example ccpa:sec:1798.105), which covers every provision inside it
+#   add:     topic ids to add
+#   remove:  topic ids to remove
+#   note:    why (optional, for your future self)
+#
+# Topic ids are in taxonomy/topics.yaml. After editing, run:
+#   python build/tag_topics.py
+# and look at data/reports/topic_review.csv.
+
+overrides: []

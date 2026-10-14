@@ -14,7 +14,10 @@
   "parent_chunk_id": null,
   "token_count": 506,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency",
+   "cookies-tracking"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
@@ -42,12 +45,15 @@
   "parent_chunk_id": "caloppa:sec:22575",
   "token_count": 127,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22575/#pa"
+  "permalink": "caloppa/sec/22575/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22575:b",
@@ -65,12 +71,16 @@
   "parent_chunk_id": "caloppa:sec:22575",
   "token_count": 378,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency",
+   "cookies-tracking"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22575/#pb"
+  "permalink": "caloppa/sec/22575/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22576",
@@ -87,7 +97,9 @@
   "parent_chunk_id": null,
   "token_count": 108,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
@@ -115,12 +127,15 @@
   "parent_chunk_id": "caloppa:sec:22576",
   "token_count": 98,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22576/"
+  "permalink": "caloppa/sec/22576/",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22576:a",
@@ -143,7 +158,8 @@
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22576/#pa"
+  "permalink": "caloppa/sec/22576/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22576:b",
@@ -166,7 +182,8 @@
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22576/#pb"
+  "permalink": "caloppa/sec/22576/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22577",
@@ -183,7 +200,9 @@
   "parent_chunk_id": null,
   "token_count": 672,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
@@ -218,7 +237,8 @@
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22577/"
+  "permalink": "caloppa/sec/22577/",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22577:a",
@@ -241,7 +261,8 @@
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22577/#pa"
+  "permalink": "caloppa/sec/22577/#pa",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22577:b",
@@ -259,12 +280,15 @@
   "parent_chunk_id": "caloppa:sec:22577",
   "token_count": 350,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22577/#pb"
+  "permalink": "caloppa/sec/22577/#pb",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22577:c",
@@ -287,7 +311,8 @@
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22577/#pc"
+  "permalink": "caloppa/sec/22577/#pc",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22577:d",
@@ -310,7 +335,8 @@
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22577/#pd"
+  "permalink": "caloppa/sec/22577/#pd",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22578",
@@ -327,7 +353,9 @@
   "parent_chunk_id": null,
   "token_count": 69,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
@@ -353,12 +381,15 @@
   "parent_chunk_id": "caloppa:sec:22578",
   "token_count": 69,
   "footnotes": [],
-  "topics": [],
+  "topics": [
+   "notice-transparency"
+  ],
   "jurisdiction": "US-CA",
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22578/"
+  "permalink": "caloppa/sec/22578/",
+  "topics_manual": false
  },
  {
   "chunk_id": "caloppa:sec:22579",
@@ -406,6 +437,7 @@
   "doc_type": "law",
   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
   "retrieved_at": "2026-10-14T13:20:00Z",
-  "permalink": "caloppa/sec/22579/"
+  "permalink": "caloppa/sec/22579/",
+  "topics_manual": false
  }
 ]

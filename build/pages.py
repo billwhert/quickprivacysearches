@@ -14,6 +14,7 @@ WEB = ROOT / "web"
 e = html.escape
 
 VERSION = "dev"  # set in build(): content hash used to bust browser caches
+TOPICS: dict = {}   # topic id -> {label, parent}; set in build()
 PARENT_KINDS = ("article", "section")
 
 DISCLAIMER = ("Reference tool, not legal advice. Text is taken from the official source and shown "
@@ -143,12 +144,17 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
                          if cites else "")
             lead = (f'<p class="lead-in"><span>Context:</span> {e(c["lead_in"])}</p>'
                     if c.get("lead_in") else "")
+            have = [t for t in c.get("topics", []) if t in TOPICS]
+            shadowed = {TOPICS[t]["parent"] for t in have if TOPICS[t]["parent"]}
+            tags = [t for t in have if t not in shadowed]   # a sub-topic replaces its parent
+            tag_html = ('<p class="tags">' + "".join(f'<span class="tag">{e(TOPICS[t]["label"])}</span>'
+                                                    for t in tags[:4]) + "</p>") if tags else ""
             anchor = (f'<div class="prov-head"><a class="anchor" href="#{frag}" title="Permalink">{e(label)}</a>'
                       f'<button type="button" class="copy-link" data-frag="{frag}">Copy link</button></div>'
                       if label and frag else "")
             id_attr = f' id="{frag}"' if frag else ""
             parts.append(f'<section class="prov"{id_attr}>'
-                         f'{anchor}{lead}<div class="text">{render_text(c["text"])}</div>{cite_html}</section>')
+                         f'{anchor}{tag_html}{lead}<div class="text">{render_text(c["text"])}</div>{cite_html}</section>')
         notes = a.get("footnotes") or []
         if notes:
             parts.append('<section class="notes"><h2>Notes</h2><ol>'
@@ -330,6 +336,9 @@ def build() -> None:
     shutil.copy(WEB / "vendor" / "minisearch.js", DIST / "assets" / "minisearch.js")
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
 
+    TOPICS.clear()
+    for t in yaml.safe_load((ROOT / "taxonomy" / "topics.yaml").read_text(encoding="utf-8"))["topics"]:
+        TOPICS[t["id"]] = {"label": t["label"], "parent": t.get("parent")}
     order = [d["doc_id"] for d in yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8"))["documents"]]
     loaded = [d for d in order if (PROCESSED / d / "chunks.json").exists()]
     docs, by_id_all = [], {}

@@ -250,6 +250,11 @@ export function search(engine, data, syn, raw, opts = {}) {
     out.messages.push(`${cit.chunk.ref} is in ${data.docs[cit.chunk.doc].short}, which your filters exclude.`);
     cit = null;
   }
+  if (cit && opts.topics && opts.topics.length &&
+      !(cit.chunk.topics || []).some(t => opts.topics.includes(t))) {
+    out.messages.push(`${cit.chunk.ref} is outside the topics you selected.`);
+    cit = null;
+  }
   if (cit) out.citation = cit;
   const pureCitation = !!cit && cit.exact;
   if (pureCitation) return out;
@@ -279,8 +284,15 @@ export function search(engine, data, syn, raw, opts = {}) {
     }
   };
   const docOK = q.filterDocs.length ? (r => q.filterDocs.includes(byId.get(r.id).doc)) : undefined;
+  const topicSet = opts.topics && opts.topics.length ? new Set(opts.topics) : null;
+  const topicOK = c => !topicSet || (c.topics || []).some(t => topicSet.has(t));
   const searchOpts = { ...SEARCH_OPTIONS, boostTerm: t => rarityWeight(engine, t) };
-  if (docOK) searchOpts.filter = docOK;
+  if (docOK || topicSet) {
+    searchOpts.filter = r => {
+      const c = byId.get(r.id);
+      return (!docOK || docOK(r)) && topicOK(c);
+    };
+  }
   if (q.terms.length) add(ms.search(q.terms.join(" "), searchOpts), 1);
   for (const x of q.weighted) add(ms.search(x.phrase, searchOpts), EXPANSION_WEIGHT * x.weight);
 
@@ -291,6 +303,7 @@ export function search(engine, data, syn, raw, opts = {}) {
   for (const [id, score] of ranked) {
     const c = byId.get(id);
     if (q.filterDocs.length && !q.filterDocs.includes(c.doc)) continue;
+    if (!topicOK(c)) continue;
     const hay = normalize(`${c.heading} ${c.sub || ""} ${c.term} ${c.text}`);
     let longest = 0;
     for (const ph of phrases) {

@@ -12,7 +12,8 @@ const MAX_RESULTS = 20;
 let data, syn, engine;
 let lastQuery = "";
 let counts = null;                       // matches per document for the current query, ignoring filters
-const filters = { laws: new Set(), types: new Set(), jurisdictions: new Set() };
+let topicCounts = null;                  // matches per topic for the current query, ignoring filters
+const filters = { laws: new Set(), types: new Set(), jurisdictions: new Set(), topics: new Set() };
 
 const TYPE_LABELS = { law: "Statutes", regulation: "Regulations", guidance: "Guidance" };
 const JURISDICTION_LABELS = { EU: "European Union", "US-CA": "California", "US-Federal": "US federal" };
@@ -33,9 +34,17 @@ const ready = (async () => {
 function filterState() {
   return { laws: [...filters.laws], types: [...filters.types], jurisdictions: [...filters.jurisdictions] };
 }
-function anyFilter() { return filters.laws.size + filters.types.size + filters.jurisdictions.size > 0; }
+function anyFilter() {
+  return filters.laws.size + filters.types.size + filters.jurisdictions.size + filters.topics.size > 0;
+}
+const topicLabel = id => (data.taxonomy.find(t => t.id === id) || { label: id }).label;
 
 function countFor(group, value) {
+  if (group === "topics") {
+    if (!topicCounts) return "";
+    const n = topicCounts[value] || 0;
+    return n > 99 ? "99+" : String(n);
+  }
   if (!counts) return "";
   let n = 0;
   for (const [doc, c] of Object.entries(counts)) {
@@ -53,6 +62,19 @@ function chip(group, value, label) {
          `${esc(label)}${n !== "" ? `<span class="fcount">${n}</span>` : ""}</button>`;
 }
 
+function topicChips() {
+  // sub-topics (for example "Deletion") appear once their parent topic is selected
+  const tops = data.taxonomy.filter(t => !t.parent);
+  let html = "";
+  for (const t of tops) {
+    html += chip("topics", t.id, t.label);
+    if (filters.topics.has(t.id)) {
+      for (const sub of data.taxonomy.filter(x => x.parent === t.id)) html += chip("topics", sub.id, sub.label);
+    }
+  }
+  return html;
+}
+
 function renderFilters() {
   const docs = Object.entries(data.docs);
   const types = [...new Set(docs.map(([, d]) => d.doc_type))];
@@ -62,6 +84,7 @@ function renderFilters() {
     group("Law", docs.map(([id, d]) => chip("laws", id, d.short)).join("")) +
     group("Type", types.map(t => chip("types", t, TYPE_LABELS[t] || t)).join("")) +
     group("Jurisdiction", juris.map(j => chip("jurisdictions", j, JURISDICTION_LABELS[j] || j)).join("")) +
+    group("Topic", topicChips()) +
     (anyFilter() ? `<button type="button" class="link" id="clear-filters">Clear filters</button>` : "");
   filterBox.hidden = false;
 }
@@ -95,6 +118,16 @@ function renderLines(text, terms) {
   }).join("");
 }
 
+function tagsHtml(c) {
+  // show the most specific tags: a sub-topic replaces its parent
+  const have = c.topics || [];
+  const parents = new Set(have.map(t => (data.taxonomy.find(x => x.id === t) || {}).parent).filter(Boolean));
+  const tags = have.filter(t => !parents.has(t));
+  if (!tags.length) return "";
+  return `<p class="tags" title="Topic tags are assigned by keyword rules and reviewed by hand; they can be incomplete.">` +
+         tags.slice(0, 4).map(t => `<span class="tag">${esc(topicLabel(t))}</span>`).join("") + `</p>`;
+}
+
 function card(c, terms, opts = {}) {
   const doc = data.docs[c.doc];
   const parent = c.parent ? data.articles.find(a => a.id === c.parent) : null;
@@ -109,6 +142,7 @@ function card(c, terms, opts = {}) {
       <span class="badge kind">${esc(kind)}</span>${opts.exact ? '<span class="badge">Exact match</span>' : ""}</div>
     <p class="crumbs">${esc(c.hier.slice(0, -1).join(" › "))}</p>
     <h2><a href="${c.url}">${esc(c.ref)}</a>${heading}</h2>
+    ${tagsHtml(c)}
     ${opts.note ? `<p class="note">${esc(opts.note)}</p>` : ""}
     ${lead}
     <div class="text">${renderLines(c.text, terms)}</div>
@@ -127,26 +161,29 @@ function highlightTerms(q) {
 }
 
 function tally(res) {
-  const t = {};
-  if (res.citation) t[res.citation.chunk.doc] = (t[res.citation.chunk.doc] || 0) + 1;
-  for (const h of res.results) {
-    const d = engine.byId.get(h.id).doc;
-    t[d] = (t[d] || 0) + 1;
-  }
-  return t;
+  const t = {}, tt = {};
+  const seen = c => {
+    t[c.doc] = (t[c.doc] || 0) + 1;
+    for (const tp of c.topics || []) tt[tp] = (tt[tp] || 0) + 1;
+  };
+  if (res.citation) seen(res.citation.chunk);
+  for (const h of res.results) seen(engine.byId.get(h.id));
+  return { docs: t, topics: tt };
 }
 
 async function run(raw) {
   raw = raw.trim();
   await ready;
   lastQuery = raw;
-  if (!raw) { list.innerHTML = ""; status.textContent = ""; counts = null; renderFilters(); return; }
+  if (!raw) { list.innerHTML = ""; status.textContent = ""; counts = null; topicCounts = null; renderFilters(); return; }
 
   // unfiltered pass gives the per-law counts shown on the filter chips
   const all = search(engine, data, syn, raw);
-  counts = tally(all);
+  const t0 = tally(all);
+  counts = t0.docs;
+  topicCounts = t0.topics;
   const res = anyFilter()
-    ? search(engine, data, syn, raw, { docs: docsForFilters(data, filterState()) })
+    ? search(engine, data, syn, raw, { docs: docsForFilters(data, filterState()), topics: [...filters.topics] })
     : all;
   renderFilters();
 
@@ -171,8 +208,13 @@ async function run(raw) {
       `${res.expansions.map(x => `<em>${esc(x)}</em>`).join(", ")}</span>`);
   }
   if (anyFilter() && out.length) {
-    const names = docsForFilters(data, filterState()).map(d => data.docs[d].short).join(", ");
-    notes.push(`<span class="note-line">Filtered to: ${esc(names)}</span>`);
+    const parts = [];
+    const f = filterState();
+    if (f.laws.length || f.types.length || f.jurisdictions.length) {
+      parts.push(docsForFilters(data, f).map(d => data.docs[d].short).join(", "));
+    }
+    if (filters.topics.size) parts.push("topic: " + [...filters.topics].map(topicLabel).join(", "));
+    notes.push(`<span class="note-line">Filtered to: ${esc(parts.join(" | "))}</span>`);
   }
   if (!out.length) {
     const hint = anyFilter() ? "Try clearing a filter, or " : "";
@@ -245,7 +287,7 @@ if (location.hash.startsWith("#q=")) history.replaceState(null, "", location.pat
 // Back/forward cache restores must not bring an old search or filters back either.
 window.addEventListener("pageshow", e => {
   if (e.persisted) {
-    input.value = ""; list.innerHTML = ""; status.textContent = ""; lastQuery = ""; counts = null;
+    input.value = ""; list.innerHTML = ""; status.textContent = ""; lastQuery = ""; counts = null; topicCounts = null;
     Object.values(filters).forEach(s => s.clear());
     if (data) renderFilters();
   }

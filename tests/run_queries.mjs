@@ -143,11 +143,20 @@ function filterTests() {
       r => r.ids.length === 0 && r.messages.length > 0],
     ["two laws selected show both", "breach notification timelines", { laws: ["gdpr", "hipaa"] },
       r => r.ids.some(i => i.startsWith("gdpr:")) && r.ids.some(i => i.startsWith("hipaa:"))],
+    ["topic filter returns only tagged provisions", "notification", { topics: ["breach-notification"] },
+      r => r.ids.length > 0 && r.ids.every(i => (byId.get(i).topics || []).includes("breach-notification"))],
+    ["sub-topic is narrower than its parent", "request", { topics: ["right-deletion"] },
+      r => r.ids.length > 0 && r.ids.every(i => (byId.get(i).topics || []).includes("right-deletion"))],
+    ["topic + law combine", "contract", { topics: ["vendor-contracts"], laws: ["hipaa"] },
+      r => r.ids.length > 0 && r.ids.every(i => i.startsWith("hipaa:") && byId.get(i).topics.includes("vendor-contracts"))],
+    ["a citation outside the chosen topic is reported", "Article 99", { topics: ["breach-notification"] },
+      r => !r.citation && r.messages.some(m => /topic/i.test(m))],
   ];
+  const byId = new Map(data.chunks.map(c => [c.id, c]));
   let pass = 0;
   console.log("\n== Filters ==");
   for (const [label, q, f, check] of cases) {
-    const r = search(engine, data, syn, q, { docs: docsForFilters(data, f) });
+    const r = search(engine, data, syn, q, { docs: docsForFilters(data, f), topics: f.topics });
     const ids = r.results.map(h => h.id);
     const ok = check({ ids, citation: r.citation, messages: r.messages });
     if (ok) pass++;

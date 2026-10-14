@@ -27,7 +27,9 @@ LOGO = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width
 # ---------- shared page frame ----------
 
 def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> str:
-    nav = [("Search", rel, "search")] + [(d["short_name"], f"{rel}{d['doc_id']}/", d["doc_id"]) for d in nav_docs]
+    nav = [("Search", rel, "search"), ("Browse", f"{rel}documents/", "browse")]
+    if active not in ("search", ""):
+        active = "browse"
     links = " ".join(
         f'<a href="{href}"{" aria-current=page" if key == active else ""}>{e(label)}</a>'
         for label, href, key in nav)
@@ -43,6 +45,7 @@ def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> s
 <main class="wrap">
 {body}
 </main>
+<script type="module" src="{rel}assets/page.js?v={VERSION}"></script>
 <footer class="site"><div class="wrap">
 <p>{e(DISCLAIMER)}</p>
 <p>No accounts, no tracking. Searches run in your browser and are never sent anywhere.</p>
@@ -140,7 +143,8 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
                          if cites else "")
             lead = (f'<p class="lead-in"><span>Context:</span> {e(c["lead_in"])}</p>'
                     if c.get("lead_in") else "")
-            anchor = (f'<a class="anchor" href="#{frag}" title="Permalink">{e(label)}</a>'
+            anchor = (f'<div class="prov-head"><a class="anchor" href="#{frag}" title="Permalink">{e(label)}</a>'
+                      f'<button type="button" class="copy-link" data-frag="{frag}">Copy link</button></div>'
                       if label and frag else "")
             id_attr = f' id="{frag}"' if frag else ""
             parts.append(f'<section class="prov"{id_attr}>'
@@ -174,7 +178,9 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         cites = out_refs.get(r["chunk_id"], [])
         body = [f'<p class="crumbs"><span class="badge">{e(doc["short_name"])}</span> Recitals</p>',
                 f'<h1>{e(r["section_ref"])}</h1>',
-                f'<section class="prov"><div class="text">{render_text(r["text"])}</div>'
+                f'<section class="prov"><div class="prov-head"><span class="anchor">Recital {r["number"]}</span>'
+                f'<button type="button" class="copy-link" data-frag="">Copy link</button></div>'
+                f'<div class="text">{render_text(r["text"])}</div>'
                 + ('<p class="refs">References: ' + ", ".join(link(rel, t) for t in cites) + "</p>" if cites else "")
                 + "</section>"]
         if r["footnotes"]:
@@ -202,6 +208,11 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
     count = f"{len(parents)} {noun}" + (f" and {len(recitals)} recitals" if recitals else "")
     toc = [f'<h1>{e(doc["title"])}</h1>', source_block(doc),
            f'<p class="lede">{count}.' + (' <a href="#recitals">Jump to recitals</a>.' if recitals else "") + "</p>",
+           f'<p><a class="btn-link" href="{parents[0]["permalink"]}">Start reading: {e(parents[0]["section_ref"])} →</a></p>',
+           '<div class="tocbar"><label for="toc-filter" class="vh">Find a section</label>'
+           '<input id="toc-filter" type="search" autocomplete="off" '
+           'placeholder="Find a section: type a number or a word, e.g. 30, erasure, minimum necessary"></div>',
+           '<p id="toc-empty" class="muted" hidden>No section matches that.</p>',
            '<div class="chapters">']
     prefix = doc["short_name"] + " "
     for chap, secs in groups.items():
@@ -209,9 +220,19 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         for sec, items in secs.items():
             if sec:
                 card.append(f"<h3>{e(sec)}</h3>")
+            def find_text(a):
+                """Paragraph headings and defined terms inside a section, so the finder can reach them."""
+                seen, out = set(), []
+                for cid in a["child_chunk_ids"]:
+                    c = by_id_all[cid]
+                    for t in (c.get("subheading"), c.get("defined_term")):
+                        if t and t not in seen:
+                            seen.add(t)
+                            out.append(t)
+                return " ".join(out)
             card.append("<ul class=toc>" + "".join(
-                f'<li><a href="{a["permalink"]}">{e(a["section_ref"].removeprefix(prefix))}</a>'
-                f'{e(a["heading"])}</li>' for a in items) + "</ul>")
+                f'<li data-find="{e(find_text(a))}"><a href="{a["permalink"]}">'
+                f'{e(a["section_ref"].removeprefix(prefix))}</a>{e(a["heading"])}</li>' for a in items) + "</ul>")
         toc.append("".join(card) + "</section>")
     toc.append("</div>")
     if recitals:
@@ -241,12 +262,39 @@ with its citation, version, and a link to the official source. Currently loaded:
   <button type="submit">Search</button>
 </form>
 <div class="examples"><span>Try:</span> {ex}</div>
+<div id="filters" class="filters" aria-label="Filters" hidden></div>
 </section>
 <div id="status" role="status" aria-live="polite"></div>
 <ol id="results" class="results"></ol>
 <noscript><p>Search needs JavaScript. You can still browse the documents using the menu above.</p></noscript>
 <script type="module" src="assets/search.js?v={VERSION}"></script>"""
     (DIST / "index.html").write_text(page("Quick Privacy Searches", body, "", docs, "search"), encoding="utf-8")
+
+
+def build_documents(docs: list, by_id_all: dict) -> None:
+    cards = []
+    type_label = {"law": "Statute", "regulation": "Regulation", "guidance": "Guidance"}
+    for d in docs:
+        own = [c for c in by_id_all.values() if c["doc_id"] == d["doc_id"]]
+        parents = [c for c in own if c["kind"] in PARENT_KINDS]
+        recitals = [c for c in own if c["kind"] == "recital"]
+        noun = "articles" if parents and parents[0]["kind"] == "article" else "sections"
+        size = f"{len(parents)} {noun}" + (f", {len(recitals)} recitals" if recitals else "")
+        cards.append(
+            f'<li class="doc-card"><div class="result-head">'
+            f'<span class="badge">{e(d["short_name"])}</span>'
+            f'<span class="badge kind">{e(type_label.get(d["doc_type"], d["doc_type"]))}</span>'
+            f'<span class="badge kind">{e(d["jurisdiction"])}</span></div>'
+            f'<h2><a href="../{d["doc_id"]}/">{e(d["title"])}</a></h2>'
+            f'<p class="muted">{e(d["version_label"])}<br>Retrieved {e(d["retrieved_at"][:10])} · {e(size)}</p>'
+            f'<p class="actions"><a href="../{d["doc_id"]}/">Read it</a>'
+            f'<a href="{e(d["source_url"])}">Official source</a></p></li>')
+    body = ('<h1>Browse the laws</h1><p class="lede">Read any loaded law in order, find a section by number or '
+            'word, and copy a link to any provision. Every provision page shows its version and retrieval date.</p>'
+            f'<ul class="doc-grid">{"".join(cards)}</ul>')
+    d = DIST / "documents"
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "index.html").write_text(page("Browse the laws", body, "../", docs, "browse"), encoding="utf-8")
 
 
 def export_synonyms() -> None:
@@ -306,6 +354,7 @@ def build() -> None:
     export_search.export()
     export_synonyms()
     build_home(docs)
+    build_documents(docs, by_id_all)
     n = sum(1 for _ in DIST.rglob("*.html"))
     print(f"site: {n} html pages -> {DIST}")
 

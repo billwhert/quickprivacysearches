@@ -371,7 +371,8 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-160.103",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/160.103/#pbusiness-associate",
-  "defined_term": "Business associate"
+  "defined_term": "Business associate",
+  "subheading": "Business associate"
  },
  {
   "chunk_id": "hipaa:sec:160.103:Civil money penalty or penalty",
@@ -920,7 +921,8 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-160.103",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/160.103/#phealth-plan",
-  "defined_term": "Health plan"
+  "defined_term": "Health plan",
+  "subheading": "Health plan"
  },
  {
   "chunk_id": "hipaa:sec:160.103:implementation-specification",
@@ -7676,7 +7678,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.105",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.105/#pa"
+  "permalink": "hipaa/sec/164.105/#pa",
+  "subheading": "Standard: Health care component. | Implementation specifications: | Application of other provisions. | Safeguard requirements. | Responsibilities of the covered entity."
  },
  {
   "chunk_id": "hipaa:sec:164.105:b",
@@ -7700,7 +7703,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.105",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.105/#pb"
+  "permalink": "hipaa/sec/164.105/#pb",
+  "subheading": "Standard: Affiliated covered entities. | Implementation specifications | Requirements for designation of an affiliated covered entity. | Safeguard requirements."
  },
  {
   "chunk_id": "hipaa:sec:164.105:c",
@@ -7724,7 +7728,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.105",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.105/#pc"
+  "permalink": "hipaa/sec/164.105/#pc",
+  "subheading": "Standard: Documentation. | Implementation specification: Retention period."
  },
  {
   "chunk_id": "hipaa:sec:164.106",
@@ -8524,7 +8529,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.308",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.308/#pa"
+  "permalink": "hipaa/sec/164.308/#pa",
+  "subheading": "Standard: Security management process. | Implementation specifications: | Risk analysis (Required). | Risk management (Required). | Sanction policy (Required). | Information system activity review (Required). | Standard: Assigned security responsibility. | Standard: Workforce security. | Authorization and/or supervision (Addressable). | Workforce clearance procedure (Addressable). | Termination procedures (Addressable). | Standard: Information access management. | Isolating health care clearinghouse functions (Required). | Access authorization (Addressable). | Access establishment and modification (Addressable). | Standard: Security awareness and training. | Implementation specifications. | Security reminders (Addressable). | Protection from malicious software (Addressable). | Log-in monitoring (Addressable). | Password management (Addressable). | Standard: Security incident procedures. | Implementation specification: Response and reporting (Required). | Standard: Contingency plan. | Data backup plan (Required). | Disaster recovery plan (Required). | Emergency mode operation plan (Required). | Testing and revision procedures (Addressable). | Applications and data criticality analysis (Addressable). | Standard: Evaluation."
  },
  {
   "chunk_id": "hipaa:sec:164.308:b",
@@ -8548,7 +8554,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.308",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.308/#pb"
+  "permalink": "hipaa/sec/164.308/#pb",
+  "subheading": "Business associate contracts and other arrangements. | Implementation specifications: Written contract or other arrangement (Required)."
  },
  {
   "chunk_id": "hipaa:sec:164.310",
@@ -8626,7 +8633,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.310",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.310/#pa"
+  "permalink": "hipaa/sec/164.310/#pa",
+  "subheading": "Standard: Facility access controls. | Implementation specifications: | Contingency operations (Addressable). | Facility security plan (Addressable). | Access control and validation procedures (Addressable). | Maintenance records (Addressable)."
  },
  {
   "chunk_id": "hipaa:sec:164.310:b",
@@ -8700,7 +8708,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.310",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.310/#pd"
+  "permalink": "hipaa/sec/164.310/#pd",
+  "subheading": "Standard: Device and media controls. | Implementation specifications: | Disposal (Required). | Media re-use (Required). | Accountability (Addressable). | Data backup and storage (Addressable)."
  },
  {
   "chunk_id": "hipaa:sec:164.312",
@@ -8779,7 +8788,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.312",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.312/#pa"
+  "permalink": "hipaa/sec/164.312/#pa",
+  "subheading": "Standard: Access control. | Implementation specifications: | Unique user identification (Required). | Emergency access procedure (Required). | Automatic logoff (Addressable). | Encryption and decryption (Addressable)."
  },
  {
   "chunk_id": "hipaa:sec:164.312:b",
@@ -8828,7 +8838,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.312",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.312/#pc"
+  "permalink": "hipaa/sec/164.312/#pc",
+  "subheading": "Standard: Integrity. | Implementation specification: Mechanism to authenticate electronic protected health information (Addressable)."
  },
  {
   "chunk_id": "hipaa:sec:164.312:d",
@@ -8877,7 +8888,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.312",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.312/#pe"
+  "permalink": "hipaa/sec/164.312/#pe",
+  "subheading": "Standard: Transmission security. | Implementation specifications: | Integrity controls (Addressable). | Encryption (Addressable)."
  },
  {
   "chunk_id": "hipaa:sec:164.314",
@@ -8929,7 +8941,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.314",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.314/#pa"
+  "permalink": "hipaa/sec/164.314/#pa",
+  "subheading": "Standard: Business associate contracts or other arrangements. | Implementation specifications (Required) | Business associate contracts. | Other arrangements. | Business associate contracts with subcontractors."
  },
  {
   "chunk_id": "hipaa:sec:164.314:b",
@@ -8953,7 +8966,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.314",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.314/#pb"
+  "permalink": "hipaa/sec/164.314/#pb",
+  "subheading": "Standard: Requirements for group health plans. | Implementation specifications (Required)."
  },
  {
   "chunk_id": "hipaa:sec:164.316",
@@ -9054,7 +9068,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.316",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.316/#pb"
+  "permalink": "hipaa/sec/164.316/#pb",
+  "subheading": "Standard: Documentation. | Implementation specifications: | Time limit (Required). | Availability (Required). | Updates (Required)."
  },
  {
   "chunk_id": "hipaa:sec:164.318",
@@ -9411,7 +9426,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.404",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.404/#pa",
-  "subheading": "Standard"
+  "subheading": "Standard | General rule. | Breaches treated as discovered."
  },
  {
   "chunk_id": "hipaa:sec:164.404:b",
@@ -9461,7 +9476,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.404",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.404/#pc",
-  "subheading": "Implementation specifications: Content of notification"
+  "subheading": "Implementation specifications: Content of notification | Elements. | Plain language requirement."
  },
  {
   "chunk_id": "hipaa:sec:164.404:d",
@@ -9486,7 +9501,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.404",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.404/#pd",
-  "subheading": "Implementation specifications: Methods of individual notification."
+  "subheading": "Implementation specifications: Methods of individual notification. | Written notice. | Substitute notice. | Additional notice in urgent situations."
  },
  {
   "chunk_id": "hipaa:sec:164.406",
@@ -9748,7 +9763,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.410",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.410/#pa",
-  "subheading": "Standard"
+  "subheading": "Standard | General rule. | Breaches treated as discovered."
  },
  {
   "chunk_id": "hipaa:sec:164.410:b",
@@ -10389,7 +10404,8 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.501",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.501/#pmarketing",
-  "defined_term": "Marketing"
+  "defined_term": "Marketing",
+  "subheading": "Financial remuneration"
  },
  {
   "chunk_id": "hipaa:sec:164.501:payment",
@@ -10689,7 +10705,7 @@
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.502/#pa.5",
   "lead_in": "(a) Standard. A covered entity or business associate may not use or disclose protected health information, except as permitted or required by this subpart or by subpart C of part 160 of this subchapter.",
-  "subheading": "Prohibited uses and disclosures"
+  "subheading": "Prohibited uses and disclosures | Use and disclosure of genetic information for underwriting purposes: | Sale of protected health information: | Reproductive health care | Prohibition. | Rule of applicability. | Presumption. | Scope."
  },
  {
   "chunk_id": "hipaa:sec:164.502:b",
@@ -10714,7 +10730,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.502",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.502/#pb",
-  "subheading": "Standard: Minimum necessary"
+  "subheading": "Standard: Minimum necessary | Minimum necessary does not apply."
  },
  {
   "chunk_id": "hipaa:sec:164.502:c",
@@ -10764,7 +10780,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.502",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.502/#pd",
-  "subheading": "Standard: Uses and disclosures of de-identified protected health information"
+  "subheading": "Standard: Uses and disclosures of de-identified protected health information | Uses and disclosures to create de-identified information. | Uses and disclosures of de-identified information."
  },
  {
   "chunk_id": "hipaa:sec:164.502:e",
@@ -10788,7 +10804,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.502",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.502/#pe"
+  "permalink": "hipaa/sec/164.502/#pe",
+  "subheading": "Standard: Disclosures to business associates. | Implementation specification: Documentation."
  },
  {
   "chunk_id": "hipaa:sec:164.502:f",
@@ -10837,7 +10854,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.502",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.502/#pg"
+  "permalink": "hipaa/sec/164.502/#pg",
+  "subheading": "Standard: Personal representatives. | Implementation specification: Adults and emancipated minors. | Implementation specification: Unemancipated minors. | Implementation specification: Deceased individuals. | Implementation specification: Abuse, neglect, endangerment situations."
  },
  {
   "chunk_id": "hipaa:sec:164.502:h",
@@ -10912,7 +10930,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.502",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.502/#pj",
-  "subheading": "Standard: Disclosures by whistleblowers and workforce member crime victims"
+  "subheading": "Standard: Disclosures by whistleblowers and workforce member crime victims | Disclosures by whistleblowers. | Disclosures by workforce members who are victims of a crime."
  },
  {
   "chunk_id": "hipaa:sec:164.504",
@@ -11155,7 +11173,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.504",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.504/#pf"
+  "permalink": "hipaa/sec/164.504/#pf",
+  "subheading": "Standard: Requirements for group health plans. | Implementation specifications: Requirements for plan documents. | Implementation specifications: Uses and disclosures."
  },
  {
   "chunk_id": "hipaa:sec:164.504:g",
@@ -11338,7 +11357,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.508",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.508/#pa",
-  "subheading": "Standard: Authorizations for uses and disclosures"
+  "subheading": "Standard: Authorizations for uses and disclosures | Authorization required: General rule. | Authorization required: Psychotherapy notes. | Authorization required: Marketing. | Authorization required: Sale of protected health information."
  },
  {
   "chunk_id": "hipaa:sec:164.508:b",
@@ -11363,7 +11382,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.508",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.508/#pb",
-  "subheading": "Implementation specifications: General requirements"
+  "subheading": "Implementation specifications: General requirements | Valid authorizations. | Defective authorizations. | Compound authorizations. | Prohibition on conditioning of authorizations. | Revocation of authorizations. | Documentation."
  },
  {
   "chunk_id": "hipaa:sec:164.508:c",
@@ -11388,7 +11407,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.508",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.508/#pc",
-  "subheading": "Implementation specifications: Core elements and requirements"
+  "subheading": "Implementation specifications: Core elements and requirements | Core elements. | Required statements. | Plain language requirement. | Copy to the individual."
  },
  {
   "chunk_id": "hipaa:sec:164.509",
@@ -11468,7 +11487,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.509",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.509/#pb",
-  "subheading": "Implementation specifications: General requirements"
+  "subheading": "Implementation specifications: General requirements | Valid attestations. | Defective attestations. | Compound attestation."
  },
  {
   "chunk_id": "hipaa:sec:164.509:c",
@@ -11493,7 +11512,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.509",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.509/#pc",
-  "subheading": "Implementation specifications: Content requirements and other obligations"
+  "subheading": "Implementation specifications: Content requirements and other obligations | Required elements. | Plain language requirement."
  },
  {
   "chunk_id": "hipaa:sec:164.509:d",
@@ -11595,7 +11614,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.510",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.510/#pa",
-  "subheading": "Standard: Use and disclosure for facility directories"
+  "subheading": "Standard: Use and disclosure for facility directories | Permitted uses and disclosure. | Opportunity to object. | Emergency circumstances."
  },
  {
   "chunk_id": "hipaa:sec:164.510:b",
@@ -11620,7 +11639,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.510",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.510/#pb",
-  "subheading": "Standard: Uses and disclosures for involvement in the individual's care and notification purposes"
+  "subheading": "Standard: Uses and disclosures for involvement in the individual's care and notification purposes | Permitted uses and disclosures. | Uses and disclosures with the individual present. | Limited uses and disclosures when the individual is not present. | Uses and disclosures for disaster relief purposes. | Uses and disclosures when the individual is deceased."
  },
  {
   "chunk_id": "hipaa:sec:164.512",
@@ -11732,7 +11751,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pb",
-  "subheading": "Standard: Uses and disclosures for public health activities"
+  "subheading": "Standard: Uses and disclosures for public health activities | Permitted uses and disclosures. | Permitted uses."
  },
  {
   "chunk_id": "hipaa:sec:164.512:c",
@@ -11757,7 +11776,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pc",
-  "subheading": "Standard: Disclosures about victims of abuse, neglect, or domestic violence"
+  "subheading": "Standard: Disclosures about victims of abuse, neglect, or domestic violence | Permitted disclosures. | Informing the individual. | Rule of construction."
  },
  {
   "chunk_id": "hipaa:sec:164.512:d",
@@ -11782,7 +11801,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pd",
-  "subheading": "Standard: Uses and disclosures for health oversight activities"
+  "subheading": "Standard: Uses and disclosures for health oversight activities | Permitted disclosures. | Exception to health oversight activities. | Joint activities or investigations. | Permitted uses."
  },
  {
   "chunk_id": "hipaa:sec:164.512:e",
@@ -11807,7 +11826,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pe",
-  "subheading": "Standard: Disclosures for judicial and administrative proceedings"
+  "subheading": "Standard: Disclosures for judicial and administrative proceedings | Permitted disclosures. | Other uses and disclosures under this section."
  },
  {
   "chunk_id": "hipaa:sec:164.512:f",
@@ -11832,7 +11851,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pf",
-  "subheading": "Standard: Disclosures for law enforcement purposes."
+  "subheading": "Standard: Disclosures for law enforcement purposes. | Permitted disclosures: Pursuant to process and as otherwise required by law. | Permitted disclosures: Limited information for identification and location purposes. | Permitted disclosure: Victims of a crime. | Permitted disclosure: Decedents. | Permitted disclosure: Crime on premises. | Permitted disclosure: Reporting crime in emergencies."
  },
  {
   "chunk_id": "hipaa:sec:164.512:g",
@@ -11857,7 +11876,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pg",
-  "subheading": "Standard: Uses and disclosures about decedents"
+  "subheading": "Standard: Uses and disclosures about decedents | Coroners and medical examiners. | Funeral directors."
  },
  {
   "chunk_id": "hipaa:sec:164.512:h",
@@ -11907,7 +11926,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pi",
-  "subheading": "Standard: Uses and disclosures for research purposes"
+  "subheading": "Standard: Uses and disclosures for research purposes | Permitted uses and disclosures. | Board approval of a waiver of authorization. | Reviews preparatory to research. | Research on decedent's information. | Documentation of waiver approval. | Identification and date of action. | Waiver criteria. | Protected health information needed. | Review and approval procedures. | Required signature."
  },
  {
   "chunk_id": "hipaa:sec:164.512:j",
@@ -11932,7 +11951,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pj",
-  "subheading": "Standard: Uses and disclosures to avert a serious threat to health or safety"
+  "subheading": "Standard: Uses and disclosures to avert a serious threat to health or safety | Permitted disclosures. | Use or disclosure not permitted. | Limit on information that may be disclosed. | Presumption of good faith belief."
  },
  {
   "chunk_id": "hipaa:sec:164.512:k",
@@ -11957,7 +11976,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.512",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.512/#pk",
-  "subheading": "Standard: Uses and disclosures for specialized government functions"
+  "subheading": "Standard: Uses and disclosures for specialized government functions | Military and veterans activities | Armed Forces personnel. | Separation or discharge from military service. | Veterans. | Foreign military personnel. | National security and intelligence activities. | Protective services for the President and others. | Medical suitability determinations. | Correctional institutions and other law enforcement custodial situations | Permitted disclosures. | Permitted uses. | No application after release. | Covered entities that are government programs providing public benefits. | National Instant Criminal Background Check System."
  },
  {
   "chunk_id": "hipaa:sec:164.512:l",
@@ -12091,7 +12110,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.514",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.514/#pc",
-  "subheading": "Implementation specifications: Re-identification."
+  "subheading": "Implementation specifications: Re-identification. | Derivation. | Security."
  },
  {
   "chunk_id": "hipaa:sec:164.514:d",
@@ -12115,7 +12134,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.514",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.514/#pd"
+  "permalink": "hipaa/sec/164.514/#pd",
+  "subheading": "Standard: minimum necessary requirements. | Implementation specifications: Minimum necessary uses of protected health information. | Implementation specification: Minimum necessary disclosures of protected health information. | Implementation specifications: Minimum necessary requests for protected health information. | Implementation specification: Other content requirement."
  },
  {
   "chunk_id": "hipaa:sec:164.514:e",
@@ -12139,7 +12159,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.514",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.514/#pe"
+  "permalink": "hipaa/sec/164.514/#pe",
+  "subheading": "Standard: Limited data set. | Implementation specification: Limited data set: | Implementation specification: Permitted purposes for uses and disclosures. | Implementation specifications: Data use agreement | Agreement required. | Contents. | Compliance."
  },
  {
   "chunk_id": "hipaa:sec:164.514:f",
@@ -12164,7 +12185,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.514",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.514/#pf",
-  "subheading": "Fundraising communications"
+  "subheading": "Fundraising communications | Standard: Uses and disclosures for fundraising. | Implementation specifications: Fundraising requirements."
  },
  {
   "chunk_id": "hipaa:sec:164.514:g",
@@ -12213,7 +12234,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.514",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.514/#ph"
+  "permalink": "hipaa/sec/164.514/#ph",
+  "subheading": "Standard: Verification requirements. | Implementation specifications: Verification | Conditions on disclosures. | Identity of public officials. | Authority of public officials. | Exercise of professional judgment."
  },
  {
   "chunk_id": "hipaa:sec:164.520",
@@ -12278,7 +12300,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.520",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.520/#pa",
-  "subheading": "Standard: Notice of privacy practices"
+  "subheading": "Standard: Notice of privacy practices | Right to notice. | Notice requirements for covered entities creating or maintaining records subject to 42 U.S.C. 290dd-2. | Exception for group health plans. | Exception for inmates."
  },
  {
   "chunk_id": "hipaa:sec:164.520:b.1.i",
@@ -12581,7 +12603,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.520",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.520/#pc",
-  "subheading": "Implementation specifications: Provision of notice."
+  "subheading": "Implementation specifications: Provision of notice. | Specific requirements for health plans. | Specific requirements for certain covered health care providers. | Specific requirements for electronic notice."
  },
  {
   "chunk_id": "hipaa:sec:164.520:d",
@@ -12683,7 +12705,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.522",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.522/#pa"
+  "permalink": "hipaa/sec/164.522/#pa",
+  "subheading": "Standard: Right of an individual to request restriction of uses and disclosures. | Implementation specifications: Terminating a restriction. | Implementation specification: Documentation."
  },
  {
   "chunk_id": "hipaa:sec:164.522:b",
@@ -12707,7 +12730,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.522",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.522/#pb"
+  "permalink": "hipaa/sec/164.522/#pb",
+  "subheading": "Standard: Confidential communications requirements. | Implementation specifications: Conditions on providing confidential communications."
  },
  {
   "chunk_id": "hipaa:sec:164.524",
@@ -12763,7 +12787,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.524",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.524/#pa",
-  "subheading": "Standard: Access to protected health information"
+  "subheading": "Standard: Access to protected health information | Right of access. | Unreviewable grounds for denial. | Reviewable grounds for denial. | Review of a denial of access."
  },
  {
   "chunk_id": "hipaa:sec:164.524:b",
@@ -12788,7 +12812,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.524",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.524/#pb",
-  "subheading": "Implementation specifications: Requests for access and timely action"
+  "subheading": "Implementation specifications: Requests for access and timely action | Individual's request for access. | Timely action by the covered entity."
  },
  {
   "chunk_id": "hipaa:sec:164.524:c",
@@ -12813,7 +12837,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.524",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.524/#pc",
-  "subheading": "Implementation specifications: Provision of access."
+  "subheading": "Implementation specifications: Provision of access. | Providing the access requested. | Form of access requested. | Time and manner of access. | Fees."
  },
  {
   "chunk_id": "hipaa:sec:164.524:d",
@@ -12838,7 +12862,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.524",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.524/#pd",
-  "subheading": "Implementation specifications: Denial of access."
+  "subheading": "Implementation specifications: Denial of access. | Making other information accessible. | Denial. | Other responsibility. | Review of denial requested."
  },
  {
   "chunk_id": "hipaa:sec:164.524:e",
@@ -12919,7 +12943,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.526",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.526/#pa",
-  "subheading": "Standard: Right to amend."
+  "subheading": "Standard: Right to amend. | Right to amend. | Denial of amendment."
  },
  {
   "chunk_id": "hipaa:sec:164.526:b",
@@ -12944,7 +12968,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.526",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.526/#pb",
-  "subheading": "Implementation specifications: Requests for amendment and timely action"
+  "subheading": "Implementation specifications: Requests for amendment and timely action | Individual's request for amendment. | Timely action by the covered entity."
  },
  {
   "chunk_id": "hipaa:sec:164.526:c",
@@ -12969,7 +12993,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.526",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.526/#pc",
-  "subheading": "Implementation specifications: Accepting the amendment."
+  "subheading": "Implementation specifications: Accepting the amendment. | Making the amendment. | Informing the individual. | Informing others."
  },
  {
   "chunk_id": "hipaa:sec:164.526:d",
@@ -12994,7 +13018,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.526",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.526/#pd",
-  "subheading": "Implementation specifications: Denying the amendment."
+  "subheading": "Implementation specifications: Denying the amendment. | Denial. | Statement of disagreement. | Rebuttal statement. | Recordkeeping. | Future disclosures."
  },
  {
   "chunk_id": "hipaa:sec:164.526:e",
@@ -13235,7 +13259,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.530",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.530/#pa"
+  "permalink": "hipaa/sec/164.530/#pa",
+  "subheading": "Standard: Personnel designations. | Implementation specification: Personnel designations."
  },
  {
   "chunk_id": "hipaa:sec:164.530:b",
@@ -13259,7 +13284,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.530",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.530/#pb"
+  "permalink": "hipaa/sec/164.530/#pb",
+  "subheading": "Standard: Training. | Implementation specifications: Training."
  },
  {
   "chunk_id": "hipaa:sec:164.530:c",
@@ -13283,7 +13309,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.530",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.530/#pc"
+  "permalink": "hipaa/sec/164.530/#pc",
+  "subheading": "Standard: Safeguards. | Implementation specification: Safeguards."
  },
  {
   "chunk_id": "hipaa:sec:164.530:d",
@@ -13307,7 +13334,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.530",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.530/#pd"
+  "permalink": "hipaa/sec/164.530/#pd",
+  "subheading": "Standard: Complaints to the covered entity. | Implementation specification: Documentation of complaints."
  },
  {
   "chunk_id": "hipaa:sec:164.530:e",
@@ -13331,7 +13359,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.530",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.530/#pe"
+  "permalink": "hipaa/sec/164.530/#pe",
+  "subheading": "Standard: Sanctions. | Implementation specification: Documentation."
  },
  {
   "chunk_id": "hipaa:sec:164.530:f",
@@ -13430,7 +13459,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.530",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.530/#pi"
+  "permalink": "hipaa/sec/164.530/#pi",
+  "subheading": "Standard: Policies and procedures. | Standard: Changes to policies and procedures. | Implementation specification: Changes in law. | Implementation specifications: Changes to privacy practices stated in the notice. | Implementation specification: Changes to other policies or procedures."
  },
  {
   "chunk_id": "hipaa:sec:164.530:j",
@@ -13454,7 +13484,8 @@
   "doc_type": "regulation",
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.530",
   "retrieved_at": "2026-10-14T13:36:00Z",
-  "permalink": "hipaa/sec/164.530/#pj"
+  "permalink": "hipaa/sec/164.530/#pj",
+  "subheading": "Standard: Documentation. | Implementation specification: Retention period."
  },
  {
   "chunk_id": "hipaa:sec:164.530:k",
@@ -13636,7 +13667,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.532",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.532/#pe",
-  "subheading": "Implementation specification: Deemed compliance"
+  "subheading": "Implementation specification: Deemed compliance | Qualification. | Limited deemed compliance period. | Covered entity responsibilities."
  },
  {
   "chunk_id": "hipaa:sec:164.532:f",
@@ -13740,7 +13771,7 @@
   "source_url": "https://www.ecfr.gov/current/title-45/section-164.534",
   "retrieved_at": "2026-10-14T13:36:00Z",
   "permalink": "hipaa/sec/164.534/#pb",
-  "subheading": "Health plans."
+  "subheading": "Health plans. | Health plans other than small health plans. | Small health plans."
  },
  {
   "chunk_id": "hipaa:sec:164.534:c",

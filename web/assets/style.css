@@ -205,3 +205,37 @@ button.chip:hover { border-color: var(--accent); color: var(--accent); filter: n
 
 /* Legal labels are case-sensitive: (a) is not (A). */
 .anchor { text-transform: none; letter-spacing: 0; font-size: .8rem; }
+
+/* filters */
+.filters { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; align-items: center; margin: .9rem 0 0; }
+.fgroup { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; }
+.flabel { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); margin-right: .15rem; }
+.fchip { font: 500 .84rem var(--ui); padding: .28rem .7rem; border-radius: 999px; background: var(--surface);
+         color: var(--text-2); border: 1px solid var(--line); cursor: pointer; display: inline-flex; gap: .4rem; align-items: center; }
+.fchip:hover { border-color: var(--accent); color: var(--accent); filter: none; }
+.fchip[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.fcount { font-size: .74rem; color: var(--text-3); font-variant-numeric: tabular-nums; }
+.fchip[aria-pressed="true"] .fcount { color: var(--accent); }
+
+/* browse page and contents page */
+.doc-grid { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr)); }
+.doc-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+            padding: 1rem 1.15rem; box-shadow: var(--shadow); }
+.doc-card h2 { font-size: 1.08rem; margin: .3rem 0; }
+.doc-card h2 a { color: var(--text); text-decoration: none; }
+.doc-card h2 a:hover { color: var(--accent); }
+.doc-card .actions { display: flex; gap: 1.1rem; margin: .5rem 0 0; }
+.tocbar { margin: 1rem 0; max-width: 40rem; }
+#toc-filter { width: 100%; font: inherit; padding: .65rem .9rem; border: 1px solid var(--line);
+              border-radius: var(--radius); background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+.btn-link { display: inline-block; font-weight: 600; text-decoration: none; padding: .45rem .9rem;
+            border-radius: 10px; background: var(--accent-soft); color: var(--accent); }
+.btn-link:hover { filter: brightness(.96); }
+[hidden] { display: none !important; }
+
+/* provision cards: label row with the copy-link button */
+.prov-head { display: flex; justify-content: space-between; align-items: center; gap: .6rem; margin-bottom: .1rem; }
+.copy-link, button.link.copy { font: 500 .78rem var(--ui); background: none; border: 0; color: var(--accent);
+                               padding: .1rem .3rem; cursor: pointer; }
+.copy-link:hover { text-decoration: underline; filter: none; }

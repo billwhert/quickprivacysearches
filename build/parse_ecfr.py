@@ -38,6 +38,13 @@ class Node:
     def own_text(self) -> str:
         return " ".join(self.lines).strip()
 
+    def headings(self) -> list[str]:
+        """This paragraph's heading plus those of everything nested inside it."""
+        out = [self.heading] if self.heading else []
+        for c in self.children:
+            out.extend(c.headings())
+        return out
+
     def labels(self) -> list[str]:
         """Label path used in chunk ids and anchors (definitions use a slug of the term)."""
         if self.term and len(self.path) >= 1:
@@ -184,8 +191,9 @@ def parse(files: dict, doc: dict, retrieved_at: str, raw_root: pathlib.Path):
                         extra["defined_term"] = node.term
                     if lead_in:
                         extra["lead_in"] = lead_in
-                    if node.heading:
-                        extra["subheading"] = node.heading
+                    hs = node.headings()
+                    if hs:
+                        extra["subheading"] = " | ".join(dict.fromkeys(hs))
                     path_h = ([f"Definition: {node.term}"] + [f"({g})" for g in node.path[1:]]) if node.term \
                         else [f"({g})" for g in node.path]
                     children.append(mk(

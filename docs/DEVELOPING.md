@@ -76,3 +76,13 @@ for each part, the eCFR renderer HTML and the official structure JSON (the table
 all from one resolved date. `build/parse_ecfr.py` nests paragraphs by eCFR's indent levels and
 labels them from the paragraph ids, and validation checks the parsed sections against the
 official structure list. Each result links to the section on ecfr.gov.
+
+## Filters, browsing and permalinks (step 7)
+- **Filters:** `docsForFilters()` in `lookup.js` turns the filter bar (law, type, jurisdiction;
+  OR within a group, AND across groups) into a document list that `search()` takes as
+  `opts.docs`. Filters live in memory only, so a refresh clears them. The topic filter arrives
+  with topic tagging (step 8).
+- **Browse:** `/documents/` lists every loaded law with its version and retrieval date. Each law's
+  contents page has a "Find a section" box that also searches paragraph headings and defined terms.
+- **Permalinks:** every provision page has a stable URL, `#p...` anchors for subdivisions, and a
+  "Copy link" button; search results have one too. Search queries are never part of a link.

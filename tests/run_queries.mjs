@@ -3,7 +3,7 @@
 // VERBOSE=1 prints the top results for every query.
 import fs from "node:fs";
 import MiniSearch from "minisearch";
-import { createEngine, search } from "../web/assets/lookup.js";
+import { createEngine, search, docsForFilters } from "../web/assets/lookup.js";
 
 const data = JSON.parse(fs.readFileSync("dist/assets/search-data.json", "utf8"));
 const syn = JSON.parse(fs.readFileSync("dist/assets/synonyms.json", "utf8"));
@@ -126,9 +126,41 @@ function run(title, tests) {
   return [pass, tests.length];
 }
 
+// ---- filters (law / type / jurisdiction), as chosen in the filter bar ----
+function filterTests() {
+  const cases = [
+    ["laws=HIPAA only returns HIPAA", "breach notification", { laws: ["hipaa"] },
+      r => r.ids.length > 0 && r.ids.every(i => i.startsWith("hipaa:"))],
+    ["type=regulation excludes statutes", "privacy policy requirements", { types: ["regulation"] },
+      r => r.ids.length > 0 && r.ids.every(i => /^(ccpa_regs|hipaa):/.test(i))],
+    ["jurisdiction=California", "right to delete", { jurisdictions: ["US-CA"] },
+      r => r.ids.length > 0 && r.ids.every(i => /^(ccpa|ccpa_regs|caloppa):/.test(i)) && r.ids.slice(0, 5).some(i => i.startsWith("ccpa:sec:1798.105"))],
+    ["law + type combine (AND across groups)", "breach", { laws: ["gdpr", "hipaa"], types: ["regulation"] },
+      r => r.ids.length > 0 && r.ids.every(i => i.startsWith("hipaa:"))],
+    ["citation outside the filter is reported, not shown", "1798.105", { laws: ["gdpr"] },
+      r => !r.citation && r.messages.some(m => /exclude/i.test(m))],
+    ["filters that match no document say so", "breach", { types: ["law"], jurisdictions: ["US-Federal"] },
+      r => r.ids.length === 0 && r.messages.length > 0],
+    ["two laws selected show both", "breach notification timelines", { laws: ["gdpr", "hipaa"] },
+      r => r.ids.some(i => i.startsWith("gdpr:")) && r.ids.some(i => i.startsWith("hipaa:"))],
+  ];
+  let pass = 0;
+  console.log("\n== Filters ==");
+  for (const [label, q, f, check] of cases) {
+    const r = search(engine, data, syn, q, { docs: docsForFilters(data, f) });
+    const ids = r.results.map(h => h.id);
+    const ok = check({ ids, citation: r.citation, messages: r.messages });
+    if (ok) pass++;
+    console.log(`${ok ? "PASS" : "FAIL"}  ${label}: "${q}" (${ids.length} results)`);
+  }
+  console.log(`${pass}/${cases.length}`);
+  return [pass, cases.length];
+}
+
 const [p1a, n1a] = run("Spec acceptance tests (applicable to loaded laws)", SPEC);
 const f19 = filterTest();
 const p1 = p1a + f19, n1 = n1a + 1;
 const [p2, n2] = run("Extra queries", EXTRA);
-console.log(`\nTotal ${p1 + p2}/${n1 + n2}`);
+const [p3, n3] = filterTests();
+console.log(`\nTotal ${p1 + p2 + p3}/${n1 + n2 + n3}`);
 process.exitCode = p1 === n1 ? 0 : 1;

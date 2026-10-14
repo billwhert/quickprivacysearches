@@ -189,6 +189,18 @@ function visitorPhrases(words) {
   return [...out];
 }
 
+// ---------- filters ----------
+
+/** Documents allowed by the visitor's filters: OR within a group, AND across groups. */
+export function docsForFilters(data, f = {}) {
+  return Object.keys(data.docs).filter(id => {
+    const d = data.docs[id];
+    return (!f.laws?.length || f.laws.includes(id)) &&
+           (!f.types?.length || f.types.includes(d.doc_type)) &&
+           (!f.jurisdictions?.length || f.jurisdictions.includes(d.jurisdiction));
+  });
+}
+
 // ---------- search ----------
 
 export function createEngine(MiniSearch, data) {
@@ -223,7 +235,21 @@ export function search(engine, data, syn, raw, opts = {}) {
   const q = analyzeQuery(raw, syn, loadedDocs);
   const out = { query: q, results: [], citation: null, messages: [], expansions: q.expansions };
 
-  const cit = lookupCitation(raw, data);
+  // Explicit filters chosen by the visitor (opts.docs) win over laws named in the question.
+  const explicit = Array.isArray(opts.docs) && opts.docs.length < loadedDocs.length;
+  if (explicit) {
+    if (!opts.docs.length) {
+      out.messages.push("No loaded document matches the selected filters.");
+      return out;
+    }
+    q.filterDocs = opts.docs;
+  }
+
+  let cit = lookupCitation(raw, data);
+  if (cit && explicit && !opts.docs.includes(cit.chunk.doc)) {
+    out.messages.push(`${cit.chunk.ref} is in ${data.docs[cit.chunk.doc].short}, which your filters exclude.`);
+    cit = null;
+  }
   if (cit) out.citation = cit;
   const pureCitation = !!cit && cit.exact;
   if (pureCitation) return out;

@@ -319,12 +319,12 @@ def provision_card(cid: str, rel: str, docs_by_id: dict) -> str:
     lead = f'<p class="lead-in"><span>Context:</span> {e(c["lead_in"])}</p>' if c.get("lead_in") else ""
     crumbs = " › ".join(c["hierarchy"][:-1])
     frag = fragment(c["permalink"])
-    return (f'<section class="prov"><div class="prov-head"><a class="anchor" href="{link}">{e(c["section_ref"])}</a>'
-            f'<span class="prov-links"><a href="{link}">Open</a>'
-            f'<a href="{e(c["source_url"])}">Official source</a></span></div>'
-            f'<p class="crumbs">{e(d["short_name"])} · {e(crumbs)}</p>{lead}'
-            f'<div class="text">{render_text(c["text"])}</div>'
-            f'<p class="meta">{e(d["title"])} · {e(d["version_label"])} · retrieved {e(d["retrieved_at"][:10])}</p>'
+    return (f'<section class="prov pc"><p class="pc-ref"><a href="{link}">{e(c["section_ref"])}</a></p>'
+            f'<p class="crumbs">{e(crumbs)}</p>{lead}'
+            f'<div class="clampable"><div class="text">{render_text(c["text"])}</div></div>'
+            f'<p class="pc-foot"><a href="{link}">Read in context</a>'
+            f'<a href="{e(c["source_url"])}" target="_blank" rel="noopener noreferrer">Official source</a></p>'
+            f'<p class="meta">{e(d["version_label"])} · retrieved {e(d["retrieved_at"][:10])}</p>'
             f'</section>')
 
 
@@ -346,8 +346,12 @@ def build_guides(docs: list, by_id_all: dict) -> None:
         elif state == "needs-review":
             banner = (f'<div class="banner draft"><strong>Needs review.</strong> {len(changed)} cited provision(s) '
                       f'changed since this topic was last reviewed.</div>')
-        parts = [f'<p class="crumbs"><span class="badge">Guided topic</span></p>',
-                 f'<h1>{e(t["title"])}</h1>', f'<p class="lede">{e(t["scope"])}</p>', banner]
+        cited = guided.cited_ids(t)
+        law_names = sorted({docs_by_id[BY_ID[c]["doc_id"]]["short_name"] for c in cited})
+        parts = [f'<header class="doc-head"><p class="eyebrow">Guided topic</p>',
+                 f'<h1>{e(t["title"])}</h1>', f'<p class="lede">{e(t["scope"])}</p>',
+                 f'<p class="stat-line"><span>{len(t["items"])} steps</span><span>{len(cited)} provisions</span>'
+                 f'<span>{e(", ".join(law_names))}</span></p></header>', banner]
         if t.get("reviewed_at"):
             parts.append(f'<p class="muted">Provision list reviewed {e(str(t["reviewed_at"]))}'
                          f'{" by " + e(t["reviewed_by"]) if t.get("reviewed_by") else ""}.</p>')

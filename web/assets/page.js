@@ -36,6 +36,18 @@ document.addEventListener("click", async e => {
   setTimeout(() => t.classList.remove("show"), 1800);
 });
 
+// Long provisions on guided-topic and compare pages are shortened, with a "Show more" toggle.
+document.querySelectorAll(".clampable").forEach(box => {
+  box.classList.add("clamp");
+  if (box.scrollHeight <= box.clientHeight + 6) { box.classList.remove("clamp"); return; }
+  const b = Object.assign(document.createElement("button"), { type: "button", className: "link", textContent: "Show more" });
+  b.addEventListener("click", () => {
+    const open = box.classList.toggle("open");
+    b.textContent = open ? "Show less" : "Show more";
+  });
+  box.after(b);
+});
+
 // "Find a section": narrows the contents list on a document's front page as you type.
 const box = document.getElementById("toc-filter");
 if (box) {

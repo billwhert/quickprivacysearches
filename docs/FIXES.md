@@ -16,6 +16,7 @@ How to use this file
 | F-22 | P2 | Topics | First-pass tags are noisiest for `security-safeguards` (about 190 provisions, mostly GDPR, from words like "safeguards") and `data-subject-rights` / `right-opt-out` in the CCPA regulations (most of that document is about requests). Review and tighten phrases in `taxonomy/topics.yaml` after looking at the "Phrases doing the work" table in `data/reports/topic_tagging.md`. | step 8 |
 | F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
 | F-32 | P3 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
+| F-33 | P3 | Review | Real-device check of the new design (phone and a large monitor) is still outstanding; emulated phone width shows no overflow on 11 page types. | review |
 | F-04 | P2 | Launch | Open the live site on a real phone using mobile data (not Wi-Fi) and try three searches. Everything else in the launch checklist was verified (see `docs/ACCEPTANCE.md`); a real device on a different network is the one thing I cannot do from here. | step 12 |
 | F-05 | P2 | Content | The two guided topics are published as a **first-release approval**; the line-by-line review of their provision lists is still pending. When you have time: `data/reports/guided_topics_review.md` (long; the review sheet lists every provision with its full text). The pages say "line-by-line review pending" until you re-approve with your own wording. | step 9 |
 | F-26 | P2 | Content | Eight comparison sets (`compare/*.yaml`) are an editorial selection of provisions and have not been reviewed. The page says they are not a statement of equivalence. Check the columns make sense; add or remove provisions in the YAML. | step 10 |
@@ -39,6 +40,19 @@ How to use this file
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
 
 ## Change log
+
+### Review and redesign pass (2026-10-14)
+Found and fixed by a full review of the code, the built site and the saved texts:
+- **485 broken links** on the four law contents pages (section lists, "Start reading", recitals grid) - all links were missing
+  the `../` prefix. Present since step 5. New `tests/check_links.py` resolves every link and anchor on every page (0 broken now).
+- **27 provisions** stored words split across a PDF line break with a stray space ("opt- in", "toll- free"). Fixed in the parser.
+- The Back button wiped a search; refresh still clears it (by design), Back no longer does.
+- Highlighting matched fragments inside unrelated words; it now matches at word starts.
+- The "not loaded yet" message printed internal ids (for example "CCPA_REGS"); `topics.json` could be served stale; the HIPAA
+  appendix table printed empty cells.
+Redesign: new look and layout across the site (hero search, filters in a panel with removable pills, calmer result cards with a
+"more" menu, clamped long text, footer columns, sticky section navigation, guided-topic steps, compare columns).
+Added: provision cards on guided-topic and compare pages show the citation first, clamp long text, and keep links in a footer.
 
 ### Step 12 - Launch (2026-10-14)
 - Owner decisions applied: MIT license added for the code and editorial files; **CalOPPA removed entirely** (its source site

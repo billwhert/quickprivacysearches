@@ -133,6 +133,7 @@ that cites changed text is flagged for review.</li>
 </ul>
 
 <h2>Documents</h2>
+<p class="jump">{" ".join(f'<a href="#{e(d["doc_id"])}">{e(d["short_name"])}</a>' for d in docs)}</p>
 {"".join(cards)}
 
 <h2>Spotted a problem?</h2>

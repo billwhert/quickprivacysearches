@@ -345,3 +345,21 @@ button.link:hover { background: none; color: var(--accent-hover); text-decoratio
   .doc-layout { display: block; }
   .clamp { max-height: none; } .clamp::after { display: none; }
 }
+
+/* provision cards on guided-topic and compare pages */
+.prov.pc { padding: 1rem 1.15rem; }
+.pc-ref { margin: 0; font: 600 .86rem var(--sans); }
+.pc-ref a { color: var(--text); }
+.pc-ref a:hover { color: var(--accent); }
+.prov.pc .crumbs { margin: .1rem 0 .6rem; }
+.prov.pc .text { font-size: 1rem; line-height: 1.65; }
+.prov.pc .clamp::after { background: linear-gradient(transparent, var(--surface)); }
+.prov.pc > button.link { margin-top: .3rem; }
+.pc-foot { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; margin: .7rem 0 0; font-size: .86rem; font-weight: 600; }
+.prov.pc .meta { margin: .45rem 0 0; }
+.stat-line { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1rem 0 0; }
+.stat-line span { font: 500 .8rem var(--sans); color: var(--text-2); background: var(--bg-soft); border: 1px solid var(--line);
+                  border-radius: 999px; padding: .2rem .7rem; }
+.jump { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1rem; }
+.jump a { font: 600 .84rem var(--sans); background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: .3rem .8rem; }
+.jump a:hover { background: var(--accent-line); text-decoration: none; }

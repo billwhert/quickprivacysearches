@@ -1,6 +1,7 @@
 {
  "doc_id": "gdpr",
  "title": "Regulation (EU) 2016/679 (General Data Protection Regulation)",
+ "short_name": "GDPR",
  "jurisdiction": "EU",
  "doc_type": "law",
  "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",

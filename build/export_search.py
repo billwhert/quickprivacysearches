@@ -1,52 +1,46 @@
-"""Export searchable chunks (and article stubs for citation lookup) to JSON for the browser.
+"""Export searchable chunks (and parent stubs for citation lookup) to JSON for the browser.
 
 Output: dist/assets/search-data.json
-  {"chunks": [...searchable chunks with full text...], "articles": [...stubs...]}
+  {"chunks": [...searchable chunks with full text...], "articles": [...parent stubs...], "docs": {...}}
 """
-import json
+import yaml
 
 from common import PROCESSED, ROOT, read_json, write_json
 
 DIST = ROOT / "dist"
-
-
-def load_all_chunks() -> list[dict]:
-    chunks = []
-    for d in sorted(PROCESSED.iterdir()):
-        if (d / "chunks.json").exists():
-            chunks.extend(read_json(d / "chunks.json"))
-    return chunks
+PARENT_KINDS = ("article", "section")
 
 
 def export() -> dict:
-    docs = {}
-    for d in sorted(PROCESSED.iterdir()):
-        if (d / "document.json").exists():
-            doc = read_json(d / "document.json")
-            docs[doc["doc_id"]] = doc
-    chunks, articles = [], []
-    for c in load_all_chunks():
-        if c["kind"] == "article":
-            articles.append({"id": c["chunk_id"], "doc": c["doc_id"], "ref": c["section_ref"],
-                             "heading": c["heading"], "url": c["permalink"], "n": c["number"]})
+    order = [d["doc_id"] for d in yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8"))["documents"]]
+    docs, chunks, parents = {}, [], []
+    for doc_id in order:
+        d = PROCESSED / doc_id
+        if not (d / "chunks.json").exists():
             continue
-        chunks.append({
-            "id": c["chunk_id"], "doc": c["doc_id"], "kind": c["kind"], "n": c["number"],
-            "ref": c["section_ref"], "heading": c["heading"],
-            "term": c.get("defined_term", ""), "text": c["text"],
-            "url": c["permalink"], "hier": c["hierarchy"], "parent": c["parent_chunk_id"],
-            "art": int(c["chunk_id"].split(":")[2]) if c["kind"] != "recital" else None,
-        })
-    out = {"chunks": chunks, "articles": articles,
-           "docs": {k: {"title": v["title"], "source_url": v["source_url"],
-                        "version_label": v["version_label"], "retrieved_at": v["retrieved_at"],
-                        "doc_type": v["doc_type"], "jurisdiction": v["jurisdiction"]}
-                    for k, v in docs.items()}}
+        doc = read_json(d / "document.json")
+        docs[doc_id] = {
+            "title": doc["title"], "short": doc.get("short_name", doc_id.upper()),
+            "source_url": doc["source_url"], "version_label": doc["version_label"],
+            "retrieved_at": doc["retrieved_at"], "doc_type": doc["doc_type"],
+            "jurisdiction": doc["jurisdiction"],
+        }
+        for i, c in enumerate(read_json(d / "chunks.json")):
+            if c["kind"] in PARENT_KINDS:
+                parents.append({"id": c["chunk_id"], "doc": doc_id, "ref": c["section_ref"],
+                                "heading": c["heading"], "url": c["permalink"], "n": c["number"]})
+                continue
+            chunks.append({
+                "id": c["chunk_id"], "doc": doc_id, "kind": c["kind"], "n": c["number"], "ord": i,
+                "ref": c["section_ref"], "heading": c["heading"],
+                "term": c.get("defined_term", ""), "text": c["text"], "lead": c.get("lead_in", ""),
+                "url": c["permalink"], "hier": c["hierarchy"], "parent": c["parent_chunk_id"],
+            })
+    out = {"chunks": chunks, "articles": parents, "docs": docs}
     write_json(DIST / "assets" / "search-data.json", out)
     return out
 
 
 if __name__ == "__main__":
     o = export()
-    size = (DIST / "assets" / "search-data.json").stat().st_size
-    print(f"exported {len(o['chunks'])} chunks, {len(o['articles'])} articles ({size:,} bytes)")
+    print(f"exported {len(o['chunks'])} chunks, {len(o['articles'])} parents")

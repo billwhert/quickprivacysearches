@@ -110,7 +110,8 @@ def write_report(doc: dict, manifest: dict, result: dict, chunks: list[dict]) ->
          f"- Retrieved: {manifest['retrieved_at']}  (sha256 `{manifest['checksum_sha256'][:16]}...`)",
          f"- Chunks: {len(chunks)} "
          + ", ".join(f"{k}={sum(1 for c in chunks if c['kind'] == k)}"
-                     for k in ("article", "paragraph", "definition", "recital")),
+                     for k in ("article", "section", "paragraph", "definition", "recital")
+                     if any(c["kind"] == k for c in chunks)),
          f"- Overall: **{'PASS' if result['ok'] else 'FAIL'}**", "", "## Checks", ""]
     for c in result["checks"]:
         L.append(f"- [{'x' if c['ok'] else ' '}] {c['name']}" + (f" ({c['detail']})" if c["detail"] else ""))

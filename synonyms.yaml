@@ -61,6 +61,7 @@ synonyms:
     expand: ["child", "information society services"]
 
   - terms: ["personal information", "pii", "personal info", "personally identifiable information"]
+    weight: 0.3   # generic vocabulary mapping; must not outrank the visitor's more specific words
     expand: ["personal data"]
 
   - terms: ["sensitive data", "sensitive information", "sensitive personal data", "special category", "special categories"]
@@ -116,6 +117,70 @@ synonyms:
 
   - terms: ["complaint", "complain", "lodge a complaint", "file a complaint"]
     expand: ["right to lodge a complaint with a supervisory authority"]
+
+  # ---- California (CCPA / CPPA regulations / CalOPPA) ----
+  - terms: ["do not sell", "do not share", "do not sell or share", "sell link", "opt out of sale", "opt-out of sale", "opt out of the sale", "opt out of sharing", "stop selling my data"]
+    expand: ["right to opt out of sale or sharing of personal information", "Do Not Sell or Share My Personal Information"]
+
+  - terms: ["global privacy control", gpc, "opt-out preference signal", "opt out preference signal", "browser signal", "universal opt-out"]
+    expand: ["opt-out preference signal"]
+
+  - terms: ["do not track", "dnt", "do-not-track"]
+    expand: ["do not track signals", "Web browser do not track signals"]
+
+  - terms: ["privacy notice", "privacy policy", "privacy statement", "online privacy policy"]
+    expand: ["notice at collection of personal information", "privacy policy", "conspicuously post its privacy policy"]
+
+  - terms: ["notice at collection", "at or before the point of collection"]
+    expand: ["notice at collection of personal information", "at or before the point of collection"]
+
+  - terms: ["does ccpa apply", "ccpa apply", "who must comply", "who has to comply", "small business", "business thresholds", "threshold", "thresholds", "applicability"]
+    expand: ["annual gross revenues", "100,000 or more consumers or households", "derives 50 percent or more of its annual revenues from selling or sharing consumers' personal information"]
+
+  - terms: [exception, exceptions, exempt, exemption, exemptions, exclusion, exclusions, "when can a business refuse", "can refuse"]
+    expand: ["shall not be required to comply", "shall not restrict a business's ability", "does not apply"]
+
+  - terms: [verify, verifies, verification, verifying, "verifiable consumer request", "verify identity", "proof of identity"]
+    expand: ["verification", "verifiable consumer request"]
+
+  - terms: ["private right of action", "sue", lawsuit, lawsuits, "class action", "civil action", "statutory damages", "damages per consumer"]
+    expand: ["civil action", "statutory damages", "actual damages"]
+
+  - terms: ["data breach", "security breach", "breach of security", "data security breach", "exfiltration"]
+    expand: ["unauthorized access and exfiltration, theft, or disclosure", "personal information security breaches"]
+
+  - terms: ["cookie", "cookies", tracking, trackers, pixels, "ad tech", advertising, "targeted advertising", analytics, "behavioral advertising", "retargeting"]
+    expand: ["cross-context behavioral advertising", "sale or sharing of personal information", "opt-out preference signal"]
+
+  - terms: ["minors", "kids", "children", "under 16", "under 13", "under 18", "teens", "teenagers"]
+    expand: ["consumers less than 16 years of age", "affirmatively authorized", "parent or guardian"]
+
+  - terms: ["dark pattern", "dark patterns", "manipulative design", "deceptive design"]
+    expand: ["dark pattern", "user interface that has the effect of substantially subverting or impairing user autonomy"]
+
+  - terms: ["service provider agreement", "contractor agreement", "service provider contract", "vendor contract", "vendor agreement"]
+    expand: ["contract requirements for service providers and contractors", "service provider or contractor"]
+
+  - terms: ["risk assessment", "risk assessments", "privacy risk assessment"]
+    expand: ["risk assessment requirements", "when a business must conduct a risk assessment"]
+
+  - terms: ["admt", "automated decisionmaking", "automated decision-making", "automated decision making"]
+    expand: ["automated decisionmaking technology"]
+
+  - terms: ["cybersecurity audit", "security audit"]
+    expand: ["cybersecurity audit", "cybersecurity audit report"]
+
+  - terms: ["response time", "how long to respond", "how quickly", "deadline", "timeline", "timelines", "time limit", "within 45 days", "45 days"]
+    expand: ["within 45 calendar days", "timelines for responding to requests", "ten business days"]
+
+  - terms: [employee, employees, employment, worker, workers, "job applicant", "job applicants", applicant, applicants, hr, "human resources", "employee data"]
+    expand: ["employment-related information", "job applicant", "employee"]
+
+  - terms: ["someone else", "on my behalf", "on behalf of", agent, agents, "authorized agent", "my lawyer", "power of attorney", "on their behalf"]
+    expand: ["authorized agent", "authorized to act on their behalf"]
+
+  - terms: ["charge more", "charge me more", "higher price", "different price", "price difference", discriminate, discrimination, penalize, penalise, retaliate, retaliation, "pay more", "worse service", "deny service", "deny me"]
+    expand: ["discriminate against a consumer", "price or service difference", "no retaliation"]
 
 jurisdictions:
   - id: eu

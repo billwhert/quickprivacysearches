@@ -21,7 +21,9 @@ required?") and get the exact text of the law, with a link to the official sourc
 | Law | Status |
 |---|---|
 | GDPR (articles and recitals) | Available |
-| California CCPA/CPRA, CPPA regulations, CalOPPA | Planned |
+| California CCPA/CPRA (Civil Code 1798.100 et seq.) | Available |
+| CPPA CCPA regulations (11 CCR 7000 et seq.) | Available |
+| California Online Privacy Protection Act (CalOPPA) | Available |
 | HIPAA Privacy, Security, and Breach Notification Rules | Planned |
 
 Later: more US state laws, LGPD, PIPEDA, GLBA, and regulator guidance.

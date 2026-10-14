@@ -8,5 +8,36 @@
   "checksum_sha256": "962539af03738bf552319ff4ce42d69e5f95a576307c4dfed7bf87e81b646b9d",
   "retrieved_at": "2026-10-14T12:10:51Z",
   "last_checked_at": "2026-10-14T12:10:51Z"
+ },
+ "ccpa": {
+  "doc_id": "ccpa",
+  "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
+  "fetch_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
+  "raw_path": "data/raw/ccpa.pdf",
+  "bytes": 453310,
+  "checksum_sha256": "d1bb2a12e84d754c87a94d11984d2dbc5613bc47766d0a23bdc4e3a70b876ae1",
+  "retrieved_at": "2026-10-14T13:21:47Z",
+  "last_checked_at": "2026-10-14T13:21:47Z"
+ },
+ "ccpa_regs": {
+  "doc_id": "ccpa_regs",
+  "source_url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf",
+  "fetch_url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf",
+  "raw_path": "data/raw/ccpa_regs.pdf",
+  "bytes": 615548,
+  "checksum_sha256": "8d57eba97a7fe13346b7827d0131e1ab84dc110c6ff20daa6fa6ec4a4329d0fe",
+  "retrieved_at": "2026-10-14T13:21:49Z",
+  "last_checked_at": "2026-10-14T13:21:49Z"
+ },
+ "caloppa": {
+  "doc_id": "caloppa",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
+  "fetch_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
+  "raw_path": "data/raw/caloppa.txt",
+  "bytes": 7170,
+  "checksum_sha256": "a31643135f5906e283fbf7d4a086ec5dd3a492394d56386c5eb7c5667d37ad67",
+  "retrieved_at": "2026-10-14T13:20:00Z",
+  "last_checked_at": "2026-10-14T13:20:00Z",
+  "fetch_method": "Text of the rendered leginfo.legislature.ca.gov page (BPC Division 8, Chapter 22), captured via a browser."
  }
 }

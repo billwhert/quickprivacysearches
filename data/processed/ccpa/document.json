@@ -1,0 +1,16 @@
+{
+ "doc_id": "ccpa",
+ "title": "California Consumer Privacy Act of 2018, as amended by the CPRA (Cal. Civ. Code 1798.100 et seq.)",
+ "short_name": "CCPA",
+ "jurisdiction": "US-CA",
+ "doc_type": "law",
+ "source_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
+ "version_label": "CCPA as amended through AB 137 and AB 566, effective 1 January 2026 (CPPA consolidated text, posted December 2025)",
+ "effective_date": "2026-01-01",
+ "retrieved_at": "2026-10-14T13:21:47Z",
+ "language": "en",
+ "is_translation": false,
+ "raw_path": "data/raw/ccpa.pdf",
+ "checksum": "d1bb2a12e84d754c87a94d11984d2dbc5613bc47766d0a23bdc4e3a70b876ae1",
+ "license_note": "California statutory text is public record. Source: California Privacy Protection Agency. Confirm attribution wording at step 11."
+}

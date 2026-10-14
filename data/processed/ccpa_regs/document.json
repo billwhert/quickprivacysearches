@@ -1,0 +1,16 @@
+{
+ "doc_id": "ccpa_regs",
+ "title": "CPPA CCPA Regulations (Cal. Code Regs. tit. 11, 7000 et seq.)",
+ "short_name": "CCPA Regs",
+ "jurisdiction": "US-CA",
+ "doc_type": "regulation",
+ "source_url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf",
+ "version_label": "California Consumer Privacy Act Regulations, effective 1 January 2026 (CPPA consolidated text)",
+ "effective_date": "2026-01-01",
+ "retrieved_at": "2026-10-14T13:21:49Z",
+ "language": "en",
+ "is_translation": false,
+ "raw_path": "data/raw/ccpa_regs.pdf",
+ "checksum": "8d57eba97a7fe13346b7827d0131e1ab84dc110c6ff20daa6fa6ec4a4329d0fe",
+ "license_note": "California regulations are public record. Source: California Privacy Protection Agency. Confirm attribution wording at step 11."
+}

@@ -16,13 +16,27 @@ def fetch(doc_id: str, force: bool = False) -> dict:
     doc = load_sources()[doc_id]
     manifest = read_json(MANIFEST) if MANIFEST.exists() else {}
     path = RAW / f"{doc_id}.{doc.get('raw_ext', 'html')}"
+    if doc.get("fetch_method") == "manual":
+        # The publisher blocks scripted downloads; the file was captured by hand and committed.
+        if not path.exists():
+            raise SystemExit(f"{path} is missing; capture it as described in sources.yaml")
+        entry = {
+            "doc_id": doc_id, "source_url": doc["source_url"], "fetch_url": doc["source_url"],
+            "raw_path": str(path.relative_to(ROOT)).replace("\\", "/"), "bytes": path.stat().st_size,
+            "checksum_sha256": sha256(path), "retrieved_at": doc["manual_retrieved_at"],
+            "last_checked_at": doc["manual_retrieved_at"], "fetch_method": doc["fetch_note"],
+        }
+        manifest[doc_id] = entry
+        write_json(MANIFEST, manifest)
+        print(f"[fetch] {doc_id}: manual capture recorded ({entry['bytes']:,} bytes)")
+        return entry
     if path.exists() and not force and doc_id in manifest:
         print(f"[fetch] {doc_id}: raw file present, skipping (use --force to re-download)")
         return manifest[doc_id]
     req = urllib.request.Request(
         doc["fetch_url"],
         headers={"Accept": doc.get("fetch_accept", "*/*"), "Accept-Language": "eng",
-                 "User-Agent": "privacy-law-reference-tool/0.1 (research; static site)"},
+                 "User-Agent": doc.get("fetch_user_agent", "privacy-law-reference-tool/0.1 (research; static site)")},
     )
     with urllib.request.urlopen(req, timeout=120) as r:
         data = r.read()

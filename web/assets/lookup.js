@@ -49,32 +49,81 @@ export const SEARCH_OPTIONS = {
 const EXPANSION_WEIGHT = 0.7;      // synonym matches count a bit less than the visitor's own words
 const FIRST_PARAGRAPH_BONUS = 1.08; // paragraph 1 is usually the operative rule; used as a tie-breaker
 const MAX_PHRASE_WORDS = 5;
+const DIVERSITY_MIN_RATIO = 0.5;  // best-of-each-law is promoted if it scores at least this share of the top hit
+const MIN_TERM_WEIGHT = 0.3;  // floor for ubiquitous words
+const RARE_IDF = 3.2;         // ln(N/df) at or above which a word has full weight
+const QUOTED_TERM_BOOST = 2.5;      // "define 'sell'" -> the definition of Sell
+const DEFINITION_DEFAULT_PENALTY = 0.7; // operative rules before definitions unless a definition is asked for
+const DEFINITION_INTENT_BOOST = 1.3; // "definition of ..." -> definition chunks
 
 // ---------- citation lookup ----------
 
-// "GDPR Article 30", "Art. 35(1)", "article 6(1)(f)", "recital 26"
+// GDPR: "GDPR Article 30", "Art. 35(1)", "article 6(1)(f)", "recital 26"
 const ART = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:art(?:icle)?s?\.?\s*)(\d{1,3})\s*(?:\(\s*(\d{1,3})\s*\))?\s*(?:\(\s*([a-z]{1,3})\s*\))?\s*$/i;
 const RCT = /^\s*(?:gdpr\s*[,:-]?\s*)?(?:recital|rec\.?)\s*\(?(\d{1,3})\)?\s*$/i;
+// Code sections: "1798.105", "Civ. Code 1798.140(ad)(1)", "section 1798.100(a)", "§ 7011(a)", "11 CCR 7025", "22575(b)"
+const CODE = new RegExp(
+  "^\\s*(?:(?:ccpa|cpra|cppa|caloppa|ccr|regs?|regulations?)\\s*[,:-]?\\s*)?" +
+  "(?:(?:cal(?:ifornia)?\\.?\\s*)?(?:civ(?:il)?\\.?|bus(?:iness)?\\.?\\s*(?:&|and)?\\s*prof(?:essions)?\\.?)\\s*code\\s*,?\\s*)?" +
+  "(?:(?:11\\s*)?c\\.?c\\.?r\\.?\\s*,?\\s*)?" +
+  "(?:(?:sections?|secs?\\.?|§+)\\s*)?" +
+  "(\\d{4,5}(?:\\.\\d+){0,2})\\s*((?:\\(\\s*[a-zA-Z0-9]{1,3}\\s*\\)\\s*)*)\\s*$", "i");
+
+function docForNumber(num) {
+  if (/^1798\./.test(num)) return "ccpa";
+  if (/^7\d{3}$/.test(num)) return "ccpa_regs";
+  if (/^2257\d$/.test(num)) return "caloppa";
+  return null;
+}
+
+function idx(data) {
+  if (!data._idx) data._idx = new Map(data.chunks.map(c => [c.id, c]));
+  return data._idx;
+}
 
 export function lookupCitation(raw, data) {
+  const byId = idx(data);
   let m = raw.match(RCT);
   if (m) {
-    const c = data.chunks.find(x => x.id === `gdpr:rct:${+m[1]}`);
+    const c = byId.get(`gdpr:rct:${+m[1]}`);
     return c ? { chunk: c, exact: true, note: null } : null;
   }
   m = raw.match(ART);
-  if (!m) return null;
-  const art = +m[1], para = m[2] ? +m[2] : null, point = m[3] || null;
-  if (para !== null) {
-    const c = data.chunks.find(x => x.id === `gdpr:art:${art}:${para}`);
-    if (c) return { chunk: c, exact: true, note: point ? `Point (${point}) is shown within ${c.ref}.` : null };
+  if (m && byId.size) {
+    const art = +m[1], para = m[2] ? +m[2] : null, point = m[3] || null;
+    if (para !== null) {
+      const c = byId.get(`gdpr:art:${art}:${para}`);
+      if (c) return { chunk: c, exact: true, note: point ? `Point (${point}) is shown within ${c.ref}.` : null };
+    }
+    const a = data.articles.find(x => x.id === `gdpr:art:${art}`);
+    if (!a) return null;
+    const first = byId.get(`gdpr:art:${art}:${para ?? 1}`) || data.chunks.find(x => x.parent === a.id);
+    return first ? { chunk: first, article: a, exact: para === null,
+      note: para !== null ? `${a.ref}(${para}) was not found; showing the article.` : null } : null;
   }
-  const a = data.articles.find(x => x.id === `gdpr:art:${art}`);
-  if (!a) return null;
-  const first = data.chunks.find(x => x.id === `gdpr:art:${art}:${para ?? 1}`) ||
-                data.chunks.find(x => x.art === art);
-  return first ? { chunk: first, article: a, exact: para === null,
-    note: para !== null ? `${a.ref}(${para}) was not found; showing the article.` : null } : null;
+  m = raw.match(CODE);
+  if (m) {
+    const num = m[1];
+    const doc = docForNumber(num);
+    if (!doc) return null;
+    const secId = `${doc}:sec:${num}`;
+    const sec = data.articles.find(x => x.id === secId);
+    if (!sec) return null;
+    const labels = (m[2].match(/\(\s*([a-zA-Z0-9]{1,3})\s*\)/g) || []).map(x => x.replace(/[()\s]/g, ""));
+    for (let n = labels.length; n > 0; n--) {
+      const c = byId.get(`${secId}:${labels.slice(0, n).join(".")}`);
+      if (c) {
+        const shown = labels.slice(0, n).map(l => `(${l})`).join("");
+        const wanted = labels.map(l => `(${l})`).join("");
+        return { chunk: c, article: sec, exact: true,
+          note: n < labels.length ? `${sec.ref}${wanted} is shown within ${sec.ref}${shown}.` : null };
+      }
+    }
+    const first = data.chunks.find(x => x.parent === secId);
+    return first ? { chunk: first, article: sec, exact: !labels.length,
+      note: labels.length ? `${sec.ref}${labels.map(l => `(${l})`).join("")} was not found; showing the section.` : null } : null;
+  }
+  return null;
 }
 
 // ---------- query analysis ----------
@@ -99,17 +148,27 @@ export function analyzeQuery(raw, syn, loadedDocs) {
 
   // synonym expansion
   const expansions = [];
+  const weighted = [];
   const triggers = [];
   for (const g of syn.synonyms) {
     const hit = g.terms.find(t => hasPhrase(padded, t));
     if (hit) {
       triggers.push(hit);
-      for (const x of g.expand) if (!expansions.includes(x) && !hasPhrase(padded, x)) expansions.push(x);
+      for (const x of g.expand) {
+        if (!expansions.includes(x) && !hasPhrase(padded, x)) {
+          expansions.push(x);
+          weighted.push({ phrase: x, weight: g.weight ?? 1 });
+        }
+      }
     }
   }
 
   const terms = words.filter(w => !STOPWORDS.has(w) && !jurWords.has(w));
-  return { padded, words, terms, mentioned, loadedMentioned, unloaded, filterDocs, expansions, triggers };
+  // "define 'sell' and 'share'": quoted words are defined terms the visitor wants to see defined
+  const quoted = [...raw.matchAll(/[\u201c"]([^\u201d"]{2,40})[\u201d"]/g)].map(m => normalize(m[1]).trim());
+  const wantsDefinition = /\b(defin(e|es|ed|ition|itions)|meaning of|what does .{1,40} mean|means?)\b/i.test(raw);
+  return { padded, words, terms, mentioned, loadedMentioned, unloaded, filterDocs, expansions, weighted,
+           triggers, quoted, wantsDefinition };
 }
 
 // phrases (2+ words) from the visitor's wording, trimmed of leading/trailing stopwords
@@ -131,7 +190,26 @@ export function createEngine(MiniSearch, data) {
   const ms = new MiniSearch(INDEX_OPTIONS);
   ms.addAll(data.chunks);
   const byId = new Map(data.chunks.map(c => [c.id, c]));
-  return { ms, byId };
+  // Rarity weighting: words that appear in a large share of provisions ("personal", "information",
+  // "consumer") say little about what the visitor wants, so they count for less than specific words.
+  const df = new Map();
+  for (const c of data.chunks) {
+    const seen = new Set();
+    for (const f of INDEX_OPTIONS.fields) {
+      for (const raw of (c[f] || "").toLowerCase().split(/[\s\p{P}]+/u)) {
+        const t = raw && INDEX_OPTIONS.processTerm(raw);
+        if (t) seen.add(t);
+      }
+    }
+    seen.forEach(t => df.set(t, (df.get(t) || 0) + 1));
+  }
+  return { ms, byId, df, n: data.chunks.length };
+}
+
+function rarityWeight(engine, term) {
+  const n = engine.n, d = engine.df.get(term) || 1;
+  const idf = Math.log(n / d);
+  return Math.min(1, Math.max(MIN_TERM_WEIGHT, idf / RARE_IDF));
 }
 
 export function search(engine, data, syn, raw, opts = {}) {
@@ -142,7 +220,7 @@ export function search(engine, data, syn, raw, opts = {}) {
 
   const cit = lookupCitation(raw, data);
   if (cit) out.citation = cit;
-  const pureCitation = cit && cit.exact && /^\s*(gdpr\s*)?(art|recital)/i.test(raw);
+  const pureCitation = !!cit && cit.exact;
   if (pureCitation) return out;
 
   // visitor asked only about a law that is not loaded
@@ -169,8 +247,11 @@ export function search(engine, data, syn, raw, opts = {}) {
       h.terms.forEach(t => matched.get(h.id).add(t));
     }
   };
-  if (q.terms.length) add(ms.search(q.terms.join(" "), SEARCH_OPTIONS), 1);
-  for (const phrase of q.expansions) add(ms.search(phrase, SEARCH_OPTIONS), EXPANSION_WEIGHT);
+  const docOK = q.filterDocs.length ? (r => q.filterDocs.includes(byId.get(r.id).doc)) : undefined;
+  const searchOpts = { ...SEARCH_OPTIONS, boostTerm: t => rarityWeight(engine, t) };
+  if (docOK) searchOpts.filter = docOK;
+  if (q.terms.length) add(ms.search(q.terms.join(" "), searchOpts), 1);
+  for (const x of q.weighted) add(ms.search(x.phrase, searchOpts), EXPANSION_WEIGHT * x.weight);
 
   // phrase boost: reward chunks containing multi-word phrases from the question or its expansions
   const phrases = visitorPhrases(q.words).concat(q.expansions.map(x => normalize(x).trim()));
@@ -187,9 +268,31 @@ export function search(engine, data, syn, raw, opts = {}) {
     }
     let s = score * (1 + 0.2 * Math.max(0, longest - 1));
     if (c.kind === "paragraph" && c.n === 1) s *= FIRST_PARAGRAPH_BONUS;
+    if (c.term) {
+      const termHay = normalize(c.term);
+      if (q.quoted.some(t => termHay.includes(" " + t + " ") || t.split(" ").every(w => termHay.includes(" " + w)))) s *= QUOTED_TERM_BOOST;
+      else if (q.wantsDefinition) s *= DEFINITION_INTENT_BOOST;
+      else s *= DEFINITION_DEFAULT_PENALTY;
+    }
     final.push({ id, score: s, terms: [...(matched.get(id) || [])] });
   }
   final.sort((a, b) => b.score - a.score);
+  // A question that names no law: after the best match, show the best match from each other law
+  // (if it is nearly as good) so no single law fills the first screen.
+  if (!q.filterDocs.length && final.length) {
+    const top = final[0].score;
+    const picked = new Set([final[0].id]);
+    const head = [final[0]];
+    const seenDocs = new Set([byId.get(final[0].id).doc]);
+    for (const r of final) {
+      const d = byId.get(r.id).doc;
+      if (!seenDocs.has(d) && r.score >= top * DIVERSITY_MIN_RATIO) {
+        head.push(r); picked.add(r.id); seenDocs.add(d);
+      }
+    }
+    out.results = head.concat(final.filter(r => !picked.has(r.id)));
+    return out;
+  }
   out.results = final;
   return out;
 }

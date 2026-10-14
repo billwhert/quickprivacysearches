@@ -1,0 +1,16 @@
+{
+ "doc_id": "caloppa",
+ "title": "California Online Privacy Protection Act (Cal. Bus. & Prof. Code 22575-22579)",
+ "short_name": "CalOPPA",
+ "jurisdiction": "US-CA",
+ "doc_type": "law",
+ "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article=",
+ "version_label": "Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014",
+ "effective_date": "2004-07-01",
+ "retrieved_at": "2026-10-14T13:20:00Z",
+ "language": "en",
+ "is_translation": false,
+ "raw_path": "data/raw/caloppa.txt",
+ "checksum": "a31643135f5906e283fbf7d4a086ec5dd3a492394d56386c5eb7c5667d37ad67",
+ "license_note": "California statutory text is public record. Source: California Legislative Information. Confirm attribution wording at step 11."
+}

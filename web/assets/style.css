@@ -199,3 +199,9 @@ mark { background: var(--mark); color: inherit; padding: 0 2px; border-radius: 3
 button.chip { font: 400 .84rem var(--ui); padding: .25rem .65rem; background: var(--surface);
               color: var(--text-2); border: 1px solid var(--line); cursor: pointer; }
 button.chip:hover { border-color: var(--accent); color: var(--accent); filter: none; }
+
+.lead-in { font-size: .86rem; color: var(--text-3); margin: .3rem 0 .1rem; }
+.lead-in span { font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .72rem; margin-right: .3rem; }
+
+/* Legal labels are case-sensitive: (a) is not (A). */
+.anchor { text-transform: none; letter-spacing: 0; font-size: .8rem; }

@@ -37,17 +37,20 @@ function renderLines(text, terms) {
 
 function card(c, terms, opts = {}) {
   const doc = data.docs[c.doc];
-  const art = c.art ? data.articles.find(a => a.id === `${c.doc}:art:${c.art}`) : null;
+  const parent = c.parent ? data.articles.find(a => a.id === c.parent) : null;
   const heading = c.heading ? `<span class="sub"> - ${esc(c.heading)}</span>` : "";
-  const parentLink = art ? `<button class="link expand" data-art="${c.art}" data-doc="${c.doc}">Show full article</button>
-    <a href="${art.url}">Open article page</a>` : "";
-  const kind = { paragraph: "Article", definition: "Definition", recital: "Recital" }[c.kind] || c.kind;
+  const noun = c.parent && c.parent.includes(":art:") ? "article" : "section";
+  const parentLink = parent ? `<button class="link expand" data-parent="${esc(parent.id)}" data-noun="${noun}">Show full ${noun}</button>
+    <a href="${parent.url}">Open ${noun} page</a>` : "";
+  const kind = { paragraph: noun === "article" ? "Article" : "Section", definition: "Definition", recital: "Recital" }[c.kind] || c.kind;
+  const lead = c.lead ? `<p class="lead-in"><span>Context:</span> ${esc(c.lead)}</p>` : "";
   return `<li class="result${opts.exact ? " exact" : ""}" data-id="${esc(c.id)}">
-    <div class="result-head"><span class="badge">${esc(c.doc.toUpperCase())}</span>
+    <div class="result-head"><span class="badge">${esc(doc.short)}</span>
       <span class="badge kind">${esc(kind)}</span>${opts.exact ? '<span class="badge">Exact match</span>' : ""}</div>
     <p class="crumbs">${esc(c.hier.slice(0, -1).join(" › "))}</p>
     <h2><a href="${c.url}">${esc(c.ref)}</a>${heading}</h2>
     ${opts.note ? `<p class="note">${esc(opts.note)}</p>` : ""}
+    ${lead}
     <div class="text">${renderLines(c.text, terms)}</div>
     <p class="meta">${esc(doc.title)} · ${esc(doc.version_label)} · retrieved ${esc(doc.retrieved_at.slice(0, 10))}</p>
     <div class="actions"><a href="${c.url}">Permalink</a>
@@ -89,9 +92,9 @@ async function run(raw) {
   }
   if (!out.length) {
     const tail = res.outOfScope
-      ? `You can <a href="gdpr/">browse the GDPR</a> instead.`
+      ? `You can browse the loaded laws from the menu above instead.`
       : `No provisions found for "${esc(raw)}" in the loaded sources. ` +
-        `Try broader terms or different wording, or <a href="gdpr/">browse the GDPR</a>.`;
+        `Try broader terms or different wording, or browse the loaded laws from the menu above.`;
     status.innerHTML = (notes.length ? notes.join("<br>") + "<br>" : "") + tail;
   } else {
     const count = `${out.length} result${out.length === 1 ? "" : "s"}` +
@@ -104,14 +107,13 @@ list.addEventListener("click", e => {
   const b = e.target.closest("button.expand");
   if (!b) return;
   const box = b.closest(".result").querySelector(".expanded");
-  if (!box.hidden) { box.hidden = true; b.textContent = "Show full article"; return; }
-  const art = +b.dataset.art;
-  const parts = data.chunks.filter(c => c.doc === b.dataset.doc && c.art === art)
-    .sort((x, y) => x.n - y.n);
+  const noun = b.dataset.noun;
+  if (!box.hidden) { box.hidden = true; b.textContent = `Show full ${noun}`; return; }
+  const parts = data.chunks.filter(c => c.parent === b.dataset.parent).sort((x, y) => x.ord - y.ord);
   box.innerHTML = parts.map(c => `<section class="prov"><a class="anchor" href="${c.url}">${esc(c.ref)}</a>
     <div class="text">${renderLines(c.text, [])}</div></section>`).join("");
   box.hidden = false;
-  b.textContent = "Hide full article";
+  b.textContent = `Hide full ${noun}`;
 });
 
 // Nothing about a search is kept in the URL, history, or storage: a refresh always starts blank.

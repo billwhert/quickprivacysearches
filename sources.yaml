@@ -22,29 +22,65 @@ documents:
       recitals: 173
       definitions: 26
   - doc_id: ccpa
-    title: "California Consumer Privacy Act / CPRA (Cal. Civ. Code 1798.100 et seq.)"
+    title: "California Consumer Privacy Act of 2018, as amended by the CPRA (Cal. Civ. Code 1798.100 et seq.)"
+    short_name: CCPA
     jurisdiction: US-CA
     doc_type: law
-    source_url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article="
-    parser: calcode
+    # Consolidated statute text published by the California Privacy Protection Agency.
+    # (The Legislature's leginfo site blocks scripted downloads.)
+    source_url: "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf"
+    fetch_url: "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf"
+    raw_ext: pdf
+    parser: code
     language: en
     is_translation: false
+    version_label: "CCPA as amended through AB 137 and AB 566, effective 1 January 2026 (CPPA consolidated text, posted December 2025)"
+    effective_date: "2026-01-01"
+    license_note: "California statutory text is public record. Source: California Privacy Protection Agency. Confirm attribution wording at step 11."
+    profile:
+      heading_re: '^(1798\.\d+(?:\.\d+)?)\.\s*(.*)$'
+      definition_sections: ["1798.140"]
   - doc_id: ccpa_regs
     title: "CPPA CCPA Regulations (Cal. Code Regs. tit. 11, 7000 et seq.)"
+    short_name: "CCPA Regs"
     jurisdiction: US-CA
     doc_type: regulation
-    source_url: "https://cppa.ca.gov/regulations/"
-    parser: generic_html
+    source_url: "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    fetch_url: "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    raw_ext: pdf
+    parser: code
     language: en
     is_translation: false
+    version_label: "California Consumer Privacy Act Regulations, effective 1 January 2026 (CPPA consolidated text)"
+    effective_date: "2026-01-01"
+    license_note: "California regulations are public record. Source: California Privacy Protection Agency. Confirm attribution wording at step 11."
+    profile:
+      heading_re: '^§\s*(7\d{3}(?:\.\d+)?)\.\s*(.*)$'
+      article_re: '^ARTICLE \d+\.'
+      definition_sections: ["7001"]
   - doc_id: caloppa
     title: "California Online Privacy Protection Act (Cal. Bus. & Prof. Code 22575-22579)"
+    short_name: CalOPPA
     jurisdiction: US-CA
     doc_type: law
     source_url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article="
-    parser: calcode
+    # leginfo blocks scripted downloads, so the page text was captured from the rendered page.
+    fetch_method: manual
+    fetch_note: "Text of the rendered leginfo.legislature.ca.gov page (BPC Division 8, Chapter 22), captured via a browser."
+    manual_retrieved_at: "2026-10-14T13:20:00Z"
+    raw_ext: txt
+    parser: code
     language: en
     is_translation: false
+    version_label: "Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014"
+    effective_date: "2004-07-01"  # operative date; 22575 last amended effective 2014-01-01
+    license_note: "California statutory text is public record. Source: California Legislative Information. Confirm attribution wording at step 11."
+    profile:
+      heading_re: '^(2257\d)\.\s*(.*)$'
+      toc: ["22575", "22576", "22577", "22578", "22579"]
+      note_re: '^\((?:Added|Amended|Repealed|Enacted)\b'
+      default_article: "Chapter 22. Internet Privacy Requirements"
+      default_title: "Internet Privacy Requirements"
   - doc_id: hipaa
     title: "HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164)"
     jurisdiction: US-Federal

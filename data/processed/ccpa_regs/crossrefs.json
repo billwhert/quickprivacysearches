@@ -1,0 +1,1297 @@
+[
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:0",
+  "raw": "Civil Code section 1798.140",
+  "to_chunk_id": "ccpa:sec:1798.140",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:a",
+  "raw": "Civil Code section 1798.199.10",
+  "to_chunk_id": "ccpa:sec:1798.199.10",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:b",
+  "raw": "Civil Code section 1798.135, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.135:a",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:b",
+  "raw": "section 7015",
+  "to_chunk_id": "ccpa_regs:sec:7015",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:d",
+  "raw": "section 7063",
+  "to_chunk_id": "ccpa_regs:sec:7063",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:h",
+  "raw": "Civil Code section 1798.100",
+  "to_chunk_id": "ccpa:sec:1798.100",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:j",
+  "raw": "section 7120, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7120:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:l",
+  "raw": "section 7123, subsection (e)",
+  "to_chunk_id": "ccpa_regs:sec:7123:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:o",
+  "raw": "Civil Code section 1798.145, subdivision (m)",
+  "to_chunk_id": "ccpa:sec:1798.145:m",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:r",
+  "raw": "section 7025, subsection (f)",
+  "to_chunk_id": "ccpa_regs:sec:7025:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:v",
+  "raw": "Civil Code section 1798.140, subdivision (d)",
+  "to_chunk_id": "ccpa:sec:1798.140:d",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:w",
+  "raw": "Civil Code section 1798.100",
+  "to_chunk_id": "ccpa:sec:1798.100",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:x",
+  "raw": "Civil Code sections 1798.121",
+  "to_chunk_id": "ccpa:sec:1798.121",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:x",
+  "raw": "1798.135",
+  "to_chunk_id": "ccpa:sec:1798.135",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:y",
+  "raw": "Civil Code sections 1798.120",
+  "to_chunk_id": "ccpa:sec:1798.120",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:y",
+  "raw": "1798.135",
+  "to_chunk_id": "ccpa:sec:1798.135",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:z",
+  "raw": "Civil Code section 1798.125, subdivision (b)",
+  "to_chunk_id": "ccpa:sec:1798.125:b",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:aa",
+  "raw": "section 7025, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7025:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:gg",
+  "raw": "Civil Code sections 1798.130, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.130",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:gg",
+  "raw": "1798.135",
+  "to_chunk_id": "ccpa:sec:1798.135",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:jj",
+  "raw": "Civil Code section 1798.185",
+  "to_chunk_id": "ccpa:sec:1798.185",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:kk",
+  "raw": "section 7221, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7221:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:ll",
+  "raw": "Civil Code section 1798.106",
+  "to_chunk_id": "ccpa:sec:1798.106",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:mm",
+  "raw": "Civil Code section 1798.105",
+  "to_chunk_id": "ccpa:sec:1798.105",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:nn",
+  "raw": "Civil Code sections 1798.110",
+  "to_chunk_id": "ccpa:sec:1798.110",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:nn",
+  "raw": "1798.115",
+  "to_chunk_id": "ccpa:sec:1798.115",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:oo",
+  "raw": "Civil Code section 1798.121, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.121:a",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:qq",
+  "raw": "Civil Code section 1798.185",
+  "to_chunk_id": "ccpa:sec:1798.185",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:rr",
+  "raw": "Civil Code section 1798.120, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.120:a",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:ss",
+  "raw": "Civil Code section 1798.185",
+  "to_chunk_id": "ccpa:sec:1798.185",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:tt",
+  "raw": "Civil Code section 1798.106",
+  "to_chunk_id": "ccpa:sec:1798.106",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:uu",
+  "raw": "Civil Code section 1798.105",
+  "to_chunk_id": "ccpa:sec:1798.105",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:vv",
+  "raw": "Civil Code sections 1798.110",
+  "to_chunk_id": "ccpa:sec:1798.110",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:vv",
+  "raw": "1798.115",
+  "to_chunk_id": "ccpa:sec:1798.115",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:ww",
+  "raw": "Civil Code section 1798.121",
+  "to_chunk_id": "ccpa:sec:1798.121",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:xx",
+  "raw": "Civil Code section 1798.185",
+  "to_chunk_id": "ccpa:sec:1798.185",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:yy",
+  "raw": "Civil Code section 1798.120",
+  "to_chunk_id": "ccpa:sec:1798.120",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:zz",
+  "raw": "Civil Code section 1798.140, subdivision (v)",
+  "to_chunk_id": "ccpa:sec:1798.140:v",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:zz",
+  "raw": "section 7152",
+  "to_chunk_id": "ccpa_regs:sec:7152",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:zz",
+  "raw": "sections 7150, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7150:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7001:zz",
+  "raw": "section 7081",
+  "to_chunk_id": "ccpa_regs:sec:7081",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7002:a",
+  "raw": "Civil Code section 1798.100, subdivision (c)",
+  "to_chunk_id": "ccpa:sec:1798.100:c",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7002:c",
+  "raw": "Civil Code section 1798.140",
+  "to_chunk_id": "ccpa:sec:1798.140",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7002:e",
+  "raw": "Civil Code section 1798.145, subdivision (r)",
+  "to_chunk_id": "ccpa:sec:1798.145:r",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7002:e",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7002:f",
+  "raw": "section 7012",
+  "to_chunk_id": "ccpa_regs:sec:7012",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7004:a.1",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7004:a.4",
+  "raw": "section 7002, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7002:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:a",
+  "raw": "section 7011",
+  "to_chunk_id": "ccpa_regs:sec:7011",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:b",
+  "raw": "section 7012",
+  "to_chunk_id": "ccpa_regs:sec:7012",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:c",
+  "raw": "section 7200, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7200:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:c",
+  "raw": "section 7220",
+  "to_chunk_id": "ccpa_regs:sec:7220",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:d",
+  "raw": "section 7221, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7221:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:d",
+  "raw": "section 7200, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7200:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:d",
+  "raw": "section 7221, subsection (c)",
+  "to_chunk_id": "ccpa_regs:sec:7221:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:e",
+  "raw": "section 7025, subsection (g)",
+  "to_chunk_id": "ccpa_regs:sec:7025:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:e",
+  "raw": "sections 7013",
+  "to_chunk_id": "ccpa_regs:sec:7013",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:f",
+  "raw": "section 7027, subsection (m)",
+  "to_chunk_id": "ccpa_regs:sec:7027:m",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:f",
+  "raw": "sections 7014",
+  "to_chunk_id": "ccpa_regs:sec:7014",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7010:g",
+  "raw": "section 7016",
+  "to_chunk_id": "ccpa_regs:sec:7016",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:d",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "Civil Code section 1798.140",
+  "to_chunk_id": "ccpa:sec:1798.140",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "section 7027, subsection (m)",
+  "to_chunk_id": "ccpa_regs:sec:7027:m",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "section 7221, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7221:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "section 7200, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7200:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "section 7013, subsection (f)",
+  "to_chunk_id": "ccpa_regs:sec:7013:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "section 7014, subsection (f)",
+  "to_chunk_id": "ccpa_regs:sec:7014:f",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "sections 7070",
+  "to_chunk_id": "ccpa_regs:sec:7070",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7011:e",
+  "raw": "section 7102",
+  "to_chunk_id": "ccpa_regs:sec:7102",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7012:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7012:i",
+  "raw": "Civil Code section 1798.99.80",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7013:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7013:c",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7013:d",
+  "raw": "section 7015",
+  "to_chunk_id": "ccpa_regs:sec:7015",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7013:d",
+  "raw": "section 7025",
+  "to_chunk_id": "ccpa_regs:sec:7025",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7013:e",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7013:f",
+  "raw": "section 7026, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7026:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:c",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:d",
+  "raw": "section 7015",
+  "to_chunk_id": "ccpa_regs:sec:7015",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:e",
+  "raw": "section 7027, subsection (m)",
+  "to_chunk_id": "ccpa_regs:sec:7027:m",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:e",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:e",
+  "raw": "Section 7027, subsection (m)",
+  "to_chunk_id": "ccpa_regs:sec:7027:m",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:f",
+  "raw": "section 7027, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7027:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:g",
+  "raw": "section 7027, subsection (m)",
+  "to_chunk_id": "ccpa_regs:sec:7027:m",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7014:h",
+  "raw": "section 7027, subsection (m)",
+  "to_chunk_id": "ccpa_regs:sec:7027:m",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7015:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7015:c",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7015:c",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7016:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7020:d",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7020:e",
+  "raw": "Civil Code section 1798.130, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.130",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7022:e",
+  "raw": "section 7101, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7101:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7022:g",
+  "raw": "section 7013",
+  "to_chunk_id": "ccpa_regs:sec:7013",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7023:d",
+  "raw": "section 7101",
+  "to_chunk_id": "ccpa_regs:sec:7101",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7023:f",
+  "raw": "Civil Code section 1798.185, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.185",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7023:j",
+  "raw": "Civil Code section 1798.130, subdivision (b)",
+  "to_chunk_id": "ccpa:sec:1798.130:b",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.1",
+  "raw": "Civil Code section 1798.120",
+  "to_chunk_id": "ccpa:sec:1798.120",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.3",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.3",
+  "raw": "section 7025, subsection (c)",
+  "to_chunk_id": "ccpa_regs:sec:7025",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.3",
+  "raw": "section 7026, subsection (g)",
+  "to_chunk_id": "ccpa_regs:sec:7026:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.4",
+  "raw": "section 7025, subsection (c)",
+  "to_chunk_id": "ccpa_regs:sec:7025",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.4",
+  "raw": "section 7026, subsection (g)",
+  "to_chunk_id": "ccpa_regs:sec:7026:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.6",
+  "raw": "section 7026, subsection (g)",
+  "to_chunk_id": "ccpa_regs:sec:7026:g",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.7",
+  "raw": "Civil Code section 1798.135, subdivision (b)",
+  "to_chunk_id": "ccpa:sec:1798.135:b",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:c.7",
+  "raw": "section 7026, subsection (k)",
+  "to_chunk_id": "ccpa_regs:sec:7026:k",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:e",
+  "raw": "Civil Code section 1798.135",
+  "to_chunk_id": "ccpa:sec:1798.135",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:f",
+  "raw": "Civil Code section 1798.135, subdivision (b)",
+  "to_chunk_id": "ccpa:sec:1798.135:b",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7025:g",
+  "raw": "Civil Code section 1798.135, subdivision (b)",
+  "to_chunk_id": "ccpa:sec:1798.135:b",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7026:b",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7026:g",
+  "raw": "section 7025, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7025:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7026:h",
+  "raw": "Civil Code section 1798.135, subdivision (b)",
+  "to_chunk_id": "ccpa:sec:1798.135:b",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7026:i",
+  "raw": "Civil Code section 1798.135, subdivision (b)",
+  "to_chunk_id": "ccpa:sec:1798.135:b",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7026:i",
+  "raw": "section 7016",
+  "to_chunk_id": "ccpa_regs:sec:7016",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7027:c",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7027:k",
+  "raw": "section 7016",
+  "to_chunk_id": "ccpa_regs:sec:7016",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7027:m",
+  "raw": "Civil Code section 1798.121, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.121:a",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7028:b",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7028:c",
+  "raw": "section 7027, subsection (m)",
+  "to_chunk_id": "ccpa_regs:sec:7027:m",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7028:c",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7050:a",
+  "raw": "Civil Code section 1798.145",
+  "to_chunk_id": "ccpa:sec:1798.145",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7050:b",
+  "raw": "Civil Code section 1798.140, subdivision (e)",
+  "to_chunk_id": "ccpa:sec:1798.140:e",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7050:e",
+  "raw": "section 7051, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7051:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7050:g",
+  "raw": "Civil Code section 1798.140, subdivision (d)",
+  "to_chunk_id": "ccpa:sec:1798.140:d",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7051:a",
+  "raw": "Civil Code section 1798.81.5",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7052:a",
+  "raw": "section 7053, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7053:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7053:a",
+  "raw": "Civil Code section 1798.81.5",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7060:c",
+  "raw": "Civil Code section 1798.81.5, subdivision (d)",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7060:d",
+  "raw": "section 7101",
+  "to_chunk_id": "ccpa_regs:sec:7101",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7061:a",
+  "raw": "section 7060",
+  "to_chunk_id": "ccpa_regs:sec:7060",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7061:b",
+  "raw": "section 7062",
+  "to_chunk_id": "ccpa_regs:sec:7062",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7062:a",
+  "raw": "section 7060",
+  "to_chunk_id": "ccpa_regs:sec:7060",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7062:e",
+  "raw": "section 7060, subsection (c)",
+  "to_chunk_id": "ccpa_regs:sec:7060:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7062:g",
+  "raw": "Civil Code section 1798.130, subdivision (a)",
+  "to_chunk_id": "ccpa:sec:1798.130",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7070:b",
+  "raw": "section 7026",
+  "to_chunk_id": "ccpa_regs:sec:7026",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7071:a",
+  "raw": "section 7028",
+  "to_chunk_id": "ccpa_regs:sec:7028",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7071:b",
+  "raw": "section 7026",
+  "to_chunk_id": "ccpa_regs:sec:7026",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7072:a",
+  "raw": "sections 7070",
+  "to_chunk_id": "ccpa_regs:sec:7070",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7080:a",
+  "raw": "Civil Code section 1798.125",
+  "to_chunk_id": "ccpa:sec:1798.125",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7080:d",
+  "raw": "Civil Code section 1798.105, subdivision (d)",
+  "to_chunk_id": "ccpa:sec:1798.105:d",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7080:e",
+  "raw": "Civil Code section 1798.125",
+  "to_chunk_id": "ccpa:sec:1798.125",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7080:e",
+  "raw": "section 7016",
+  "to_chunk_id": "ccpa_regs:sec:7016",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7080:f",
+  "raw": "Civil Code section 1798.145, subdivision (h)",
+  "to_chunk_id": "ccpa:sec:1798.145:h",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7081:a",
+  "raw": "Civil Code section 1798.125",
+  "to_chunk_id": "ccpa:sec:1798.125",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7120:b",
+  "raw": "Civil Code section 1798.140, subdivision (d)",
+  "to_chunk_id": "ccpa:sec:1798.140:d",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7121:b",
+  "raw": "section 7120",
+  "to_chunk_id": "ccpa_regs:sec:7120",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7122:e",
+  "raw": "section 7123, subsection (e)",
+  "to_chunk_id": "ccpa_regs:sec:7123:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7123:c",
+  "raw": "Civil Code section 1798.145",
+  "to_chunk_id": "ccpa:sec:1798.145",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7123:c",
+  "raw": "Civil Code section 1798.150",
+  "to_chunk_id": "ccpa:sec:1798.150",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7123:c",
+  "raw": "section 7051",
+  "to_chunk_id": "ccpa_regs:sec:7051",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7123:c",
+  "raw": "section 7053",
+  "to_chunk_id": "ccpa_regs:sec:7053",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7123:c",
+  "raw": "sections 7051",
+  "to_chunk_id": "ccpa_regs:sec:7051",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7123:e",
+  "raw": "Civil Code section 1798.82, subdivision (a)",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7124:d",
+  "raw": "section 7124, subsection (c)",
+  "to_chunk_id": "ccpa_regs:sec:7124:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7151:a",
+  "raw": "section 7150, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7150:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7152:a",
+  "raw": "section 7150",
+  "to_chunk_id": "ccpa_regs:sec:7150",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7152:a",
+  "raw": "section 7151, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7151:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7153:a",
+  "raw": "section 7150, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7150:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7155:a",
+  "raw": "section 7150, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7150:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7155:a",
+  "raw": "section 7152, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7152:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7155:b",
+  "raw": "section 7150, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7150:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7155:b",
+  "raw": "section 7152",
+  "to_chunk_id": "ccpa_regs:sec:7152",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7155:b",
+  "raw": "section 7157, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7157:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7156:b",
+  "raw": "section 7152",
+  "to_chunk_id": "ccpa_regs:sec:7152",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7157:b",
+  "raw": "Civil Code section 1798.140",
+  "to_chunk_id": "ccpa:sec:1798.140",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7157:b",
+  "raw": "section 7150, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7150:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7157:b",
+  "raw": "section 7157, subsection (c)",
+  "to_chunk_id": "ccpa_regs:sec:7157:c",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7220:a",
+  "raw": "section 7200, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7200:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7220:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7220:b",
+  "raw": "section 7200, subsection (a)",
+  "to_chunk_id": "ccpa_regs:sec:7200:a",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7220:c",
+  "raw": "section 7221, subsection (b)",
+  "to_chunk_id": "ccpa_regs:sec:7221:b",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7220:c",
+  "raw": "section 7001, subsection (e)",
+  "to_chunk_id": "ccpa_regs:sec:7001:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7221:b",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7221:b",
+  "raw": "section 7003",
+  "to_chunk_id": "ccpa_regs:sec:7003",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7221:b",
+  "raw": "section 7021",
+  "to_chunk_id": "ccpa_regs:sec:7021",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7221:b",
+  "raw": "section 7001",
+  "to_chunk_id": "ccpa_regs:sec:7001",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7221:d",
+  "raw": "section 7004",
+  "to_chunk_id": "ccpa_regs:sec:7004",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7221:l",
+  "raw": "Civil Code section 1798.125",
+  "to_chunk_id": "ccpa:sec:1798.125",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7222:b",
+  "raw": "section 7001, subsection (e)",
+  "to_chunk_id": "ccpa_regs:sec:7001:e",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7222:d",
+  "raw": "section 7020",
+  "to_chunk_id": "ccpa_regs:sec:7020",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7222:k",
+  "raw": "Civil Code section 1798.125",
+  "to_chunk_id": "ccpa:sec:1798.125",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7302:a",
+  "raw": "Civil Code section 1798.199.50",
+  "to_chunk_id": "ccpa:sec:1798.199.50",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7302:b",
+  "raw": "Civil Code section 1798.199.50",
+  "to_chunk_id": "ccpa:sec:1798.199.50",
+  "external": false,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "ccpa_regs:sec:7302:c",
+  "raw": "Civil Code section 1798.199.50",
+  "to_chunk_id": "ccpa:sec:1798.199.50",
+  "external": false,
+  "own_space": false
+ }
+]

@@ -7,7 +7,8 @@
 - `data/raw/` - original source files, untouched, with `manifest.json` (URL, checksum, retrieval date)
 - `data/processed/<doc_id>/` - `document.json`, `chunks.json`, `crossrefs.json`
 - `data/reports/<doc_id>_validation.md` - validation checks and a 10-chunk spot-check
-- `build/` - ingestion pipeline (`ingest.py`, `parse_*.py`, `validate.py`) and site generator (`pages.py`)
+- `build/` - ingestion pipeline (`ingest.py`, `parse_eurlex.py` for EU acts, `parse_code.py` for
+  US statutes and regulations in PDF or text, `validate*.py`) and site generator (`pages.py`)
 - `web/assets/` - search page JavaScript and CSS; `lookup.js` holds citation lookup and query cleanup
 - `web/vendor/minisearch.js` - vendored search library (MIT)
 - `tests/run_queries.mjs` - acceptance queries run against the built site
@@ -55,3 +56,16 @@ All of it runs in the browser (`web/assets/lookup.js`, shared with the test runn
 
 To add or fix a synonym, edit `synonyms.yaml` and rebuild. `node tests/run_queries.mjs` shows
 what changed; set `VERBOSE=1` to see the top results for every query.
+
+## Adding a US statute or regulation
+Documents with `parser: code` in `sources.yaml` use `build/parse_code.py`. Each entry needs a
+`profile` with a `heading_re` (matches section headings and captures the number and title).
+Optional profile keys: `article_re` (article/chapter headings), `definition_sections`
+(sections chunked per defined term), `toc` (explicit section list when the source has no
+printed table of contents), `note_re` (history/authority lines kept apart from the text).
+The parser uses the document's own table of contents as the ordered list of sections, so a
+citation that happens to start a wrapped line is never mistaken for a heading.
+
+Sources that block scripted downloads (the California Legislature's leginfo site does) can use
+`fetch_method: manual`: save the text under `data/raw/` and describe how it was captured in
+`fetch_note`. The manifest records the checksum and capture date.

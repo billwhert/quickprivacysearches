@@ -16,7 +16,10 @@ documents:
     is_translation: false
     version_label: "Official Journal L 119, 4.5.2016 (CELEX 32016R0679, as published)"
     effective_date: "2018-05-25"  # applicable from; entered into force 2016-05-24
-    license_note: "EU legislation reuse is authorised with acknowledgement of source (Commission Decision 2011/833/EU). Confirm wording at step 11."
+    license_note: "Reuse authorised. EUR-Lex states that, unless otherwise specified, the legal documents it publishes may be re-used for commercial or non-commercial purposes under Commission Decision 2011/833/EU. Only EU legal acts published in the Official Journal are authentic."
+    attribution: "Regulation (EU) 2016/679, © European Union, https://eur-lex.europa.eu, 1998-2026. Reused under Commission Decision 2011/833/EU."
+    reuse_url: "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html"
+    notes: "The text is the Official Journal version of the Regulation (CELEX 32016R0679), retrieved from the EU Publications Office. Later corrigenda and the consolidated text may differ in places; check the official source."
     validation:
       articles: 99
       recitals: 173
@@ -36,7 +39,10 @@ documents:
     is_translation: false
     version_label: "CCPA as amended through AB 137 and AB 566, effective 1 January 2026 (CPPA consolidated text, posted December 2025)"
     effective_date: "2026-01-01"
-    license_note: "California statutory text is public record. Source: California Privacy Protection Agency. Confirm attribution wording at step 11."
+    license_note: "Public-domain government information. The State of California's Conditions of Use state that information on its websites is, unless otherwise indicated, considered public domain and may be distributed or copied as permitted by law. No attribution is required; it is given anyway."
+    attribution: "California Consumer Privacy Act of 2018 (consolidated text, effective 1 January 2026), California Privacy Protection Agency, https://cppa.ca.gov. Public-domain government information under the State of California's Conditions of Use."
+    reuse_url: "https://www.ca.gov/legal/conditions-of-use/"
+    notes: "This is the consolidated statute published by the California Privacy Protection Agency, not the Legislature's own publication (California Legislative Information)."
     profile:
       heading_re: '^(1798\.\d+(?:\.\d+)?)\.\s*(.*)$'
       definition_sections: ["1798.140"]
@@ -53,7 +59,10 @@ documents:
     is_translation: false
     version_label: "California Consumer Privacy Act Regulations, effective 1 January 2026 (CPPA consolidated text)"
     effective_date: "2026-01-01"
-    license_note: "California regulations are public record. Source: California Privacy Protection Agency. Confirm attribution wording at step 11."
+    license_note: "Public-domain government information. The State of California's Conditions of Use state that information on its websites is, unless otherwise indicated, considered public domain and may be distributed or copied as permitted by law. No attribution is required; it is given anyway."
+    attribution: "California Consumer Privacy Act Regulations, Cal. Code Regs. tit. 11, 7000 et seq. (effective 1 January 2026), California Privacy Protection Agency, https://cppa.ca.gov. Public-domain government information under the State of California's Conditions of Use."
+    reuse_url: "https://www.ca.gov/legal/conditions-of-use/"
+    notes: "This is the consolidated text published by the California Privacy Protection Agency. The official publication of California regulations is the California Code of Regulations (Office of Administrative Law)."
     profile:
       heading_re: '^§\s*(7\d{3}(?:\.\d+)?)\.\s*(.*)$'
       article_re: '^ARTICLE \d+\.'
@@ -74,7 +83,10 @@ documents:
     is_translation: false
     version_label: "Cal. Bus. & Prof. Code 22575-22579, as published by the California Legislature (leginfo); 22575 amended by Stats. 2013, Ch. 390 (AB 370), effective 1 January 2014"
     effective_date: "2004-07-01"  # operative date; 22575 last amended effective 2014-01-01
-    license_note: "California statutory text is public record. Source: California Legislative Information. Confirm attribution wording at step 11."
+    license_note: "Statutory text of five short sections. The California Legislature's Privacy and Conditions of Use Policy says some information on its site may be protected by copyright and that permission to use that material must be obtained from the Assembly, the Senate or the Legislative Counsel Bureau. Statutory text is law; see the note on the Sources page."
+    attribution: "California Business and Professions Code, sections 22575-22579, California Legislative Information (https://leginfo.legislature.ca.gov), California State Legislature."
+    reuse_url: "https://leginfo.legislature.ca.gov/faces/home.xhtml"
+    notes: "Captured by hand from the rendered California Legislative Information page, because that site blocks scripted downloads. The saved file is the page text, not a byte-exact download."
     profile:
       heading_re: '^(2257\d)\.\s*(.*)$'
       toc: ["22575", "22576", "22577", "22578", "22579"]
@@ -101,6 +113,9 @@ documents:
     language: en
     is_translation: false
     version_label: "Electronic Code of Federal Regulations, 45 CFR Parts 160 and 164, current as of {ECFR_DATE}"
-    license_note: "Works of the US Government are in the public domain. Source: Electronic Code of Federal Regulations (eCFR), Office of the Federal Register. Note: the eCFR is an unofficial editorial compilation; the official CFR is published annually by the Government Publishing Office. Confirm wording at step 11."
+    license_note: "US Government work, not subject to copyright (17 U.S.C. 105). The Office of the Federal Register and the Government Publishing Office state that the eCFR is an editorial compilation and not an official legal edition of the CFR."
+    attribution: "45 CFR Parts 160 and 164, Electronic Code of Federal Regulations (eCFR), Office of the Federal Register, National Archives and Records Administration, and U.S. Government Publishing Office, https://www.ecfr.gov. This site is not the official CFR."
+    reuse_url: "https://www.ecfr.gov/reader-aids/understanding-the-ecfr/what-is-the-ecfr"
+    notes: "The eCFR is an editorial compilation, updated daily. For legal research, verify against the official CFR and the Federal Register."
     profile:
       definition_sections: ["160.103", "164.103", "164.304", "164.402", "164.501"]

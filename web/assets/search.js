@@ -122,6 +122,12 @@ function renderLines(text, terms) {
   }).join("");
 }
 
+function reportUrl(c) {
+  const q = new URLSearchParams({ template: "report-an-error.yml", title: `[Error] ${c.ref}`, provision: c.ref,
+    page: data.site.site_url.replace(/\/$/, "") + "/" + c.url });
+  return `${data.site.repo}/issues/new?${q}`;
+}
+
 function tagsHtml(c) {
   // show the most specific tags: a sub-topic replaces its parent
   const have = c.topics || [];
@@ -153,7 +159,8 @@ function card(c, terms, opts = {}) {
     <p class="meta">${esc(doc.title)} · ${esc(doc.version_label)} · retrieved ${esc(doc.retrieved_at.slice(0, 10))}</p>
     <div class="actions"><a href="${c.url}">Permalink</a>
       <button class="link copy" data-url="${esc(c.url)}">Copy link</button>
-      <a href="${esc(c.src || doc.source_url)}">Official source</a>${parentLink}</div>
+      <a href="${esc(c.src || doc.source_url)}">Official source</a>${parentLink}
+      <a href="${esc(reportUrl(c))}" title="Opens a public GitHub issue form">Report an error</a></div>
     <div class="expanded" hidden></div>
   </li>`;
 }

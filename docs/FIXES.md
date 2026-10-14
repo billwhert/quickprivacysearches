@@ -15,7 +15,11 @@ How to use this file
 | F-02 | P1 | Review | Topic tags (step 8) are keyword-assigned first pass. Review `data/reports/topic_review.csv` and record corrections in `taxonomy/overrides.yaml`. | step 8 |
 | F-22 | P2 | Topics | First-pass tags are noisiest for `security-safeguards` (about 190 provisions, mostly GDPR, from words like "safeguards") and `data-subject-rights` / `right-opt-out` in the CCPA regulations (most of that document is about requests). Review and tighten phrases in `taxonomy/topics.yaml` after looking at the "Phrases doing the work" table in `data/reports/topic_tagging.md`. | step 8 |
 | F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
-| F-03 | P1 | Legal | License and attribution wording for every source is a placeholder (EU reuse decision, CPPA, California Legislature, eCFR). Confirm and display on Sources page. | step 11 |
+| F-28 | P1 | Decision | **Licence for this project.** The repository has no LICENSE file, so by default all rights are reserved even though the repo is public. Suggested: MIT for the code and CC BY 4.0 for the editorial files (topics, comparisons, synonyms). Say which you want and I will add the files and a line on the About page. | step 11 |
+| F-29 | P1 | Decision | **CalOPPA source.** The California Legislature's site says some of its material may be copyrighted and to obtain permission. The statute text itself is law (and the US Supreme Court held government edicts are not copyrightable in *Georgia v. Public.Resource.Org*, 2020), and only five short sections are reproduced, with attribution. Options: keep as is, or email the Legislative Counsel Bureau for written confirmation. | step 11 |
+| F-30 | P2 | Decision | **Name on the About page.** `maintainer` in `site.yaml` is empty, so the page says "an independent project". Add your name or organisation if you want it shown. | step 11 |
+| F-31 | P2 | Decision | **AI-assistance statement.** The About page says the software and first drafts of the synonym lists, tags, guided topics and comparisons were developed with an AI coding assistant, and that no AI writes or alters the legal text. Confirm or edit the wording in `build/trust.py` (spec open decision 6 was about summaries). | step 11 |
+| F-32 | P2 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
 | F-04 | P1 | Launch | Spec test 20: confirm in a browser's network tab that query text is never sent anywhere. Also test on a phone and a different network. | step 12 |
 | F-05 | P2 | Content | The two guided topics are published as a **first-release approval**; the line-by-line review of their provision lists is still pending. When you have time: `data/reports/guided_topics_review.md` (long; the review sheet lists every provision with its full text). The pages say "line-by-line review pending" until you re-approve with your own wording. | step 9 |
 | F-26 | P2 | Content | Eight comparison sets (`compare/*.yaml`) are an editorial selection of provisions and have not been reviewed. The page says they are not a statement of equivalence. Check the columns make sense; add or remove provisions in the YAML. | step 10 |
@@ -40,6 +44,12 @@ How to use this file
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
 
 ## Change log
+
+### Step 11 - Trust pages (2026-10-14)
+- Added About, Disclaimer and privacy notice, and Sources pages, linked from every page's footer.
+- Confirmed reuse terms from the publishers' own pages: EUR-Lex (Decision 2011/833/EU, source acknowledged), State of California Conditions of Use (public domain unless indicated), eCFR/OFR (US Government work; editorial compilation, not official), California Legislature (notes possible copyright; see F-29). Attribution text is shown on Sources.
+- Added a GitHub issue form ("Report an error") with links on every provision page and result, prefilled with the provision and page address only, never a search.
+- Added `tests/check_site.py`, which verifies the privacy claims (no third-party resources, cookies, storage or tracking) and that every document has attribution and reuse links.
 
 ### Step 10 - Compare view (2026-10-14)
 - Added `/compare/` with eight hand-written comparison sets (request deadlines, breach notification, access, deletion, definitions of personal data, privacy notices, penalties, processor contracts).

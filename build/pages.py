@@ -9,6 +9,7 @@ import yaml
 import compare
 import export_search
 import guided
+import trust
 from common import PROCESSED, ROOT, read_json
 
 DIST = ROOT / "dist"
@@ -19,6 +20,7 @@ VERSION = "dev"  # set in build(): content hash used to bust browser caches
 TOPICS: dict = {}   # topic id -> {label, parent}; set in build()
 GUIDES: list = []   # guided topics shown on this build; set in build()
 COMPARES: list = []  # comparison sets; set in build()
+SITE: dict = {}      # site.yaml; set in build()
 PARENT_KINDS = ("article", "section")
 
 DISCLAIMER = ("Reference tool, not legal advice. Text is taken from the official source and shown "
@@ -38,7 +40,9 @@ def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> s
     if COMPARES:
         nav.append(("Compare", f"{rel}compare/", "compare"))
     nav.append(("Browse", f"{rel}documents/", "browse"))
-    if active not in ("search", "guides", "compare", ""):
+    if active in ("about", "disclaimer", "sources"):
+        active = ""
+    elif active not in ("search", "guides", "compare", ""):
         active = "browse"
     links = " ".join(
         f'<a href="{href}"{" aria-current=page" if key == active else ""}>{e(label)}</a>'
@@ -59,6 +63,9 @@ def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> s
 <footer class="site"><div class="wrap">
 <p>{e(DISCLAIMER)}</p>
 <p>No accounts, no tracking. Searches run in your browser and are never sent anywhere.</p>
+<p class="foot-links"><a href="{rel}about/">About</a><a href="{rel}sources/">Sources</a>
+<a href="{rel}disclaimer/">Disclaimer and privacy notice</a>
+<a href="{e(trust.report_url(SITE))}">Report an error</a><a href="{e(SITE.get('repo', '#'))}">Repository</a></p>
 </div></footer>
 </body></html>
 """
@@ -81,7 +88,8 @@ def doc_layout(parts: list, side: str) -> str:
     return f'<div class="doc-layout"><article>{"".join(parts)}</article>{side}</div>'
 
 
-def side_panel(doc: dict, nav_title: str = "", nav_items: list = None, src: str = "") -> str:
+def side_panel(doc: dict, nav_title: str = "", nav_items: list = None, src: str = "", ref: str = "",
+               permalink: str = "") -> str:
     out = ['<aside class="side">',
            '<div class="side-card"><h3>Source</h3>',
            f'<p><a href="{e(src or doc["source_url"])}">Official text</a></p>',
@@ -89,7 +97,9 @@ def side_panel(doc: dict, nav_title: str = "", nav_items: list = None, src: str 
     if nav_items:
         out.append(f'<div class="side-card"><h3>{e(nav_title)}</h3><ul class="side-nav">'
                    + "".join(f'<li><a href="#{a}">{e(t)}</a></li>' for a, t in nav_items) + "</ul></div>")
-    out.append(f'<p class="side-link"><a href="../../">All {e(doc["short_name"])} provisions</a></p></aside>')
+    report = (f'<p class="side-link"><a href="{e(trust.report_url(SITE, ref, permalink))}">Report an error '
+              f'in this provision</a></p>') if ref else ""
+    out.append(f'<p class="side-link"><a href="../../">All {e(doc["short_name"])} provisions</a></p>{report}</aside>')
     return "".join(out)
 
 
@@ -185,7 +195,7 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         title = f'{a["section_ref"]} - {a["heading"]}' if a["heading"] else a["section_ref"]
         nav_title = "In this article" if a["kind"] == "article" else "In this section"
         (d / "index.html").write_text(
-            page(title, doc_layout(parts, side_panel(doc, nav_title, nav_items, a["source_url"])), rel, docs, doc_id),
+            page(title, doc_layout(parts, side_panel(doc, nav_title, nav_items, a["source_url"], a["section_ref"], a["permalink"])), rel, docs, doc_id),
             encoding="utf-8")
 
     for i, r in enumerate(recitals):
@@ -210,7 +220,8 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         d = DIST / r["permalink"]
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(
-            page(r["section_ref"], doc_layout(body, side_panel(doc)), rel, docs, doc_id), encoding="utf-8")
+            page(r["section_ref"], doc_layout(body, side_panel(doc, ref=r["section_ref"], permalink=r["permalink"])),
+                 rel, docs, doc_id), encoding="utf-8")
 
     # document browser
     groups: dict[str, dict[str, list]] = {}
@@ -410,6 +421,27 @@ def build_compare(docs: list, by_id_all: dict) -> None:
     (DIST / "compare" / "index.html").write_text(page("Compare the laws", body, "../", docs, "compare"), encoding="utf-8")
 
 
+# ---------- trust pages ----------
+
+def build_trust(docs: list, by_id_all: dict) -> None:
+    counts = {}
+    for d in docs:
+        own = [c for c in by_id_all.values() if c["doc_id"] == d["doc_id"]]
+        parents = [c for c in own if c["kind"] in PARENT_KINDS]
+        noun = "articles" if parents and parents[0]["kind"] == "article" else "sections"
+        n_rec = sum(1 for c in own if c["kind"] == "recital")
+        counts[d["doc_id"]] = f"{len(parents)} {noun}" + (f", {n_rec} recitals" if n_rec else "")
+    for slug, title, body in [
+        ("about", "About", trust.about_body(SITE, docs, counts)),
+        ("disclaimer", "Disclaimer and privacy notice", trust.disclaimer_body(SITE)),
+        ("sources", "Sources", trust.sources_body(SITE, docs, counts)),
+    ]:
+        d = DIST / slug
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(page(title, f'<div class="prose">{body}</div>', "../", docs, slug),
+                                      encoding="utf-8")
+
+
 # ---------- home and build ----------
 
 def build_home(docs: list) -> None:
@@ -504,6 +536,8 @@ def build() -> None:
     shutil.copy(WEB / "vendor" / "minisearch.js", DIST / "assets" / "minisearch.js")
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
 
+    SITE.clear()
+    SITE.update(yaml.safe_load((ROOT / "site.yaml").read_text(encoding="utf-8")))
     TOPICS.clear()
     for t in yaml.safe_load((ROOT / "taxonomy" / "topics.yaml").read_text(encoding="utf-8"))["topics"]:
         TOPICS[t["id"]] = {"label": t["label"], "parent": t.get("parent")}
@@ -547,6 +581,7 @@ def build() -> None:
     build_documents(docs, by_id_all)
     build_guides(docs, by_id_all)
     build_compare(docs, by_id_all)
+    build_trust(docs, by_id_all)
     guided.write_review_sheet(topics_all, by_id_all, {d["doc_id"]: d for d in docs})
     n = sum(1 for _ in DIST.rglob("*.html"))
     print(f"site: {n} html pages -> {DIST}")

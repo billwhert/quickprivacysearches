@@ -18,7 +18,7 @@
 - [x] Every parent_chunk_id resolves
 - [x] Every chunk's text appears verbatim in the saved source file (0 missing: [])
 - [x] Cross-references into this document resolve (0 unresolved: [])
-- [x] Guided-topic citations exist in loaded text (0 cited across topics; unresolved: [])
+- [x] Guided-topic citations exist in loaded text (65 cited across topics; unresolved: [])
 
 ## Largest searchable chunks
 

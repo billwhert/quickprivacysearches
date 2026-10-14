@@ -12,5 +12,10 @@
  "is_translation": false,
  "raw_path": "data/raw/ccpa.pdf",
  "checksum": "d1bb2a12e84d754c87a94d11984d2dbc5613bc47766d0a23bdc4e3a70b876ae1",
- "license_note": "California statutory text is public record. Source: California Privacy Protection Agency. Confirm attribution wording at step 11."
+ "license_note": "Public-domain government information. The State of California's Conditions of Use state that information on its websites is, unless otherwise indicated, considered public domain and may be distributed or copied as permitted by law. No attribution is required; it is given anyway.",
+ "attribution": "California Consumer Privacy Act of 2018 (consolidated text, effective 1 January 2026), California Privacy Protection Agency, https://cppa.ca.gov. Public-domain government information under the State of California's Conditions of Use.",
+ "reuse_url": "https://www.ca.gov/legal/conditions-of-use/",
+ "notes": "This is the consolidated statute published by the California Privacy Protection Agency, not the Legislature's own publication (California Legislative Information).",
+ "fetch_note": null,
+ "fetch_url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf"
 }

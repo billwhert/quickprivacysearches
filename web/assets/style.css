@@ -272,3 +272,17 @@ button.chip:hover { border-color: var(--accent); color: var(--accent); filter: n
 .cmp-head h2 { font-size: .98rem; margin: .3rem 0 0; line-height: 1.3; }
 .cmp-col .prov { margin: .8rem 0; }
 @media (max-width: 62rem) { .cmp-grid { grid-template-columns: minmax(0, 1fr); } .cmp-head { position: static; } }
+
+/* trust pages */
+.prose { max-width: 46rem; }
+.prose h2 { margin-top: 2rem; }
+.prose li { margin: .35rem 0; }
+.src-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+            padding: 1rem 1.2rem; margin: 1rem 0; box-shadow: var(--shadow); }
+.src-card h2 { font-size: 1.1rem; margin: .4rem 0 .6rem; }
+.src-card dl { margin: 0; display: grid; grid-template-columns: 9rem 1fr; gap: .45rem 1rem; font-size: .92rem; }
+.src-card dt { color: var(--text-3); font-weight: 600; }
+.src-card dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 40rem) { .src-card dl { grid-template-columns: 1fr; gap: .1rem; } .src-card dd { margin-bottom: .5rem; } }
+.foot-links { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-top: .6rem; }
+.foot-links a { color: var(--text-2); }

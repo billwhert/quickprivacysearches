@@ -1,0 +1,47 @@
+name: Report an error
+description: Something here does not match the official source, or a search missed something it should have found.
+title: "[Error] "
+labels: ["error-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. This is a public issue tracker: anyone can read what you post, so please do not include
+        personal information. Links to the official source are the most useful thing you can add.
+  - type: input
+    id: provision
+    attributes:
+      label: Provision or page
+      description: For example "GDPR Art. 30(1)" or "CCPA Regs § 7011(e)".
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page address
+      description: The address of the page where you saw the problem.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - The text differs from the official source
+        - Wrong citation, heading or link
+        - Wrong version or date
+        - A search did not find what it should have
+        - A topic tag or guided topic looks wrong
+        - A comparison pairs provisions that do not belong together
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What should it say, or where is the right text?
+      description: A link to the official source helps most.

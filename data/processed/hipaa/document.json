@@ -12,5 +12,10 @@
  "is_translation": false,
  "raw_path": "data/raw/hipaa_160.html",
  "checksum": "c74a206eee1f3a199d0aa9a07dedffcaa449471ef45f29aac50e614e0186d36c",
- "license_note": "Works of the US Government are in the public domain. Source: Electronic Code of Federal Regulations (eCFR), Office of the Federal Register. Note: the eCFR is an unofficial editorial compilation; the official CFR is published annually by the Government Publishing Office. Confirm wording at step 11."
+ "license_note": "US Government work, not subject to copyright (17 U.S.C. 105). The Office of the Federal Register and the Government Publishing Office state that the eCFR is an editorial compilation and not an official legal edition of the CFR.",
+ "attribution": "45 CFR Parts 160 and 164, Electronic Code of Federal Regulations (eCFR), Office of the Federal Register, National Archives and Records Administration, and U.S. Government Publishing Office, https://www.ecfr.gov. This site is not the official CFR.",
+ "reuse_url": "https://www.ecfr.gov/reader-aids/understanding-the-ecfr/what-is-the-ecfr",
+ "notes": "The eCFR is an editorial compilation, updated daily. For legal research, verify against the official CFR and the Federal Register.",
+ "fetch_note": null,
+ "fetch_url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/2026-10-09/title-45?part=160"
 }

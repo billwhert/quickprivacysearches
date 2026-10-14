@@ -67,6 +67,9 @@ def ingest(doc_id: str, force_fetch: bool = False) -> bool:
         "language": doc["language"], "is_translation": doc["is_translation"],
         "raw_path": manifest["raw_path"], "checksum": manifest["checksum_sha256"],
         "license_note": doc.get("license_note"),
+        "attribution": doc.get("attribution"), "reuse_url": doc.get("reuse_url"),
+        "notes": doc.get("notes"), "fetch_note": doc.get("fetch_note"),
+        "fetch_url": manifest.get("fetch_url"),
     })
     write_json(out / "chunks.json", chunks)
     write_json(out / "crossrefs.json", refs)

@@ -12,5 +12,10 @@
  "is_translation": false,
  "raw_path": "data/raw/gdpr.xhtml",
  "checksum": "962539af03738bf552319ff4ce42d69e5f95a576307c4dfed7bf87e81b646b9d",
- "license_note": "EU legislation reuse is authorised with acknowledgement of source (Commission Decision 2011/833/EU). Confirm wording at step 11."
+ "license_note": "Reuse authorised. EUR-Lex states that, unless otherwise specified, the legal documents it publishes may be re-used for commercial or non-commercial purposes under Commission Decision 2011/833/EU. Only EU legal acts published in the Official Journal are authentic.",
+ "attribution": "Regulation (EU) 2016/679, © European Union, https://eur-lex.europa.eu, 1998-2026. Reused under Commission Decision 2011/833/EU.",
+ "reuse_url": "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html",
+ "notes": "The text is the Official Journal version of the Regulation (CELEX 32016R0679), retrieved from the EU Publications Office. Later corrigenda and the consolidated text may differ in places; check the official source.",
+ "fetch_note": null,
+ "fetch_url": "http://publications.europa.eu/resource/celex/32016R0679"
 }

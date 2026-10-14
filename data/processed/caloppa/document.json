@@ -12,5 +12,10 @@
  "is_translation": false,
  "raw_path": "data/raw/caloppa.txt",
  "checksum": "a31643135f5906e283fbf7d4a086ec5dd3a492394d56386c5eb7c5667d37ad67",
- "license_note": "California statutory text is public record. Source: California Legislative Information. Confirm attribution wording at step 11."
+ "license_note": "Statutory text of five short sections. The California Legislature's Privacy and Conditions of Use Policy says some information on its site may be protected by copyright and that permission to use that material must be obtained from the Assembly, the Senate or the Legislative Counsel Bureau. Statutory text is law; see the note on the Sources page.",
+ "attribution": "California Business and Professions Code, sections 22575-22579, California Legislative Information (https://leginfo.legislature.ca.gov), California State Legislature.",
+ "reuse_url": "https://leginfo.legislature.ca.gov/faces/home.xhtml",
+ "notes": "Captured by hand from the rendered California Legislative Information page, because that site blocks scripted downloads. The saved file is the page text, not a byte-exact download.",
+ "fetch_note": "Text of the rendered leginfo.legislature.ca.gov page (BPC Division 8, Chapter 22), captured via a browser.",
+ "fetch_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=8.&chapter=22.&article="
 }

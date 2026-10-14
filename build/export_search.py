@@ -41,7 +41,9 @@ def export() -> dict:
     tax = yaml.safe_load((ROOT / "taxonomy" / "topics.yaml").read_text(encoding="utf-8"))["topics"]
     taxonomy = [{"id": t["id"], "label": t["label"], "parent": t.get("parent"),
                  "description": t.get("description", "")} for t in tax]
-    out = {"chunks": chunks, "articles": parents, "docs": docs, "taxonomy": taxonomy}
+    site = yaml.safe_load((ROOT / "site.yaml").read_text(encoding="utf-8"))
+    out = {"chunks": chunks, "articles": parents, "docs": docs, "taxonomy": taxonomy,
+           "site": {"repo": site["repo"], "site_url": site["site_url"]}}
     write_json(DIST / "assets" / "search-data.json", out)
     return out
 

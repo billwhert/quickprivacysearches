@@ -195,3 +195,7 @@ mark { background: var(--mark); color: inherit; padding: 0 2px; border-radius: 3
 
 .note-line { display: inline-block; margin-top: .25rem; }
 #status em { font-style: normal; color: var(--text-2); }
+
+button.chip { font: 400 .84rem var(--ui); padding: .25rem .65rem; background: var(--surface);
+              color: var(--text-2); border: 1px solid var(--line); cursor: pointer; }
+button.chip:hover { border-color: var(--accent); color: var(--accent); filter: none; }

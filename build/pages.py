@@ -197,14 +197,14 @@ def build_home() -> None:
     examples = ["GDPR Article 30", "When is a data protection impact assessment required?",
                 "What must a record of processing activities contain?",
                 "lawful bases for processing", "right to erasure", "Recital 26"]
-    ex = " ".join(f'<a href="#q={e(x)}" class="chip">{e(x)}</a>' for x in examples)
+    ex = " ".join(f'<button type="button" class="chip" data-q="{e(x)}">{e(x)}</button>' for x in examples)
     body = f"""<section class="hero">
 <h1>Find the exact text of privacy law</h1>
 <p class="lede">Search by citation or by question. Every result is the unmodified source text,
 with its citation, version, and a link to the official source. Currently loaded: the GDPR.</p>
 <form id="search-form" role="search" autocomplete="off">
   <label for="q" class="vh">Search</label>
-  <input id="q" type="search" placeholder="Try &quot;GDPR Article 30&quot; or &quot;right to erasure&quot;" autofocus>
+  <input id="q" type="search" autocomplete="off" name="q-not-saved" placeholder="Try &quot;GDPR Article 30&quot; or &quot;right to erasure&quot;" autofocus>
   <button type="submit">Search</button>
 </form>
 <div class="examples"><span>Try:</span> {ex}</div>

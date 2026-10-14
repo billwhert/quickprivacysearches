@@ -114,14 +114,24 @@ list.addEventListener("click", e => {
   b.textContent = "Hide full article";
 });
 
-function fromHash() {
-  const m = location.hash.match(/^#q=(.*)$/);
-  return m ? decodeURIComponent(m[1].replace(/\+/g, " ")) : "";
-}
-function submit(q) {
-  history.replaceState(null, "", q ? `#q=${encodeURIComponent(q)}` : location.pathname);
-  run(q);
-}
+// Nothing about a search is kept in the URL, history, or storage: a refresh always starts blank.
+function submit(q) { run(q); }
 form.addEventListener("submit", e => { e.preventDefault(); submit(input.value); });
-window.addEventListener("hashchange", () => { input.value = fromHash(); run(input.value); });
-if (fromHash()) { input.value = fromHash(); run(input.value); }
+document.querySelector(".examples").addEventListener("click", e => {
+  const b = e.target.closest("button[data-q]");
+  if (!b) return;
+  input.value = b.dataset.q;
+  submit(b.dataset.q);
+  input.focus();
+});
+// Links that arrive with #q=... (for example from another site) run once, then the hash is removed.
+const m = location.hash.match(/^#q=(.*)$/);
+if (m) {
+  input.value = decodeURIComponent(m[1].replace(/\+/g, " "));
+  history.replaceState(null, "", location.pathname + location.search);
+  run(input.value);
+}
+// Back/forward cache restores must not bring an old search back either.
+window.addEventListener("pageshow", e => {
+  if (e.persisted) { input.value = ""; list.innerHTML = ""; status.textContent = ""; }
+});

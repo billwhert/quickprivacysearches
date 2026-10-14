@@ -13,20 +13,8 @@ How to use this file
 |---|---|---|---|---|
 | F-01 | P1 | Review | `synonyms.yaml` (about 70 groups) was drafted by the assistant. The spec says curated lists must be reviewed by you. Review for wrong or over-broad mappings. | step 4-6 |
 | F-02 | P1 | Review | Topic tags (step 8) are keyword-assigned first pass. Review `data/reports/topic_review.csv` and record corrections in `taxonomy/overrides.yaml`. | step 8 |
-| F-22 | P2 | Topics | First-pass tags are noisiest for `security-safeguards` (about 190 provisions, mostly GDPR, from words like "safeguards") and `data-subject-rights` / `right-opt-out` in the CCPA regulations (most of that document is about requests). Review and tighten phrases in `taxonomy/topics.yaml` after looking at the "Phrases doing the work" table in `data/reports/topic_tagging.md`. | step 8 |
-| F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
-| F-32 | P3 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
-| F-34 | P3 | Content | **Paused by owner decision.** Remaining Phase 2 candidates, if ever wanted: LGPD (Portuguese original; English would be an unofficial translation), Virginia/Colorado/Texas statutes (state legislature sites often block scripted downloads), and guidance (EDPB/WP29, ICO, NIST), which must look visibly different from binding law. | step 13 |
-| F-35 | P3 | Decision | Step 14 (in-browser semantic search) is not recommended yet: 96 of 97 test queries pass with keywords and synonyms, and it would add a download of tens of MB. Revisit when real-use misses accumulate (see F-08). | step 14 |
-| F-36 | P3 | Content | GLBA: the statute itself (15 U.S.C. 6801 et seq.) and the FTC's own Privacy Rule for motor vehicle dealers (16 CFR 313) are not loaded. | step 13 |
-| F-37 | P2 | Search | Unseen-question review (84 questions, `tests/review/batch1.txt`): about 70 good first or second results. Still weak: "consent to send marketing emails" (surfaces HIPAA fundraising, no GDPR consent/ePrivacy hit), "what must a financial privacy notice say" (should lead with 16 CFR 1016.6(a)), "what is nonpublic personal information" (314.2(l) ranks second), "can a business refuse a deletion request" (GDPR before CCPA 1798.105(d)), "ten privacy principles in Canada" (lands on 4.5.x, not the principle list), "can an employer collect employee information". | search review |
-| F-33 | P3 | Review | Real-device check of the new design (phone and a large monitor) is still outstanding; emulated phone width shows no overflow on 11 page types. | review |
 | F-04 | P2 | Launch | Open the live site on a real phone using mobile data (not Wi-Fi) and try three searches. Everything else in the launch checklist was verified (see `docs/ACCEPTANCE.md`); a real device on a different network is the one thing I cannot do from here. | step 12 |
 | F-05 | P2 | Content | The two guided topics are published as a **first-release approval**; the line-by-line review of their provision lists is still pending. When you have time: `data/reports/guided_topics_review.md` (long; the review sheet lists every provision with its full text). The pages say "line-by-line review pending" until you re-approve with your own wording. | step 9 |
-| F-26 | P2 | Content | Eight comparison sets (`compare/*.yaml`) are an editorial selection of provisions and have not been reviewed. The page says they are not a statement of equivalence. Check the columns make sense; add or remove provisions in the YAML. | step 10 |
-| F-27 | P3 | Feature | Compare view could be linked from guided topics and from search results that span several laws. | step 10 |
-| F-24 | P2 | Content | Guided topics have no hand-written summaries yet (only short applicability notes). The spec allows summaries only after you have written or reviewed them. | step 9 |
-| F-25 | P3 | Content | More guided topics for the other loaded laws (GDPR DPIA, DSAR handling, HIPAA breach notification) once the first two are approved. | step 9 |
 | F-06 | P2 | Search | "how to verify a consumer request": the verification regulations (7060-7063) rank 5th behind a definition and other request rules. | step 5 |
 | F-07 | P2 | Search | "how long must documentation be retained" does not surface HIPAA 164.530(j) (documentation, 6 years). | step 6 |
 | F-08 | P2 | Search | Synonym vocabulary gaps keep appearing on new, unseen questions (about 1 in 4 on held-out checks). Keep a list of failed real queries and add them as regression tests. | step 5-7 |
@@ -36,14 +24,32 @@ How to use this file
 | F-13 | P2 | Data | CCPA statute and regulations come from the CPPA's consolidated PDFs, not the Legislature's leginfo or OAL. Fine for now; state this clearly on the Sources page. | step 5 |
 | F-14 | P2 | Data | eCFR is an editorial compilation, not the official annual CFR. Say so on the Sources page. | step 6 |
 | F-15 | P2 | Feature | Export a set of results to Markdown / print-friendly (spec section 11) is not built. | planned |
-| F-16 | P2 | Ops | GitHub Pages limits (size, bandwidth) are from memory. Verify the current numbers and monitor `search-data.json` (about 320 KB gzipped now; grows with every law). | step 1, 6 |
-| F-17 | P2 | Ops | Add `.gitattributes` text normalization to stop the LF/CRLF warnings on every commit. | step 3 |
+| F-16 | P2 | Ops | GitHub Pages limits (size, bandwidth) are from memory. Verify the current numbers and monitor `search-data.json` (410 KB gzipped, 1971 chunks, index builds in about 150 ms and a query takes about 16 ms as of 2026-10-14; plenty of headroom). | step 1, 6 |
+| F-22 | P2 | Topics | First-pass tags are noisiest for `security-safeguards` (about 190 provisions, mostly GDPR, from words like "safeguards") and `data-subject-rights` / `right-opt-out` in the CCPA regulations (most of that document is about requests). Review and tighten phrases in `taxonomy/topics.yaml` after looking at the "Phrases doing the work" table in `data/reports/topic_tagging.md`. | step 8 |
+| F-24 | P2 | Content | Guided topics have no hand-written summaries yet (only short applicability notes). The spec allows summaries only after you have written or reviewed them. | step 9 |
+| F-26 | P2 | Content | Eight comparison sets (`compare/*.yaml`) are an editorial selection of provisions and have not been reviewed. The page says they are not a statement of equivalence. Check the columns make sense; add or remove provisions in the YAML. | step 10 |
+| F-37 | P2 | Search | Unseen-question review (84 questions, `tests/review/batch1.txt`): about 70 good first or second results. Still weak: "consent to send marketing emails" (surfaces HIPAA fundraising, no GDPR consent/ePrivacy hit), "what must a financial privacy notice say" (should lead with 16 CFR 1016.6(a)), "what is nonpublic personal information" (314.2(l) ranks second), "can a business refuse a deletion request" (GDPR before CCPA 1798.105(d)), "ten privacy principles in Canada" (lands on 4.5.x, not the principle list), "can an employer collect employee information". | search review |
 | F-18 | P3 | Data | Some CCPA sections (1798.136, .146, .148, most of 1798.199.x) have no title in the CPPA PDF, so they show only the citation. | step 5 |
 | F-19 | P3 | Data | GDPR recitals are not linked to the articles they relate to (the source does not say). Could be added as manual links. | step 2 |
 | F-20 | P3 | Dev | Local default Python is 3.15, which cannot build PyYAML; builds use 3.12. Document or install a 3.12 default. | step 1 |
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
+| F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
+| F-25 | P3 | Content | More guided topics for the other loaded laws (GDPR DPIA, DSAR handling, HIPAA breach notification) once the first two are approved. | step 9 |
+| F-27 | P3 | Feature | Compare view could be linked from guided topics and from search results that span several laws. | step 10 |
+| F-32 | P3 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
+| F-33 | P3 | Review | Real-device check of the new design (phone and a large monitor) is still outstanding; emulated phone width shows no overflow on 11 page types. | review |
+| F-34 | P3 | Content | **Paused by owner decision.** Remaining Phase 2 candidates, if ever wanted: LGPD (Portuguese original; English would be an unofficial translation), Virginia/Colorado/Texas statutes (state legislature sites often block scripted downloads), and guidance (EDPB/WP29, ICO, NIST), which must look visibly different from binding law. | step 13 |
+| F-35 | P3 | Decision | Step 14 (in-browser semantic search) is not recommended yet: 96 of 97 test queries pass with keywords and synonyms, and it would add a download of tens of MB. Revisit when real-use misses accumulate (see F-08). | step 14 |
+| F-36 | P3 | Content | GLBA: the statute itself (15 U.S.C. 6801 et seq.) and the FTC's own Privacy Rule for motor vehicle dealers (16 CFR 313) are not loaded. | step 13 |
+| F-38 | P3 | A11y | The result-card "more actions" menu has role=menu but no arrow-key navigation (Tab, Enter and Escape work). Not tested with a real screen reader. | a11y check |
 
 ## Change log
+
+### Checking pass: content, accessibility, performance (2026-10-14)
+- **Content spot-check:** re-downloaded the CCPA statute, CCPA regulations and PIPEDA XML from their official URLs; all three are byte-identical to the stored copies (GDPR is served in a different format by content negotiation, so its checksum was not comparable; the stored copy was already validated against the Official Journal structure). Sampled 150 random provisions across all six laws and confirmed each appears intact on its generated page (one apparent miss, PIPEDA s. 2, is the definitions lead-in rendering as separate definition cards, not a defect).
+- **Accessibility:** added a skip-to-content link, changed side-card headings to h2 so heading levels no longer skip on 434 pages, and confirmed one h1 per page, lang, landmarks, labels, focus ring and dark-mode contrast (lowest body-text ratio 4.7:1 light, 6.2:1 dark). Remaining gaps are F-38.
+- **Performance:** search data is 2.6 MB raw, 410 KB gzipped; index builds in about 150 ms; queries take about 16 ms. No change needed (F-16).
+- Added `.gitattributes` to normalise line endings (F-17). Open items are now sorted by priority.
 
 ### Search-quality pass on unseen questions (2026-10-14)
 - Ran 84 untuned, realistic questions across all six laws (`node tests/review_queries.mjs tests/review/batch1.txt 3`) and judged results by eye.

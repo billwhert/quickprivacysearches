@@ -244,7 +244,7 @@ button.link:hover { background: none; color: var(--accent-hover); text-decoratio
 .notes { font-size: .88rem; color: var(--text-2); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
 .notes h2 { font: 600 .74rem var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); margin: 0 0 .5rem; }
 .side { position: sticky; top: calc(var(--header-h) + 22px); display: grid; gap: 1.4rem; font-size: .9rem; }
-.side-card h3 { margin: 0 0 .55rem; font: 600 .72rem var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); }
+.side-card h2 { margin: 0 0 .55rem; font: 600 .72rem var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); }
 .side-card p { margin: .25rem 0; color: var(--text-2); }
 .side-nav { list-style: none; margin: 0; padding: 0 0 0 .1rem; border-left: 1px solid var(--line); max-height: 50vh; overflow: auto; }
 .side-nav a { display: block; padding: .22rem .8rem; color: var(--text-2); margin-left: -1px; border-left: 2px solid transparent; }
@@ -364,3 +364,6 @@ button.link:hover { background: none; color: var(--accent-hover); text-decoratio
 .jump a { font: 600 .84rem var(--sans); background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: .3rem .8rem; }
 .jump a:hover { background: var(--accent-line); text-decoration: none; }
 .prov.pc .clamp { max-height: 13.5em; }
+
+.skip { position: absolute; left: 1rem; top: -4rem; z-index: 100; background: var(--accent); color: var(--accent-ink); padding: .55rem .9rem; border-radius: var(--radius-sm); font: 600 .9rem var(--sans); text-decoration: none; }
+.skip:focus { top: .75rem; }

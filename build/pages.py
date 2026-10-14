@@ -72,10 +72,11 @@ def page(title: str, body: str, rel: str, nav_docs: list, active: str = "", desc
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="{rel}assets/style.css?v={VERSION}">
 </head><body>
+<a class="skip" href="#main">Skip to main content</a>
 <header class="site"><div class="wrap">
 <a class="brand" href="{rel}"><span class="brand-mark">{LOGO}</span>Quick Privacy Searches</a><nav aria-label="Main">{links}</nav>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main">
 {body}
 </main>
 <script type="module" src="{rel}assets/page.js?v={VERSION}"></script>
@@ -113,11 +114,11 @@ def doc_layout(parts: list, side: str) -> str:
 def side_panel(doc: dict, nav_title: str = "", nav_items: list = None, src: str = "", ref: str = "",
                permalink: str = "") -> str:
     out = ['<aside class="side">',
-           '<div class="side-card"><h3>Source</h3>',
+           '<div class="side-card"><h2>Source</h2>',
            f'<p><a href="{e(src or doc["source_url"])}">Official text</a></p>',
            f'<p class="muted">{e(doc["version_label"])}<br>Retrieved {e(doc["retrieved_at"][:10])}</p></div>']
     if nav_items:
-        out.append(f'<div class="side-card"><h3>{e(nav_title)}</h3><ul class="side-nav">'
+        out.append(f'<div class="side-card"><h2>{e(nav_title)}</h2><ul class="side-nav">'
                    + "".join(f'<li><a href="#{a}">{e(t)}</a></li>' for a, t in nav_items) + "</ul></div>")
     report = (f'<p class="side-link"><a href="{e(trust.report_url(SITE, ref, permalink))}">Report an error '
               f'in this provision</a></p>') if ref else ""
@@ -392,7 +393,7 @@ def build_guides(docs: list, by_id_all: dict) -> None:
                 parts.append(f"<li>{line}</li>")
             parts.append("</ul>")
         parts.append(f'<p class="disclaimer">{e(guided.DISCLAIMER)}</p>')
-        side = ('<aside class="side"><div class="side-card"><h3>On this page</h3><ul class="side-nav">'
+        side = ('<aside class="side"><div class="side-card"><h2>On this page</h2><ul class="side-nav">'
                 + "".join(f'<li><a href="#{a}">{e(l)}</a></li>' for a, l in nav_items) + "</ul></div>"
                 '<p class="side-link"><a href="../">All guided topics</a></p></aside>')
         d = DIST / "topics" / t["id"]

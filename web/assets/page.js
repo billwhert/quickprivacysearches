@@ -25,9 +25,15 @@ document.addEventListener("click", async e => {
   const url = new URL(location.href);
   url.hash = b.dataset.frag ? `#${b.dataset.frag}` : "";
   const ok = await copyText(url.href);
-  const old = b.textContent;
-  b.textContent = ok ? "Link copied" : "Copy failed";
-  setTimeout(() => { b.textContent = old; }, 1600);
+  let t = document.getElementById("toast");
+  if (!t) {
+    t = Object.assign(document.createElement("div"), { id: "toast", className: "toast" });
+    t.setAttribute("role", "status");
+    document.body.appendChild(t);
+  }
+  t.textContent = ok ? "Link copied" : "Could not copy the link";
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 1800);
 });
 
 // "Find a section": narrows the contents list on a document's front page as you type.

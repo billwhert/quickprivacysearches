@@ -19,14 +19,14 @@
 - [x] Every chunk's text appears verbatim in the saved source file (0 missing: [])
 - [x] Every definition has a defined term ([])
 - [x] Cross-references into this document resolve (0 unresolved: [])
-- [x] Guided-topic citations exist in loaded text (65 cited across topics; unresolved: [])
+- [x] Guided-topic citations exist in loaded text (59 cited across topics; unresolved: [])
 
 ## Largest searchable chunks
 
 - `ccpa_regs:sec:7011:e` CCPA Regs § 7011(e): ~1439 tokens
 - `ccpa_regs:sec:7152:a` CCPA Regs § 7152(a): ~1425 tokens
-- `ccpa_regs:sec:7123:c` CCPA Regs § 7123(c): ~1346 tokens
-- `ccpa_regs:sec:7001:zz` CCPA Regs § 7001(zz): ~1153 tokens
+- `ccpa_regs:sec:7123:c` CCPA Regs § 7123(c): ~1342 tokens
+- `ccpa_regs:sec:7001:zz` CCPA Regs § 7001(zz): ~1150 tokens
 - `ccpa_regs:sec:7027:m` CCPA Regs § 7027(m): ~949 tokens
 
 ## Spot-check: 10 random chunks (compare against the official source)
@@ -90,7 +90,7 @@ Hierarchy: Article 1. General Provisions > Section 7001 > Subdivision (e)
 Hierarchy: Article 5. Verification of Requests > Section 7060 > Subdivision (f)
 
 ```text
-(f) A business shall implement reasonable security measures to detect fraudulent identity- verification activity and prevent the unauthorized deletion, correction, or access to a consumer’s personal information, or access to information about a business’s use of ADMT with respect to a consumer.
+(f) A business shall implement reasonable security measures to detect fraudulent identity-verification activity and prevent the unauthorized deletion, correction, or access to a consumer’s personal information, or access to information about a business’s use of ADMT with respect to a consumer.
 ```
 
 ### CCPA Regs § 7050(g)  `ccpa_regs:sec:7050:g`

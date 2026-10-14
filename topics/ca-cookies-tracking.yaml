@@ -73,6 +73,8 @@ related:
 # Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
 
 # Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
+
+# Fingerprint of each cited provision's text when it was reviewed (written by `approve`).
 reviewed_hashes:
   "ccpa:sec:1798.140:d": "b37898a92b8e73b5"
   "ccpa:sec:1798.140:ad": "4d8bfbfe258812ff"
@@ -87,7 +89,7 @@ reviewed_hashes:
   "ccpa_regs:sec:7013:c": "88168ac8267b4b15"
   "ccpa_regs:sec:7013:d": "017134784cd0a094"
   "ccpa_regs:sec:7015:a": "3d6aaa80555da26e"
-  "ccpa_regs:sec:7015:b": "9c047d98eaeea7d5"
+  "ccpa_regs:sec:7015:b": "9cc2436c5f514b38"
   "ccpa:sec:1798.135:b": "af712a10e367cfd1"
   "ccpa_regs:sec:7025:a": "61e6b279596b9149"
   "ccpa_regs:sec:7025:b": "9f4d81f5892f4b10"
@@ -98,7 +100,7 @@ reviewed_hashes:
   "ccpa_regs:sec:7013:e": "eef9d9b732275c70"
   "ccpa_regs:sec:7013:f": "0140a5f5024913ab"
   "ccpa_regs:sec:7013:g": "b056e679cbacfa69"
-  "ccpa_regs:sec:7026:a": "5045e9cbd44a7d57"
+  "ccpa_regs:sec:7026:a": "fe48098734d397e1"
   "ccpa_regs:sec:7026:c": "092b64fdd9bdf5be"
   "ccpa_regs:sec:7026:d": "5663897e223e3ae8"
   "ccpa_regs:sec:7026:f": "eb5c5e20e2f59e66"

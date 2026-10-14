@@ -33,7 +33,7 @@ def ingest(doc_id: str, force_fetch: bool = False) -> bool:
         chunks, toc = parse_code.parse(raw_path, doc, manifest["retrieved_at"])
         ids = {c["chunk_id"] for c in chunks} | all_loaded_ids(doc_id)
         refs = crossrefs_code.extract(chunks, ids, doc_id)
-        plain = validate.norm(" ".join(parse_code.raw_lines(raw_path)))
+        plain = validate.norm(parse_code.join_lines(parse_code.raw_lines(raw_path)))
         result = validate_code.validate_code(doc, chunks, toc, plain, refs, ids)
     elif doc["parser"] == "ecfr":
         import crossrefs_ecfr

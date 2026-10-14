@@ -162,7 +162,8 @@ def parse(files: dict, doc: dict, retrieved_at: str, raw_root: pathlib.Path):
                     rows = []                     # the appendix is a table: one line per row
                     for tr in div.iter("tr"):
                         cells = [norm(c.text_content()) for c in tr if c.tag in ("td", "th")]
-                        if any(cells):
+                        cells = [x for x in cells if x]
+                        if cells:
                             rows.append(" | ".join(cells))
                     table = Node(())
                     table.lines = rows

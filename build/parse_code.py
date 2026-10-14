@@ -82,6 +82,23 @@ def first_label(style: str) -> str:
 
 # ---------- raw text extraction ----------
 
+KEEP_SPACE_AFTER_HYPHEN = ("and ", "or ", "to ", "and,", "or,")
+
+
+def join_lines(lines: list[str]) -> str:
+    """Join wrapped PDF lines. A line ending in a hyphen followed by a lowercase continuation is a
+    compound word broken at the line end ("opt-" + "in" -> "opt-in"), except "pre- and post-" style."""
+    out = ""
+    for ln in lines:
+        if not ln:
+            continue
+        if out.endswith("-") and ln[:1].islower() and not ln.startswith(KEEP_SPACE_AFTER_HYPHEN):
+            out += ln
+        else:
+            out = f"{out} {ln}" if out else ln
+    return out
+
+
 def raw_lines(path: pathlib.Path) -> list[str]:
     if path.suffix.lower() == ".pdf":
         import pymupdf
@@ -108,7 +125,7 @@ class Node:
         self.children: list["Node"] = []
 
     def own_text(self) -> str:
-        return " ".join(self.own).strip()
+        return join_lines(self.own).strip()
 
     def render(self, indent=0) -> str:
         head = f"({self.label}) " if self.label else ""

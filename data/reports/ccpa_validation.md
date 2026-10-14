@@ -19,13 +19,13 @@
 - [x] Every chunk's text appears verbatim in the saved source file (0 missing: [])
 - [x] Every definition has a defined term ([])
 - [x] Cross-references into this document resolve (0 unresolved: [])
-- [x] Guided-topic citations exist in loaded text (65 cited across topics; unresolved: [])
+- [x] Guided-topic citations exist in loaded text (59 cited across topics; unresolved: [])
 
 ## Largest searchable chunks
 
 - `ccpa:sec:1798.145:a` CCPA § 1798.145(a): ~863 tokens
 - `ccpa:sec:1798.146:a` CCPA § 1798.146(a): ~759 tokens
-- `ccpa:sec:1798.185:a.18` CCPA § 1798.185(a)(18): ~679 tokens
+- `ccpa:sec:1798.185:a.18` CCPA § 1798.185(a)(18): ~677 tokens
 - `ccpa:sec:1798.145:m` CCPA § 1798.145(m): ~624 tokens
 - `ccpa:sec:1798.140:v` CCPA § 1798.140(v): ~604 tokens
 

@@ -26,9 +26,21 @@ PARENT_KINDS = ("article", "section")
 DISCLAIMER = ("Reference tool, not legal advice. Text is taken from the official source and shown "
               "unmodified; check the official source and version date before relying on it.")
 
-LOGO = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
-        'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
-        '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>')
+def icon(paths: str) -> str:
+    return ('<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{paths}</svg>')
+
+
+ICONS = {
+    "search": icon('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'),
+    "link": icon('<path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/>'
+                 '<path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/>'),
+    "guide": icon('<path d="M4 5h11a3 3 0 0 1 3 3v12H7a3 3 0 0 1-3-3z"/><path d="M8 9h6M8 13h5"/>'),
+    "compare": icon('<rect x="3" y="4" width="7" height="16" rx="1.5"/><rect x="14" y="4" width="7" height="16" rx="1.5"/>'),
+    "browse": icon('<path d="M4 4h6v16H4zM14 4h6v16h-6z"/><path d="M6.5 8h1M16.5 8h1"/>'),
+    "arrow": icon('<path d="M5 12h14M13 6l6 6-6 6"/>'),
+}
+LOGO = ICONS["search"]
 
 
 # ---------- shared page frame ----------
@@ -61,18 +73,21 @@ def page(title: str, body: str, rel: str, nav_docs: list, active: str = "", desc
 <link rel="stylesheet" href="{rel}assets/style.css?v={VERSION}">
 </head><body>
 <header class="site"><div class="wrap">
-<a class="brand" href="{rel}">{LOGO}Quick Privacy Searches</a><nav aria-label="Main">{links}</nav>
+<a class="brand" href="{rel}"><span class="brand-mark">{LOGO}</span>Quick Privacy Searches</a><nav aria-label="Main">{links}</nav>
 </div></header>
 <main class="wrap">
 {body}
 </main>
 <script type="module" src="{rel}assets/page.js?v={VERSION}"></script>
 <footer class="site"><div class="wrap">
+<div class="foot-about"><p class="foot-brand">Quick Privacy Searches</p>
 <p>{e(DISCLAIMER)}</p>
-<p>No accounts, no tracking. Searches run in your browser and are never sent anywhere.</p>
-<p class="foot-links"><a href="{rel}about/">About</a><a href="{rel}sources/">Sources</a>
-<a href="{rel}disclaimer/">Disclaimer and privacy notice</a>
-<a href="{e(trust.report_url(SITE))}">Report an error</a><a href="{e(SITE.get('repo', '#'))}">Repository</a></p>
+<p>No accounts, no tracking. Searches run in your browser and are never sent anywhere.</p></div>
+<div><h2>Explore</h2><ul><li><a href="{rel}">Search</a></li>{'<li><a href="' + rel + 'topics/">Guided topics</a></li>' if GUIDES else ''}
+{'<li><a href="' + rel + 'compare/">Compare</a></li>' if COMPARES else ''}<li><a href="{rel}documents/">Browse the laws</a></li></ul></div>
+<div><h2>About</h2><ul><li><a href="{rel}about/">About</a></li><li><a href="{rel}sources/">Sources</a></li>
+<li><a href="{rel}disclaimer/">Disclaimer and privacy notice</a></li>
+<li><a href="{e(trust.report_url(SITE))}">Report an error</a></li><li><a href="{e(SITE.get('repo', '#'))}">Repository</a></li></ul></div>
 </div></footer>
 </body></html>
 """
@@ -156,8 +171,8 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         rel = depth_rel(a["permalink"])
         crumbs = " › ".join(a["hierarchy"][:-1])
         h1_sub = f'<span class="sub">{e(a["heading"])}</span>' if a["heading"] else ""
-        parts = [f'<p class="crumbs"><span class="badge">{e(doc["short_name"])}</span> {e(crumbs)}</p>',
-                 f'<h1>{e(a["section_ref"])}{h1_sub}</h1>']
+        parts = [f'<header class="doc-head"><p class="crumbs"><span class="badge">{e(doc["short_name"])}</span> {e(crumbs)}</p>',
+                 f'<h1>{e(a["section_ref"])}{h1_sub}</h1></header>']
         nav_items = []
         for cid in a["child_chunk_ids"]:
             c = by_id_all[cid]
@@ -176,7 +191,8 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
             tag_html = ('<p class="tags">' + "".join(f'<span class="tag">{e(TOPICS[t]["label"])}</span>'
                                                     for t in tags[:4]) + "</p>") if tags else ""
             anchor = (f'<div class="prov-head"><a class="anchor" href="#{frag}" title="Permalink">{e(label)}</a>'
-                      f'<button type="button" class="copy-link" data-frag="{frag}">Copy link</button></div>'
+                      f'<button type="button" class="copy-link icon-btn" data-frag="{frag}" title="Copy link" '
+                      f'aria-label="Copy link to {e(label)}">{ICONS["link"]}</button></div>'
                       if label and frag else "")
             id_attr = f' id="{frag}"' if frag else ""
             parts.append(f'<section class="prov"{id_attr}>'
@@ -210,10 +226,11 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
     for i, r in enumerate(recitals):
         rel = depth_rel(r["permalink"])
         cites = out_refs.get(r["chunk_id"], [])
-        body = [f'<p class="crumbs"><span class="badge">{e(doc["short_name"])}</span> Recitals</p>',
-                f'<h1>{e(r["section_ref"])}</h1>',
+        body = [f'<header class="doc-head"><p class="crumbs"><span class="badge">{e(doc["short_name"])}</span> Recitals</p>',
+                f'<h1>{e(r["section_ref"])}</h1></header>',
                 f'<section class="prov"><div class="prov-head"><span class="anchor">Recital {r["number"]}</span>'
-                f'<button type="button" class="copy-link" data-frag="">Copy link</button></div>'
+                f'<button type="button" class="copy-link icon-btn" data-frag="" title="Copy link" '
+                f'aria-label="Copy link to this recital">{ICONS["link"]}</button></div>'
                 f'<div class="text">{render_text(r["text"])}</div>'
                 + ('<p class="refs">References: ' + ", ".join(link(rel, t) for t in cites) + "</p>" if cites else "")
                 + "</section>"]
@@ -241,12 +258,14 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         groups.setdefault(chap, {}).setdefault(sec, []).append(a)
     noun = "articles" if parents and parents[0]["kind"] == "article" else "sections"
     count = f"{len(parents)} {noun}" + (f" and {len(recitals)} recitals" if recitals else "")
-    toc = [f'<h1>{e(doc["title"])}</h1>', source_block(doc),
+    toc = [f'<header class="doc-head"><p class="eyebrow">{e(doc["short_name"])}</p><h1>{e(doc["title"])}</h1>',
            f'<p class="lede">{count}.' + (' <a href="#recitals">Jump to recitals</a>.' if recitals else "") + "</p>",
-           f'<p><a class="btn-link" href="{parents[0]["permalink"]}">Start reading: {e(parents[0]["section_ref"])} →</a></p>',
-           '<div class="tocbar"><label for="toc-filter" class="vh">Find a section</label>'
+           source_block(doc) + "</header>",
+           f'<p><a class="btn-link" href="../{parents[0]["permalink"]}">Start reading at {e(parents[0]["section_ref"])} '
+           f'{ICONS["arrow"]}</a></p>',
+           f'<div class="tocbar">{ICONS["search"]}<label for="toc-filter" class="vh">Find a section</label>'
            '<input id="toc-filter" type="search" autocomplete="off" '
-           'placeholder="Find a section: type a number or a word, e.g. 30, erasure, minimum necessary"></div>',
+           'placeholder="Find a section by number or word"></div>',
            '<p id="toc-empty" class="muted" hidden>No section matches that.</p>',
            '<div class="chapters">']
     prefix = doc["short_name"] + " "
@@ -266,13 +285,13 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
                             out.append(t)
                 return " ".join(out)
             card.append("<ul class=toc>" + "".join(
-                f'<li data-find="{e(find_text(a))}"><a href="{a["permalink"]}">'
+                f'<li data-find="{e(find_text(a))}"><a href="../{a["permalink"]}">'
                 f'{e(a["section_ref"].removeprefix(prefix))}</a>{e(a["heading"])}</li>' for a in items) + "</ul>")
         toc.append("".join(card) + "</section>")
     toc.append("</div>")
     if recitals:
         toc.append('<section class="chapter" id="recitals"><h2>Recitals</h2><p class="recs">'
-                   + " ".join(f'<a href="{r["permalink"]}">{r["number"]}</a>' for r in recitals) + "</p></section>")
+                   + " ".join(f'<a href="../{r["permalink"]}">{r["number"]}</a>' for r in recitals) + "</p></section>")
     (DIST / doc_id).mkdir(parents=True, exist_ok=True)
     (DIST / doc_id / "index.html").write_text(
         page(doc["title"], "\n".join(toc), "../", docs, doc_id), encoding="utf-8")
@@ -411,7 +430,7 @@ def build_compare(docs: list, by_id_all: dict) -> None:
                 + "".join(provision_card(cid, rel, docs_by_id) for cid in c["chunk_ids"]) + "</div>")
         parts = ['<p class="crumbs"><span class="badge">Compare</span></p>',
                  f'<h1>{e(s["title"])}</h1>', f'<p class="lede">{e(s["question"])}</p>',
-                 '<div class="filters"><div class="fgroup"><span class="flabel">Show</span>' + toggles + "</div></div>",
+                 '<div class="cmp-toggles"><span class="label">Show</span>' + toggles + "</div>",
                  f'<div class="cmp-grid" style="--cols:{len(cols)}">{"".join(grid)}</div>',
                  '<p class="disclaimer">The provisions are placed side by side as an editorial selection. That is not '
                  'a statement that they are equivalent or that they cover the same situations. The text is shown '
@@ -474,33 +493,55 @@ def build_extras(docs: list) -> None:
 
 def build_home(docs: list) -> None:
     loaded = ", ".join(d["short_name"] for d in docs)
-    examples = ["GDPR Article 30", "When is a data protection impact assessment required?",
-                "What must a record of processing activities contain?", "lawful bases for processing",
-                "1798.105", "What are the exceptions to the CCPA right to delete?",
-                "What must a CCPA privacy notice include?", "Do I need a Do Not Sell link"]
-    ex = " ".join(f'<button type="button" class="chip" data-q="{e(x)}">{e(x)}</button>' for x in examples)
-    featured = ""
+    examples = ["GDPR Article 30", "When is a DPIA required?", "1798.105", "Do I need a Do Not Sell link",
+                "HIPAA minimum necessary", "breach notification timelines"]
+    sep = '<span class="sep" aria-hidden="true">·</span>'
+    ex = sep.join(f'<button type="button" data-q="{e(x)}">{e(x)}</button>' for x in examples)
+    features = []
     if GUIDES:
-        featured = ('<section class="featured"><h2>Guided topics</h2><p class="muted">Hand-built research paths: '
-                    'the provisions that bear on a common question, in order, with exact text.</p>'
-                    '<div class="doc-grid">' + "".join(guide_card(t, "") for t in GUIDES) + "</div></section>")
+        features.append(("topics/", "guide", "Guided topics",
+                         "Research paths for common questions, with every relevant provision in order."))
+    if COMPARES:
+        features.append(("compare/", "compare", "Compare the laws",
+                         "The same question answered by each law, side by side."))
+    features.append(("documents/", "browse", "Browse the laws",
+                     "Read any law in order, or jump to a section by number or keyword."))
+    feature_html = "".join(
+        f'<a class="feature" href="{href}"><span class="fi">{ICONS[ic]}</span><h3>{e(t)}</h3><p>{e(d)}</p>'
+        f'<span class="more">Open {ICONS["arrow"]}</span></a>' for href, ic, t, d in features)
+    laws = "".join(
+        f'<a class="feature" href="{e(d["doc_id"])}/"><span class="badge">{e(d["short_name"])}</span>'
+        f'<h3 style="margin-top:.8rem">{e(d["title"])}</h3><p>{e(d["version_label"])}</p></a>' for d in docs)
     body = f"""<section class="hero">
+<p class="eyebrow">Free privacy law reference</p>
 <h1>Find the exact text of privacy law</h1>
-<p class="lede">Search by citation or by question. Every result is the unmodified source text,
-with its citation, version, and a link to the official source. Currently loaded: {e(loaded)}.</p>
-<form id="search-form" role="search" autocomplete="off">
-  <label for="q" class="vh">Search</label>
-  <input id="q" type="search" autocomplete="off" name="q-not-saved" placeholder="Try &quot;GDPR Article 30&quot;, &quot;1798.105&quot; or &quot;right to erasure&quot;" autofocus>
+<p class="lede">Search by citation or plain question. Every result is the official wording, with its citation,
+version date and a link to the source. Covering {e(loaded)}.</p>
+<form id="search-form" role="search" autocomplete="off" class="search-box">
+  <label for="q" class="vh">Search privacy law</label>
+  {ICONS["search"]}
+  <input id="q" type="search" autocomplete="off" name="q-not-saved" placeholder="Try &quot;right to erasure&quot; or &quot;164.502(b)&quot;" autofocus>
   <button type="submit">Search</button>
 </form>
-<div class="examples"><span>Try:</span> {ex}</div>
-<div id="filters" class="filters" aria-label="Filters" hidden></div>
+<div class="suggest examples">Try {ex}</div>
 </section>
-<div id="topic-cards" class="topic-cards"></div>
-<div id="status" role="status" aria-live="polite"></div>
-<ol id="results" class="results"></ol>
-{featured}
-<noscript><p>Search needs JavaScript. You can still browse the documents using the menu above.</p></noscript>
+<section id="results-area" class="results-area" hidden>
+  <div id="topic-cards" class="topic-cards"></div>
+  <div class="toolbar">
+    <div id="status" role="status" aria-live="polite"></div>
+    <div class="filter-wrap" id="filter-wrap"></div>
+  </div>
+  <div id="pills" class="pills"></div>
+  <ol id="results" class="results"></ol>
+  <div id="more" class="more-results"></div>
+</section>
+<div id="home-sections" class="home-sections">
+  <section><div class="section-head"><h2>Explore</h2></div><div class="feature-grid">{feature_html}</div></section>
+  <section><div class="section-head"><h2>Laws included</h2><a href="sources/">Where the texts come from</a></div>
+  <div class="feature-grid">{laws}</div></section>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p>Search needs JavaScript. You can still browse the laws from the menu above.</p></noscript>
 <script type="module" src="assets/search.js?v={VERSION}"></script>"""
     (DIST / "index.html").write_text(page("Quick Privacy Searches", body, "", docs, "search"), encoding="utf-8")
 
@@ -556,7 +597,7 @@ def build() -> None:
             t = f.read_text(encoding="utf-8")
             for name in ("minisearch.js", "lookup.js"):
                 t = t.replace(f'"./{name}"', f'"./{name}?v={VERSION}"')
-            for name in ("search-data.json", "synonyms.json"):
+            for name in ("search-data.json", "synonyms.json", "topics.json"):
                 t = t.replace(f'"assets/{name}"', f'"assets/{name}?v={VERSION}"')
             (DIST / "assets" / f.name).write_text(t, encoding="utf-8")
         else:

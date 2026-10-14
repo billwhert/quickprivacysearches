@@ -282,7 +282,7 @@ export function search(engine, data, syn, raw, opts = {}) {
   // visitor asked only about a law that is not loaded
   if (q.unloaded.length && !q.loadedMentioned.length) {
     const names = q.unloaded.map(j => j.label).join(", ");
-    const have = loadedDocs.map(d => d.toUpperCase()).join(", ");
+    const have = loadedDocs.map(d => data.docs[d].short).join(", ");
     out.messages.push(`${names} ${q.unloaded.length > 1 ? "are" : "is"} not in the loaded sources yet. ` +
       `Currently loaded: ${have}.`);
     out.outOfScope = true;

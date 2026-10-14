@@ -1,0 +1,3008 @@
+[
+ {
+  "from_chunk_id": "gdpr:art:2:3",
+  "raw": "Article 98",
+  "to_chunk_id": "gdpr:art:98",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:2:4",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:12",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:2:4",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:2:4",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:2:4",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:4:17",
+  "raw": "Article 27",
+  "to_chunk_id": "gdpr:art:27",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:4:21",
+  "raw": "Article 51",
+  "to_chunk_id": "gdpr:art:51",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:4:25",
+  "raw": "Article 1(1)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:5:1",
+  "raw": "Article 89(1)",
+  "to_chunk_id": "gdpr:art:89:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:5:1",
+  "raw": "Article 89(1)",
+  "to_chunk_id": "gdpr:art:89:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:6:4",
+  "raw": "Article 23(1)",
+  "to_chunk_id": "gdpr:art:23:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:6:4",
+  "raw": "Article 9",
+  "to_chunk_id": "gdpr:art:9",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:6:4",
+  "raw": "Article 10",
+  "to_chunk_id": "gdpr:art:10",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:8:1",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:9:2",
+  "raw": "Article 89(1)",
+  "to_chunk_id": "gdpr:art:89:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:10:1",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:11:2",
+  "raw": "Articles 15 to 20",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:11:2",
+  "raw": "Articles 15 to 20",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:11:2",
+  "raw": "Articles 15 to 20",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:11:2",
+  "raw": "Articles 15 to 20",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:11:2",
+  "raw": "Articles 15 to 20",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:11:2",
+  "raw": "Articles 15 to 20",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:1",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:34",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Article 11(2)",
+  "to_chunk_id": "gdpr:art:11:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:2",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:3",
+  "raw": "Articles 15 to 22",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:5",
+  "raw": "Articles 15 to 22 and 34",
+  "to_chunk_id": "gdpr:art:34",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Article 11",
+  "to_chunk_id": "gdpr:art:11",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Articles 15 to 21",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Articles 15 to 21",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Articles 15 to 21",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Articles 15 to 21",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Articles 15 to 21",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Articles 15 to 21",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:6",
+  "raw": "Articles 15 to 21",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:7",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:7",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:12:8",
+  "raw": "Article 92",
+  "to_chunk_id": "gdpr:art:92",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:13:1",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:13:1",
+  "raw": "Article 46 or 47",
+  "to_chunk_id": "gdpr:art:46",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:13:1",
+  "raw": "Article 46 or 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:13:1",
+  "raw": "Article 49(1)",
+  "to_chunk_id": "gdpr:art:49:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:13:2",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:13:2",
+  "raw": "Article 9(2)",
+  "to_chunk_id": "gdpr:art:9:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:13:2",
+  "raw": "Article 22(1)",
+  "to_chunk_id": "gdpr:art:22:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:1",
+  "raw": "Article 46 or 47",
+  "to_chunk_id": "gdpr:art:46",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:1",
+  "raw": "Article 46 or 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:1",
+  "raw": "Article 49(1)",
+  "to_chunk_id": "gdpr:art:49:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:2",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:2",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:2",
+  "raw": "Article 9(2)",
+  "to_chunk_id": "gdpr:art:9:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:2",
+  "raw": "Article 22(1)",
+  "to_chunk_id": "gdpr:art:22:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:14:5",
+  "raw": "Article 89(1)",
+  "to_chunk_id": "gdpr:art:89:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:15:1",
+  "raw": "Article 22(1)",
+  "to_chunk_id": "gdpr:art:22:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:15:2",
+  "raw": "Article 46",
+  "to_chunk_id": "gdpr:art:46",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:1",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:1",
+  "raw": "Article 9(2)",
+  "to_chunk_id": "gdpr:art:9:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:1",
+  "raw": "Article 21(1)",
+  "to_chunk_id": "gdpr:art:21:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:1",
+  "raw": "Article 21(2)",
+  "to_chunk_id": "gdpr:art:21:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:1",
+  "raw": "Article 8(1)",
+  "to_chunk_id": "gdpr:art:8:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:3",
+  "raw": "Article 9(2)",
+  "to_chunk_id": "gdpr:art:9:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:3",
+  "raw": "Article 9(3)",
+  "to_chunk_id": "gdpr:art:9:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:17:3",
+  "raw": "Article 89(1)",
+  "to_chunk_id": "gdpr:art:89:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:18:1",
+  "raw": "Article 21(1)",
+  "to_chunk_id": "gdpr:art:21:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:19:1",
+  "raw": "Article 16",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:19:1",
+  "raw": "Article 17(1)",
+  "to_chunk_id": "gdpr:art:17:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:19:1",
+  "raw": "Article 18",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:20:1",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:20:1",
+  "raw": "Article 9(2)",
+  "to_chunk_id": "gdpr:art:9:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:20:1",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:20:3",
+  "raw": "Article 17",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:21:1",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:21:6",
+  "raw": "Article 89(1)",
+  "to_chunk_id": "gdpr:art:89:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:22:4",
+  "raw": "Article 9(1)",
+  "to_chunk_id": "gdpr:art:9:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:22:4",
+  "raw": "Article 9(2)",
+  "to_chunk_id": "gdpr:art:9:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:12",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Article 34",
+  "to_chunk_id": "gdpr:art:34",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Article 5",
+  "to_chunk_id": "gdpr:art:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:12",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:23:1",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:24:3",
+  "raw": "Article 40",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:24:3",
+  "raw": "Article 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:25:3",
+  "raw": "Article 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:26:1",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:26:1",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:27:1",
+  "raw": "Article 3(2)",
+  "to_chunk_id": "gdpr:art:3:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:27:2",
+  "raw": "Article 9(1)",
+  "to_chunk_id": "gdpr:art:9:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:27:2",
+  "raw": "Article 10",
+  "to_chunk_id": "gdpr:art:10",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:3",
+  "raw": "Article 32",
+  "to_chunk_id": "gdpr:art:32",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:3",
+  "raw": "Articles 32 to 36",
+  "to_chunk_id": "gdpr:art:32",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:3",
+  "raw": "Articles 32 to 36",
+  "to_chunk_id": "gdpr:art:33",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:3",
+  "raw": "Articles 32 to 36",
+  "to_chunk_id": "gdpr:art:34",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:3",
+  "raw": "Articles 32 to 36",
+  "to_chunk_id": "gdpr:art:35",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:3",
+  "raw": "Articles 32 to 36",
+  "to_chunk_id": "gdpr:art:36",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:5",
+  "raw": "Article 40",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:5",
+  "raw": "Article 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:6",
+  "raw": "Articles 42 and 43",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:6",
+  "raw": "Articles 42 and 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:7",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:8",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:10",
+  "raw": "Articles 82, 83 and 84",
+  "to_chunk_id": "gdpr:art:82",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:10",
+  "raw": "Articles 82, 83 and 84",
+  "to_chunk_id": "gdpr:art:83",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:28:10",
+  "raw": "Articles 82, 83 and 84",
+  "to_chunk_id": "gdpr:art:84",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:30:1",
+  "raw": "Article 49(1)",
+  "to_chunk_id": "gdpr:art:49:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:30:1",
+  "raw": "Article 32(1)",
+  "to_chunk_id": "gdpr:art:32:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:30:2",
+  "raw": "Article 49(1)",
+  "to_chunk_id": "gdpr:art:49:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:30:2",
+  "raw": "Article 32(1)",
+  "to_chunk_id": "gdpr:art:32:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:30:5",
+  "raw": "Article 9(1)",
+  "to_chunk_id": "gdpr:art:9:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:30:5",
+  "raw": "Article 10",
+  "to_chunk_id": "gdpr:art:10",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:32:3",
+  "raw": "Article 40",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:32:3",
+  "raw": "Article 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:33:1",
+  "raw": "Article 55",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:34:2",
+  "raw": "Article 33(3)",
+  "to_chunk_id": "gdpr:art:33:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:35:3",
+  "raw": "Article 9(1)",
+  "to_chunk_id": "gdpr:art:9:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:35:3",
+  "raw": "Article 10",
+  "to_chunk_id": "gdpr:art:10",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:35:4",
+  "raw": "Article 68",
+  "to_chunk_id": "gdpr:art:68",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:35:6",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:35:8",
+  "raw": "Article 40",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:35:10",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:36:1",
+  "raw": "Article 35",
+  "to_chunk_id": "gdpr:art:35",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:36:2",
+  "raw": "Article 58",
+  "to_chunk_id": "gdpr:art:58",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:36:3",
+  "raw": "Article 35",
+  "to_chunk_id": "gdpr:art:35",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:37:1",
+  "raw": "Article 9",
+  "to_chunk_id": "gdpr:art:9",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:37:1",
+  "raw": "Article 10",
+  "to_chunk_id": "gdpr:art:10",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:37:5",
+  "raw": "Article 39",
+  "to_chunk_id": "gdpr:art:39",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:38:2",
+  "raw": "Article 39",
+  "to_chunk_id": "gdpr:art:39",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:39:1",
+  "raw": "Article 35",
+  "to_chunk_id": "gdpr:art:35",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:39:1",
+  "raw": "Article 36",
+  "to_chunk_id": "gdpr:art:36",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:2",
+  "raw": "Articles 24 and 25",
+  "to_chunk_id": "gdpr:art:24",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:2",
+  "raw": "Articles 24 and 25",
+  "to_chunk_id": "gdpr:art:25",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:2",
+  "raw": "Article 32",
+  "to_chunk_id": "gdpr:art:32",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:2",
+  "raw": "Articles 77 and 79",
+  "to_chunk_id": "gdpr:art:77",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:2",
+  "raw": "Articles 77 and 79",
+  "to_chunk_id": "gdpr:art:79",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:3",
+  "raw": "Article 3",
+  "to_chunk_id": "gdpr:art:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:3",
+  "raw": "Article 46(2)",
+  "to_chunk_id": "gdpr:art:46:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:4",
+  "raw": "Article 41(1)",
+  "to_chunk_id": "gdpr:art:41:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:4",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:4",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:5",
+  "raw": "Article 55",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:7",
+  "raw": "Article 55",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:7",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:40:9",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:41:1",
+  "raw": "Articles 57 and 58",
+  "to_chunk_id": "gdpr:art:57",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:41:1",
+  "raw": "Articles 57 and 58",
+  "to_chunk_id": "gdpr:art:58",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:41:1",
+  "raw": "Article 40",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:41:3",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:2",
+  "raw": "Article 3",
+  "to_chunk_id": "gdpr:art:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:2",
+  "raw": "Article 46(2)",
+  "to_chunk_id": "gdpr:art:46:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:4",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:4",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:5",
+  "raw": "Article 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:5",
+  "raw": "Article 58(3)",
+  "to_chunk_id": "gdpr:art:58:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:5",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:6",
+  "raw": "Article 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:42:7",
+  "raw": "Article 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:1",
+  "raw": "Articles 57 and 58",
+  "to_chunk_id": "gdpr:art:57",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:1",
+  "raw": "Articles 57 and 58",
+  "to_chunk_id": "gdpr:art:58",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:1",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:1",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:1",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:1",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:1",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:2",
+  "raw": "Article 42(5)",
+  "to_chunk_id": "gdpr:art:42:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:2",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:2",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:2",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:3",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:3",
+  "raw": "Article 55 or 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:3",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:6",
+  "raw": "Article 42(5)",
+  "to_chunk_id": "gdpr:art:42:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:8",
+  "raw": "Article 92",
+  "to_chunk_id": "gdpr:art:92",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:8",
+  "raw": "Article 42(1)",
+  "to_chunk_id": "gdpr:art:42:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:43:9",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:3",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:4",
+  "raw": "Article 25(6)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:5",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:5",
+  "raw": "Article 93(3)",
+  "to_chunk_id": "gdpr:art:93:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:7",
+  "raw": "Articles 46 to 49",
+  "to_chunk_id": "gdpr:art:46",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:7",
+  "raw": "Articles 46 to 49",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:7",
+  "raw": "Articles 46 to 49",
+  "to_chunk_id": "gdpr:art:48",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:7",
+  "raw": "Articles 46 to 49",
+  "to_chunk_id": "gdpr:art:49",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:45:9",
+  "raw": "Article 25(6)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:1",
+  "raw": "Article 45(3)",
+  "to_chunk_id": "gdpr:art:45:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:2",
+  "raw": "Article 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:2",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:2",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:2",
+  "raw": "Article 40",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:2",
+  "raw": "Article 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:4",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:5",
+  "raw": "Article 26(2)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:46:5",
+  "raw": "Article 26(4)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:47:1",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:47:2",
+  "raw": "Article 22",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:47:2",
+  "raw": "Article 79",
+  "to_chunk_id": "gdpr:art:79",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:47:2",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:47:2",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:47:2",
+  "raw": "Article 37",
+  "to_chunk_id": "gdpr:art:37",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:47:3",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:49:1",
+  "raw": "Article 45(3)",
+  "to_chunk_id": "gdpr:art:45:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:49:1",
+  "raw": "Article 46",
+  "to_chunk_id": "gdpr:art:46",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:49:1",
+  "raw": "Article 45 or 46",
+  "to_chunk_id": "gdpr:art:45",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:49:1",
+  "raw": "Article 45 or 46",
+  "to_chunk_id": "gdpr:art:46",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:49:1",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:49:1",
+  "raw": "Articles 13 and 14",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:49:6",
+  "raw": "Article 30",
+  "to_chunk_id": "gdpr:art:30",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:51:3",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:55:2",
+  "raw": "Article 6(1)",
+  "to_chunk_id": "gdpr:art:6:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:55:2",
+  "raw": "Article 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:56:1",
+  "raw": "Article 55",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:56:1",
+  "raw": "Article 60",
+  "to_chunk_id": "gdpr:art:60",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:56:3",
+  "raw": "Article 60",
+  "to_chunk_id": "gdpr:art:60",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:56:4",
+  "raw": "Article 60",
+  "to_chunk_id": "gdpr:art:60",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:56:4",
+  "raw": "Article 60(3)",
+  "to_chunk_id": "gdpr:art:60:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:56:5",
+  "raw": "Articles 61 and 62",
+  "to_chunk_id": "gdpr:art:61",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:56:5",
+  "raw": "Articles 61 and 62",
+  "to_chunk_id": "gdpr:art:62",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 80",
+  "to_chunk_id": "gdpr:art:80",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 28(8)",
+  "to_chunk_id": "gdpr:art:28:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 46(2)",
+  "to_chunk_id": "gdpr:art:46:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 35(4)",
+  "to_chunk_id": "gdpr:art:35:4",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 36(2)",
+  "to_chunk_id": "gdpr:art:36:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 40(1)",
+  "to_chunk_id": "gdpr:art:40:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 40(5)",
+  "to_chunk_id": "gdpr:art:40:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 42(1)",
+  "to_chunk_id": "gdpr:art:42:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 42(5)",
+  "to_chunk_id": "gdpr:art:42:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 42(7)",
+  "to_chunk_id": "gdpr:art:42:7",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 41",
+  "to_chunk_id": "gdpr:art:41",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 41",
+  "to_chunk_id": "gdpr:art:41",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 46(3)",
+  "to_chunk_id": "gdpr:art:46:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:57:1",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:1",
+  "raw": "Article 42(7)",
+  "to_chunk_id": "gdpr:art:42:7",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Articles 16, 17 and 18",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Articles 16, 17 and 18",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Articles 16, 17 and 18",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Article 17(2)",
+  "to_chunk_id": "gdpr:art:17:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Article 19",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Articles 42 and 43",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Articles 42 and 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:2",
+  "raw": "Article 83",
+  "to_chunk_id": "gdpr:art:83",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 36",
+  "to_chunk_id": "gdpr:art:36",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 36(5)",
+  "to_chunk_id": "gdpr:art:36:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 40(5)",
+  "to_chunk_id": "gdpr:art:40:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 42(5)",
+  "to_chunk_id": "gdpr:art:42:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 28(8)",
+  "to_chunk_id": "gdpr:art:28:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 46(2)",
+  "to_chunk_id": "gdpr:art:46:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 46(3)",
+  "to_chunk_id": "gdpr:art:46:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 46(3)",
+  "to_chunk_id": "gdpr:art:46:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:58:3",
+  "raw": "Article 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:59:1",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:60:2",
+  "raw": "Article 61",
+  "to_chunk_id": "gdpr:art:61",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:60:2",
+  "raw": "Article 62",
+  "to_chunk_id": "gdpr:art:62",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:60:4",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:60:11",
+  "raw": "Article 66",
+  "to_chunk_id": "gdpr:art:66",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:61:8",
+  "raw": "Article 55(1)",
+  "to_chunk_id": "gdpr:art:55:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:61:8",
+  "raw": "Article 66(1)",
+  "to_chunk_id": "gdpr:art:66:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:61:8",
+  "raw": "Article 66(2)",
+  "to_chunk_id": "gdpr:art:66:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:61:9",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:62:2",
+  "raw": "Article 56(1)",
+  "to_chunk_id": "gdpr:art:56:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:62:7",
+  "raw": "Article 55",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:62:7",
+  "raw": "Article 66(1)",
+  "to_chunk_id": "gdpr:art:66:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:62:7",
+  "raw": "Article 66(2)",
+  "to_chunk_id": "gdpr:art:66:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 35(4)",
+  "to_chunk_id": "gdpr:art:35:4",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 40(7)",
+  "to_chunk_id": "gdpr:art:40:7",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 41(3)",
+  "to_chunk_id": "gdpr:art:41:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 43(3)",
+  "to_chunk_id": "gdpr:art:43:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 46(2)",
+  "to_chunk_id": "gdpr:art:46:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 28(8)",
+  "to_chunk_id": "gdpr:art:28:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 46(3)",
+  "to_chunk_id": "gdpr:art:46:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:1",
+  "raw": "Article 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:2",
+  "raw": "Article 61",
+  "to_chunk_id": "gdpr:art:61",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:2",
+  "raw": "Article 62",
+  "to_chunk_id": "gdpr:art:62",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:64:8",
+  "raw": "Article 65(1)",
+  "to_chunk_id": "gdpr:art:65:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:65:1",
+  "raw": "Article 60(4)",
+  "to_chunk_id": "gdpr:art:60:4",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:65:1",
+  "raw": "Article 64(1)",
+  "to_chunk_id": "gdpr:art:64:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:65:1",
+  "raw": "Article 64",
+  "to_chunk_id": "gdpr:art:64",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:65:6",
+  "raw": "Article 60(7)",
+  "to_chunk_id": "gdpr:art:60:7",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:66:1",
+  "raw": "Articles 63, 64 and 65",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:66:1",
+  "raw": "Articles 63, 64 and 65",
+  "to_chunk_id": "gdpr:art:64",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:66:1",
+  "raw": "Articles 63, 64 and 65",
+  "to_chunk_id": "gdpr:art:65",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:66:1",
+  "raw": "Article 60",
+  "to_chunk_id": "gdpr:art:60",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:66:4",
+  "raw": "Article 64(3)",
+  "to_chunk_id": "gdpr:art:64:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:66:4",
+  "raw": "Article 65(2)",
+  "to_chunk_id": "gdpr:art:65:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:67:1",
+  "raw": "Article 64",
+  "to_chunk_id": "gdpr:art:64",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:67:1",
+  "raw": "Article 93(2)",
+  "to_chunk_id": "gdpr:art:93:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:68:6",
+  "raw": "Article 65",
+  "to_chunk_id": "gdpr:art:65",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:69:1",
+  "raw": "Articles 70 and 71",
+  "to_chunk_id": "gdpr:art:70",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:69:1",
+  "raw": "Articles 70 and 71",
+  "to_chunk_id": "gdpr:art:71",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:69:2",
+  "raw": "Article 70(1)",
+  "to_chunk_id": "gdpr:art:70:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:69:2",
+  "raw": "Article 70(2)",
+  "to_chunk_id": "gdpr:art:70:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Articles 64 and 65",
+  "to_chunk_id": "gdpr:art:64",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Articles 64 and 65",
+  "to_chunk_id": "gdpr:art:65",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 17(2)",
+  "to_chunk_id": "gdpr:art:17:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 22(2)",
+  "to_chunk_id": "gdpr:art:22:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 33(1)",
+  "to_chunk_id": "gdpr:art:33:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 34(1)",
+  "to_chunk_id": "gdpr:art:34:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 49(1)",
+  "to_chunk_id": "gdpr:art:49:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 58(1)",
+  "to_chunk_id": "gdpr:art:58:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 83",
+  "to_chunk_id": "gdpr:art:83",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 54(2)",
+  "to_chunk_id": "gdpr:art:54:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Articles 40 and 42",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Articles 40 and 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 43(6)",
+  "to_chunk_id": "gdpr:art:43:6",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 42(7)",
+  "to_chunk_id": "gdpr:art:42:7",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 43(3)",
+  "to_chunk_id": "gdpr:art:43:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 43(8)",
+  "to_chunk_id": "gdpr:art:43:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 12(7)",
+  "to_chunk_id": "gdpr:art:12:7",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 64(1)",
+  "to_chunk_id": "gdpr:art:64:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 64(2)",
+  "to_chunk_id": "gdpr:art:64:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 65",
+  "to_chunk_id": "gdpr:art:65",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 66",
+  "to_chunk_id": "gdpr:art:66",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:1",
+  "raw": "Article 40(9)",
+  "to_chunk_id": "gdpr:art:40:9",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:3",
+  "raw": "Article 93",
+  "to_chunk_id": "gdpr:art:93",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:70:4",
+  "raw": "Article 76",
+  "to_chunk_id": "gdpr:art:76",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:71:2",
+  "raw": "Article 70(1)",
+  "to_chunk_id": "gdpr:art:70:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:71:2",
+  "raw": "Article 65",
+  "to_chunk_id": "gdpr:art:65",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:74:1",
+  "raw": "Article 65",
+  "to_chunk_id": "gdpr:art:65",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:74:1",
+  "raw": "Article 63",
+  "to_chunk_id": "gdpr:art:63",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:77:2",
+  "raw": "Article 78",
+  "to_chunk_id": "gdpr:art:78",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:78:2",
+  "raw": "Articles 55 and 56",
+  "to_chunk_id": "gdpr:art:55",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:78:2",
+  "raw": "Articles 55 and 56",
+  "to_chunk_id": "gdpr:art:56",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:78:2",
+  "raw": "Article 77",
+  "to_chunk_id": "gdpr:art:77",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:79:1",
+  "raw": "Article 77",
+  "to_chunk_id": "gdpr:art:77",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:80:1",
+  "raw": "Articles 77, 78 and 79",
+  "to_chunk_id": "gdpr:art:77",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:80:1",
+  "raw": "Articles 77, 78 and 79",
+  "to_chunk_id": "gdpr:art:78",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:80:1",
+  "raw": "Articles 77, 78 and 79",
+  "to_chunk_id": "gdpr:art:79",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:80:1",
+  "raw": "Article 82",
+  "to_chunk_id": "gdpr:art:82",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:80:2",
+  "raw": "Article 77",
+  "to_chunk_id": "gdpr:art:77",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:80:2",
+  "raw": "Articles 78 and 79",
+  "to_chunk_id": "gdpr:art:78",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:80:2",
+  "raw": "Articles 78 and 79",
+  "to_chunk_id": "gdpr:art:79",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:82:6",
+  "raw": "Article 79(2)",
+  "to_chunk_id": "gdpr:art:79:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:2",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:2",
+  "raw": "Articles 25 and 32",
+  "to_chunk_id": "gdpr:art:25",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:2",
+  "raw": "Articles 25 and 32",
+  "to_chunk_id": "gdpr:art:32",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:2",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:2",
+  "raw": "Article 40",
+  "to_chunk_id": "gdpr:art:40",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:2",
+  "raw": "Article 42",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:11",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:25",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:26",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:27",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:28",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:29",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:30",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:31",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:32",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:33",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:34",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:35",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:36",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:37",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:38",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:39",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 8, 11, 25 to 39 and 42 and 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 42 and 43",
+  "to_chunk_id": "gdpr:art:42",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Articles 42 and 43",
+  "to_chunk_id": "gdpr:art:43",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:4",
+  "raw": "Article 41(4)",
+  "to_chunk_id": "gdpr:art:41:4",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 5, 6, 7 and 9",
+  "to_chunk_id": "gdpr:art:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 5, 6, 7 and 9",
+  "to_chunk_id": "gdpr:art:6",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 5, 6, 7 and 9",
+  "to_chunk_id": "gdpr:art:7",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 5, 6, 7 and 9",
+  "to_chunk_id": "gdpr:art:9",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:12",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:17",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 12 to 22",
+  "to_chunk_id": "gdpr:art:22",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 44 to 49",
+  "to_chunk_id": "gdpr:art:44",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 44 to 49",
+  "to_chunk_id": "gdpr:art:45",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 44 to 49",
+  "to_chunk_id": "gdpr:art:46",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 44 to 49",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 44 to 49",
+  "to_chunk_id": "gdpr:art:48",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Articles 44 to 49",
+  "to_chunk_id": "gdpr:art:49",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:5",
+  "raw": "Article 58(1)",
+  "to_chunk_id": "gdpr:art:58:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:6",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:83:7",
+  "raw": "Article 58(2)",
+  "to_chunk_id": "gdpr:art:58:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:84:1",
+  "raw": "Article 83",
+  "to_chunk_id": "gdpr:art:83",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:2",
+  "raw": "Articles 15, 16, 18 and 21",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:2",
+  "raw": "Articles 15, 16, 18 and 21",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:2",
+  "raw": "Articles 15, 16, 18 and 21",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:2",
+  "raw": "Articles 15, 16, 18 and 21",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:3",
+  "raw": "Articles 15, 16, 18, 19, 20 and 21",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:3",
+  "raw": "Articles 15, 16, 18, 19, 20 and 21",
+  "to_chunk_id": "gdpr:art:16",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:3",
+  "raw": "Articles 15, 16, 18, 19, 20 and 21",
+  "to_chunk_id": "gdpr:art:18",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:3",
+  "raw": "Articles 15, 16, 18, 19, 20 and 21",
+  "to_chunk_id": "gdpr:art:19",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:3",
+  "raw": "Articles 15, 16, 18, 19, 20 and 21",
+  "to_chunk_id": "gdpr:art:20",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:89:3",
+  "raw": "Articles 15, 16, 18, 19, 20 and 21",
+  "to_chunk_id": "gdpr:art:21",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:90:1",
+  "raw": "Article 58(1)",
+  "to_chunk_id": "gdpr:art:58:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:92:2",
+  "raw": "Article 12(8)",
+  "to_chunk_id": "gdpr:art:12:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:92:2",
+  "raw": "Article 43(8)",
+  "to_chunk_id": "gdpr:art:43:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:92:3",
+  "raw": "Article 12(8)",
+  "to_chunk_id": "gdpr:art:12:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:92:3",
+  "raw": "Article 43(8)",
+  "to_chunk_id": "gdpr:art:43:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:92:5",
+  "raw": "Article 12(8)",
+  "to_chunk_id": "gdpr:art:12:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:92:5",
+  "raw": "Article 43(8)",
+  "to_chunk_id": "gdpr:art:43:8",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:93:2",
+  "raw": "Article 5",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:93:3",
+  "raw": "Article 8",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:93:3",
+  "raw": "Article 5",
+  "to_chunk_id": "gdpr:art:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:94:2",
+  "raw": "Article 29",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:art:97:2",
+  "raw": "Article 45(3)",
+  "to_chunk_id": "gdpr:art:45:3",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:art:97:2",
+  "raw": "Article 25(6)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:1",
+  "raw": "Article 8(1)",
+  "to_chunk_id": "gdpr:art:8:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:1",
+  "raw": "Article 16(1)",
+  "to_chunk_id": "gdpr:art:16:1",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:12",
+  "raw": "Article 16(2)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:13",
+  "raw": "Article 2",
+  "to_chunk_id": "gdpr:art:2",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:21",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:12",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:21",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:13",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:21",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:14",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:21",
+  "raw": "Articles 12 to 15",
+  "to_chunk_id": "gdpr:art:15",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:106",
+  "raw": "Article 25(6)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:106",
+  "raw": "Article 26(4)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:141",
+  "raw": "Article 47",
+  "to_chunk_id": "gdpr:art:47",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:143",
+  "raw": "Article 263",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:143",
+  "raw": "Article 263",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:143",
+  "raw": "Article 263",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:143",
+  "raw": "Article 263",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:143",
+  "raw": "Article 267",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:143",
+  "raw": "Article 267",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:143",
+  "raw": "Article 263",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:150",
+  "raw": "Articles 101 and 102",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:150",
+  "raw": "Articles 101 and 102",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:153",
+  "raw": "Article 11",
+  "to_chunk_id": "gdpr:art:11",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:159",
+  "raw": "Article 179(1)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:163",
+  "raw": "Article 338(2)",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:165",
+  "raw": "Article 17",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:166",
+  "raw": "Article 290",
+  "to_chunk_id": null,
+  "external": true
+ },
+ {
+  "from_chunk_id": "gdpr:rct:170",
+  "raw": "Article 5",
+  "to_chunk_id": "gdpr:art:5",
+  "external": false
+ },
+ {
+  "from_chunk_id": "gdpr:rct:172",
+  "raw": "Article 28(2)",
+  "to_chunk_id": null,
+  "external": true
+ }
+]

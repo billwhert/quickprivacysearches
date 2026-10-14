@@ -1,0 +1,12 @@
+{
+ "gdpr": {
+  "doc_id": "gdpr",
+  "source_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+  "fetch_url": "http://publications.europa.eu/resource/celex/32016R0679",
+  "raw_path": "data/raw/gdpr.xhtml",
+  "bytes": 806864,
+  "checksum_sha256": "962539af03738bf552319ff4ce42d69e5f95a576307c4dfed7bf87e81b646b9d",
+  "retrieved_at": "2026-10-14T12:10:51Z",
+  "last_checked_at": "2026-10-14T12:10:51Z"
+ }
+}

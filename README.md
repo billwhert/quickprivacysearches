@@ -27,3 +27,13 @@ python -m http.server -d dist 8000   # open http://localhost:8000
 ## GitHub Pages limits (verify at https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 As last known: published site <= 1 GB, ~100 GB/month soft bandwidth, ~10 builds/hour soft limit,
 files over 100 MB are rejected by git. Keep generated output well under these.
+
+## Ingestion pipeline (step 2+)
+```bash
+python build/ingest.py gdpr            # fetch (skipped if raw file present) -> parse -> validate
+python build/ingest.py gdpr --force-fetch   # re-download and compare checksum
+```
+- `data/raw/` - original files unchanged, plus `manifest.json` (URL, checksum, retrieval date)
+- `data/processed/<doc_id>/` - `document.json`, `chunks.json`, `crossrefs.json`
+- `data/reports/<doc_id>_validation.md` - checks and 10-chunk spot-check sample
+- Parsers live in `build/parse_*.py`; the parser is chosen by `parser:` in `sources.yaml`.

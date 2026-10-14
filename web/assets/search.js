@@ -1,7 +1,7 @@
 // Search page: runs entirely in the browser. No network calls except loading the
 // static data and library files from this same site; query text is never sent anywhere.
 import MiniSearch from "./minisearch.js";
-import { createEngine, search, stem, STOPWORDS, normalize, docsForFilters } from "./lookup.js";
+import { createEngine, search, stem, STOPWORDS, normalize, docsForFilters, matchTopics } from "./lookup.js";
 
 const $ = id => document.getElementById(id);
 const input = $("q"), form = $("search-form"), status = $("status"), list = $("results");
@@ -9,7 +9,8 @@ const filterBox = $("filters");
 const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const MAX_RESULTS = 20;
 
-let data, syn, engine;
+let data, syn, engine, guides = [];
+const topicBox = $("topic-cards");
 let lastQuery = "";
 let counts = null;                       // matches per document for the current query, ignoring filters
 let topicCounts = null;                  // matches per topic for the current query, ignoring filters
@@ -20,10 +21,13 @@ const JURISDICTION_LABELS = { EU: "European Union", "US-CA": "California", "US-F
 
 const ready = (async () => {
   status.textContent = "Loading index...";
-  [data, syn] = await Promise.all([
+  let tj;
+  [data, syn, tj] = await Promise.all([
     fetch("assets/search-data.json").then(r => r.json()),
     fetch("assets/synonyms.json").then(r => r.json()),
+    fetch("assets/topics.json").then(r => r.json()).catch(() => ({ topics: [] })),
   ]);
+  guides = tj.topics || [];
   engine = createEngine(MiniSearch, data);
   status.textContent = "";
   renderFilters();
@@ -175,7 +179,7 @@ async function run(raw) {
   raw = raw.trim();
   await ready;
   lastQuery = raw;
-  if (!raw) { list.innerHTML = ""; status.textContent = ""; counts = null; topicCounts = null; renderFilters(); return; }
+  if (!raw) { list.innerHTML = ""; topicBox.innerHTML = ""; status.textContent = ""; counts = null; topicCounts = null; renderFilters(); return; }
 
   // unfiltered pass gives the per-law counts shown on the filter chips
   const all = search(engine, data, syn, raw);
@@ -201,6 +205,16 @@ async function run(raw) {
     if (++shown >= MAX_RESULTS) break;
   }
   list.innerHTML = out.join("");
+
+  // guided topics whose trigger words appear in the question are shown above the results
+  const matched = matchTopics(raw, guides, res.query.filterDocs);
+  topicBox.innerHTML = matched.map(({ topic: t }) => {
+    const warn = t.state === "published" ? "" : `<span class="badge warn">${t.state === "draft" ? "Draft - awaiting review" : "Needs review"}</span>`;
+    const start = (t.applicability || []).slice(0, 1).map(q => `<p class="muted">Starts with: ${esc(q)}</p>`).join("");
+    return `<article class="topic-card"><div class="result-head"><span class="badge">Guided topic</span>${warn}</div>
+      <h2><a href="${t.url}">${esc(t.title)}</a></h2><p class="muted">${esc(t.scope)}</p>${start}
+      <p class="actions"><a href="${t.url}">Open the research path</a></p></article>`;
+  }).join("");
 
   const notes = res.messages.map(m => `<span class="note-line">${esc(m)}</span>`);
   if (res.expansions.length && out.length) {
@@ -287,7 +301,7 @@ if (location.hash.startsWith("#q=")) history.replaceState(null, "", location.pat
 // Back/forward cache restores must not bring an old search or filters back either.
 window.addEventListener("pageshow", e => {
   if (e.persisted) {
-    input.value = ""; list.innerHTML = ""; status.textContent = ""; lastQuery = ""; counts = null; topicCounts = null;
+    input.value = ""; list.innerHTML = ""; topicBox.innerHTML = ""; status.textContent = ""; lastQuery = ""; counts = null; topicCounts = null;
     Object.values(filters).forEach(s => s.clear());
     if (data) renderFilters();
   }

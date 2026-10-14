@@ -189,6 +189,27 @@ function visitorPhrases(words) {
   return [...out];
 }
 
+// ---------- guided topics ----------
+
+/** Guided topics whose trigger words appear in the question. One word scores 1, a phrase 2; shown at 2+. */
+export function matchTopics(raw, topics, filterDocs = []) {
+  const padded = normalize(raw);
+  const out = [];
+  for (const t of topics || []) {
+    if (filterDocs.length && !filterDocs.some(d => (t.docs || []).includes(d))) continue;
+    let score = 0;
+    const hits = [];
+    for (const trig of t.triggers) {
+      if (hasPhrase(padded, trig)) {
+        score += trig.trim().split(/\s+/).length > 1 ? 2 : 1;
+        hits.push(trig);
+      }
+    }
+    if (score >= 2) out.push({ topic: t, score, hits });
+  }
+  return out.sort((a, b) => b.score - a.score);
+}
+
 // ---------- filters ----------
 
 /** Documents allowed by the visitor's filters: OR within a group, AND across groups. */

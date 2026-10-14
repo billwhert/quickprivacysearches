@@ -1,0 +1,73 @@
+# Guided topic: Cookies and tracking (California)
+#
+# STATUS: draft. The provision list below is the assistant's proposal for you to review against the
+# ingested text. Review file: data/reports/guided_topics_review.md.
+# When you are satisfied, publish with:
+#   python build/guided.py approve ca-cookies-tracking --by "Your name"
+#
+# Authoring rules (spec section 10): this describes what the provisions say. It does not say what a
+# business "must" do to be compliant, and it does not draft anything.
+
+id: ca-cookies-tracking
+title: Cookies and tracking (California)
+scope: >-
+  Which California privacy law provisions address cookies, trackers, and the sale or sharing of
+  personal information collected through a website.
+status: draft
+reviewed_by: ""
+reviewed_at: ""
+
+triggers:
+  - cookies
+  - cookie
+  - tracking
+  - trackers
+  - pixels
+  - pixel
+  - analytics
+  - advertising
+  - opt-out
+  - global privacy control
+  - do not sell
+  - do not share
+  - do not track
+  - opt-out preference signal
+  - tracking technologies
+  - retargeting
+  - website
+  - california
+  - ccpa
+
+docs: [ccpa, ccpa_regs, caloppa, gdpr]
+
+applicability:
+  - question: "Is the organization a \"business\" under the CCPA?"
+    note: "The same thresholds apply as for the privacy notice topic."
+    chunk_ids: ["ccpa:sec:1798.140:d"]
+  - question: "Is the website's data collection a \"sale\" or \"sharing\" of personal information?"
+    note: "The definitions of sell and share, and of cross-context behavioral advertising, decide whether the opt-out provisions are engaged."
+    chunk_ids: ["ccpa:sec:1798.140:ad", "ccpa:sec:1798.140:ah", "ccpa:sec:1798.140:k", "ccpa:sec:1798.140:ai"]
+  - question: "Are cookie and device identifiers \"personal information\"?"
+    chunk_ids: ["ccpa:sec:1798.140:v", "ccpa:sec:1798.140:aj"]
+
+items:
+  - label: "What the CCPA says about the right to opt out of sale or sharing"
+    chunk_ids: ["ccpa:sec:1798.120:a", "ccpa:sec:1798.120:b"]
+  - label: "What the CCPA says about the \"Do Not Sell or Share My Personal Information\" link"
+    chunk_ids: ["ccpa:sec:1798.135:a", "ccpa_regs:sec:7013:c", "ccpa_regs:sec:7013:d", "ccpa_regs:sec:7015:a", "ccpa_regs:sec:7015:b"]
+  - label: "What the provisions say about opt-out preference signals (such as Global Privacy Control)"
+    chunk_ids: ["ccpa:sec:1798.135:b", "ccpa_regs:sec:7025:a", "ccpa_regs:sec:7025:b", "ccpa_regs:sec:7025:c.1", "ccpa_regs:sec:7025:c.2", "ccpa_regs:sec:7025:f"]
+  - label: "What the Notice of Right to Opt-out of Sale/Sharing must contain"
+    chunk_ids: ["ccpa_regs:sec:7013:a", "ccpa_regs:sec:7013:e", "ccpa_regs:sec:7013:f", "ccpa_regs:sec:7013:g"]
+  - label: "How requests to opt out are submitted and handled"
+    chunk_ids: ["ccpa_regs:sec:7026:a", "ccpa_regs:sec:7026:c", "ccpa_regs:sec:7026:d", "ccpa_regs:sec:7026:f", "ccpa:sec:1798.135:c"]
+  - label: "Contracts with third parties that receive personal information"
+    chunk_ids: ["ccpa:sec:1798.100:d", "ccpa_regs:sec:7053:a"]
+  - label: "CalOPPA: disclosing how a site responds to do-not-track signals"
+    chunk_ids: ["caloppa:sec:22575:b"]
+
+related:
+  - label: "California business privacy notice: what the notice at collection and privacy policy contain"
+    topic: ca-business-privacy-notice
+  - label: "Comparison: EU consent requirements under the GDPR"
+    chunk_ids: ["gdpr:art:4:11", "gdpr:art:6:1", "gdpr:art:7:1", "gdpr:art:7:3"]

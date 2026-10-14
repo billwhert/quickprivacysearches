@@ -27,8 +27,8 @@ def topic_citations() -> set[str]:
     cited = set()
     for p in (ROOT / "topics").glob("*.yaml"):
         data = yaml.safe_load(p.read_text(encoding="utf-8")) or {}
-        for item in data.get("items", []):
-            cited.update(item.get("chunk_ids", []))
+        for block in (data.get("applicability") or []) + (data.get("items") or []) + (data.get("related") or []):
+            cited.update(block.get("chunk_ids") or [])
     return cited
 
 

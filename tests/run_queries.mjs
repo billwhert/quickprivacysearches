@@ -3,7 +3,7 @@
 // VERBOSE=1 prints the top results for every query.
 import fs from "node:fs";
 import MiniSearch from "minisearch";
-import { createEngine, search, docsForFilters } from "../web/assets/lookup.js";
+import { createEngine, search, docsForFilters, matchTopics } from "../web/assets/lookup.js";
 
 const data = JSON.parse(fs.readFileSync("dist/assets/search-data.json", "utf8"));
 const syn = JSON.parse(fs.readFileSync("dist/assets/synonyms.json", "utf8"));
@@ -171,5 +171,41 @@ const f19 = filterTest();
 const p1 = p1a + f19, n1 = n1a + 1;
 const [p2, n2] = run("Extra queries", EXTRA);
 const [p3, n3] = filterTests();
-console.log(`\nTotal ${p1 + p2 + p3}/${n1 + n2 + n3}`);
+
+// ---- guided topics (spec tests 14-16); needs a build with INCLUDE_DRAFT_TOPICS=1 until topics are approved ----
+function topicTests() {
+  const guides = JSON.parse(fs.readFileSync("dist/assets/topics.json", "utf8")).topics;
+  console.log("\n== Guided topics ==");
+  if (!guides.length) {
+    console.log("SKIP  no guided topics in this build (set INCLUDE_DRAFT_TOPICS=1 to include drafts)");
+    return [0, 0];
+  }
+  const cases = [
+    ["Spec 14 both topic cards surface",
+     "I am building a sales business in California and have no idea what I should include in my privacy notice online, and I need to make sure the cookies on my website are set up right",
+     q => { const ids = matchTopics(q, guides, search(engine, data, syn, q).query.filterDocs).map(m => m.topic.id);
+            return ids.includes("ca-business-privacy-notice") && ids.includes("ca-cookies-tracking"); }],
+    ["Spec 15 Do Not Sell link surfaces the cookies topic", "Do I need a Do Not Sell link",
+     q => matchTopics(q, guides, search(engine, data, syn, q).query.filterDocs).some(m => m.topic.id === "ca-cookies-tracking")],
+    ["Spec 16 applicability provisions surface", "Does CCPA apply to my small business",
+     q => { const r = search(engine, data, syn, q);
+            const top = r.results.slice(0, 3).map(h => h.id);
+            return top.includes("ccpa:sec:1798.140:d") &&
+                   matchTopics(q, guides, r.query.filterDocs).some(m => m.topic.id === "ca-business-privacy-notice"); }],
+    ["a GDPR question does not surface the California topics", "privacy notice requirements under GDPR",
+     q => matchTopics(q, guides, search(engine, data, syn, q).query.filterDocs).length === 0],
+    ["a one-word mention is not enough", "california",
+     q => matchTopics(q, guides, []).length === 0],
+  ];
+  let pass = 0;
+  for (const [label, q, check] of cases) {
+    const ok = check(q);
+    if (ok) pass++;
+    console.log(`${ok ? "PASS" : "FAIL"}  ${label}`);
+  }
+  console.log(`${pass}/${cases.length}`);
+  return [pass, cases.length];
+}
+const [p4, n4] = topicTests();
+console.log(`\nTotal ${p1 + p2 + p3 + p4}/${n1 + n2 + n3 + n4}`);
 process.exitCode = p1 === n1 ? 0 : 1;

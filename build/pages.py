@@ -7,6 +7,7 @@ import shutil
 import yaml
 
 import export_search
+import guided
 from common import PROCESSED, ROOT, read_json
 
 DIST = ROOT / "dist"
@@ -15,6 +16,7 @@ e = html.escape
 
 VERSION = "dev"  # set in build(): content hash used to bust browser caches
 TOPICS: dict = {}   # topic id -> {label, parent}; set in build()
+GUIDES: list = []   # guided topics shown on this build; set in build()
 PARENT_KINDS = ("article", "section")
 
 DISCLAIMER = ("Reference tool, not legal advice. Text is taken from the official source and shown "
@@ -28,8 +30,11 @@ LOGO = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width
 # ---------- shared page frame ----------
 
 def page(title: str, body: str, rel: str, nav_docs: list, active: str = "") -> str:
-    nav = [("Search", rel, "search"), ("Browse", f"{rel}documents/", "browse")]
-    if active not in ("search", ""):
+    nav = [("Search", rel, "search")]
+    if GUIDES:
+        nav.append(("Guides", f"{rel}topics/", "guides"))
+    nav.append(("Browse", f"{rel}documents/", "browse"))
+    if active not in ("search", "guides", ""):
         active = "browse"
     links = " ".join(
         f'<a href="{href}"{" aria-current=page" if key == active else ""}>{e(label)}</a>'
@@ -249,6 +254,115 @@ def build_doc_pages(doc_id: str, docs: list, by_id_all: dict, in_refs: dict) -> 
         page(doc["title"], "\n".join(toc), "../", docs, doc_id), encoding="utf-8")
 
 
+# ---------- guided topics ----------
+
+def guide_card(t: dict, rel: str) -> str:
+    state, _ = guided.review_state(t, BY_ID)
+    badge = {"draft": '<span class="badge warn">Draft - awaiting review</span>',
+             "needs-review": '<span class="badge warn">Needs review</span>'}.get(state, "")
+    return (f'<article class="doc-card"><div class="result-head"><span class="badge">Guided topic</span>{badge}</div>'
+            f'<h2><a href="{rel}topics/{e(t["id"])}/">{e(t["title"])}</a></h2>'
+            f'<p class="muted">{e(t["scope"])}</p>'
+            f'<p class="actions"><a href="{rel}topics/{e(t["id"])}/">Open the research path</a></p></article>')
+
+
+BY_ID: dict = {}
+
+
+def provision_card(cid: str, rel: str, docs_by_id: dict) -> str:
+    c = BY_ID[cid]
+    d = docs_by_id[c["doc_id"]]
+    link = f'{rel}{c["permalink"]}'
+    lead = f'<p class="lead-in"><span>Context:</span> {e(c["lead_in"])}</p>' if c.get("lead_in") else ""
+    crumbs = " › ".join(c["hierarchy"][:-1])
+    frag = fragment(c["permalink"])
+    return (f'<section class="prov"><div class="prov-head"><a class="anchor" href="{link}">{e(c["section_ref"])}</a>'
+            f'<span class="prov-links"><a href="{link}">Open</a>'
+            f'<a href="{e(c["source_url"])}">Official source</a></span></div>'
+            f'<p class="crumbs">{e(d["short_name"])} · {e(crumbs)}</p>{lead}'
+            f'<div class="text">{render_text(c["text"])}</div>'
+            f'<p class="meta">{e(d["title"])} · {e(d["version_label"])} · retrieved {e(d["retrieved_at"][:10])}</p>'
+            f'</section>')
+
+
+def build_guides(docs: list, by_id_all: dict) -> None:
+    BY_ID.update(by_id_all)
+    docs_by_id = {d["doc_id"]: d for d in docs}
+    if not GUIDES:
+        (DIST / "assets" / "topics.json").write_text(json.dumps({"topics": []}), encoding="utf-8")
+        return
+    index = {t["id"]: t for t in GUIDES}
+    summary = []
+    for t in GUIDES:
+        rel = "../../"
+        state, changed = guided.review_state(t, by_id_all)
+        banner = ""
+        if state == "draft":
+            banner = ('<div class="banner draft"><strong>Draft.</strong> This provision list has not yet been reviewed. '
+                      'It is shown for review only.</div>')
+        elif state == "needs-review":
+            banner = (f'<div class="banner draft"><strong>Needs review.</strong> {len(changed)} cited provision(s) '
+                      f'changed since this topic was last reviewed.</div>')
+        parts = [f'<p class="crumbs"><span class="badge">Guided topic</span></p>',
+                 f'<h1>{e(t["title"])}</h1>', f'<p class="lede">{e(t["scope"])}</p>', banner]
+        if t.get("reviewed_at"):
+            parts.append(f'<p class="muted">Provision list reviewed {e(str(t["reviewed_at"]))}'
+                         f'{" by " + e(t["reviewed_by"]) if t.get("reviewed_by") else ""}.</p>')
+        nav_items = []
+        if t.get("applicability"):
+            parts.append('<h2 id="applies">Does the law apply at all?</h2>')
+            nav_items.append(("applies", "Does the law apply?"))
+            for i, q in enumerate(t["applicability"], 1):
+                parts.append(f'<div class="q"><h3>{e(q["question"])}</h3>')
+                if q.get("note"):
+                    parts.append(f'<p class="summary"><span class="badge kind">Summary</span> {e(q["note"])}</p>')
+                parts += [provision_card(cid, rel, docs_by_id) for cid in q["chunk_ids"]]
+                parts.append("</div>")
+        parts.append('<h2 id="provisions">What the provisions say</h2>')
+        nav_items.append(("provisions", "What the provisions say"))
+        parts.append('<ol class="checklist">')
+        for i, it in enumerate(t["items"], 1):
+            parts.append(f'<li id="item-{i}"><h3>{e(it["label"])}</h3>')
+            if it.get("summary"):
+                parts.append(f'<p class="summary"><span class="badge kind">Summary</span> {e(it["summary"])}</p>')
+            parts += [provision_card(cid, rel, docs_by_id) for cid in it["chunk_ids"]]
+            parts.append("</li>")
+            nav_items.append((f"item-{i}", f"{i}. {it['label']}"))
+        parts.append("</ol>")
+        if t.get("related"):
+            parts.append('<h2 id="related">Related</h2><ul class="related">')
+            nav_items.append(("related", "Related"))
+            for r in t["related"]:
+                href = ""
+                if r.get("topic") and r["topic"] in index:
+                    href = f'{rel}topics/{r["topic"]}/'
+                line = f'<a href="{href}">{e(r["label"])}</a>' if href else e(r["label"])
+                if r.get("chunk_ids"):
+                    line += " " + ", ".join(
+                        f'<a href="{rel}{BY_ID[c]["permalink"]}">{e(BY_ID[c]["section_ref"])}</a>' for c in r["chunk_ids"])
+                parts.append(f"<li>{line}</li>")
+            parts.append("</ul>")
+        parts.append(f'<p class="disclaimer">{e(guided.DISCLAIMER)}</p>')
+        side = ('<aside class="side"><div class="side-card"><h3>On this page</h3><ul class="side-nav">'
+                + "".join(f'<li><a href="#{a}">{e(l)}</a></li>' for a, l in nav_items) + "</ul></div>"
+                '<p class="side-link"><a href="../">All guided topics</a></p></aside>')
+        d = DIST / "topics" / t["id"]
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(
+            page(t["title"], doc_layout(parts, side), rel, docs, "guides"), encoding="utf-8")
+        summary.append({
+            "id": t["id"], "title": t["title"], "scope": t["scope"], "url": f'topics/{t["id"]}/',
+            "triggers": t["triggers"], "docs": t.get("docs", []), "state": state,
+            "applicability": [q["question"] for q in t.get("applicability", [])],
+        })
+    (DIST / "topics").mkdir(parents=True, exist_ok=True)
+    body = ('<h1>Guided topics</h1><p class="lede">Hand-built research paths. Each gathers the provisions that bear on a '
+            'common question, with exact text, citations and version dates. They describe what the law says; they '
+            'are not advice.</p><div class="doc-grid">' + "".join(guide_card(t, "../") for t in GUIDES) + "</div>")
+    (DIST / "topics" / "index.html").write_text(page("Guided topics", body, "../", docs, "guides"), encoding="utf-8")
+    (DIST / "assets" / "topics.json").write_text(json.dumps({"topics": summary}, ensure_ascii=False), encoding="utf-8")
+
+
 # ---------- home and build ----------
 
 def build_home(docs: list) -> None:
@@ -258,6 +372,11 @@ def build_home(docs: list) -> None:
                 "1798.105", "What are the exceptions to the CCPA right to delete?",
                 "What must a CCPA privacy notice include?", "Do I need a Do Not Sell link"]
     ex = " ".join(f'<button type="button" class="chip" data-q="{e(x)}">{e(x)}</button>' for x in examples)
+    featured = ""
+    if GUIDES:
+        featured = ('<section class="featured"><h2>Guided topics</h2><p class="muted">Hand-built research paths: '
+                    'the provisions that bear on a common question, in order, with exact text.</p>'
+                    '<div class="doc-grid">' + "".join(guide_card(t, "") for t in GUIDES) + "</div></section>")
     body = f"""<section class="hero">
 <h1>Find the exact text of privacy law</h1>
 <p class="lede">Search by citation or by question. Every result is the unmodified source text,
@@ -270,8 +389,10 @@ with its citation, version, and a link to the official source. Currently loaded:
 <div class="examples"><span>Try:</span> {ex}</div>
 <div id="filters" class="filters" aria-label="Filters" hidden></div>
 </section>
+<div id="topic-cards" class="topic-cards"></div>
 <div id="status" role="status" aria-live="polite"></div>
 <ol id="results" class="results"></ol>
+{featured}
 <noscript><p>Search needs JavaScript. You can still browse the documents using the menu above.</p></noscript>
 <script type="module" src="assets/search.js?v={VERSION}"></script>"""
     (DIST / "index.html").write_text(page("Quick Privacy Searches", body, "", docs, "search"), encoding="utf-8")
@@ -358,12 +479,21 @@ def build() -> None:
             tp = tgt["chunk_id"] if tgt["kind"] in PARENT_KINDS else tgt["parent_chunk_id"]
             sp = src["chunk_id"] if src["kind"] in PARENT_KINDS else (src["parent_chunk_id"] or src["chunk_id"])
             in_refs.setdefault(tp, set()).add(sp)
+    guided_errors = guided.validate(guided.load_topics(), by_id_all)
+    if guided_errors:
+        raise SystemExit("Guided topics are inconsistent:\n  " + "\n  ".join(guided_errors))
+    topics_all = guided.load_topics()
+    BY_ID.update(by_id_all)
+    GUIDES.clear()
+    GUIDES.extend(t for t in topics_all if guided.visible(t))
     for d in loaded:
         build_doc_pages(d, docs, by_id_all, in_refs)
     export_search.export()
     export_synonyms()
     build_home(docs)
     build_documents(docs, by_id_all)
+    build_guides(docs, by_id_all)
+    guided.write_review_sheet(topics_all, by_id_all, {d["doc_id"]: d for d in docs})
     n = sum(1 for _ in DIST.rglob("*.html"))
     print(f"site: {n} html pages -> {DIST}")
 

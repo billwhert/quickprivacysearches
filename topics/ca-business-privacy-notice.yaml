@@ -1,0 +1,72 @@
+# Guided topic: California business privacy notice
+#
+# STATUS: draft. The provision list below is the assistant's proposal for you to review against the
+# ingested text. Review file: data/reports/guided_topics_review.md.
+# When you are satisfied, publish with:
+#   python build/guided.py approve ca-business-privacy-notice --by "Your name"
+# That records the review date and a fingerprint of every cited provision, so a later rebuild can flag
+# the topic as "needs review" if any cited text changes.
+#
+# Authoring rules (spec section 10): this describes what the provisions say. It does not say what a
+# business "must" do to be compliant, and it does not draft anything.
+
+id: ca-business-privacy-notice
+title: California business privacy notice
+scope: >-
+  Which California privacy law provisions address the content and presentation of an online
+  privacy notice.
+status: draft
+reviewed_by: ""
+reviewed_at: ""
+
+# Words and phrases that surface this topic from a search. A single word scores 1, a phrase 2;
+# a topic is shown when the score reaches 2.
+triggers:
+  - california
+  - ccpa
+  - cpra
+  - caloppa
+  - privacy notice
+  - privacy policy
+  - notice at collection
+  - website
+  - online business
+  - small business
+  - privacy notice for my website
+  - what to include
+  - do not track
+
+# Which loaded laws this topic draws on (used to keep it away from questions about other laws).
+docs: [ccpa, ccpa_regs, caloppa]
+
+applicability:
+  - question: "Is the organization a \"business\" under the CCPA?"
+    note: "The definition sets thresholds based on revenue, volume of personal information handled, and share of revenue from selling or sharing personal information."
+    chunk_ids: ["ccpa:sec:1798.140:d"]
+  - question: "Is the person whose information is collected a \"consumer\"?"
+    chunk_ids: ["ccpa:sec:1798.140:i"]
+  - question: "Is the information \"personal information\"?"
+    chunk_ids: ["ccpa:sec:1798.140:v"]
+  - question: "Does CalOPPA reach the website or online service?"
+    note: "CalOPPA applies to operators of commercial websites and online services that collect personally identifiable information from California residents."
+    chunk_ids: ["caloppa:sec:22575:a", "caloppa:sec:22577:c", "caloppa:sec:22577:a", "caloppa:sec:22577:d"]
+
+items:
+  - label: "What the CCPA says about a notice at or before the point of collection"
+    chunk_ids: ["ccpa:sec:1798.100:a", "ccpa_regs:sec:7012:a", "ccpa_regs:sec:7012:c", "ccpa_regs:sec:7012:e", "ccpa_regs:sec:7012:f"]
+  - label: "What the provisions say about third parties that control the collection"
+    chunk_ids: ["ccpa:sec:1798.100:b", "ccpa_regs:sec:7012:g"]
+  - label: "What the online privacy policy must contain, and how often it is updated"
+    chunk_ids: ["ccpa:sec:1798.130:a.5", "ccpa_regs:sec:7011:a", "ccpa_regs:sec:7011:d", "ccpa_regs:sec:7011:e"]
+  - label: "How notices must be presented (readable, accessible, easy to find)"
+    chunk_ids: ["ccpa_regs:sec:7003:a", "ccpa_regs:sec:7003:b", "ccpa_regs:sec:7003:c", "ccpa_regs:sec:7003:d"]
+  - label: "Which disclosures the regulations list in total"
+    chunk_ids: ["ccpa_regs:sec:7010:a", "ccpa_regs:sec:7010:b", "ccpa_regs:sec:7010:e", "ccpa_regs:sec:7010:f", "ccpa_regs:sec:7010:g"]
+  - label: "CalOPPA: posting a privacy policy and what it must disclose, including do-not-track"
+    chunk_ids: ["caloppa:sec:22575:a", "caloppa:sec:22575:b", "caloppa:sec:22577:b"]
+
+related:
+  - label: "Cookies and tracking (California): opt-out of sale or sharing, opt-out preference signals, \"Do Not Sell or Share\" link"
+    topic: ca-cookies-tracking
+  - label: "Consumer rights provisions: right to know, delete, correct, and opt out"
+    chunk_ids: ["ccpa:sec:1798.105:a", "ccpa:sec:1798.106:a", "ccpa:sec:1798.110:a", "ccpa:sec:1798.120:a"]

@@ -17,7 +17,9 @@ How to use this file
 | F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
 | F-03 | P1 | Legal | License and attribution wording for every source is a placeholder (EU reuse decision, CPPA, California Legislature, eCFR). Confirm and display on Sources page. | step 11 |
 | F-04 | P1 | Launch | Spec test 20: confirm in a browser's network tab that query text is never sent anywhere. Also test on a phone and a different network. | step 12 |
-| F-05 | P1 | Content | Guided-topic spec tests 14, 15, 16 cannot pass until guided topics exist. | step 9 |
+| F-05 | P1 | Content | **Review the two guided topics and publish them.** Open `data/reports/guided_topics_review.md`, check every cited provision, edit `topics/*.yaml` if needed, then run `python build/guided.py approve <id> --by "Your name"`. Until then they are hidden on the live site. | step 9 |
+| F-24 | P2 | Content | Guided topics have no hand-written summaries yet (only short applicability notes). The spec allows summaries only after you have written or reviewed them. | step 9 |
+| F-25 | P3 | Content | More guided topics for the other loaded laws (GDPR DPIA, DSAR handling, HIPAA breach notification) once the first two are approved. | step 9 |
 | F-06 | P2 | Search | "how to verify a consumer request": the verification regulations (7060-7063) rank 5th behind a definition and other request rules. | step 5 |
 | F-07 | P2 | Search | "how long must documentation be retained" does not surface HIPAA 164.530(j) (documentation, 6 years). | step 6 |
 | F-08 | P2 | Search | Synonym vocabulary gaps keep appearing on new, unseen questions (about 1 in 4 on held-out checks). Keep a list of failed real queries and add them as regression tests. | step 5-7 |
@@ -36,6 +38,13 @@ How to use this file
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
 
 ## Change log
+
+### Step 9 - Guided topics (2026-10-14)
+- Engine: topics are YAML files in `topics/`; text is always pulled from the stored provision; build fails if a cited provision does not exist; wording that tells the reader what to do is rejected.
+- Two draft topics: California business privacy notice; Cookies and tracking (California). Spec tests 14, 15, 16 pass.
+- Draft/published lifecycle with `approve` command, change fingerprints and a "needs review" flag, plus a generated review sheet.
+- Search shows topic cards above results; home page features published topics; new Guides page.
+- Fixed while building: side-nav labels on topic pages were cut mid-word (now wrap).
 
 ### Step 8 - Topic tagging (2026-10-14)
 - 16 topics plus 5 sub-topics of individual rights; every ingest re-applies the rules and your overrides.

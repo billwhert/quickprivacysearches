@@ -1,0 +1,83 @@
+# GDPR
+do I need consent to send marketing emails
+how long can we keep customer data
+what is a data processing agreement
+can I transfer personal data to the US
+what rights do individuals have over their data
+when do we need to appoint a data protection officer
+what counts as sensitive personal data
+do small companies have to keep records of processing
+what happens if we have a data breach
+what is a legitimate interest assessment
+can children give consent online
+what is pseudonymisation
+who is a joint controller
+what fines can regulators impose
+how do I respond to a deletion request
+# CCPA / CPRA
+does CCPA apply to nonprofits
+what is a service provider under CCPA
+do we have to honor requests from California residents
+what is the right to limit use of sensitive information
+can a business refuse a deletion request
+what is a household under CCPA
+do we need a Do Not Sell link
+what are the penalties for CCPA violations
+how often do we have to update our privacy policy
+what is cross-context behavioral advertising
+can we charge people who opt out
+what counts as selling personal information
+is employee data covered by CCPA
+do we need to verify who is making the request
+can a parent make a request for a child
+# CPPA regulations
+what is a dark pattern
+what must be in a notice at collection
+how do we handle opt-out preference signals
+what is a risk assessment under the regulations
+when is a cybersecurity audit required
+what is automated decisionmaking technology
+how must requests to know be handled
+what training do employees need
+how long do we keep records of requests
+can an authorized agent submit a request
+# HIPAA
+what is protected health information
+who is a business associate
+do we need a business associate agreement
+what is the minimum necessary rule
+how long do we have to notify patients of a breach
+when must we report a breach to HHS
+can we share patient information with family
+what are the security rule requirements
+is a risk analysis required
+what must be in a notice of privacy practices
+can patients get a copy of their records
+what is de-identified data
+what are the penalties for HIPAA violations
+what is a covered entity
+can we use patient information for marketing
+# GLBA
+what is the Safeguards Rule
+do we need a written information security program
+what is a financial institution
+what must a financial privacy notice say
+how do customers opt out of sharing
+do we need to encrypt customer data
+when must we tell the FTC about a breach
+who is the qualified individual
+what is nonpublic personal information
+are there exceptions for small companies
+# PIPEDA
+what are the ten privacy principles in Canada
+do we need consent to collect personal information in Canada
+when do we have to report a breach in Canada
+what is meaningful consent
+how long do we have to respond to an access request
+can an employer collect employee information
+what are the penalties under Canadian privacy law
+who enforces PIPEDA
+what is business contact information
+can we disclose personal information without consent
+how long can we keep personal information
+what is a complaint to the Privacy Commissioner

@@ -19,6 +19,7 @@ How to use this file
 | F-34 | P3 | Content | **Paused by owner decision.** Remaining Phase 2 candidates, if ever wanted: LGPD (Portuguese original; English would be an unofficial translation), Virginia/Colorado/Texas statutes (state legislature sites often block scripted downloads), and guidance (EDPB/WP29, ICO, NIST), which must look visibly different from binding law. | step 13 |
 | F-35 | P3 | Decision | Step 14 (in-browser semantic search) is not recommended yet: 96 of 97 test queries pass with keywords and synonyms, and it would add a download of tens of MB. Revisit when real-use misses accumulate (see F-08). | step 14 |
 | F-36 | P3 | Content | GLBA: the statute itself (15 U.S.C. 6801 et seq.) and the FTC's own Privacy Rule for motor vehicle dealers (16 CFR 313) are not loaded. | step 13 |
+| F-37 | P2 | Search | Unseen-question review (84 questions, `tests/review/batch1.txt`): about 70 good first or second results. Still weak: "consent to send marketing emails" (surfaces HIPAA fundraising, no GDPR consent/ePrivacy hit), "what must a financial privacy notice say" (should lead with 16 CFR 1016.6(a)), "what is nonpublic personal information" (314.2(l) ranks second), "can a business refuse a deletion request" (GDPR before CCPA 1798.105(d)), "ten privacy principles in Canada" (lands on 4.5.x, not the principle list), "can an employer collect employee information". | search review |
 | F-33 | P3 | Review | Real-device check of the new design (phone and a large monitor) is still outstanding; emulated phone width shows no overflow on 11 page types. | review |
 | F-04 | P2 | Launch | Open the live site on a real phone using mobile data (not Wi-Fi) and try three searches. Everything else in the launch checklist was verified (see `docs/ACCEPTANCE.md`); a real device on a different network is the one thing I cannot do from here. | step 12 |
 | F-05 | P2 | Content | The two guided topics are published as a **first-release approval**; the line-by-line review of their provision lists is still pending. When you have time: `data/reports/guided_topics_review.md` (long; the review sheet lists every provision with its full text). The pages say "line-by-line review pending" until you re-approve with your own wording. | step 9 |
@@ -43,6 +44,12 @@ How to use this file
 | F-21 | P3 | CI | GitHub Actions warns that `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19. Re-run the workflow after that date and bump action versions if needed. | step 7 |
 
 ## Change log
+
+### Search-quality pass on unseen questions (2026-10-14)
+- Ran 84 untuned, realistic questions across all six laws (`node tests/review_queries.mjs tests/review/batch1.txt 3`) and judged results by eye.
+- Fixed: the bare "how long" synonym group hijacked retention questions (narrowed to response-time phrasing; added retention, records-of-requests, DPA, update-frequency, charge/retaliation, encryption, FTC notification, notice-contents, ten-principles, enforcement and family groups); generic "email"/"text" no longer pull in HIPAA texting rules.
+- Ranking: "what is X" now acts like a definition request; procedural questions ("how do we", "when must") penalise definitions harder; "what must be in" questions lightly favour provisions that list required content; collection/objection-style words stem together.
+- Added law cues: patient, bank, FTC, Privacy Commissioner. Existing suites unchanged (106/107, gold 66/66). Remaining weak cases are logged as F-37.
 
 ### Step 13 - PIPEDA added; further coverage paused (2026-10-14)
 - Added PIPEDA (S.C. 2000, c. 5) from the Department of Justice's official XML: 84 of 84 sections (71 body sections, the ten

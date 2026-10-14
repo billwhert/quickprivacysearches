@@ -22,6 +22,7 @@ export function stem(w) {
   else if (w.endsWith("sses") || /(x|z|ch|sh)es$/.test(w)) w = w.slice(0, -2);
   else if (w.endsWith("ss") || w.endsWith("us") || w.endsWith("is")) return w;
   else if (w.endsWith("s")) w = w.slice(0, -1);
+  if (w.length > 6 && w.endsWith("ction")) w = w.slice(0, -3);   // collection -> collect, objection -> object
   if (w.length > 6 && w.endsWith("ing")) w = w.slice(0, -3);
   else if (w.length > 5 && w.endsWith("ed")) w = w.slice(0, -2);
   if (w.length > 4 && w.endsWith("e")) w = w.slice(0, -1);
@@ -55,6 +56,9 @@ const RARE_IDF = 3.2;         // ln(N/df) at or above which a word has full weig
 const EXACT_TERM_BOOST = 3;         // the whole question is a defined term: "who is a covered entity"
 const QUOTED_TERM_BOOST = 2.5;      // "define 'sell'" -> the definition of Sell
 const DEFINITION_DEFAULT_PENALTY = 0.7; // operative rules before definitions unless a definition is asked for
+const DEFINITION_PROCEDURAL_PENALTY = 0.5; // "how do we...", "when must...": definitions matter even less
+const CONTENTS_BOOST = 1.2;          // "what must be in X": provisions that list required content
+const CONTENTS_RE = /\b(shall|must|will) (include|contain|disclose|provide|set out|state)\b|\bthe following (information|elements|items)\b|\bincludes? the following\b/i;
 const DEFINITION_INTENT_BOOST = 1.3; // "definition of ..." -> definition chunks
 
 // ---------- citation lookup ----------
@@ -204,8 +208,15 @@ export function analyzeQuery(raw, syn, loadedDocs) {
   // "define 'sell' and 'share'": quoted words are defined terms the visitor wants to see defined
   const quoted = [...raw.matchAll(/[\u201c"]([^\u201d"]{2,40})[\u201d"]/g)].map(m => normalize(m[1]).trim());
   const wantsDefinition = /\b(defin(e|es|ed|ition|itions)|meaning of|what does .{1,40} mean|means?)\b/i.test(raw);
+  // "what is nonpublic personal information" asks for that term's definition, like a quoted term would
+  const isA = raw.match(/^\s*(?:what is|what are|what's|who is|who are)\s+(?:an?\s+|the\s+)?(.+?)\s*\??\s*$/i);
+  if (isA) quoted.push(normalize(isA[1]).trim());
+  // "how do we...", "when is ... required": the visitor wants the operative rule, not a definition
+  const procedural = /\b(how (do|does|should|can|must|to|would)|when (is|are|must|do|does|should|would)|what must|must (we|i|an?|the)|do (we|i) need|need to|required|requirements?)\b/i.test(raw);
+  // "what must be in a notice": prefer provisions that list required content
+  const contentsIntent = /\b(what (must|should|needs?|goes?)|must (be )?(in|include|contain|say|disclose)|should (include|contain)|contents? of|include|contain)\b/i.test(raw);
   return { padded, words, terms, mentioned, loadedMentioned, unloaded, filterDocs, expansions, weighted,
-           triggers, quoted, wantsDefinition };
+           triggers, quoted, wantsDefinition, procedural, contentsIntent };
 }
 
 // phrases (2+ words) from the visitor's wording, trimmed of leading/trailing stopwords
@@ -373,8 +384,9 @@ export function search(engine, data, syn, raw, opts = {}) {
       const termHay = normalize(c.term);
       if (q.quoted.some(t => termHay.includes(" " + t + " ") || t.split(" ").every(w => termHay.includes(" " + w)))) s *= QUOTED_TERM_BOOST;
       else if (q.wantsDefinition) s *= DEFINITION_INTENT_BOOST;
-      else s *= DEFINITION_DEFAULT_PENALTY;
+      else s *= q.procedural ? DEFINITION_PROCEDURAL_PENALTY : DEFINITION_DEFAULT_PENALTY;
     }
+    if (q.contentsIntent && CONTENTS_RE.test(c.text)) s *= CONTENTS_BOOST;
     final.push({ id, score: s, terms: [...(matched.get(id) || [])] });
   }
   final.sort((a, b) => b.score - a.score);

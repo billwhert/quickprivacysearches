@@ -233,6 +233,7 @@ synonyms:
     expand: ["covered entity", "applicability", "health plan, health care clearinghouse, health care provider who transmits any health information in electronic form"]
 
   - terms: ["marketing", "fundraising", "marketing communications"]
+    weight: 0.4
     expand: ["uses and disclosures for marketing", "uses and disclosures for fundraising"]
 
   - terms: [media, press, news, newspaper, "prominent media outlets"]
@@ -254,7 +255,7 @@ synonyms:
   - terms: [restrict, restriction, restrictions, "restrict disclosure", "limit disclosure", "ask not to share", "opt out of disclosure", "refuse to share"]
     expand: ["right of an individual to request restriction of uses and disclosures", "agree to a restriction"]
 
-  - terms: [texting, text, texts, sms, "text message", "text messages", email, emails, emailing, fax, "unencrypted email", "patient portal"]
+  - terms: [texting, sms, "text message", "text messages", fax, "unencrypted email", "patient portal"]
     expand: ["transmission security", "confidential communications", "alternative means or alternative locations"]
 
   - terms: ["privacy officer", "privacy official", "compliance officer", "security officer", "security official", "hipaa officer"]
@@ -314,13 +315,52 @@ synonyms:
     weight: 0.8
     expand: ["real risk of significant harm to an individual", "report to the Commissioner any breach of security safeguards"]
 
-  - terms: ["how long", "time limit", "respond within", "deadline to respond", "days to respond", "how many days"]
+  - terms: ["how long to respond", "how long do we have to respond", "how long does an organization have to respond", "how long to answer", "time to respond", "respond within", "deadline to respond", "days to respond", "time limit to respond"]
     weight: 0.6
     expand: ["not later than thirty days after receipt of the request", "may extend the time limit for a maximum of thirty days"]
 
   - terms: [penalty, penalties, fine, fines, offence, offense, "criminal penalty", "knowingly contravenes"]
     weight: 0.5
     expand: ["guilty of an offence and liable on summary conviction to a fine", "knowingly contravenes"]
+
+  # ---- added after the unseen-question review ----
+  - terms: ["how long can we keep", "how long do we keep", "how long should we keep", "how long to keep", "how long can we retain", "how long to retain", "how long may we keep", "keep customer data", "retention of personal information"]
+    expand: ["storage limitation", "kept in a form which permits identification of data subjects for no longer than is necessary", "no longer required to fulfil the identified purposes should be destroyed, erased, or made anonymous", "retention of personal information"]
+
+  - terms: ["keep records of requests", "records of requests", "request records", "log requests"]
+    expand: ["maintain records of consumer requests", "records of requests made pursuant to the CCPA"]
+
+  - terms: ["data processing agreement", "processing agreement", "dpa contract"]
+    expand: ["Processing by a processor shall be governed by a contract or other legal act", "contract or other legal act"]
+
+  - terms: ["what rights do individuals have", "rights do individuals have", "individual rights", "rights of individuals", "data subject rights", "consumer rights", "privacy rights", "what rights do consumers have", "what rights do customers have"]
+    weight: 0.6
+    expand: ["rights of the data subject", "consumers' rights", "individual rights"]
+
+  - terms: ["how often", "update our privacy policy", "update the privacy policy", "update privacy policy", "every 12 months", "annual update"]
+    expand: ["update that information at least once every 12 months", "updated at least once every 12 months"]
+
+  - terms: ["charge people", "charge consumers", "charge customers", "charge for opting out", "charge those who opt out", "charge a fee", "penalize for opting out", "retaliate against"]
+    expand: ["discriminate against a consumer", "price or service difference", "no retaliation"]
+
+  - terms: [encrypt, encrypted, encrypting, encryption]
+    expand: ["encryption of all customer information held or transmitted", "encryption of personal data", "pseudonymisation and encryption"]
+
+  - terms: ["tell the ftc", "inform the ftc", "notify the federal trade commission", "report to the ftc"]
+    expand: ["notify the Federal Trade Commission about notification events", "notification event"]
+
+  - terms: ["what must a financial privacy notice say", "what must a privacy notice say", "privacy notice contents", "contents of the privacy notice"]
+    expand: ["information to be included in privacy notices", "initial, annual, and revised privacy notices must include"]
+
+  - terms: ["privacy principles", "ten privacy principles", "10 privacy principles", "ten principles of privacy", "privacy principles in canada"]
+    expand: ["Principle 1 Accountability", "Principle 2 Identifying Purposes", "Principle 3 Consent", "Principle 4 Limiting Collection", "Principle 5 Limiting Use, Disclosure, and Retention", "Principle 6 Accuracy", "Principle 7 Safeguards", "Principle 8 Openness", "Principle 9 Individual Access", "Principle 10 Challenging Compliance"]
+
+  - terms: [enforce, enforces, enforced, "who enforces", "who regulates", "who oversees", regulator]
+    weight: 0.5
+    expand: ["Powers of Commissioner", "Investigations of Complaints", "Commissioner's report", "Hearing by Court"]
+
+  - terms: [family, "family and friends", "relatives", "spouse"]
+    expand: ["uses and disclosures requiring an opportunity for the individual to agree or to object", "persons involved in the individual's care"]
 
 jurisdictions:
   - id: eu
@@ -333,8 +373,8 @@ jurisdictions:
     docs: [ccpa, ccpa_regs]
   - id: glba
     label: "financial institutions (GLBA: FTC Safeguards Rule and Regulation P)"
-    words: [glba, "gramm-leach-bliley", "gramm leach bliley", "safeguards rule", "regulation p", "reg p", "ftc safeguards"]
-    topical: ["financial institution", "financial institutions", "customer information", "nonpublic personal information"]
+    words: [glba, "gramm-leach-bliley", "gramm leach bliley", "safeguards rule", "regulation p", "reg p", "ftc safeguards", ftc, "federal trade commission"]
+    topical: [bank, banks, "credit union", lender, "financial institution", "financial institutions", "customer information", "nonpublic personal information"]
     docs: [glba]
   - id: caloppa
     label: "CalOPPA (Cal. Bus. & Prof. Code 22575)"
@@ -343,11 +383,12 @@ jurisdictions:
   - id: hipaa
     label: "US health privacy (HIPAA)"
     words: [hipaa, ephi, hhs, ocr, baa, "health and human services"]
-    topical: ["protected health information", phi, "covered entity", "covered entities", "business associate", "business associates"]
+    topical: [patient, patients, "health plan", "protected health information", phi, "covered entity", "covered entities", "business associate", "business associates"]
     docs: [hipaa]
   - id: canada
     label: "Canada (PIPEDA)"
     words: [canada, canadian, pipeda, "personal information protection and electronic documents act", opc]
+    topical: ["privacy commissioner", "privacy commissioner of canada"]
     docs: [pipeda]
   - id: canada_provincial
     label: "Canadian provincial privacy laws (for example Quebec, Alberta and British Columbia)"

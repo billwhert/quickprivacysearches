@@ -57,7 +57,7 @@ topics:
   - id: right-access
     parent: data-subject-rights
     label: "Right of access"
-    phrases: ["right of access", "right to know", "request to know", "access of individuals to protected health information", "inspect and obtain a copy", "access to protected health information", "request to access"]
+    phrases: ["right of access", "right to know", "request to know", "access of individuals to protected health information", "inspect and obtain a copy", "access to protected health information", "request to access", "individual access", "access to personal information", "request for access"]
     min_score: 1.5
 
   - id: right-deletion

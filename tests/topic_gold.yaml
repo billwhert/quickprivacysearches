@@ -67,3 +67,9 @@ gold:
   - {id: "glba:sec:1016.4:a", has: [notice-transparency]}
   - {id: "glba:sec:1016.7:a", has: [right-opt-out]}
   - {id: "glba:sec:314.2:r", has: [definitions]}
+  # PIPEDA
+  - {id: "pipeda:sec:10.1:1", has: [breach-notification]}
+  - {id: "pipeda:sec:sched1-4.7:4.7.1", has: [security-safeguards]}
+  - {id: "pipeda:sec:sched1-4.9:4.9.1", has: [right-access]}
+  - {id: "pipeda:sec:28:0", has: [enforcement-penalties]}
+  - {id: "pipeda:sec:2:personal-information", has: [definitions]}

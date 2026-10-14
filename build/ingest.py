@@ -50,6 +50,21 @@ def ingest(doc_id: str, force_fetch: bool = False) -> bool:
             lxml.html.fromstring((ROOT / f["html"]).read_text(encoding="utf-8")).text_content()
             for f in manifest["files"].values()))
         result = validate_code.validate_code(doc, chunks, toc, plain, refs, ids)
+    elif doc["parser"] == "justice":
+        import crossrefs_justice
+        import parse_justice
+        import validate_code
+        from lxml import etree
+        root = etree.fromstring(raw_path.read_bytes())
+        ns = "{http://justice.gc.ca/lims}"
+        pit, last = root.get(ns + "pit-date"), root.get(ns + "lastAmendedDate")
+        doc = {**doc, "version_label": doc["version_label"].replace("{PIT}", pit or "?").replace("{LAST}", last or "?"),
+               "effective_date": pit}
+        chunks, toc = parse_justice.parse(raw_path, doc, manifest["retrieved_at"])
+        ids = {c["chunk_id"] for c in chunks} | all_loaded_ids(doc_id)
+        refs = crossrefs_justice.extract(chunks, ids, doc_id)
+        plain = validate.norm("".join(root.itertext()))
+        result = validate_code.validate_code(doc, chunks, toc, plain, refs, ids)
     elif doc["parser"] == "eurlex":
         raw_text = raw_path.read_text(encoding="utf-8")
         chunks = parse_eurlex.parse(raw_text, doc, manifest["retrieved_at"])

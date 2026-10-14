@@ -8,6 +8,9 @@ columns:
   - doc: ccpa
     heading: "CCPA: notice at collection and the online privacy policy"
     chunk_ids: ["ccpa:sec:1798.100:a", "ccpa:sec:1798.130:a.5"]
+  - doc: pipeda
+    heading: "PIPEDA: openness (Schedule 1, principle 8)"
+    chunk_ids: ["pipeda:sec:sched1-4.8:4.8.1", "pipeda:sec:sched1-4.8:4.8.2"]
   - doc: glba
     heading: "GLBA Regulation P: initial and annual privacy notices"
     chunk_ids: ["glba:sec:1016.4:a", "glba:sec:1016.6:a"]

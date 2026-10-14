@@ -744,6 +744,8 @@
   "token_count": 64,
   "footnotes": [],
   "topics": [
+   "data-subject-rights",
+   "right-access",
    "definitions"
   ],
   "jurisdiction": "US-CA",
@@ -8853,6 +8855,8 @@
   "token_count": 2275,
   "footnotes": [],
   "topics": [
+   "data-subject-rights",
+   "right-access",
    "breach-notification",
    "vendor-contracts",
    "security-safeguards",
@@ -8945,6 +8949,8 @@
   "token_count": 1342,
   "footnotes": [],
   "topics": [
+   "data-subject-rights",
+   "right-access",
    "breach-notification",
    "vendor-contracts",
    "security-safeguards",

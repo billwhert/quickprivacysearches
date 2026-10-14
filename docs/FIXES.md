@@ -16,7 +16,7 @@ How to use this file
 | F-22 | P2 | Topics | First-pass tags are noisiest for `security-safeguards` (about 190 provisions, mostly GDPR, from words like "safeguards") and `data-subject-rights` / `right-opt-out` in the CCPA regulations (most of that document is about requests). Review and tighten phrases in `taxonomy/topics.yaml` after looking at the "Phrases doing the work" table in `data/reports/topic_tagging.md`. | step 8 |
 | F-23 | P3 | Topics | About 30% of provisions have no topic (mostly institutional or procedural: supervisory authority duties, agency staffing, hearings). That is expected; add topics via `taxonomy/overrides.yaml` only where one clearly fits. | step 8 |
 | F-32 | P3 | Legal | The disclaimer and privacy notice are plain-language drafts. Consider a lawyer's review before wide promotion. | step 11 |
-| F-34 | P2 | Content | Remaining Phase 2 documents, one at a time (each needs its own source check): LGPD (Portuguese original; English would be an unofficial translation), PIPEDA, Virginia/Colorado/Texas statutes (state legislature sites often block scripted downloads), and guidance (EDPB/WP29 DPIA, ICO DPIA/ROPA/DSAR, NIST Privacy Framework). Guidance must be visually distinct from law (spec risk). | step 13 |
+| F-34 | P3 | Content | **Paused by owner decision.** Remaining Phase 2 candidates, if ever wanted: LGPD (Portuguese original; English would be an unofficial translation), Virginia/Colorado/Texas statutes (state legislature sites often block scripted downloads), and guidance (EDPB/WP29, ICO, NIST), which must look visibly different from binding law. | step 13 |
 | F-35 | P3 | Decision | Step 14 (in-browser semantic search) is not recommended yet: 96 of 97 test queries pass with keywords and synonyms, and it would add a download of tens of MB. Revisit when real-use misses accumulate (see F-08). | step 14 |
 | F-36 | P3 | Content | GLBA: the statute itself (15 U.S.C. 6801 et seq.) and the FTC's own Privacy Rule for motor vehicle dealers (16 CFR 313) are not loaded. | step 13 |
 | F-33 | P3 | Review | Real-device check of the new design (phone and a large monitor) is still outstanding; emulated phone width shows no overflow on 11 page types. | review |
@@ -44,7 +44,16 @@ How to use this file
 
 ## Change log
 
-### Step 13 - first Phase 2 document: GLBA (2026-10-14)
+### Step 13 - PIPEDA added; further coverage paused (2026-10-14)
+- Added PIPEDA (S.C. 2000, c. 5) from the Department of Justice's official XML: 84 of 84 sections (71 body sections, the ten
+  principles of Schedule 1 as sections, and Schedules 2-4), 341 chunks, all validation checks pass. New parser `build/parse_justice.py`.
+- Reuse terms confirmed from the Reproduction of Federal Law Order (SI/97-5): free reproduction without permission if accuracy is
+  checked and it is not presented as the official version.
+- Added PIPEDA citations (`PIPEDA s. 10.1`, `PIPEDA clause 4.3.1`), vocabulary, 7 comparison columns, 9 tests and 5 topic-gold provisions.
+- Spec test 17's out-of-scope example moved from Canada (now loaded) to Brazil.
+- Owner decision: no further documents for now; the site itself needs checking and tuning first (see F-34).
+
+### Step 13 - GLBA (2026-10-14)
 - Added the FTC Safeguards Rule (16 CFR Part 314) and Regulation P (12 CFR Part 1016) from the eCFR: 24 of 24 sections match
   the official structure list, all validation checks pass, 148 chunks.
 - Pipeline generalized: an eCFR document may combine parts from different CFR titles; sections outside any subpart are handled;

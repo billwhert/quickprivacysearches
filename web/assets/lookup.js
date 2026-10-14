@@ -71,6 +71,36 @@ const CODE = new RegExp(
   "(?:(?:sections?|secs?\\.?|§+)\\s*)?" +
   "(\\d{4,5}(?:\\.\\d+){0,2}|\\d{3,4}\\.\\d{1,3})\\s*((?:\\(\\s*[a-zA-Z0-9]{1,3}\\s*\\)\\s*)*)\\s*$", "i");
 
+// PIPEDA: "PIPEDA s. 7(3)", "PIPEDA section 10.1", "PIPEDA clause 4.3.1", "PIPEDA Schedule 1 4.7"
+const PIPEDA = new RegExp(
+  "^\\s*pipeda\\s*[,:-]?\\s*((?:(?:s\\.?|sec\\.?|sections?|clauses?|cl\\.?|schedule\\s*1|sched\\.?\\s*1)\\s*,?\\s*)*)" +
+  "(\\d{1,2}(?:\\.\\d{1,2}){0,2})\\s*((?:\\(\\s*[a-zA-Z0-9.]{1,6}\\s*\\)\\s*)*)\\s*$", "i");
+
+function lookupPipeda(m, data, byId) {
+  const num = m[2];
+  const labels = (m[3].match(/\(\s*([a-zA-Z0-9.]+)\s*\)/g) || []).map(x => x.replace(/[()\s]/g, ""));
+  const clause = /clause|cl\.?|sched/i.test(m[1]) || /^4\.\d+\.\d+/.test(num);
+  let secId, key;
+  if (clause && /^4\.\d+/.test(num)) {
+    const p = num.split(".");
+    secId = `pipeda:sec:sched1-${p[0]}.${p[1]}`;
+    key = p.length > 2 ? num : "0";
+  } else {
+    secId = `pipeda:sec:${num}`;
+    key = labels[0] || null;
+  }
+  const sec = data.articles.find(x => x.id === secId);
+  if (!sec) return null;
+  const tries = clause ? [`${secId}:${key}`] : labels.map((_, n) => `${secId}:${labels.slice(0, labels.length - n).join(".")}`);
+  for (const id of tries) {
+    const c = byId.get(id);
+    if (c) return { chunk: c, article: sec, exact: true, note: null };
+  }
+  const first = data.chunks.find(x => x.parent === secId);
+  return first ? { chunk: first, article: sec, exact: !labels.length, note: labels.length
+    ? `${sec.ref}(${labels.join(")(")}) was not found; showing the section.` : null } : null;
+}
+
 function docForNumber(num) {
   if (/^1798\./.test(num)) return "ccpa";
   if (/^7\d{3}$/.test(num)) return "ccpa_regs";
@@ -104,6 +134,8 @@ export function lookupCitation(raw, data) {
     return first ? { chunk: first, article: a, exact: para === null,
       note: para !== null ? `${a.ref}(${para}) was not found; showing the article.` : null } : null;
   }
+  m = raw.match(PIPEDA);
+  if (m) return lookupPipeda(m, data, byId);
   m = raw.match(CODE);
   if (m) {
     const num = m[1];

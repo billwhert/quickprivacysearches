@@ -28,7 +28,7 @@ let lastQuery = "", limit = PAGE, panelOpen = false;
 let counts = null, topicCounts = null;       // matches for the current question, before filters
 const filters = { laws: new Set(), types: new Set(), jurisdictions: new Set(), topics: new Set() };
 const TYPE_LABELS = { law: "Statutes", regulation: "Regulations", guidance: "Guidance" };
-const JUR_LABELS = { EU: "European Union", "US-CA": "California", "US-Federal": "US federal" };
+const JUR_LABELS = { EU: "European Union", "US-CA": "California", "US-Federal": "US federal", CA: "Canada" };
 
 const ready = (async () => {
   let tj;

@@ -23,7 +23,7 @@ Re-run the search tests any time with `node tests/run_queries.mjs` (after `pytho
 | 14 | Long California privacy-notice-and-cookies question | Pass | Both guided topic cards at the top |
 | 15 | Do I need a Do Not Sell link | Pass | Cookies and tracking topic |
 | 16 | Does CCPA apply to my small business | Pass | 1798.140(d) in the top 3 and the privacy notice topic |
-| 17 | Canada's breach reporting threshold | Pass | "not in the loaded sources yet", no invented text |
+| 17 | A law outside the loaded sources (re-checked with Brazil's breach threshold, since Canada's PIPEDA is now loaded) | Pass | "not in the loaded sources yet", no invented text |
 | 18 | "erase my data" | Pass | Art. 17 via synonyms |
 | 19 | Filter to HIPAA only | Pass | Every result is HIPAA |
 | 20 | No network calls with the query | Pass | Checked on the live site in a real browser: 9 requests on load, all to billwhert.github.io; none after searching; the query is not in any URL, the address bar, storage or cookies |

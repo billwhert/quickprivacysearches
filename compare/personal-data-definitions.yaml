@@ -8,6 +8,9 @@ columns:
   - doc: ccpa
     heading: "CCPA: \"personal information\""
     chunk_ids: ["ccpa:sec:1798.140:v"]
+  - doc: pipeda
+    heading: "PIPEDA: \"personal information\""
+    chunk_ids: ["pipeda:sec:2:personal-information"]
   - doc: hipaa
     heading: "HIPAA: \"protected health information\""
     chunk_ids: ["hipaa:sec:160.103:protected-health-information", "hipaa:sec:160.103:individually-identifiable-health-information"]

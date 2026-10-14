@@ -25,6 +25,7 @@ required?") and get the exact text of the law, with a link to the official sourc
 | CPPA CCPA regulations (11 CCR 7000 et seq.) | Available |
 | HIPAA Privacy, Security, and Breach Notification Rules (45 CFR Parts 160 and 164) | Available |
 | Gramm-Leach-Bliley: FTC Safeguards Rule (16 CFR 314) and Regulation P (12 CFR 1016) | Available |
+| PIPEDA (Canada's federal private-sector privacy law) | Available |
 
 Later: more US state laws, LGPD, PIPEDA, GLBA, and regulator guidance.
 

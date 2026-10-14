@@ -38,7 +38,8 @@ const SPEC = [
     ["ccpa:sec:1798.130:a", "ccpa:sec:1798.100:a", "ccpa_regs:sec:7011", "ccpa_regs:sec:7012"]],
   ["Spec 16 (approx.) does CCPA apply", "Does CCPA apply to my small business", ["ccpa:sec:1798.140:d"]],
   ["Spec 15 (approx.) Do Not Sell link", "Do I need a Do Not Sell link", ["ccpa:sec:1798.135", "ccpa_regs:sec:7013", "ccpa:sec:1798.120"]],
-  ["Spec 17 outside loaded sources", "What is Canada's breach reporting threshold?", []],
+  ["Spec 17 outside loaded sources", "What is Brazil's data breach reporting threshold?", []],
+  ["Spec 17b Canada is now loaded (PIPEDA 10.1)", "What is Canada's breach reporting threshold?", ["pipeda:sec:10.1:1"]],
   ["Spec 18 synonym wording", "erase my data", ["gdpr:art:17:"]],
   ["Spec 18b synonym wording (CA)", "delete my personal information", ["ccpa:sec:1798.105"]],
 ];
@@ -104,6 +105,15 @@ const EXTRA = [
   ["GLBA annual notice exception", "annual privacy notice exception", ["glba:sec:1016.5:e"]],
   ["GLBA small institutions", "do the Safeguards Rule requirements apply to small financial institutions", ["glba:sec:314.6"]],
   ["GLBA multi-factor authentication", "multi-factor authentication requirement", ["glba:sec:314.4:c", "glba:sec:314.2:k"]],
+  ["PIPEDA citation, section", "PIPEDA s. 10.1", ["pipeda:sec:10.1"]],
+  ["PIPEDA citation, subsection", "PIPEDA 7(3)", ["pipeda:sec:7:3"]],
+  ["PIPEDA citation, Schedule 1 clause", "PIPEDA clause 4.3.1", ["pipeda:sec:sched1-4.3:4.3.1"]],
+  ["PIPEDA breach report", "when must an organization report a breach to the Privacy Commissioner of Canada", ["pipeda:sec:10.1:1"]],
+  ["PIPEDA significant harm", "what is real risk of significant harm", ["pipeda:sec:10.1:7", "pipeda:sec:10.1:8"]],
+  ["PIPEDA access request time", "how long does an organization have to respond to an access request in Canada", ["pipeda:sec:8:3", "pipeda:sec:8:4"]],
+  ["PIPEDA ten principles", "what are the ten fair information principles", ["pipeda:sec:sched1-4"]],
+  ["PIPEDA disclosure without consent", "when can personal information be disclosed without consent in Canada", ["pipeda:sec:7:3", "pipeda:sec:7:2"]],
+  ["PIPEDA offence", "penalty for knowingly failing to report a breach in Canada", ["pipeda:sec:28"]],
   ["CCPA response deadline", "how long to respond to a request to delete", ["ccpa_regs:sec:7021", "ccpa:sec:1798.130:a"]],
 ];
 

@@ -86,5 +86,15 @@
   "checksum_sha256": "f0e1225afbe8322e5f9c3c3f0844dc1cc81ddd40361ee6b7714f31e2ae7e1213",
   "retrieved_at": "2026-10-14T15:05:06Z",
   "last_checked_at": "2026-10-14T15:05:06Z"
+ },
+ "pipeda": {
+  "doc_id": "pipeda",
+  "source_url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/",
+  "fetch_url": "https://laws-lois.justice.gc.ca/eng/XML/P-8.6.xml",
+  "raw_path": "data/raw/pipeda.xml",
+  "bytes": 243198,
+  "checksum_sha256": "f19a69c256d4454b49516a9f78f10642361204534c1da37d0f64c7afbd24d6a1",
+  "retrieved_at": "2026-10-14T15:17:07Z",
+  "last_checked_at": "2026-10-14T15:17:07Z"
  }
 }

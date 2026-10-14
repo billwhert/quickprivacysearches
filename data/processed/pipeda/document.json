@@ -1,0 +1,21 @@
+{
+ "doc_id": "pipeda",
+ "title": "Personal Information Protection and Electronic Documents Act (S.C. 2000, c. 5)",
+ "short_name": "PIPEDA",
+ "jurisdiction": "CA",
+ "doc_type": "law",
+ "source_url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/",
+ "version_label": "Justice Laws Website consolidation, current to 2026-03-26 (last amended 2025-03-04)",
+ "effective_date": "2026-03-26",
+ "retrieved_at": "2026-10-14T15:17:07Z",
+ "language": "en",
+ "is_translation": false,
+ "raw_path": "data/raw/pipeda.xml",
+ "checksum": "f19a69c256d4454b49516a9f78f10642361204534c1da37d0f64c7afbd24d6a1",
+ "license_note": "Reuse permitted. The Reproduction of Federal Law Order (SI/97-5) allows anyone to reproduce federal enactments and consolidations without charge or request for permission, provided due diligence is exercised in ensuring the accuracy of the materials reproduced and the reproduction is not represented as an official version.",
+ "attribution": "Personal Information Protection and Electronic Documents Act (S.C. 2000, c. 5), Justice Laws Website, Department of Justice Canada, https://laws-lois.justice.gc.ca. Reproduced under the Reproduction of Federal Law Order (SI/97-5). This is not the official version.",
+ "reuse_url": "https://laws-lois.justice.gc.ca/eng/regulations/SI-97-5/FullText.html",
+ "notes": "This is the Department of Justice's consolidation of the Act (English text), loaded from the official XML. The Act is also published in French. Provincial private-sector privacy laws (for example Quebec, Alberta and British Columbia) and the Act's regulations are not loaded. Check the Justice Laws website for the legal status of its consolidations.",
+ "fetch_note": null,
+ "fetch_url": "https://laws-lois.justice.gc.ca/eng/XML/P-8.6.xml"
+}

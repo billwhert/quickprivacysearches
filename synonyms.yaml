@@ -288,6 +288,40 @@ synonyms:
   - terms: ["small financial institution", "small financial institutions", "small institutions", "small business exemption", "fewer than 5,000", "5,000 consumers"]
     expand: ["fewer than five thousand consumers", "do not apply to financial institutions that maintain customer information concerning fewer than five thousand consumers"]
 
+  # ---- PIPEDA (Canada) ----
+  - terms: ["real risk of significant harm", rrsh, "breach reporting canada", "report a breach to the privacy commissioner", "breach of security safeguards", "report breach to opc"]
+    expand: ["real risk of significant harm to an individual", "report to the Commissioner any breach of security safeguards", "notify an individual of any breach of security safeguards"]
+
+  - terms: ["fair information principles", "ten principles", "10 principles", "model code", "csa model code", "principles of pipeda"]
+    expand: ["Principles Set Out in the National Standard of Canada Entitled Model Code", "Principle 1 Accountability"]
+
+  - terms: ["privacy commissioner", opc, "office of the privacy commissioner"]
+    expand: ["Commissioner", "complaint to the Commissioner"]
+
+  - terms: ["meaningful consent", "implied consent", "express consent", "knowledge and consent", "valid consent"]
+    expand: ["knowledge and consent of the individual", "consent of an individual is only valid if"]
+
+  - terms: ["business contact information", "work email address", "work contact details"]
+    expand: ["business contact information"]
+
+  - terms: ["challenge compliance", "challenging compliance", "complain to the organization", "internal complaint"]
+    expand: ["challenging compliance", "complaint procedures"]
+
+  - terms: [accountability, accountable, "designate an individual"]
+    expand: ["designate an individual or individuals who are accountable for the organization's compliance"]
+
+  - terms: ["breach reporting threshold", "reporting threshold", "threshold for reporting", "breach threshold", "when must a breach be reported", "when to report a breach"]
+    weight: 0.8
+    expand: ["real risk of significant harm to an individual", "report to the Commissioner any breach of security safeguards"]
+
+  - terms: ["how long", "time limit", "respond within", "deadline to respond", "days to respond", "how many days"]
+    weight: 0.6
+    expand: ["not later than thirty days after receipt of the request", "may extend the time limit for a maximum of thirty days"]
+
+  - terms: [penalty, penalties, fine, fines, offence, offense, "criminal penalty", "knowingly contravenes"]
+    weight: 0.5
+    expand: ["guilty of an offence and liable on summary conviction to a fine", "knowingly contravenes"]
+
 jurisdictions:
   - id: eu
     label: "the EU (GDPR)"
@@ -313,7 +347,11 @@ jurisdictions:
     docs: [hipaa]
   - id: canada
     label: "Canada (PIPEDA)"
-    words: [canada, canadian, pipeda, ontario, quebec]
+    words: [canada, canadian, pipeda, "personal information protection and electronic documents act", opc]
+    docs: [pipeda]
+  - id: canada_provincial
+    label: "Canadian provincial privacy laws (for example Quebec, Alberta and British Columbia)"
+    words: [quebec, "law 25", "bill 64", alberta, "british columbia", ontario, pipa, phipa]
     docs: []
   - id: brazil
     label: "Brazil (LGPD)"

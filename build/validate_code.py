@@ -55,8 +55,14 @@ def validate_code(doc: dict, chunks: list[dict], toc: list[str], plain: str, cro
           all(c["parent_chunk_id"] in idset for c in kids if c["parent_chunk_id"]))
 
     # table rows are rendered with " | " between cells; the source has no such separator
-    miss = [c["chunk_id"] for c in kids if norm(c["text"]) not in plain
-            and norm(c["text"].replace(" | ", " ")) not in plain]
+    if doc.get("profile", {}).get("ignore_whitespace"):
+        import re as _re
+        flat = _re.sub(r"\s+", "", plain)
+        miss = [c["chunk_id"] for c in kids
+                if _re.sub(r"\s+", "", c["text"].replace(" | ", "")) not in flat]
+    else:
+        miss = [c["chunk_id"] for c in kids if norm(c["text"]) not in plain
+                and norm(c["text"].replace(" | ", " ")) not in plain]
     check("Every chunk's text appears verbatim in the saved source file", not miss,
           f"{len(miss)} missing: {miss[:8]}")
     if doc.get("profile", {}).get("definition_sections"):

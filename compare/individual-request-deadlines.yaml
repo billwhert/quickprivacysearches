@@ -12,6 +12,9 @@ columns:
     docs: [ccpa, ccpa_regs]
     heading: "CCPA and CPPA regulations: consumer requests"
     chunk_ids: ["ccpa:sec:1798.130:a.2", "ccpa_regs:sec:7021:a", "ccpa_regs:sec:7021:b"]
+  - doc: pipeda
+    heading: "PIPEDA: responding to a request for access"
+    chunk_ids: ["pipeda:sec:8:3", "pipeda:sec:8:4"]
   - doc: hipaa
     heading: "HIPAA: requests for access to protected health information"
     chunk_ids: ["hipaa:sec:164.524:b"]

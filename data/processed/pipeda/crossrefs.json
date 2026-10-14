@@ -1,0 +1,765 @@
+[
+ {
+  "from_chunk_id": "pipeda:sec:2:breach-of-security-safeguards",
+  "raw": "clause 4.7",
+  "to_chunk_id": "pipeda:sec:sched1-4.7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:2:commissioner",
+  "raw": "section 53",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:2:federal-work-undertaking-or-business",
+  "raw": "section 2",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:2:federal-work-undertaking-or-business",
+  "raw": "section 20",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:2:federal-work-undertaking-or-business",
+  "raw": "paragraph 26(1)(k)",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:2:2",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:4.1:1",
+  "raw": "section 38.13",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:4.1:2",
+  "raw": "section 38.13",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:4.1:3",
+  "raw": "section 38.13",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:4.1:4",
+  "raw": "section 38.13",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:5:1",
+  "raw": "sections 6",
+  "to_chunk_id": "pipeda:sec:6",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:6:0",
+  "raw": "clause 4.1",
+  "to_chunk_id": "pipeda:sec:sched1-4.1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:6.1:0",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7:1",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7:2",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7:3",
+  "raw": "section 7",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7:3",
+  "raw": "subsection 11.01(1)",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7:3",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7:4",
+  "raw": "clause 4.5",
+  "to_chunk_id": "pipeda:sec:sched1-4.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7:5",
+  "raw": "clause 4.5",
+  "to_chunk_id": "pipeda:sec:sched1-4.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.1:computer-program",
+  "raw": "subsection 342.1(2)",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.1:computer-system",
+  "raw": "subsection 342.1(2)",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.1:2",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.1:3",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.2:1",
+  "raw": "subsections 7(2)",
+  "to_chunk_id": "pipeda:sec:7:2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.2:1",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.2:2",
+  "raw": "subsections 7(2)",
+  "to_chunk_id": "pipeda:sec:7:2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.2:2",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.2:2",
+  "raw": "clause 4.3.8",
+  "to_chunk_id": "pipeda:sec:sched1-4.3:4.3.8",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.3:0",
+  "raw": "section 7",
+  "to_chunk_id": "pipeda:sec:7",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.3:0",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.4:1",
+  "raw": "subsection 7.2(1)",
+  "to_chunk_id": "pipeda:sec:7.2:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.4:1",
+  "raw": "section 7.3",
+  "to_chunk_id": "pipeda:sec:7.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.4:1",
+  "raw": "clause 4.5",
+  "to_chunk_id": "pipeda:sec:sched1-4.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.4:2",
+  "raw": "subsection 7.2(1)",
+  "to_chunk_id": "pipeda:sec:7.2:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.4:2",
+  "raw": "section 7.3",
+  "to_chunk_id": "pipeda:sec:7.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:7.4:2",
+  "raw": "clause 4.5",
+  "to_chunk_id": "pipeda:sec:sched1-4.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:8:1",
+  "raw": "clause 4.9",
+  "to_chunk_id": "pipeda:sec:sched1-4.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:8:8",
+  "raw": "clause 4.5",
+  "to_chunk_id": "pipeda:sec:sched1-4.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:1",
+  "raw": "clause 4.9",
+  "to_chunk_id": "pipeda:sec:sched1-4.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:2.1",
+  "raw": "paragraph 7(3)(c)",
+  "to_chunk_id": "pipeda:sec:7:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:2.1",
+  "raw": "paragraph 7(3)(c.2)",
+  "to_chunk_id": "pipeda:sec:7:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:2.4",
+  "raw": "paragraph 7(3)(c)",
+  "to_chunk_id": "pipeda:sec:7:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:2.4",
+  "raw": "paragraph 7(3)(c.2)",
+  "to_chunk_id": "pipeda:sec:7:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:2.4",
+  "raw": "clause 4.9",
+  "to_chunk_id": "pipeda:sec:sched1-4.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:3",
+  "raw": "paragraph 7(1)(b)",
+  "to_chunk_id": "pipeda:sec:7:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:9:3",
+  "raw": "clause 4.9",
+  "to_chunk_id": "pipeda:sec:sched1-4.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:10.2:1",
+  "raw": "subsection 10.1(3)",
+  "to_chunk_id": "pipeda:sec:10.1:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:10.2:3",
+  "raw": "subsection 7(3)",
+  "to_chunk_id": "pipeda:sec:7:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:10.2:3",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:10.2:4",
+  "raw": "clause 4.5",
+  "to_chunk_id": "pipeda:sec:sched1-4.5",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:11:3",
+  "raw": "section 8",
+  "to_chunk_id": "pipeda:sec:8",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12:2",
+  "raw": "sections 6",
+  "to_chunk_id": "pipeda:sec:6",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12:2",
+  "raw": "section 52.01",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12:2",
+  "raw": "section 74.011",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12.2:1",
+  "raw": "subsection 17.1(1)",
+  "to_chunk_id": "pipeda:sec:17.1:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12.2:1",
+  "raw": "paragraph 12(1)(a)",
+  "to_chunk_id": "pipeda:sec:12:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12.2:2",
+  "raw": "sections 6",
+  "to_chunk_id": "pipeda:sec:6",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12.2:2",
+  "raw": "section 52.01",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:12.2:2",
+  "raw": "section 74.011",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:13:1",
+  "raw": "section 14",
+  "to_chunk_id": "pipeda:sec:14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:14:1",
+  "raw": "subsection 12.2(3)",
+  "to_chunk_id": "pipeda:sec:12.2:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:14:1",
+  "raw": "subsection 5(3)",
+  "to_chunk_id": "pipeda:sec:5:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:14:1",
+  "raw": "section 10",
+  "to_chunk_id": "pipeda:sec:10",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:14:1",
+  "raw": "clause 4.1.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.1:4.1.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:14:1",
+  "raw": "clause 4.3",
+  "to_chunk_id": "pipeda:sec:sched1-4.3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:14:3",
+  "raw": "subsection 11(2)",
+  "to_chunk_id": "pipeda:sec:11:2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:14:3",
+  "raw": "subsection 11(1)",
+  "to_chunk_id": "pipeda:sec:11:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:15:0",
+  "raw": "section 14",
+  "to_chunk_id": "pipeda:sec:14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17:1",
+  "raw": "section 14",
+  "to_chunk_id": "pipeda:sec:14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17:2",
+  "raw": "section 14",
+  "to_chunk_id": "pipeda:sec:14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17:2",
+  "raw": "clause 4.9",
+  "to_chunk_id": "pipeda:sec:sched1-4.9",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.1:3",
+  "raw": "subsection 14(1)",
+  "to_chunk_id": "pipeda:sec:14:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.1:3",
+  "raw": "paragraph 15(a)",
+  "to_chunk_id": "pipeda:sec:15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.1:4",
+  "raw": "section 14",
+  "to_chunk_id": "pipeda:sec:14",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.2:1",
+  "raw": "subsection 14(1)",
+  "to_chunk_id": "pipeda:sec:14:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.2:1",
+  "raw": "paragraph 15(a)",
+  "to_chunk_id": "pipeda:sec:15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.2:2",
+  "raw": "subsection 14(1)",
+  "to_chunk_id": "pipeda:sec:14:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.2:2",
+  "raw": "paragraph 15(a)",
+  "to_chunk_id": "pipeda:sec:15",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.2:2",
+  "raw": "paragraph 17.1(3)(b)",
+  "to_chunk_id": "pipeda:sec:17.1:3",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:17.2:3",
+  "raw": "subsection 14(2)",
+  "to_chunk_id": "pipeda:sec:14:2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:19:2",
+  "raw": "section 25",
+  "to_chunk_id": "pipeda:sec:25",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:1",
+  "raw": "section 25",
+  "to_chunk_id": "pipeda:sec:25",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:1",
+  "raw": "subsection 10.1(1)",
+  "to_chunk_id": "pipeda:sec:10.1:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:1.1",
+  "raw": "section 25",
+  "to_chunk_id": "pipeda:sec:25",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:1.1",
+  "raw": "subsection 10.1(1)",
+  "to_chunk_id": "pipeda:sec:10.1:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:1.1",
+  "raw": "subsection 10.3(2)",
+  "to_chunk_id": "pipeda:sec:10.3:2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:4",
+  "raw": "section 28",
+  "to_chunk_id": "pipeda:sec:28",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:4",
+  "raw": "section 132",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:6",
+  "raw": "subsection 10.1(1)",
+  "to_chunk_id": "pipeda:sec:10.1:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:6",
+  "raw": "subsection 10.3(2)",
+  "to_chunk_id": "pipeda:sec:10.3:2",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:7",
+  "raw": "paragraph 50(c)",
+  "to_chunk_id": "pipeda:sec:50",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:20:7",
+  "raw": "subsection 58(3)",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:21:0",
+  "raw": "section 28",
+  "to_chunk_id": "pipeda:sec:28",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:21:0",
+  "raw": "section 132",
+  "to_chunk_id": null,
+  "external": true,
+  "own_space": false
+ },
+ {
+  "from_chunk_id": "pipeda:sec:26:1",
+  "raw": "paragraph 7(1)(d)",
+  "to_chunk_id": "pipeda:sec:7:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:26:1",
+  "raw": "subsection 10.3(1)",
+  "to_chunk_id": "pipeda:sec:10.3:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:28:0",
+  "raw": "subsection 8(8)",
+  "to_chunk_id": "pipeda:sec:8:8",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:28:0",
+  "raw": "section 10.1",
+  "to_chunk_id": "pipeda:sec:10.1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:28:0",
+  "raw": "subsection 10.3(1)",
+  "to_chunk_id": "pipeda:sec:10.3:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:31:secure-electronic-signature",
+  "raw": "subsection 48(1)",
+  "to_chunk_id": "pipeda:sec:48:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:40:0",
+  "raw": "sections 41",
+  "to_chunk_id": "pipeda:sec:41",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:43:0",
+  "raw": "sections 44",
+  "to_chunk_id": "pipeda:sec:44",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:48:1",
+  "raw": "subsection 31(1)",
+  "to_chunk_id": "pipeda:sec:31:1",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:49:0",
+  "raw": "sections 38",
+  "to_chunk_id": "pipeda:sec:38",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:50:1",
+  "raw": "sections 41",
+  "to_chunk_id": "pipeda:sec:41",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:50:2",
+  "raw": "sections 41",
+  "to_chunk_id": "pipeda:sec:41",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:50:3",
+  "raw": "sections 41",
+  "to_chunk_id": "pipeda:sec:41",
+  "external": false,
+  "own_space": true
+ },
+ {
+  "from_chunk_id": "pipeda:sec:51:0",
+  "raw": "section 50",
+  "to_chunk_id": "pipeda:sec:50",
+  "external": false,
+  "own_space": true
+ }
+]

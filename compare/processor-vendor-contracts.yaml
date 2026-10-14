@@ -9,6 +9,9 @@ columns:
     docs: [ccpa, ccpa_regs]
     heading: "CCPA and CPPA regulations: service providers, contractors and third parties"
     chunk_ids: ["ccpa:sec:1798.100:d", "ccpa_regs:sec:7051:a"]
+  - doc: pipeda
+    heading: "PIPEDA: accountability for information transferred to a third party"
+    chunk_ids: ["pipeda:sec:sched1-4.1:4.1.3"]
   - doc: glba
     heading: "GLBA Safeguards Rule: overseeing service providers"
     chunk_ids: ["glba:sec:314.4:f"]

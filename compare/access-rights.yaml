@@ -8,6 +8,9 @@ columns:
   - doc: ccpa
     heading: "CCPA: right to know what personal information is collected"
     chunk_ids: ["ccpa:sec:1798.110:a", "ccpa:sec:1798.115:a"]
+  - doc: pipeda
+    heading: "PIPEDA: individual access (Schedule 1, principle 9) and the response rules"
+    chunk_ids: ["pipeda:sec:sched1-4.9:4.9.1", "pipeda:sec:8:3"]
   - doc: hipaa
     heading: "HIPAA: access of individuals to protected health information"
     chunk_ids: ["hipaa:sec:164.524:a"]

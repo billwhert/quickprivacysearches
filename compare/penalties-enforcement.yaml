@@ -8,6 +8,9 @@ columns:
   - doc: ccpa
     heading: "CCPA: administrative and civil enforcement"
     chunk_ids: ["ccpa:sec:1798.155:a", "ccpa:sec:1798.199.90:a"]
+  - doc: pipeda
+    heading: "PIPEDA: offences and fines"
+    chunk_ids: ["pipeda:sec:28:0"]
   - doc: hipaa
     heading: "HIPAA: civil money penalties"
     chunk_ids: ["hipaa:sec:160.404:a", "hipaa:sec:160.404:b"]

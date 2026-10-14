@@ -139,6 +139,8 @@ def child_label(c: dict) -> str:
         if c.get("defined_term"):
             return f"Definition: {c['defined_term']}"
         return f"Definition ({c['number']})"
+    if c.get("label"):                      # e.g. a numbered clause of PIPEDA Schedule 1
+        return f"Clause {c['label']}"
     if c.get("unnumbered") or str(c["number"]) == "0":
         return ""
     if c["doc_id"] == "gdpr":
